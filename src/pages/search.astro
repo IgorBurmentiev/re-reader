@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Поиск — Re:Zero" theme="amethyst">
+  <h1>Поиск по всем главам</h1>
+  <p class="hint">Индекс строится при сборке (Pagefind), работает офлайн.</p>
+  <div id="search"></div>
+</Base>
+
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+<script is:inline>
+  window.addEventListener("DOMContentLoaded", () => {
+    if (window.PagefindUI)
+      new PagefindUI({ element: "#search", showSubResults: true, resetStyles: false });
+  });
+</script>
+
+<style>
+  h1 {
+    font: 400 clamp(26px, 4vw, 38px) "Forum", serif;
+    color: var(--gold-soft);
+  }
+  .hint {
+    font: 12px "Golos Text", sans-serif;
+    color: var(--ink-dim);
+    letter-spacing: 0.08em;
+  }
+  #search {
+    margin-top: 24px;
+    --pagefind-ui-primary: var(--c);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-background: var(--paper-2);
+    --pagefind-ui-border: var(--rule);
+  }
+</style>

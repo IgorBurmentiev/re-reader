@@ -1,0 +1,775 @@
+---
+import { getCollection, render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import { arcBySlug, ARC_JP } from "../../lib/arcs";
+import { REGISTRY, CATEGORY_LABEL } from "../../lib/extra";
+
+export async function getStaticPaths() {
+  const all = await getCollection("chapters");
+  const byArc = new Map<string, typeof all>();
+  for (const e of all) {
+    const k = e.id.split("/")[0];
+    if (!byArc.has(k)) byArc.set(k, []);
+    byArc.get(k)!.push(e);
+  }
+  // главы арок и части «Дополнительного» — две разные схемы коллекций;
+  // страница читает общее подмножество полей (title/translator/…) и
+  // самостоятельно разводит остальное по isExtra, поэтому пути — any[]
+  const paths: any[] = [...byArc.values()].flatMap((list) => {
+    list.sort((a, b) => (a.data.order_release ?? 0) - (b.data.order_release ?? 0));
+    return list.map((entry, i) => ({
+      params: { id: entry.id },
+      props: {
+        entry,
+        isExtra: false,
+        prev: list[i - 1] ?? null,
+        next: list[i + 1] ?? null,
+        pos: i + 1,
+        total: list.length,
+        toc: list.map((c) => ({
+          id: c.id,
+          type: c.data.type,
+          n: c.data.number ?? "",
+          label: c.data.label ?? "",
+          title: c.data.title ?? "",
+        })),
+      },
+    }));
+  });
+
+  // «Дополнительно»: группа — серия из реестра content/extra/_index.json,
+  // а не id.split("/") (у побочных историй в id нет "/" — они лежат плоско)
+  const extraAll = await getCollection("extra");
+  const bySlug = new Map(extraAll.map((e) => [e.id, e]));
+  for (const series of REGISTRY) {
+    const list = series.part_slugs.map((s) => bySlug.get(s)).filter((e) => e != null);
+    list.forEach((entry, i) => {
+      paths.push({
+        params: { id: `extra/${entry.id}` },
+        props: {
+          entry,
+          isExtra: true,
+          seriesSlug: series.slug,
+          seriesTitle: series.title,
+          category: series.category,
+          prev: list[i - 1] ?? null,
+          next: list[i + 1] ?? null,
+          pos: i + 1,
+          total: list.length,
+          toc: list.map((c, j) => ({
+            id: `extra/${c.id}`,
+            type: "chapter",
+            n: String(j + 1),
+            label: "",
+            title: c.data.title ?? "",
+          })),
+        },
+      });
+    });
+  }
+  return paths;
+}
+
+const props = Astro.props as any;
+const { entry, isExtra, prev, next, pos, total, toc } = props;
+const seriesSlug: string = isExtra ? props.seriesSlug : "";
+const seriesTitle: string = isExtra ? props.seriesTitle : "";
+const category: string = isExtra ? props.category : "";
+const { Content } = await render(entry);
+const d = entry.data as any;
+const arcSlug = isExtra ? "extra" : entry.id.split("/")[0];
+const arc = isExtra ? null : arcBySlug(arcSlug);
+const chId = isExtra ? `extra/${entry.id}` : entry.id;
+const readHref = (id: string) => (isExtra ? `/read/extra/${id}` : `/read/${id}`);
+
+const kindLabel: Record<string, string> = {
+  prologue: "Пролог", epilogue: "Эпилог", interlude: "Интерлюдия",
+  side: "Побочная история", if: "IF-история", extra: "Бонус",
+};
+const kindWord = (t: string, label?: string) =>
+  label && !/^\d/.test(label) && label !== "Интерлюдия" && label !== "Пролог"
+    ? label
+    : kindLabel[t] || t;
+const kicker = isExtra
+  ? (d.parts_total && d.parts_total > 1
+      ? `${seriesTitle} · часть ${d.part}/${d.parts_total}`
+      : CATEGORY_LABEL[category] ?? "Дополнительно")
+  : d.type === "chapter" ? `Глава ${d.label ?? d.number}` : kindWord(d.type, d.label);
+const navLabel = (x: any) =>
+  x.data.title || kindLabel[x.data.type] || `Глава ${x.data.label ?? x.data.number}`;
+const pageTitle = isExtra
+  ? `${kicker}${d.title && d.title !== kicker ? " — " + d.title : ""} · Дополнительно`
+  : `${kicker}${d.title ? " — " + d.title : ""} · Арка ${d.arc}`;
+---
+
+<Base
+  title={pageTitle}
+  theme={isExtra ? "midnight" : (arc?.theme ?? "midnight")}
+  palette={false}
+  bare
+>
+  <div id="bar"></div>
+  <header class="rhead">
+    {
+      isExtra ? (
+        <a href="/extra" class="crumb">
+          <Icon name="chevron-left" size={15} /> Дополнительно
+        </a>
+      ) : (
+        <a href={`/arc/${arcSlug}`} class="crumb">
+          <Icon name="chevron-left" size={15} /> Арка {d.arc}
+        </a>
+      )
+    }
+    <span class="mid">{isExtra ? CATEGORY_LABEL[category] : arc?.title}</span>
+    <span class="pct" id="hpct">0%</span>
+  </header>
+
+  <section class="cover">
+    {!isExtra && <div class="jp" lang="ja">{ARC_JP[String(d.arc)]?.jp ?? "零"}</div>}
+    <p class="eyebrow">
+      {
+        isExtra
+          ? `Re:Zero · Дополнительно · ${CATEGORY_LABEL[category] ?? ""}`
+          : <>Re:Zero · Арка {d.arc}{d.phase ? ` · фаза ${d.phase}` : ""}{d.volume ? ` · том ${d.volume}` : ""}</>
+      }
+    </p>
+    <h1>{kicker}</h1>
+    {d.title && d.title !== kicker && <p class="sub">«{d.title}»</p>}
+    {
+      isExtra ? (
+        (d.translator || d.fanart) && (
+          <p class="src">
+            {d.translator ? `перевод: ${d.translator}` : ""}
+            {d.fanart ? `${d.translator ? " · " : ""}арт: ${d.fanart}` : ""}
+          </p>
+        )
+      ) : (
+        (d.translator || d.source) && (
+          <p class="src">
+            {d.translator ? `перевод: ${d.translator}` : ""}
+            {d.source ? (
+              <>
+                {" · "}
+                <a href={d.source} rel="noreferrer">источник</a>
+              </>
+            ) : null}
+          </p>
+        )
+      )
+    }
+    <p class="scroll-hint">↓ читать</p>
+  </section>
+
+  <main id="text">
+    <Content />
+  </main>
+
+  <nav class="pager">
+    {prev ? <a href={readHref(prev.id)}>‹ {navLabel(prev)}</a> : <span />}
+    {next ? <a href={readHref(next.id)}>{navLabel(next)} ›</a> : <span />}
+  </nav>
+
+  <!-- FAB -->
+  <button class="fab" id="gearBtn" type="button" aria-label="Настройки чтения (S)">
+    <Icon name="settings" size={19} />
+  </button>
+  {
+    total > 1 && (
+      <button class="fab" id="tocBtn" type="button" aria-label="Оглавление (C)">
+        <Icon name="book" size={18} />
+      </button>
+    )
+  }
+  <button class="fab" id="notesBtn" type="button" aria-label="Заметки (N)">
+    <Icon name="eye" size={18} />
+  </button>
+  <button class="fab" id="paletteBtn2" type="button" aria-label="Оформление (T)">
+    <Icon name="palette" size={19} />
+  </button>
+
+  <!-- Панель настроек -->
+  <div class="panel" id="settings">
+    <h2>Настройки чтения</h2>
+    <div class="grp"><span>Шрифт</span><div id="fonts" class="fontlist"></div><div id="fontnote"></div></div>
+    <div class="grp"><span>Выравнивать высоту строчных</span><div class="chips" id="fsa"></div></div>
+    <div class="grp"><span>Размер текста</span><div class="row"><input type="range" id="fs" min="15" max="30" step="1" /><i class="val" id="fsv"></i></div></div>
+    <div class="grp"><span>Ширина колонки</span><div class="row"><input type="range" id="mw" min="480" max="1040" step="20" /><i class="val" id="mwv"></i></div></div>
+    <div class="grp"><span>Межстрочный интервал</span><div class="row"><input type="range" id="lh" min="1.4" max="2.2" step="0.05" /><i class="val" id="lhv"></i></div></div>
+    <div class="grp"><span>Выравнивание</span><div class="chips" id="align"></div></div>
+    <div class="grp"><span>Красная строка</span><div class="chips" id="indent"></div></div>
+    <div class="grp"><span>Появление текста</span><div class="chips" id="anim"></div></div>
+    <div class="grp"><span>Иллюстрации</span><div class="chips" id="spoil"></div></div>
+    <div class="actions"><button class="chip" id="reset" type="button">Сбросить настройки</button></div>
+  </div>
+
+  {
+    total > 1 && (
+      <div class="panel" id="tocPanel">
+        <h2>{isExtra ? `Части · ${seriesTitle}` : `Оглавление · Арка ${d.arc}`}</h2>
+        <div id="tocList"></div>
+        <div class="actions">
+          <button class="chip" id="tocMarkAllRead" type="button">Отметить все прочитанными</button>
+        </div>
+      </div>
+    )
+  }
+
+  <div class="panel" id="notesPanel">
+    <h2>Заметки и выделения</h2>
+    <div id="noteList"></div>
+    <div class="actions">
+      <button class="chip" id="expMd" type="button">Скачать .md</button>
+      <button class="chip" id="expJson" type="button">Скачать .json</button>
+      <button class="chip" id="impJson" type="button">Загрузить .json</button>
+    </div>
+    <p class="hint">
+      «.json» — это не только заметки, а полный бэкап: ещё настройки читалки и весь
+      прогресс чтения по всем главам. Если планируете чистить данные браузера или
+      менять устройство — сначала скачайте его, потом «Загрузить .json» вернёт всё как было.
+    </p>
+  </div>
+
+  <div class="panel" id="palettePanel">
+    <h2>Оформление</h2>
+    <div class="grp"><div class="chips" id="mode">
+      <button class="chip" data-v="dark">Тёмная</button>
+      <button class="chip" data-v="light">Светлая</button>
+    </div></div>
+    <div class="grp"><span>Тема арки</span><div class="chips" id="autoTheme">
+      <button class="chip" data-v="on">Своя у каждой</button>
+      <button class="chip" data-v="off">Одна везде</button>
+    </div></div>
+    <div class="grp"><span>Тёмные</span><div class="swatches" id="swDark"></div></div>
+    <div class="grp"><span>Светлые</span><div class="swatches" id="swLight"></div></div>
+  </div>
+
+  <div id="selbar">
+    <button data-act="hl" type="button">Выделить</button>
+    <button data-act="note" type="button">Заметка</button>
+    <button data-act="copy" type="button">Копировать</button>
+  </div>
+  <div id="toast"></div>
+  <div id="lightbox"><img alt="" /></div>
+
+  <script
+    is:inline
+    define:vars={{
+      data: {
+        arc: isExtra ? "extra" : String(d.arc),
+        arcSlug,
+        whereLabel: isExtra ? "Дополнительно" : `Арка ${d.arc}`,
+        chId,
+        seriesSlug: isExtra ? seriesSlug : "",
+        chTitle: kicker + (d.title && d.title !== kicker ? " — " + d.title : ""),
+        pos,
+        total,
+        toc,
+      },
+    }}
+  >
+    window.__READER__ = data;
+  </script>
+  <script src="../../scripts/reader.ts"></script>
+</Base>
+
+<style is:global>
+  :root { --fs: 19.5px; --lh: 1.78; --measure: 720px; --align: left; --indent: 0em; }
+  #bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    z-index: 50;
+    background: linear-gradient(90deg, var(--c), var(--gold-soft));
+  }
+  .rhead {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 40;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 18px;
+    font: 500 12px var(--ui);
+    letter-spacing: 0.05em;
+    color: var(--ink-dim);
+    background: color-mix(in srgb, var(--paper) 84%, transparent);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .rhead .crumb { display: inline-flex; align-items: center; gap: 4px; color: var(--c); }
+  .rhead .mid { flex: 1; color: var(--ink); font-style: italic; }
+  .rhead .pct { color: var(--c); font-variant-numeric: tabular-nums; }
+
+  .cover {
+    min-height: 82vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 120px 24px 60px;
+    font-family: var(--font, "EB Garamond", serif);
+  }
+  .cover .jp {
+    font: clamp(28px, 6vw, 52px) "Forum", "Noto Serif JP", serif;
+    letter-spacing: 0.16em;
+    color: var(--c);
+    opacity: 0.3;
+    margin-bottom: 30px;
+  }
+  .cover .eyebrow {
+    font: 500 11px var(--ui);
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin: 0 0 24px;
+  }
+  .cover h1 {
+    font: 400 clamp(34px, 6vw, 58px) "Forum", serif;
+    color: var(--gold-soft);
+    margin: 0 0 8px;
+    letter-spacing: 0.02em;
+  }
+  .cover .sub { font-style: italic; font-size: clamp(20px, 3vw, 26px); margin: 0; }
+  .cover .src {
+    margin: 18px 0 0;
+    font: 500 12px var(--ui);
+    color: var(--ink-dim);
+  }
+  .cover .src a:hover { color: var(--c); }
+  .cover .scroll-hint {
+    margin-top: 52px;
+    font: 500 11px var(--ui);
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    animation: pulse 3.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.35; } 50% { opacity: 0.85; } }
+
+  #text {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 24px 220px;
+    font-family: var(--font, "EB Garamond", serif);
+    font-size: var(--fs);
+    line-height: var(--lh);
+    font-size-adjust: var(--fsa, none);
+  }
+  #text p.par {
+    margin: 0 0 1.35em;
+    text-align: var(--align);
+    text-indent: var(--indent);
+    position: relative;
+    hyphens: auto;
+  }
+  html[data-anim="on"] #text p.par {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  html[data-anim="on"] #text p.par.seen { opacity: 1; transform: none; }
+  #text p.par .anchor {
+    position: absolute;
+    left: -1.6em;
+    top: 0.15em;
+    opacity: 0;
+    border: 0;
+    background: none;
+    color: var(--c);
+    font-size: 0.7em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  #text p.par:hover .anchor,
+  #text p.par:focus-within .anchor { opacity: 0.5; }
+  #text p.par.flash { background: color-mix(in srgb, var(--c) 14%, transparent); border-radius: 3px; }
+  #text mark.note {
+    background: color-mix(in srgb, var(--c) 26%, transparent);
+    border-bottom: 1px solid var(--c);
+    border-radius: 2px;
+    color: inherit;
+  }
+  #text hr.scene-break {
+    border: 0;
+    margin: 2.4em auto;
+    width: 120px;
+    text-align: center;
+  }
+  #text hr.scene-break::after {
+    content: "✳ ✳ ✳";
+    color: var(--c);
+    opacity: 0.4;
+    letter-spacing: 0.4em;
+    font-size: 12px;
+  }
+  #text hr.notes-rule { border: 0; border-top: 1px solid var(--rule); margin: 3em 0 1.2em; }
+  /* пояснения теперь всплывают по клику (см. reader.ts), список внизу главы
+     больше не нужен — но остаётся в разметке как источник данных для попапа */
+  #text section.footnotes { display: none; }
+  #text sup a[data-footnote-ref] {
+    color: var(--c);
+    font-weight: 600;
+    padding: 0 2px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #text sup a[data-footnote-ref]:hover,
+  #text sup a[data-footnote-ref][aria-expanded="true"] {
+    background: color-mix(in srgb, var(--c) 22%, transparent);
+  }
+  .fnpop {
+    position: absolute;
+    z-index: 80;
+    max-width: min(360px, calc(100vw - 32px));
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 13px 16px;
+    box-shadow: 0 22px 55px -20px rgba(0, 0, 0, 0.55);
+    font-family: var(--font, "EB Garamond", serif);
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .fnpop p { margin: 0; }
+  .fnpop::before {
+    content: "";
+    position: absolute;
+    left: var(--fnpop-arrow, 20px);
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    background: var(--paper-2);
+    border-left: 1px solid var(--rule);
+    border-top: 1px solid var(--rule);
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .fnpop.up::before {
+    top: auto;
+    bottom: -6px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+  #text blockquote {
+    font-family: var(--font, serif);
+    margin: 2em 0;
+    padding: 1.1em 1.4em;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--c);
+    border-radius: 4px;
+    background: var(--paper-2);
+    font-style: italic;
+  }
+  #text h2 {
+    font: 400 20px "Forum", serif;
+    color: var(--c);
+    text-align: center;
+    margin: 2.6em 0 1.5em;
+    letter-spacing: 0.08em;
+  }
+  #text figure { margin: 2.6em 0; text-align: center; position: relative; }
+  /* пропорции — как у исходника: обе оси auto, ограничиваем только максимумы,
+     object-fit: contain страхует от растяжения, если что-то задаст размер. */
+  #text figure img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 86vh;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    cursor: zoom-in;
+    transition: filter 0.45s;
+  }
+  #text figure[data-blur="on"] img { filter: blur(22px) saturate(0.6); }
+  #text figure .fighide {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--rule);
+    background: color-mix(in srgb, var(--paper-2) 82%, transparent);
+    color: var(--ink-dim);
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    transition: opacity 0.2s, color 0.2s;
+  }
+  #text figure:hover .fighide,
+  #text figure .fighide:focus-visible { opacity: 1; }
+  #text figure .fighide:hover { color: var(--c); }
+  #text figure[data-blur="on"] .fighide { display: none; }
+  #text figure .cap {
+    font: 500 12px var(--ui);
+    letter-spacing: 0.1em;
+    color: var(--ink-dim);
+    margin-top: 10px;
+  }
+  #text figure[data-blur="on"] .cap::after { content: " · нажмите, чтобы показать"; }
+
+  .pager {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 24px 24px 120px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid var(--rule);
+    font: 500 13.5px var(--ui);
+  }
+  .pager a { color: var(--c); max-width: 46%; }
+  .pager a:hover { text-decoration: underline; }
+
+  .fab {
+    position: fixed;
+    bottom: 22px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    border: 1px solid var(--rule);
+    background: color-mix(in srgb, var(--paper-2) 92%, transparent);
+    color: var(--ink-dim);
+    cursor: pointer;
+    z-index: 45;
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow);
+    transition: color 0.2s, border-color 0.2s, transform 0.2s;
+  }
+  .fab:hover, .fab:focus-visible {
+    color: var(--c);
+    border-color: var(--c);
+    transform: scale(1.05);
+    box-shadow: var(--shadow), 0 0 0 5px color-mix(in srgb, var(--c) 16%, transparent);
+  }
+  #gearBtn { left: 22px; }
+  #tocBtn { left: 78px; }
+  #notesBtn { right: 78px; }
+  #paletteBtn2 { right: 22px; }
+
+  .panel {
+    position: fixed;
+    z-index: 60;
+    bottom: 82px;
+    width: min(380px, calc(100vw - 32px));
+    max-height: 74vh;
+    overflow: auto;
+    padding: 22px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.22s;
+  }
+  .panel.open { opacity: 1; visibility: visible; transform: none; }
+  #settings, #tocPanel { left: 22px; }
+  #notesPanel, #palettePanel { right: 22px; }
+  .panel h2 {
+    margin: 0 0 18px;
+    font: 600 11px var(--ui);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--c);
+  }
+  .panel .grp { margin-bottom: 20px; }
+  .panel .grp > span {
+    display: block;
+    margin-bottom: 9px;
+    font: 500 10px var(--ui);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .panel .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  .panel .chip {
+    font: 500 12.5px var(--ui);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink-dim);
+    cursor: pointer;
+    transition: 0.18s;
+  }
+  .panel .chip:hover { color: var(--ink); }
+  .panel .chip[aria-pressed="true"] {
+    color: var(--paper);
+    background: var(--c);
+    border-color: var(--c);
+  }
+  .panel .row { display: flex; align-items: center; gap: 12px; }
+  .panel input[type="range"] { flex: 1; accent-color: var(--c); }
+  .panel .val {
+    font: 500 12px var(--ui);
+    color: var(--c);
+    min-width: 56px;
+    text-align: right;
+  }
+  .fontlist { max-height: 250px; overflow: auto; margin: 0 -4px; }
+  .fgroup {
+    font: 500 10px var(--ui);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--c);
+    opacity: 0.65;
+    margin: 12px 6px 5px;
+  }
+  .fgroup:first-child { margin-top: 2px; }
+  .fontrow {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 16px;
+    color: var(--ink-dim);
+    cursor: pointer;
+    transition: 0.18s;
+  }
+  .fontrow:hover { color: var(--ink); border-color: var(--rule); }
+  .fontrow[aria-pressed="true"] {
+    color: var(--c);
+    border-color: var(--c);
+    background: color-mix(in srgb, var(--c) 9%, transparent);
+  }
+  .fontrow.bad { opacity: 0.32; text-decoration: line-through; }
+  .hint { font: 500 11px var(--ui); color: var(--ink-dim); margin: 9px 6px 0; line-height: 1.5; }
+  .actions { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .swatches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+  .sw {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 9px;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink-dim);
+    font: 500 12.5px var(--ui);
+    cursor: pointer;
+    transition: 0.18s;
+  }
+  .sw:hover { color: var(--ink); }
+  .sw[aria-pressed="true"] { color: var(--c); border-color: var(--c); }
+  .sw i {
+    position: relative;
+    width: 26px;
+    height: 16px;
+    border-radius: 3px;
+    flex: none;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    overflow: hidden;
+  }
+  .sw i span { position: absolute; right: 2px; top: 2px; bottom: 2px; width: 6px; border-radius: 2px; }
+  .tocitem {
+    display: flex;
+    gap: 12px;
+    padding: 9px 4px;
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--ink-dim);
+  }
+  .tocitem:hover { color: var(--c); }
+  .tocitem.here { color: var(--c); }
+  .tocitem .n { font: 500 11px var(--ui); opacity: 0.6; min-width: 30px; }
+  .note-row { border-bottom: 1px solid var(--rule); padding: 10px 0; font-size: 14px; }
+  .note-row q { display: block; color: var(--ink); font-style: italic; margin-bottom: 5px; }
+  .note-row .c { color: var(--ink-dim); font-size: 13px; margin-bottom: 5px; }
+  .note-row .meta {
+    font: 500 11px var(--ui);
+    color: var(--ink-dim);
+    display: flex;
+    justify-content: space-between;
+  }
+  .note-row .meta button { background: none; border: 0; color: var(--ink-dim); cursor: pointer; font-size: 11px; }
+  .note-row .meta button:hover { color: var(--c); }
+  .empty { color: var(--ink-dim); font-size: 14px; font-style: italic; }
+
+  #selbar {
+    position: absolute;
+    z-index: 70;
+    display: none;
+    gap: 2px;
+    padding: 4px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+  }
+  #selbar button {
+    font: 500 12px var(--ui);
+    background: none;
+    border: 0;
+    color: var(--ink-dim);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  #selbar button:hover { color: var(--c); background: color-mix(in srgb, var(--c) 12%, transparent); }
+  #toast {
+    position: fixed;
+    bottom: 96px;
+    left: 50%;
+    transform: translateX(-50%) translateY(12px);
+    z-index: 80;
+    padding: 9px 18px;
+    background: var(--paper-2);
+    border: 1px solid var(--c);
+    border-radius: 4px;
+    font: 500 13px var(--ui);
+    color: var(--ink);
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #toast.show { opacity: 1; transform: translateX(-50%); }
+  #lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.94);
+    display: none;
+    place-content: center;
+    cursor: zoom-out;
+  }
+  #lightbox.open { display: grid; }
+  #lightbox img {
+    max-width: 94vw;
+    max-height: 94vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 640px) {
+    .rhead .mid { display: none; }
+    .fab { width: 44px; height: 44px; bottom: 16px; }
+    #gearBtn { left: 14px; }
+    #tocBtn { left: 64px; }
+    #notesBtn { right: 64px; }
+    #paletteBtn2 { right: 14px; }
+    .panel { left: 14px !important; right: 14px !important; width: auto; }
+    #text { padding: 0 18px 200px; }
+    #text p.par .anchor { left: auto; right: 0; top: -1.2em; }
+  }
+</style>

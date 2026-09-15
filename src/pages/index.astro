@@ -1,0 +1,656 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
+import Cover from "../components/Cover.astro";
+import { Image } from "astro:assets";
+import { ARCS } from "../lib/arcs";
+import { THEMES } from "../lib/themes";
+import { siteHero, cardFor } from "../lib/covers";
+import { REGISTRY } from "../lib/extra";
+import type { ArcUnlockMeta, ChapterMeta } from "../lib/unlock";
+
+const all = await getCollection("chapters");
+const countByArc = new Map<string, number>();
+const chapterMeta: Record<string, ChapterMeta> = {};
+for (const e of all) {
+  if (e.data.type !== "chapter") continue;
+  const k = e.id.split("/")[0];
+  countByArc.set(k, (countByArc.get(k) ?? 0) + 1);
+  chapterMeta[e.id] = { arc: e.data.arc, number: e.data.number, volume: e.data.volume };
+}
+const arcsMeta: Record<string, ArcUnlockMeta> = {};
+for (const a of ARCS) {
+  arcsMeta[a.arc] = { structure: a.structure, volumes: a.volumes, phases: a.phases ?? [] };
+}
+const hero = siteHero();
+const extraWords = REGISTRY.reduce((s, x) => s + x.words, 0);
+
+// ── сквозной хронологический порядок ВСЕХ глав основной истории (по аркам
+//    в порядке ARCS, внутри арки — по order_release) — нужен, чтобы «Продолжить»
+//    после 100% главы указывал на следующую главу, даже на стыке арок ──
+const kindLabelHome: Record<string, string> = {
+  prologue: "Пролог", epilogue: "Эпилог", interlude: "Интерлюдия",
+  side: "Побочная история", if: "IF-история", extra: "Бонус",
+};
+const kindWordHome = (t: string, label?: string) =>
+  label && !/^\d/.test(label) && label !== "Интерлюдия" && label !== "Пролог"
+    ? label
+    : kindLabelHome[t] || t;
+const continueChapters: { id: string; href: string; label: string }[] = [];
+for (const a of ARCS) {
+  const entries = all
+    .filter((e) => e.id.startsWith(`${a.slug}/`))
+    .sort((x, y) => (x.data.order_release ?? 0) - (y.data.order_release ?? 0));
+  for (const e of entries) {
+    const d = e.data as any;
+    const kicker = d.type === "chapter" ? `Глава ${d.label ?? d.number}` : kindWordHome(d.type, d.label);
+    continueChapters.push({ id: e.id, href: `/read/${e.id}`, label: `Арка ${a.arc} · ${kicker}` });
+  }
+}
+
+// ── серии «Дополнительного» (для отдельных чипов «продолжить» на главной) ──
+const extraSeries = REGISTRY.map((s) => ({
+  slug: s.slug,
+  title: s.title,
+  parts: s.part_slugs.map((ps, i) => ({ id: `extra/${ps}`, href: `/read/extra/${ps}`, n: i + 1 })),
+}));
+---
+
+<Base title="Re:Zero — полное собрание" theme="amethyst" wide>
+  <div class="hero">
+    {hero && <Image class="bg" src={hero} alt="" widths={[900, 1600, 2200]} sizes="100vw" loading="eager" />}
+    <div class="grad"></div>
+    <div class="in">
+      <div class="kanji">零</div>
+      <h1>Re:Zero</h1>
+      <p class="sub">Жизнь с нуля в альтернативном мире</p>
+      <p class="meta">полное собрание · веб-новелла и ранобэ · читается офлайн</p>
+      <button class="resume" id="resume" type="button" hidden>
+        <span class="lbl">Продолжить</span>
+        <span class="where" id="resumeWhere"></span>
+        <span class="pct" id="resumePct"></span>
+      </button>
+      <div class="extraResumes" id="extraResumes" hidden></div>
+    </div>
+  </div>
+
+  <section id="arcsSec">
+    <div class="shead">
+      <h2>Арки</h2>
+    </div>
+    <ol class="arcs">
+      {
+        ARCS.map((a) => (
+          <li>
+            <a
+              class="arc"
+              href={`/arc/${a.slug}`}
+              data-theme={a.theme}
+              style={`--c:${THEMES[a.theme]?.g ?? "var(--gold)"}`}
+            >
+              <div class="cov">
+                <Cover img={cardFor(a.slug)} alt="" fallback={a.title} />
+                <span class="n">{a.arc}<small>Арка</small></span>
+              </div>
+              <div class="body">
+                <h3>
+                  Арка {a.arc}
+                  <em>{a.title}</em>
+                </h3>
+                <p class="syn" data-arc={a.slug}>Синопсис — наведи на карточку.</p>
+                <p class="stat">
+                  тома {a.volumes} · глав {countByArc.get(a.slug) ?? "—"}
+                  {a.phases?.length ? ` · фаз ${a.phases.length}` : ""}
+                  {a.status ? ` · ${a.status}` : ""}
+                </p>
+              </div>
+              <span class="go">К оглавлению →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section id="extraSec">
+    <a class="extraCard" href="/extra">
+      <div class="cov">
+        <Cover img={cardFor("extra")} alt="" fallback="Дополнительно" />
+      </div>
+      <div class="body">
+        <span class="lbl">Дополнительно</span>
+        <h3>Побочные и дополнительные истории</h3>
+        <p class="stat">{REGISTRY.length} историй · {Math.round(extraWords / 1000)} тыс. слов · IF, Ex-издания, спешлы</p>
+      </div>
+      <span class="go">Открыть →</span>
+    </a>
+  </section>
+
+  <script
+    is:inline
+    define:vars={{ HOME_UNLOCK_DATA: { chapterMeta, arcsMeta, continueChapters, extraSeries } }}
+  >
+    window.__HOME_UNLOCK__ = HOME_UNLOCK_DATA;
+  </script>
+
+  <footer class="pagefoot">
+    <p>
+      Некоммерческий фан-проект. Все переводы взяты из открытых источников:
+      арки 1–9 — <a href="https://t.me/rezeroranobeandwebnovel" target="_blank" rel="noreferrer">t.me/rezeroranobeandwebnovel</a>,
+      арка 10 (онгоинг) — <a href="https://t.me/readzero" target="_blank" rel="noreferrer">t.me/readzero</a>,
+      всё «Дополнительное» — <a href="https://t.me/rezeropobo" target="_blank" rel="noreferrer">t.me/rezeropobo</a>.
+    </p>
+    <p>Все арты в проекте также не принадлежат создателю сайта и взяты из открытых источников.</p>
+    <p>Сайт создан S0ttwi при помощи Claude Sonnet 5 Max, Claude Fable 5.1 High, Claude Code.</p>
+    <p>
+      По всем вопросам — баги на сайте, предложения по функциям или переводу, авторство
+      артов/текста, ошибки в тексте — писать: <a href="https://t.me/s0ttwi" target="_blank" rel="noreferrer">t.me/s0ttwi</a>.
+    </p>
+  </footer>
+
+  <button id="wipeProgress" class="devwipe" type="button" aria-label="Стереть прогресс чтения (для тестирования)">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0-1 14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L4 6" />
+      <path d="M10 11v6M14 11v6" />
+    </svg>
+  </button>
+</Base>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: clamp(360px, 82vh, 760px);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 120px 24px 70px;
+    overflow: hidden;
+    margin: -74px calc(50% - 50vw) 0;
+    isolation: isolate;
+  }
+  .hero .bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.42;
+  }
+  .hero .grad {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--paper) 60%, transparent) 0%,
+      color-mix(in srgb, var(--paper) 28%, transparent) 38%,
+      var(--paper) 96%
+    );
+  }
+  .kanji {
+    font: clamp(46px, 10vw, 108px) "Forum", serif;
+    letter-spacing: 0.36em;
+    text-indent: 0.36em;
+    color: var(--c);
+    opacity: 0.5;
+    margin-bottom: 24px;
+    text-shadow: 0 0 40px color-mix(in srgb, var(--paper) 80%, transparent);
+  }
+  h1 {
+    font: 400 clamp(40px, 7vw, 76px) "Forum", serif;
+    color: var(--gold-soft);
+    margin: 0 0 12px;
+    letter-spacing: 0.06em;
+  }
+  .sub { font-style: italic; font-size: clamp(17px, 2.4vw, 22px); margin: 0; }
+  .meta {
+    margin: 26px 0 0;
+    font: 500 12px var(--ui);
+    letter-spacing: 0.16em;
+    color: var(--ink-dim);
+  }
+  .resume {
+    margin: 32px auto 0;
+    max-width: 460px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--paper-2) 88%, transparent);
+    padding: 12px 18px;
+    text-align: left;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    font: 500 13.5px var(--ui);
+    color: var(--ink);
+  }
+  .resume[hidden] { display: none; }
+  .resume:hover { border-color: var(--c); }
+  .resume .lbl { font-size: 10px; letter-spacing: 0.2em; color: var(--ink-dim); text-transform: uppercase; }
+  .resume .pct { margin-left: auto; color: var(--c); }
+
+  .extraResumes {
+    margin: 14px auto 0;
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .extraResumes[hidden] { display: none; }
+  .extraResumes .chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--rule);
+    border-radius: 20px;
+    background: color-mix(in srgb, var(--paper-2) 80%, transparent);
+    padding: 6px 8px 6px 14px;
+    font: 500 12px var(--ui);
+    color: var(--ink);
+    backdrop-filter: blur(6px);
+  }
+  .extraResumes .chip a {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    color: inherit;
+    max-width: 220px;
+  }
+  .extraResumes .chip .t {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .extraResumes .chip .p { color: var(--c); white-space: nowrap; font-size: 11px; }
+  .extraResumes .chip .x {
+    border: none;
+    background: none;
+    color: var(--ink-dim);
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 50%;
+  }
+  .extraResumes .chip .x:hover { color: var(--ink); background: var(--rule); }
+
+  section { margin-top: 8px; }
+  .shead {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+  }
+  .shead h2 {
+    font: 400 26px "Forum", serif;
+    color: var(--gold-soft);
+    margin: 0;
+    letter-spacing: 0.05em;
+  }
+  .arcs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+  }
+  .arc {
+    display: grid;
+    grid-template-columns: 230px 1fr auto;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    background: var(--paper-2);
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .arc:hover {
+    border-color: var(--c);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px -16px color-mix(in srgb, var(--c) 50%, transparent);
+  }
+  .arc .cov { position: relative; }
+  .arc .cov :global(.cover) { height: 100%; aspect-ratio: auto; min-height: 168px; }
+  .arc .n {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    font: 40px "Forum", serif;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.9);
+  }
+  .arc .n small {
+    display: block;
+    font: 500 9px var(--ui);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-top: 4px;
+  }
+  .arc .body { padding: 20px 24px; align-self: center; }
+  .arc h3 {
+    margin: 0 0 8px;
+    font: 400 23px "Forum", serif;
+    letter-spacing: 0.03em;
+  }
+  .arc h3 em {
+    font-style: normal;
+    color: var(--ink-dim);
+    font-size: 15px;
+    margin-left: 10px;
+    font-family: "EB Garamond", serif;
+  }
+  .arc .syn {
+    margin: 0;
+    font-size: 15.5px;
+    color: var(--ink-dim);
+    line-height: 1.6;
+    max-width: 64ch;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .arc .stat {
+    margin: 12px 0 0;
+    font: 500 12px var(--ui);
+    letter-spacing: 0.05em;
+    color: var(--ink-dim);
+  }
+  .arc .go {
+    align-self: center;
+    padding: 0 24px;
+    font: 500 11px var(--ui);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c);
+    white-space: nowrap;
+  }
+  @media (max-width: 780px) {
+    .arc { grid-template-columns: 1fr; }
+    .arc .cov :global(.cover) { min-height: 150px; }
+    .arc .go { padding: 0 24px 18px; align-self: start; }
+  }
+
+  #extraSec { margin-top: 30px; }
+  .extraCard {
+    display: grid;
+    grid-template-columns: 230px 1fr auto;
+    align-items: center;
+    gap: 18px;
+    border: 1px dashed var(--rule);
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--paper-2) 70%, transparent);
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .extraCard:hover {
+    border-color: var(--c);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px -18px color-mix(in srgb, var(--c) 45%, transparent);
+  }
+  .extraCard .cov { position: relative; }
+  .extraCard .cov :global(.cover) { height: 100%; aspect-ratio: auto; min-height: 128px; }
+  .extraCard .body { padding: 20px 0; }
+  .extraCard .lbl {
+    display: block;
+    font: 600 10px var(--ui);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--c);
+    margin-bottom: 7px;
+  }
+  .extraCard h3 { margin: 0 0 6px; font: 400 21px "Forum", serif; color: var(--gold-soft); }
+  .extraCard .stat { margin: 0; font: 500 12px var(--ui); color: var(--ink-dim); }
+  .extraCard .go {
+    flex: none;
+    padding: 0 26px;
+    font: 500 11px var(--ui);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c);
+    white-space: nowrap;
+  }
+  @media (max-width: 640px) {
+    .extraCard { grid-template-columns: 1fr; }
+    .extraCard .cov :global(.cover) { min-height: 140px; }
+    .extraCard .body { padding: 16px 18px 0; }
+    .extraCard .go { padding: 0 18px 18px; }
+  }
+
+  .pagefoot {
+    margin-top: 90px;
+    border-top: 1px solid var(--rule);
+    padding-top: 34px;
+    text-align: center;
+    font: 500 13px var(--ui);
+    color: var(--ink-dim);
+    line-height: 1.9;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pagefoot p { margin: 0 0 12px; }
+  .pagefoot p:last-child { margin-bottom: 0; }
+  .pagefoot a { color: var(--c); }
+  .pagefoot a:hover { text-decoration: underline; }
+
+  /* без подписи, для тестирования — стирает прогресс чтения; иконка вместо
+     текста, чтобы смысл считывался с одного взгляда, но не бросался в глаза */
+  .devwipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin: 24px auto 10px;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    background: none;
+    color: var(--ink-dim);
+    opacity: 0.45;
+    cursor: pointer;
+    transition: opacity 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .devwipe:hover { opacity: 1; color: #e5484d; border-color: #e5484d; }
+</style>
+
+<script>
+  import { THEMES } from "../lib/themes";
+  import { applyTheme } from "../scripts/theme.ts";
+  import { REGISTRY } from "../lib/extra.ts";
+  import { computeUnlocked, type ChapterMeta, type ArcUnlockMeta } from "../lib/unlock.ts";
+  import { checkAndToastUnlocks } from "../lib/unlockToast.ts";
+  import { initListScroll } from "../scripts/listScroll.ts";
+
+  initListScroll();
+
+  declare global {
+    interface Window {
+      __HOME_UNLOCK__?: {
+        chapterMeta: Record<string, ChapterMeta>;
+        arcsMeta: Record<string, ArcUnlockMeta>;
+        continueChapters: { id: string; href: string; label: string }[];
+        extraSeries: { slug: string; title: string; parts: { id: string; href: string; n: number }[] }[];
+      };
+    }
+  }
+
+  // ── синопсисы в карточки (raw markdown из /content/arc-*/_synopsis.md) ──
+  const syn = import.meta.glob<string>("/content/arc-*/_synopsis.md", {
+    query: "?raw",
+    import: "default",
+  });
+  const byArc: Record<string, string> = {};
+  await Promise.all(
+    Object.entries(syn).map(async ([k, load]) => {
+      const m = k.match(/\/(arc-[^/]+)\//);
+      if (m) byArc[m[1]] = ((await load()) as string).replace(/\s+/g, " ").trim();
+    }),
+  );
+  document.querySelectorAll<HTMLElement>(".arc .syn").forEach((el) => {
+    const t = byArc[el.dataset.arc || ""];
+    if (t) el.textContent = t;
+  });
+
+  // ── навести на карточку → тема этой арки (если «своя у каждой») ──
+  const root = document.documentElement;
+  let siteAuto = true;
+  try {
+    siteAuto = JSON.parse(localStorage.getItem("rz:site") || "{}").auto !== "off";
+  } catch {}
+  const setVars = (id: string) => {
+    const t = THEMES[id];
+    if (!t) return;
+    const r = root.style;
+    r.setProperty("--paper", t.p);
+    r.setProperty("--paper-2", t.p2);
+    r.setProperty("--ink", t.i);
+    r.setProperty("--ink-dim", t.d);
+    r.setProperty("--c", t.g);
+    r.setProperty("--gold", t.g);
+    r.setProperty("--gold-soft", t.gs);
+    r.setProperty("--rule", t.g + "4a");
+    root.dataset.mode = t.m;
+  };
+  const sec = document.getElementById("arcsSec")!;
+  sec.addEventListener("mouseover", (e) => {
+    if (!siteAuto) return;
+    const a = (e.target as HTMLElement).closest<HTMLElement>(".arc[data-theme]");
+    if (a) setVars(a.dataset.theme!);
+  });
+  sec.addEventListener("mouseleave", () => {
+    if (siteAuto) applyTheme();
+  });
+
+  // ── «продолжить» ──
+  // Считаем цель заново при каждом визите из rz:progress — никакого отдельного
+  // «последнее посещённое» состояния. Благодаря этому 100% главы сами по себе
+  // сдвигают точку продолжения на следующую (даже на стыке арок), кнопка
+  // «отметить все главы прочитанными» тоже сразу сдвигает её (это тот же
+  // прогресс), а при полном прочтении или у не начинавшего читать — кнопка
+  // скрыта; как только выйдет новая глава — у неё 0% и кнопка сама появится.
+  {
+    let progress: Record<string, number> = {};
+    try {
+      progress = JSON.parse(localStorage.getItem("rz:progress") || "{}");
+    } catch {}
+    const { continueChapters, extraSeries } = window.__HOME_UNLOCK__ || ({} as any);
+
+    if (continueChapters) {
+      const hasAnyProgress = Object.values(progress).some((v: any) => v > 0);
+      let target: { href: string; label: string; pct: number } | null = null;
+      if (hasAnyProgress) {
+        for (const ch of continueChapters as { id: string; href: string; label: string }[]) {
+          const p = progress[ch.id] ?? 0;
+          if (p < 1) {
+            target = { href: ch.href, label: ch.label, pct: Math.round(p * 100) };
+            break;
+          }
+        }
+      }
+      if (target) {
+        const b = document.getElementById("resume") as HTMLButtonElement;
+        (document.getElementById("resumeWhere") as HTMLElement).textContent = target.label;
+        (document.getElementById("resumePct") as HTMLElement).textContent = target.pct ? target.pct + "%" : "";
+        b.hidden = false;
+        b.addEventListener("click", () => (location.href = target!.href));
+      }
+    }
+
+    // ── «продолжить» по отдельным историям «Дополнительного» — до 3 одновременно,
+    //    не мешают основному прогрессу, пропадают сами при полном прочтении ──
+    if (extraSeries) {
+      type Series = { slug: string; title: string; parts: { id: string; href: string; n: number }[] };
+      let dismissed: Record<string, boolean> = {};
+      let touched: Record<string, number> = {};
+      try { dismissed = JSON.parse(localStorage.getItem("rz:extra:dismissed") || "{}"); } catch {}
+      try { touched = JSON.parse(localStorage.getItem("rz:extra:touched") || "{}"); } catch {}
+
+      const chips = (extraSeries as Series[])
+        .map((s) => {
+          if (dismissed[s.slug]) return null;
+          const hasAny = s.parts.some((p) => (progress[p.id] ?? 0) > 0);
+          if (!hasAny) return null;
+          const allDone = s.parts.every((p) => (progress[p.id] ?? 0) >= 1);
+          if (allDone) return null;
+          const t = s.parts.find((p) => (progress[p.id] ?? 0) < 1);
+          if (!t) return null;
+          const pct = Math.round((progress[t.id] ?? 0) * 100);
+          return { slug: s.slug, title: s.title, href: t.href, n: t.n, total: s.parts.length, pct, ts: touched[s.slug] ?? 0 };
+        })
+        .filter((x): x is NonNullable<typeof x> => x != null)
+        .sort((a, b) => b.ts - a.ts)
+        .slice(0, 3);
+
+      if (chips.length) {
+        const wrap = document.getElementById("extraResumes")!;
+        wrap.hidden = false;
+        wrap.innerHTML = chips
+          .map(
+            (c) => `
+          <div class="chip" data-slug="${c.slug}">
+            <a href="${c.href}">
+              <span class="t">${c.title}</span>
+              <span class="p">${c.total > 1 ? "часть " + c.n + " · " : ""}${c.pct}%</span>
+            </a>
+            <button class="x" type="button" data-slug="${c.slug}" aria-label="Убрать из списка">×</button>
+          </div>`,
+          )
+          .join("");
+        wrap.querySelectorAll(".x").forEach((btn) =>
+          btn.addEventListener("click", () => {
+            try {
+              const d = JSON.parse(localStorage.getItem("rz:extra:dismissed") || "{}");
+              d[(btn as HTMLElement).dataset.slug!] = true;
+              localStorage.setItem("rz:extra:dismissed", JSON.stringify(d));
+            } catch {}
+            (btn.closest(".chip") as HTMLElement)?.remove();
+            if (!wrap.querySelector(".chip")) wrap.hidden = true;
+          }),
+        );
+      }
+    }
+  }
+
+  // ── уведомление «открыто в Дополнительном», если что-то разблокировалось
+  //    с прошлого визита (общий тост — тот же, что на арке и на /extra) ──
+  {
+    let progress: Record<string, number> = {};
+    try {
+      progress = JSON.parse(localStorage.getItem("rz:progress") || "{}");
+    } catch {}
+    const { chapterMeta, arcsMeta } = window.__HOME_UNLOCK__ || ({} as any);
+    if (chapterMeta) {
+      const items = REGISTRY.map((r) => ({ slug: r.slug, read_after: r.read_after }));
+      const unlocked = computeUnlocked(progress, chapterMeta, arcsMeta, items);
+      checkAndToastUnlocks(unlocked, (slug) => REGISTRY.find((r) => r.slug === slug)?.title);
+    }
+  }
+
+  // без подписи, для тестирования — стирает весь прогресс чтения
+  document.getElementById("wipeProgress")?.addEventListener("click", () => {
+    if (!confirm("Стереть весь прогресс чтения? Это действие нельзя отменить.")) return;
+    try {
+      localStorage.removeItem("rz:progress");
+      localStorage.removeItem("rz:last");
+      localStorage.removeItem("rz:extra:unlocked");
+      localStorage.removeItem("rz:extra:dismissed");
+      localStorage.removeItem("rz:extra:touched");
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const k = localStorage.key(i);
+        if (k && (k.startsWith("reader:pos:") || k.startsWith("reader:illos:") || k.startsWith("rz:offline:"))) {
+          localStorage.removeItem(k);
+        }
+      }
+    } catch {}
+    location.reload();
+  });
+</script>

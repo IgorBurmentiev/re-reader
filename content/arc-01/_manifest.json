@@ -1,0 +1,250 @@
+{
+  "arc": 1,
+  "generator": "fb2_to_md.py",
+  "source": [
+    "Том 1 Re_Zero.fb2"
+  ],
+  "orphan_images": [
+    "i_020.jpg"
+  ],
+  "images_total": 20,
+  "volume": 1,
+  "book_title": "Re:Zero. Жизнь с нуля в альтернативном мире 1",
+  "annotation": "Возвращаясь домой из магазина, старшеклассник Субару Нацуки попадает в фэнтезийный мир. Юноша, знающий толк в видеоиграх, приходит к выводу, что его призвали в иную реальность. Субару ожидает встречи с призвавшим его персонажем, но на него нападают разбойники. На выручку юноше приходят загадочная сереброволосая красавица и дух в облике кота. В благодарность за спасение Субару предлагает девушке помочь в поисках украденной у неё вещи. Когда цель уже близка, герои вдруг становятся жертвами таинственного убийцы... после чего Субару приходит в чувство и обнаруживает себя на том же самом месте, где начались его приключения. Постепенно юноша понимает, что он наделён способностью «Посмертное возвращение». Отныне ему предстоит пройти через множество испытаний и спасти девушку от гибели. «Даже если ты забудешь меня, я буду помнить о тебе».",
+  "mode": "structured",
+  "chapters": [
+    {
+      "slug": "extra-00",
+      "type": "extra",
+      "number": null,
+      "label": "",
+      "title": "Иллюстрации",
+      "phase": null,
+      "volume": 1,
+      "words": 7,
+      "paragraphs": 7,
+      "illustrations": [
+        "i_001.jpg",
+        "i_002.jpg",
+        "i_003.jpg",
+        "i_004.jpg",
+        "i_005.jpg",
+        "i_006.jpg",
+        "i_007.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_004.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_005.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_006.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_007.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "section 0"
+    },
+    {
+      "slug": "prologue-00",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Жар начала",
+      "phase": null,
+      "volume": 1,
+      "words": 230,
+      "paragraphs": 16,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "section 1"
+    },
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Конец начала",
+      "phase": null,
+      "volume": 1,
+      "words": 15193,
+      "paragraphs": 661,
+      "illustrations": [
+        "i_008.jpg",
+        "i_009.jpg",
+        "i_010.jpg",
+        "i_011.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.jpg",
+          "after_paragraph": 71
+        },
+        {
+          "image": "i_009.jpg",
+          "after_paragraph": 122
+        },
+        {
+          "image": "i_010.jpg",
+          "after_paragraph": 381
+        },
+        {
+          "image": "i_011.jpg",
+          "after_paragraph": 647
+        }
+      ],
+      "source_ref": "section 2"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Запоздалое сопротивление",
+      "phase": null,
+      "volume": 1,
+      "words": 11048,
+      "paragraphs": 525,
+      "illustrations": [
+        "i_012.jpg",
+        "i_013.jpg",
+        "i_014.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_012.jpg",
+          "after_paragraph": 211
+        },
+        {
+          "image": "i_013.jpg",
+          "after_paragraph": 373
+        },
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 509
+        }
+      ],
+      "source_ref": "section 3"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Конец и начало",
+      "phase": null,
+      "volume": 1,
+      "words": 3166,
+      "paragraphs": 140,
+      "illustrations": [
+        "i_015.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_015.jpg",
+          "after_paragraph": 51
+        }
+      ],
+      "source_ref": "section 4"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Дубль четвёртый. Разговор начистоту",
+      "phase": null,
+      "volume": 1,
+      "words": 11222,
+      "paragraphs": 439,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "section 5"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Выжить с нуля в альтернативном мире",
+      "phase": null,
+      "volume": 1,
+      "words": 9938,
+      "paragraphs": 439,
+      "illustrations": [
+        "i_016.jpg",
+        "i_017.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_016.jpg",
+          "after_paragraph": 251
+        },
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 410
+        }
+      ],
+      "source_ref": "section 6"
+    },
+    {
+      "slug": "epilogue-00",
+      "type": "epilogue",
+      "number": null,
+      "label": "Эпилог",
+      "title": "Под пристальным оком луны",
+      "phase": null,
+      "volume": 1,
+      "words": 2275,
+      "paragraphs": 95,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "section 7"
+    },
+    {
+      "slug": "extra-01",
+      "type": "extra",
+      "number": null,
+      "label": "Постскриптум",
+      "title": "",
+      "phase": null,
+      "volume": 1,
+      "words": 955,
+      "paragraphs": 39,
+      "illustrations": [
+        "i_018.jpg",
+        "i_019.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_018.jpg",
+          "after_paragraph": 18
+        },
+        {
+          "image": "i_019.jpg",
+          "after_paragraph": 18
+        }
+      ],
+      "source_ref": "section 8"
+    }
+  ]
+}

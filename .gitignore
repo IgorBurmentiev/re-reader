@@ -1,0 +1,38 @@
+# build
+dist/
+.astro/
+node_modules/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# OCR / scratch
+tools/**/__pycache__/
+
+# editor
+.vscode/
+.idea/
+*.log
+
+# большие исходники книг (fb2/epub/pdf) — уже нарезаны в content/, само
+# сырьё в гит не кладём (1.2 ГБ, не нужно для сборки сайта)
+sources/
+
+# бэкапы оригиналов до апскейла (tools/upscale.py)
+**/_orig/
+tools/vendor/
+
+# рабочие/плановые материалы — не нужны для сборки и показа сайта:
+# исходник синопсисов уже перенесён в content/arc-*/_synopsis.md,
+# arcs.md — рабочая версия data/arcs.json (она в гите), ТЗ и заметки по
+# спойлер-безопасной расстановке разблокировок — внутренние черновики
+synopses/
+prototypes/
+spoiler_safe_placement/
+data/arcs.md
+ТЗ-читалка.md
+
+# конфиг/память Claude Code — не часть проекта
+.claude/

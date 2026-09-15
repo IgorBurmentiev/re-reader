@@ -1,0 +1,374 @@
+---
+import { getCollection } from "astro:content";
+import { Image, getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import ExtraCard from "../components/ExtraCard.astro";
+import { ARCS } from "../lib/arcs";
+import { heroFor } from "../lib/covers";
+import { REGISTRY, CATEGORY_ORDER, CATEGORY_LABEL } from "../lib/extra";
+import type { ArcUnlockMeta, ChapterMeta } from "../lib/unlock";
+
+const synopsis =
+  "Это полное собрание всех переведённых на русский язык побочных и " +
+  "дополнительных историй на данный момент. Содержит все IF, все тома EX, " +
+  "сборники с короткими побочными историями, а также побочные короткие " +
+  "истории из твиттера и поздравления с днём рождения.";
+
+// иллюстрации — реальные картинки из самих побочных историй
+const illoFiles = import.meta.glob<{ default: ImageMetadata }>(
+  "/content/extra/images/i_*.{jpg,jpeg,png,webp}",
+  { eager: true },
+);
+const gallery = Object.entries(illoFiles)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, m]) => m.default);
+const galleryFull = await Promise.all(
+  gallery.map((g) => getImage({ src: g, width: Math.min(g.width, 2000), format: "webp" })),
+);
+
+// данные для разблокировки на клиенте (см. src/lib/unlock.ts)
+const chapters = await getCollection("chapters");
+const chapterMeta: Record<string, ChapterMeta> = {};
+for (const c of chapters) {
+  if (c.data.type !== "chapter") continue;
+  chapterMeta[c.id] = { arc: c.data.arc, number: c.data.number, volume: c.data.volume };
+}
+const arcsMeta: Record<string, ArcUnlockMeta> = {};
+for (const a of ARCS) {
+  arcsMeta[a.arc] = { structure: a.structure, volumes: a.volumes, phases: a.phases ?? [] };
+}
+
+const hero = heroFor("extra");
+const totalWords = REGISTRY.reduce((s, x) => s + x.words, 0);
+const notrCount = REGISTRY.filter((x) => x.status !== "ok").length;
+
+const byCategory = new Map<string, typeof REGISTRY>();
+for (const item of REGISTRY) {
+  if (!byCategory.has(item.category)) byCategory.set(item.category, []);
+  byCategory.get(item.category)!.push(item);
+}
+// сортируем так, чтобы карточки одной подгруппы (см. content/extra/_index.json →
+// subgroup) оказались рядом даже если сами названия не похожи друг на друга
+// («Re:IF Нацуки Рем» и «Нацуки Рем IF» — это блю-рей и веб-издание одной истории)
+for (const list of byCategory.values()) {
+  list.sort(
+    (a, b) =>
+      (a.subgroup ?? a.title).localeCompare(b.subgroup ?? b.title, "ru") ||
+      a.title.localeCompare(b.title, "ru"),
+  );
+}
+
+type Item = (typeof REGISTRY)[number];
+type Block = { kind: "item"; item: Item } | { kind: "group"; label: string; items: Item[] };
+function containerNum(item: Item): [number, number] {
+  const ra = item.read_after;
+  if (!ra) return [999, 0];
+  const n = ra.container?.match(/\d+/)?.[0];
+  // «Танпэнсю» — отдельные сборники самих побочных историй, не тома основной
+  // серии; внутри подгруппы их условно ставим после тех же по номеру томов
+  const isTanpen = /^Танпэнсю/i.test(ra.container ?? "");
+  return [ra.arc, (n ? parseInt(n, 10) : 0) + (isTanpen ? 1000 : 0)];
+}
+function buildBlocks(list: Item[]): Block[] {
+  const blocks: Block[] = [];
+  let i = 0;
+  while (i < list.length) {
+    const label = list[i].subgroup;
+    if (!label) {
+      blocks.push({ kind: "item", item: list[i] });
+      i++;
+      continue;
+    }
+    const members = [list[i]];
+    let j = i + 1;
+    while (j < list.length && list[j].subgroup === label) {
+      members.push(list[j]);
+      j++;
+    }
+    members.sort((a, b) => {
+      const ka = containerNum(a);
+      const kb = containerNum(b);
+      return ka[0] - kb[0] || ka[1] - kb[1];
+    });
+    blocks.push({ kind: "group", label, items: members });
+    i = j;
+  }
+  return blocks;
+}
+
+---
+
+<Base title="Дополнительно · Re:Zero" wide backHref="/" backLabel="на главную">
+  <div class="top">
+    {hero && <Image class="bg" src={hero} alt="" widths={[900, 1600, 2200]} sizes="100vw" loading="eager" />}
+    <div class="grad"></div>
+    <div class="in">
+      <p class="eyebrow">Re:Zero — жизнь с нуля в альтернативном мире</p>
+      <h1>Дополнительно</h1>
+      <p class="sub">побочные и дополнительные истории</p>
+      <p class="stat">
+        {REGISTRY.length} историй · {Math.round(totalWords / 1000)} тыс. слов
+        {notrCount ? ` · ${notrCount} пока без полного перевода` : ""}
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="syn" tabindex="0">
+      <span class="lbl">Об этом разделе · наведи, чтобы прочесть</span>
+      <div class="syn-body"><p>{synopsis}</p></div>
+    </div>
+
+    {
+      gallery.length > 0 && (
+        <>
+          <div class="bar">
+            <h2>Иллюстрации</h2>
+            <span class="gbtns">
+              <button class="chip" id="galExpand" type="button" data-n={gallery.length}>
+                развернуть список ({gallery.length})
+              </button>
+              <button class="chip" id="galReveal" type="button">показать все</button>
+            </span>
+          </div>
+          <p class="ghint">клик — показать; повторный клик по открытой — на весь экран</p>
+          <div class="gallery" id="gal">
+            {gallery.map((g, i) => (
+              <button class="gitem" type="button" data-i={i} data-full={galleryFull[i].src}>
+                <Image src={g} alt="" widths={[280, 560]} sizes="(max-width:640px) 42vw, 260px" loading="lazy" />
+              </button>
+            ))}
+          </div>
+        </>
+      )
+    }
+
+    <div class="bar" style="margin-top:44px">
+      <h2>Истории</h2>
+      <span class="prog" id="prog"></span>
+    </div>
+
+    <p class="toolbar">
+      <button id="offline" type="button" data-slug="extra">
+        <Icon name="download" size={15} /> скачать всё «Дополнительное» для офлайна
+      </button>
+    </p>
+
+    <div class="legend">
+      <span class="it"><i class="dot read"></i>прочитано</span>
+      <span class="it"><i class="dot open"></i>открыто</span>
+      <span class="it"><i class="dot locked"></i>закрыто</span>
+      <span class="it"><i class="dot notr"></i>нет перевода</span>
+    </div>
+
+    <div class="queue" id="queue" hidden>
+      <div class="qhead">
+        <h3>Закрыто · откроется по ходу чтения</h3>
+        <span class="n" id="qcount"></span>
+      </div>
+      <div id="qlist"></div>
+    </div>
+
+    {
+      CATEGORY_ORDER.filter((c) => byCategory.has(c)).map((cat) => (
+        <section class="cat" data-cat={cat}>
+          <h3>{CATEGORY_LABEL[cat]}</h3>
+          <div class:list={["rows", { books: cat === "ex" }]}>
+            {buildBlocks(byCategory.get(cat)!).map((b) =>
+              b.kind === "group" ? (
+                <div class="subgrp" data-subgrp={b.label}>
+                  <p class="subgrp-lbl">{b.label}</p>
+                  <div class:list={["subgrp-items", { books: cat === "ex" }]}>
+                    {b.items.map((item) => <ExtraCard item={item} cat={cat} />)}
+                  </div>
+                </div>
+              ) : (
+                <ExtraCard item={b.item} cat={cat} />
+              ),
+            )}
+          </div>
+        </section>
+      ))
+    }
+  </div>
+
+  <div id="alb" aria-hidden="true"><img alt="" /></div>
+
+  <script
+    is:inline
+    define:vars={{ EXTRA_DATA: { chapterMeta, arcsMeta } }}
+  >
+    window.__EXTRA__ = EXTRA_DATA;
+  </script>
+  <script src="../scripts/extra.ts"></script>
+</Base>
+
+<style>
+  .top {
+    position: relative;
+    min-height: clamp(280px, 46vh, 460px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 108px 24px 44px;
+    overflow: hidden;
+    margin: -74px calc(50% - 50vw) 0;
+    isolation: isolate;
+  }
+  .top .bg {
+    position: absolute; inset: 0; z-index: -2;
+    width: 100%; height: 100%; object-fit: cover; object-position: center top; opacity: 0.92;
+  }
+  .top .grad {
+    position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(
+      to bottom, transparent 0%, transparent 30%,
+      color-mix(in srgb, var(--paper) 55%, var(--c) 6%) 60%,
+      color-mix(in srgb, var(--paper) 97%, var(--c) 5%) 100%
+    );
+  }
+  .top::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -3;
+    background: radial-gradient(60% 90% at 50% 0%, color-mix(in srgb, var(--c) 12%, transparent), transparent 70%);
+  }
+  .eyebrow {
+    font: 500 11px var(--ui); letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--ink-dim); margin: 0 0 14px;
+  }
+  h1 {
+    font: 400 clamp(34px, 6vw, 58px) "Forum", serif; color: var(--gold-soft);
+    margin: 0 0 6px; letter-spacing: 0.04em;
+  }
+  .sub { font-style: italic; font-size: clamp(16px, 2.2vw, 20px); margin: 0; color: var(--ink-dim); }
+  .stat { margin: 22px 0 0; font: 500 12px var(--ui); letter-spacing: 0.1em; color: var(--ink-dim); }
+
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  .syn {
+    position: relative; border: 1px solid var(--rule); border-left: 3px solid var(--c);
+    border-radius: 8px; background: var(--paper-2); padding: 22px 28px; margin: 4px 0 34px; overflow: hidden;
+  }
+  .syn .lbl {
+    display: block; font: 600 10px var(--ui); letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--ink-dim); margin-bottom: 12px;
+  }
+  .syn-body {
+    font-size: 16.5px; line-height: 1.75; font-style: italic; filter: blur(6px); opacity: 0.5;
+    transition: filter 0.25s, opacity 0.25s;
+  }
+  .syn-body p { margin: 0; }
+  .syn:hover .syn-body, .syn:focus-within .syn-body { filter: none; opacity: 1; }
+
+  .bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule); padding-bottom: 12px; margin: 34px 0 22px;
+  }
+  .bar h2 { margin: 0; font: 400 23px "Forum", serif; color: var(--gold-soft); letter-spacing: 0.04em; }
+  .bar .prog {
+    font: 500 12px var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim);
+  }
+  .gbtns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; border-radius: 6px;
+    border: 1px solid var(--rule); background: none; color: var(--ink-dim); font: 500 12px var(--ui); cursor: pointer;
+  }
+  .chip:hover { color: var(--c); border-color: var(--c); }
+  .ghint { font: 500 11px var(--ui); color: var(--ink-dim); letter-spacing: 0.03em; margin: 0 0 12px; }
+  .gallery {
+    display: flex; gap: 10px; overflow-x: auto; overscroll-behavior-x: contain;
+    padding-bottom: 12px; margin-bottom: 14px; scrollbar-color: var(--c) transparent;
+  }
+  .gallery::-webkit-scrollbar { height: 8px; }
+  .gallery::-webkit-scrollbar-track { background: var(--paper-2); border-radius: 100px; }
+  .gallery::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--c) 55%, transparent); border-radius: 100px; }
+  .gallery::-webkit-scrollbar-thumb:hover { background: var(--c); }
+  .gallery.all { flex-wrap: wrap; overflow: visible; scrollbar-width: auto; }
+  .gitem { flex: 0 0 auto; padding: 0; border: 0; background: none; cursor: pointer; border-radius: 6px; overflow: hidden; line-height: 0; }
+  .gitem :global(img) {
+    height: 200px; width: auto; max-width: none; object-fit: contain;
+    filter: blur(18px) saturate(0.5); transition: filter 0.4s;
+  }
+  .gallery.all .gitem :global(img) { height: 232px; }
+  .gitem.shown :global(img) { filter: none; }
+  .gitem.shown { cursor: zoom-in; }
+
+  .toolbar { margin: 0 0 18px; }
+  .toolbar button {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: none; border: 1px solid var(--rule); border-radius: 6px;
+    color: var(--ink-dim); font: 500 12.5px var(--ui); letter-spacing: 0.04em;
+    padding: 9px 16px; cursor: pointer;
+  }
+  .toolbar button:hover { border-color: var(--c); color: var(--c); }
+  .toolbar button:disabled { opacity: 0.6; cursor: default; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 18px; margin: 0 0 26px; font: 500 12px var(--ui); color: var(--ink-dim); }
+  .legend .it { display: flex; align-items: center; gap: 7px; }
+  .legend .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+  .dot.read { background: var(--c); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c) 25%, transparent); }
+  .dot.open { background: var(--gold-soft); }
+  .dot.locked { background: var(--ink-dim); opacity: 0.6; }
+  .dot.notr { background: transparent; border: 1px solid var(--ink-dim); }
+
+  .queue { border: 1px dashed var(--rule); border-radius: 10px; padding: 18px 20px; margin-bottom: 38px; }
+  .qhead { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .qhead h3 { margin: 0; font: 500 12px var(--ui); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-dim); }
+  .qhead .n { font: 500 11px var(--ui); color: var(--ink-dim); opacity: 0.7; }
+  /* карточки, а не сплошной список с чертой — чтобы читалось так же, как
+     обычные строки глав, просто приглушённо (закрыто, кликать некуда).
+     Строки добавляются в #qlist динамически из extra.ts (innerHTML), поэтому
+     не получают скоуп-атрибут Astro — стили на них обязаны быть :global() */
+  #qlist { display: grid; gap: 8px; }
+  #qlist :global(.qrow) {
+    display: grid; grid-template-columns: 20px 1fr; align-items: center; gap: 14px;
+    border: 1px solid var(--rule); border-radius: 8px; background: var(--paper-2);
+    padding: 12px 16px; color: var(--ink-dim); opacity: 0.85;
+  }
+  #qlist :global(.qrow .ico) { opacity: 0.65; flex: none; }
+  #qlist :global(.qrow .t) { font-size: 15.5px; font-style: italic; }
+
+  section.cat { margin-bottom: 36px; }
+  section.cat[hidden] { display: none; }
+  section.cat h3 {
+    font: 500 11px var(--ui); letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--c); opacity: 0.85; margin: 0 0 14px;
+  }
+  .rows { display: grid; gap: 8px; }
+  .rows.books { grid-template-columns: 1fr; }
+
+  /* подгруппа внутри категории — истории с общим составом персонажей, но
+     без сквозного сюжета (см. subgroup в content/extra/_index.json).
+     Вертикальная полоска слева — сразу видно, где группа начинается и
+     заканчивается (в отличие от пунктирной черты снизу — ту было легко не
+     заметить), и она же слегка сдвигает карточки внутри вправо, отличая их
+     от одиночных пунктов категории. Больший отступ вокруг самой подгруппы,
+     чем между обычными строками — но меньше, чем между разделами (EX/IF/…) */
+  .subgrp[hidden] { display: none; }
+  .subgrp {
+    margin: 14px 0;
+    padding: 2px 0 2px 18px;
+    border-left: 3px solid color-mix(in srgb, var(--c) 45%, transparent);
+  }
+  .subgrp-lbl {
+    margin: 4px 2px 10px;
+    font: 500 10.5px var(--ui);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    opacity: 0.85;
+  }
+  .subgrp-items { display: grid; gap: 8px; }
+  .subgrp-items.books { grid-template-columns: 1fr; }
+
+  #alb {
+    position: fixed; inset: 0; z-index: 90; background: rgba(0, 0, 0, 0.94);
+    display: none; place-content: center; cursor: zoom-out; padding: 20px;
+  }
+  #alb.open { display: grid; }
+  #alb img { max-width: 95vw; max-height: 95vh; width: auto; height: auto; object-fit: contain; }
+</style>

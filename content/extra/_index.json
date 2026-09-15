@@ -1,0 +1,5358 @@
+[
+  {
+    "slug": "one-day-i",
+    "title": "One Day I",
+    "title_jp": "中毒症状",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "one-day-i-01",
+      "one-day-i-02"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "no_translation",
+    "words": 30,
+    "subgroup": "One Day"
+  },
+  {
+    "slug": "mechta-korolya-lva",
+    "title": "Мечта Короля-Льва",
+    "title_jp": "",
+    "category": "ex",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 8,
+    "part_slugs": [
+      "mechta-korolya-lva-01",
+      "mechta-korolya-lva-02",
+      "mechta-korolya-lva-03",
+      "mechta-korolya-lva-04",
+      "mechta-korolya-lva-05",
+      "mechta-korolya-lva-06",
+      "mechta-korolya-lva-07",
+      "mechta-korolya-lva-08"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 6"
+    },
+    "status": "ok",
+    "words": 58674
+  },
+  {
+    "slug": "pesn-lyubvi-demona-mecha",
+    "title": "Песнь Любви Демона Меча",
+    "title_jp": "",
+    "category": "ex",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 12,
+    "part_slugs": [
+      "pesn-lyubvi-demona-mecha-01",
+      "pesn-lyubvi-demona-mecha-02",
+      "pesn-lyubvi-demona-mecha-03",
+      "pesn-lyubvi-demona-mecha-04",
+      "pesn-lyubvi-demona-mecha-05",
+      "pesn-lyubvi-demona-mecha-06",
+      "pesn-lyubvi-demona-mecha-07",
+      "pesn-lyubvi-demona-mecha-08",
+      "pesn-lyubvi-demona-mecha-09",
+      "pesn-lyubvi-demona-mecha-10",
+      "pesn-lyubvi-demona-mecha-11",
+      "pesn-lyubvi-demona-mecha-12"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 7"
+    },
+    "status": "ok",
+    "words": 67158
+  },
+  {
+    "slug": "uzy-lda",
+    "title": "Узы Льда",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 6,
+    "part_slugs": [
+      "uzy-lda-01",
+      "uzy-lda-02",
+      "uzy-lda-03",
+      "uzy-lda-04",
+      "uzy-lda-05",
+      "uzy-lda-06"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "no_translation",
+    "words": 3587
+  },
+  {
+    "slug": "sestry-oni-iz-skrytoj-derevni",
+    "title": "Сёстры-Они из Скрытой Деревни",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 7,
+    "part_slugs": [
+      "sestry-oni-iz-skrytoj-derevni-01",
+      "sestry-oni-iz-skrytoj-derevni-02",
+      "sestry-oni-iz-skrytoj-derevni-03",
+      "sestry-oni-iz-skrytoj-derevni-04",
+      "sestry-oni-iz-skrytoj-derevni-05",
+      "sestry-oni-iz-skrytoj-derevni-06",
+      "sestry-oni-iz-skrytoj-derevni-07"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 49112,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "istorii-formirovaniya-lagerej",
+    "title": "Истории Формирования Лагерей",
+    "title_jp": "戦乙女と『青』と剣鬼",
+    "category": "side",
+    "tags": [
+      "Бордо",
+      "Вильгельм",
+      "Круш",
+      "Лейп",
+      "Присцилла",
+      "Феликс",
+      "Шульт"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "",
+    "parts": 4,
+    "part_slugs": [
+      "istorii-formirovaniya-lagerej-01",
+      "istorii-formirovaniya-lagerej-02",
+      "istorii-formirovaniya-lagerej-03",
+      "istorii-formirovaniya-lagerej-04"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 12845
+  },
+  {
+    "slug": "esche-odin-snegopad-vospominanij",
+    "title": "Ещё один снегопад воспоминаний",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "esche-odin-snegopad-vospominanij-01",
+      "esche-odin-snegopad-vospominanij-02",
+      "esche-odin-snegopad-vospominanij-03",
+      "esche-odin-snegopad-vospominanij-04",
+      "esche-odin-snegopad-vospominanij-05"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 6589
+  },
+  {
+    "slug": "uzy-lda-before-memories",
+    "title": "Узы Льда: Before Memories",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 6,
+    "part_slugs": [
+      "uzy-lda-before-memories-01",
+      "uzy-lda-before-memories-02",
+      "uzy-lda-before-memories-03",
+      "uzy-lda-before-memories-04",
+      "uzy-lda-before-memories-05",
+      "uzy-lda-before-memories-06"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 15248
+  },
+  {
+    "slug": "dni-gornichnyh-frederiki-i-petry-1",
+    "title": "Дни горничных Фредерики и Петры 1",
+    "title_jp": "フレデリカとペトラの、メイドさんデイズⅠ",
+    "category": "side",
+    "tags": [
+      "Петра",
+      "Фредерика"
+    ],
+    "translator": "Перевод и редактура: BogMorgan",
+    "fanart": "",
+    "parts": 4,
+    "part_slugs": [
+      "dni-gornichnyh-frederiki-i-petry-1-01",
+      "dni-gornichnyh-frederiki-i-petry-1-02",
+      "dni-gornichnyh-frederiki-i-petry-1-03",
+      "dni-gornichnyh-frederiki-i-petry-1-04"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 10"
+    },
+    "status": "ok",
+    "words": 6968
+  },
+  {
+    "slug": "re-zeropedia",
+    "title": "Re:Zeropedia",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 3,
+    "part_slugs": [
+      "re-zeropedia-01",
+      "re-zeropedia-02",
+      "re-zeropedia-03"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 10"
+    },
+    "status": "ok",
+    "words": 21
+  },
+  {
+    "slug": "elza-i-mejli-dnevnik-sester-ubijc-ubijstvo-1",
+    "title": "Эльза и Мейли: Дневник Сестёр-Убийц | Убийство 1",
+    "title_jp": "エルザとメィリィ、裏稼業姉妹暗躍日報 KILL１",
+    "category": "side",
+    "tags": [
+      "Мейли",
+      "Эльза"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 4,
+    "part_slugs": [
+      "elza-i-mejli-dnevnik-sester-ubijc-ubijstvo-1-01",
+      "elza-i-mejli-dnevnik-sester-ubijc-ubijstvo-1-02",
+      "elza-i-mejli-dnevnik-sester-ubijc-ubijstvo-1-03",
+      "elza-i-mejli-dnevnik-sester-ubijc-ubijstvo-1-04"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 12"
+    },
+    "status": "ok",
+    "words": 9055
+  },
+  {
+    "slug": "istoriya-lyubvi-demona-mecha",
+    "title": "История Любви Демона Меча",
+    "title_jp": "",
+    "category": "ex",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 7,
+    "part_slugs": [
+      "istoriya-lyubvi-demona-mecha-01",
+      "istoriya-lyubvi-demona-mecha-02",
+      "istoriya-lyubvi-demona-mecha-03",
+      "istoriya-lyubvi-demona-mecha-04",
+      "istoriya-lyubvi-demona-mecha-05",
+      "istoriya-lyubvi-demona-mecha-06",
+      "istoriya-lyubvi-demona-mecha-07"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 16"
+    },
+    "status": "ok",
+    "words": 57276
+  },
+  {
+    "slug": "hroniki-userdnoj-borby-otto-suvena-s-vnutrennimi-delami-1",
+    "title": "Хроники усердной борьбы Отто Сувена с внутренними делами 1",
+    "title_jp": "オットー・スーウェンの内政奮闘記",
+    "category": "side",
+    "tags": [
+      "Отто",
+      "Петра",
+      "Рам",
+      "Фредерика",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Культ Сателлы",
+    "fanart": "",
+    "parts": 4,
+    "part_slugs": [
+      "hroniki-userdnoj-borby-otto-suvena-s-vnutrennimi-delami-1-01",
+      "hroniki-userdnoj-borby-otto-suvena-s-vnutrennimi-delami-1-02",
+      "hroniki-userdnoj-borby-otto-suvena-s-vnutrennimi-delami-1-03",
+      "hroniki-userdnoj-borby-otto-suvena-s-vnutrennimi-delami-1-04"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 17"
+    },
+    "status": "ok",
+    "words": 9277,
+    "subgroup": "Хроники усердной борьбы Отто Сувена"
+  },
+  {
+    "slug": "virtuoznost-pered-teatrom",
+    "title": "Виртуозность перед Театром",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "virtuoznost-pered-teatrom-01",
+      "virtuoznost-pered-teatrom-02",
+      "virtuoznost-pered-teatrom-03",
+      "virtuoznost-pered-teatrom-04",
+      "virtuoznost-pered-teatrom-05"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "no_translation",
+    "words": 37
+  },
+  {
+    "slug": "zhurnal-rekonstrukcii-pristelly-1",
+    "title": "Журнал реконструкции Пристеллы 1",
+    "title_jp": "水門都市残留組、プリステラ復興日誌",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Киритака",
+      "Отто"
+    ],
+    "translator": "Перевод на русский: Gradient; Перевод на английский: Goldkills",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "zhurnal-rekonstrukcii-pristelly-1-01",
+      "zhurnal-rekonstrukcii-pristelly-1-02",
+      "zhurnal-rekonstrukcii-pristelly-1-03",
+      "zhurnal-rekonstrukcii-pristelly-1-04",
+      "zhurnal-rekonstrukcii-pristelly-1-05"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 21"
+    },
+    "status": "ok",
+    "words": 10927
+  },
+  {
+    "slug": "dnevnik-vypolneniya-obeschanij-yuliusa-yukliusa-1",
+    "title": "Дневник выполнения обещаний Юлиуса Юклиуса 1",
+    "title_jp": "ユリウス・ユークリウスの有言実行備忘録",
+    "category": "side",
+    "tags": [
+      "Йешуа",
+      "Рикардо",
+      "Субару",
+      "Шарфидна",
+      "Юлиус"
+    ],
+    "translator": "Перевод на английский: Heretic Translations; Перевод на русский: Gradient",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "dnevnik-vypolneniya-obeschanij-yuliusa-yukliusa-1-01",
+      "dnevnik-vypolneniya-obeschanij-yuliusa-yukliusa-1-02"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 21"
+    },
+    "status": "ok",
+    "words": 4062
+  },
+  {
+    "slug": "hroniki-bezuprechnogo",
+    "title": "Хроники Безупречного",
+    "title_jp": "",
+    "category": "ex",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "hroniki-bezuprechnogo-01",
+      "hroniki-bezuprechnogo-02",
+      "hroniki-bezuprechnogo-03",
+      "hroniki-bezuprechnogo-04",
+      "hroniki-bezuprechnogo-05"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 5"
+    },
+    "status": "ok",
+    "words": 60221
+  },
+  {
+    "slug": "sestry-apokalipsisa",
+    "title": "Сёстры Апокалипсиса",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 9,
+    "part_slugs": [
+      "sestry-apokalipsisa-01",
+      "sestry-apokalipsisa-02",
+      "sestry-apokalipsisa-03",
+      "sestry-apokalipsisa-04",
+      "sestry-apokalipsisa-05",
+      "sestry-apokalipsisa-06",
+      "sestry-apokalipsisa-07",
+      "sestry-apokalipsisa-08",
+      "sestry-apokalipsisa-09"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "ok",
+    "words": 54489
+  },
+  {
+    "slug": "lyubov-k-ushedshim-dnyam",
+    "title": "Любовь к ушедшим дням",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Ехидна",
+      "Пак",
+      "Ремина",
+      "Розвааль",
+      "Рюдзу",
+      "Тоска",
+      "Фаргал"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "lyubov-k-ushedshim-dnyam-01",
+      "lyubov-k-ushedshim-dnyam-02",
+      "lyubov-k-ushedshim-dnyam-03",
+      "lyubov-k-ushedshim-dnyam-04",
+      "lyubov-k-ushedshim-dnyam-05"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "ok",
+    "words": 26628
+  },
+  {
+    "slug": "zemlya-volkov-smert-slabym-poschady-ne-budet-1",
+    "title": "Земля Волков / Смерть слабым, Пощады не будет 1",
+    "title_jp": "狼の国／弱者死すべし慈悲はない①",
+    "category": "side",
+    "tags": [
+      "Винсент",
+      "Куна"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 8,
+    "part_slugs": [
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-01",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-02",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-03",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-04",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-05",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-06",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-07",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-1-08"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 26"
+    },
+    "status": "ok",
+    "words": 19454
+  },
+  {
+    "slug": "naciya-drakona-hroniki-poiska-propavshego-rebenka-1",
+    "title": "Нация Дракона / Хроники поиска пропавшего ребёнка 1",
+    "title_jp": "親竜の国／迷子捜索記録①",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Беатрис",
+      "Мейли",
+      "Рам",
+      "Эмилия",
+      "Юлиус"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 6,
+    "part_slugs": [
+      "naciya-drakona-hroniki-poiska-propavshego-rebenka-1-01",
+      "naciya-drakona-hroniki-poiska-propavshego-rebenka-1-02",
+      "naciya-drakona-hroniki-poiska-propavshego-rebenka-1-03",
+      "naciya-drakona-hroniki-poiska-propavshego-rebenka-1-04",
+      "naciya-drakona-hroniki-poiska-propavshego-rebenka-1-05",
+      "naciya-drakona-hroniki-poiska-propavshego-rebenka-1-06"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 26"
+    },
+    "status": "ok",
+    "words": 12593
+  },
+  {
+    "slug": "skazanie-ob-aloj-princesse",
+    "title": "Сказание об Алой Принцессе",
+    "title_jp": "",
+    "category": "ex",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 6,
+    "part_slugs": [
+      "skazanie-ob-aloj-princesse-01",
+      "skazanie-ob-aloj-princesse-02",
+      "skazanie-ob-aloj-princesse-03",
+      "skazanie-ob-aloj-princesse-04",
+      "skazanie-ob-aloj-princesse-05",
+      "skazanie-ob-aloj-princesse-06"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 27"
+    },
+    "status": "ok",
+    "words": 75599
+  },
+  {
+    "slug": "gazety-luguniki",
+    "title": "Газеты Лугуники",
+    "title_jp": "Lugunican Papers",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Анастасия",
+      "Беатрис",
+      "Гарфиэль",
+      "Круш",
+      "Лулулала",
+      "Морган",
+      "Отто",
+      "Петра",
+      "Присцилла",
+      "Райнхард",
+      "Рам",
+      "Субару",
+      "Феликс",
+      "Фельт",
+      "Фредерика",
+      "Шорти",
+      "Эмилия",
+      "Юлиус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "gazety-luguniki-01",
+      "gazety-luguniki-02"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 7"
+    },
+    "status": "ok",
+    "words": 21629
+  },
+  {
+    "slug": "korolevstvo-drakona-zametki-mejli-o-zverodemonah-1",
+    "title": "Королевство Дракона: Заметки Мейли о зверодемонах 1",
+    "title_jp": "親竜の国／メィリイの魔獣見聞録",
+    "category": "side",
+    "tags": [
+      "Аннерозе",
+      "Бордо",
+      "Клинд",
+      "Маркос",
+      "Мейли",
+      "Миклотов",
+      "Райнхард"
+    ],
+    "translator": "Перевод: Sergirym; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-1-01",
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-1-02"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 32"
+    },
+    "status": "ok",
+    "words": 4984
+  },
+  {
+    "slug": "istoriya-o-poltergejste",
+    "title": "История о Полтергейсте",
+    "title_jp": "Poltergeist Story",
+    "category": "side",
+    "tags": [
+      "Петра",
+      "Рам",
+      "Розвааль",
+      "Фредерика"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "Фан-арты: Lapetusea",
+    "parts": 2,
+    "part_slugs": [
+      "istoriya-o-poltergejste-01",
+      "istoriya-o-poltergejste-02"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 8"
+    },
+    "status": "ok",
+    "words": 10285
+  },
+  {
+    "slug": "zemlya-volkov-smert-slabym-poschady-ne-budet-9",
+    "title": "Земля Волков / Смерть слабым, Пощады не будет 9",
+    "title_jp": "狼の国／弱者死すべし慈悲はない⑨",
+    "category": "side",
+    "tags": [
+      "Винсент",
+      "Сесилус",
+      "Чиша"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-9-01",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-9-02",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-9-03",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-9-04",
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-9-05"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Том 34"
+    },
+    "status": "ok",
+    "words": 5591
+  },
+  {
+    "slug": "korolevstvo-drakona-zametki-mejli-o-zverodemonah-3",
+    "title": "Королевство Дракона: Заметки Мейли о зверодемонах 3",
+    "title_jp": "親竜の国／メィリイの魔獣見聞録③",
+    "category": "side",
+    "tags": [
+      "Аннерозе",
+      "Волканика",
+      "Грассис",
+      "Клинд",
+      "Мейли",
+      "Райнхард",
+      "Фельт",
+      "Флам",
+      "Эццо"
+    ],
+    "translator": "Перевод: HaziVsroslyak; Редактура: Kitten , Gradient , HaziVsroslyak",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-3-01",
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-3-02",
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-3-03",
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-3-04",
+      "korolevstvo-drakona-zametki-mejli-o-zverodemonah-3-05"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Том 34"
+    },
+    "status": "ok",
+    "words": 11679
+  },
+  {
+    "slug": "hroniki-poiska-tovarischej-anastasii-1",
+    "title": "Хроники поиска товарищей Анастасии 1",
+    "title_jp": "アナスタシアの朋友探訪記①",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Юлиус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 4,
+    "part_slugs": [
+      "hroniki-poiska-tovarischej-anastasii-1-01",
+      "hroniki-poiska-tovarischej-anastasii-1-02",
+      "hroniki-poiska-tovarischej-anastasii-1-03",
+      "hroniki-poiska-tovarischej-anastasii-1-04"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Том 35"
+    },
+    "status": "ok",
+    "words": 9363,
+    "subgroup": "Хроники поиска товарищей Анастасии"
+  },
+  {
+    "slug": "afera-v-lugunike",
+    "title": "Афера в Лугунике",
+    "title_jp": "Lugunican Hustle",
+    "category": "side",
+    "tags": [
+      "Йешуа",
+      "Юлиус",
+      "Анастасия",
+      "Хетаро",
+      "Рикардо"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "afera-v-lugunike-01",
+      "afera-v-lugunike-02"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Танпэнсю 9"
+    },
+    "status": "ok",
+    "words": 15611
+  },
+  {
+    "slug": "zolotye-brat-i-sestra",
+    "title": "Золотые брат и сестра",
+    "title_jp": "Golden Siblings",
+    "category": "side",
+    "tags": [
+      "Фредерика",
+      "Гарфиэль",
+      "Рам",
+      "Петра",
+      "Эмилия",
+      "Субару",
+      "Беатрис",
+      "Клинд",
+      "Лено",
+      "Хейден",
+      "Леонардо"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "Фан-арты: Rokaroka , Barto",
+    "parts": 2,
+    "part_slugs": [
+      "zolotye-brat-i-sestra-01",
+      "zolotye-brat-i-sestra-02"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Танпэнсю 9"
+    },
+    "status": "ok",
+    "words": 18085
+  },
+  {
+    "slug": "zolotaya-lvica-i-svyatoj-mecha-bunt-vo-flandrii-vstupitelnay",
+    "title": "Золотая Львица и Святой Меча | Бунт во Фландрии | Вступительная часть",
+    "title_jp": "金獅子と剣聖／フランダース騒乱（導入編）",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Ром",
+      "Райнхард",
+      "Эццо",
+      "Гастон",
+      "Рачинс",
+      "Кэмберли",
+      "Грассис",
+      "Флам",
+      "Хелейн",
+      "Роми",
+      "Ирия",
+      "Карифа",
+      "Сафис",
+      "Дольтеро",
+      "Тото",
+      "Манфред"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "Фан-арты: Pon",
+    "parts": 3,
+    "part_slugs": [
+      "zolotaya-lvica-i-svyatoj-mecha-bunt-vo-flandrii-vstupitelnay-01",
+      "zolotaya-lvica-i-svyatoj-mecha-bunt-vo-flandrii-vstupitelnay-02",
+      "zolotaya-lvica-i-svyatoj-mecha-bunt-vo-flandrii-vstupitelnay-03"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Танпэнсю 10"
+    },
+    "status": "ok",
+    "words": 42498,
+    "subgroup": "Золотая Львица и Святой Меча"
+  },
+  {
+    "slug": "vedmy-posle-chaepitiya-odna-bezumnaya-noch",
+    "title": "Ведьмы после чаепития / Одна безумная ночь",
+    "title_jp": "魔女のアフターティーパーティー／One Wild Night",
+    "category": "side",
+    "tags": [
+      "Омега",
+      "Ехидна",
+      "Колетт",
+      "Пальмира",
+      "Ноэль",
+      "Подосо",
+      "Адомонса",
+      "Макина",
+      "Треллок"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "vedmy-posle-chaepitiya-odna-bezumnaya-noch-01",
+      "vedmy-posle-chaepitiya-odna-bezumnaya-noch-02"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Танпэнсю 10"
+    },
+    "status": "ok",
+    "words": 17622,
+    "subgroup": "Ведьмы после чаепития"
+  },
+  {
+    "slug": "no-stella-no-life-1",
+    "title": "No Stella — No Life 1",
+    "title_jp": "NO STELLA NO LIFE①",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Ехидна"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "no-stella-no-life-1-01",
+      "no-stella-no-life-1-02",
+      "no-stella-no-life-1-03",
+      "no-stella-no-life-1-04",
+      "no-stella-no-life-1-05"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Том 39"
+    },
+    "status": "ok",
+    "words": 12135
+  },
+  {
+    "slug": "zemlya-vozrozhdayuschihsya-volkov-ohotniki-za-nezhityu-1",
+    "title": "Земля Возрождающихся Волков / Охотники за нежитью 1",
+    "title_jp": "新生狼の国／屍人バスターズ①",
+    "category": "side",
+    "tags": [
+      "Аракия",
+      "Луи",
+      "Сесилус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "zemlya-vozrozhdayuschihsya-volkov-ohotniki-za-nezhityu-1-01",
+      "zemlya-vozrozhdayuschihsya-volkov-ohotniki-za-nezhityu-1-02",
+      "zemlya-vozrozhdayuschihsya-volkov-ohotniki-za-nezhityu-1-03",
+      "zemlya-vozrozhdayuschihsya-volkov-ohotniki-za-nezhityu-1-04",
+      "zemlya-vozrozhdayuschihsya-volkov-ohotniki-za-nezhityu-1-05"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Том 39"
+    },
+    "status": "ok",
+    "words": 9529
+  },
+  {
+    "slug": "proisshestvie-s-bogom-smerti-kararagi-1",
+    "title": "Происшествие с Богом Смерти Карараги 1",
+    "title_jp": "カララギ死神事変①",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Зарестия",
+      "Орго",
+      "Рикардо",
+      "Халибель",
+      "Шарфидна",
+      "Юлиус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 5,
+    "part_slugs": [
+      "proisshestvie-s-bogom-smerti-kararagi-1-01",
+      "proisshestvie-s-bogom-smerti-kararagi-1-02",
+      "proisshestvie-s-bogom-smerti-kararagi-1-03",
+      "proisshestvie-s-bogom-smerti-kararagi-1-04",
+      "proisshestvie-s-bogom-smerti-kararagi-1-05"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Том 39"
+    },
+    "status": "ok",
+    "words": 9215
+  },
+  {
+    "slug": "elegantnyj-urok",
+    "title": "Элегантный Урок",
+    "title_jp": "Elegant Lesson",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Беатрис",
+      "Клинд",
+      "Эмилия",
+      "Аннерозе",
+      "Фредерика",
+      "Розвааль"
+    ],
+    "translator": "Перевод: Pogchie; Редактура: Pogchie , Gradient",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "elegantnyj-urok-01",
+      "elegantnyj-urok-02"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 11"
+    },
+    "status": "ok",
+    "words": 10434
+  },
+  {
+    "slug": "boevaya-ballada-demona-mecha",
+    "title": "Боевая Баллада Демона Меча",
+    "title_jp": "",
+    "category": "ex",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 12,
+    "part_slugs": [
+      "boevaya-ballada-demona-mecha-01",
+      "boevaya-ballada-demona-mecha-02",
+      "boevaya-ballada-demona-mecha-03",
+      "boevaya-ballada-demona-mecha-04",
+      "boevaya-ballada-demona-mecha-05",
+      "boevaya-ballada-demona-mecha-06",
+      "boevaya-ballada-demona-mecha-07",
+      "boevaya-ballada-demona-mecha-08",
+      "boevaya-ballada-demona-mecha-09",
+      "boevaya-ballada-demona-mecha-10",
+      "boevaya-ballada-demona-mecha-11",
+      "boevaya-ballada-demona-mecha-12"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 11"
+    },
+    "status": "ok",
+    "words": 64328
+  },
+  {
+    "slug": "pervaya-missiya",
+    "title": "Первая Миссия",
+    "title_jp": "First Mission",
+    "category": "side",
+    "tags": [
+      "Юлиус",
+      "Райнхард",
+      "Маркос",
+      "Бикрам",
+      "Райнер",
+      "Хелейн",
+      "Феликс",
+      "Бельмонт"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "pervaya-missiya-01",
+      "pervaya-missiya-02"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 12"
+    },
+    "status": "ok",
+    "words": 25902
+  },
+  {
+    "slug": "odnazhdy-v-lugunike-ii",
+    "title": "Однажды в Лугунике II",
+    "title_jp": "Once Upon a Time in LUGUNICA II",
+    "category": "side",
+    "tags": [
+      "Терезия",
+      "Маркос",
+      "Рассел",
+      "Розвааль",
+      "Хейнкель",
+      "Серена",
+      "Вильгельм",
+      "Гвейн",
+      "Галахау"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "odnazhdy-v-lugunike-ii-01",
+      "odnazhdy-v-lugunike-ii-02"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 12"
+    },
+    "status": "no_translation",
+    "words": 4,
+    "subgroup": "Однажды в Лугунике"
+  },
+  {
+    "slug": "korolevskij-otbor-pervyj-kontakt",
+    "title": "Королевский Отбор: Первый Контакт",
+    "title_jp": "KING SELECTION First Contact",
+    "category": "side",
+    "tags": [
+      "Эмилия",
+      "Присцилла",
+      "Анастасия",
+      "Круш",
+      "Райнхард",
+      "Пак",
+      "Феликс",
+      "Розвааль",
+      "Юлиус",
+      "Фредерика",
+      "Рассел"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "korolevskij-otbor-pervyj-kontakt-01",
+      "korolevskij-otbor-pervyj-kontakt-02"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 13"
+    },
+    "status": "ok",
+    "words": 17012
+  },
+  {
+    "slug": "odnazhdy-v-astreya",
+    "title": "Однажды в Астрея",
+    "title_jp": "Once Upon a Time in ASTREA",
+    "category": "side",
+    "tags": [
+      "Луанна",
+      "Хейнкель"
+    ],
+    "translator": "Перевод: Энди; Редактура: Энди , Винсент",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "odnazhdy-v-astreya-01",
+      "odnazhdy-v-astreya-02"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 13"
+    },
+    "status": "ok",
+    "words": 9770
+  },
+  {
+    "slug": "zemlya-vozrozhdayuschihsya-volkov-velichie-vydayuschegosya-i",
+    "title": "Земля Возрождающихся Волков / Величие выдающегося императора Волакии 1",
+    "title_jp": "新生狼の国／華麗なるヴォラキア皇帝のお仕事",
+    "category": "side",
+    "tags": [],
+    "translator": "Перевод: Виолетта; Редактура: Gradient",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "zemlya-vozrozhdayuschihsya-volkov-velichie-vydayuschegosya-i-01",
+      "zemlya-vozrozhdayuschihsya-volkov-velichie-vydayuschegosya-i-02"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Том 44"
+    },
+    "status": "partial",
+    "words": 2685
+  },
+  {
+    "slug": "proisshestvie-s-bogom-smerti-kararagi-6",
+    "title": "Происшествие с Богом Смерти Карараги 6",
+    "title_jp": "カララギ死神事変⑥",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Зарестия",
+      "Халибель",
+      "Юлиус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "proisshestvie-s-bogom-smerti-kararagi-6-01",
+      "proisshestvie-s-bogom-smerti-kararagi-6-02"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Том 44"
+    },
+    "status": "no_translation",
+    "words": 4
+  },
+  {
+    "slug": "skazanie-o-skorpione",
+    "title": "Сказание о Скорпионе",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 7,
+    "part_slugs": [
+      "skazanie-o-skorpione-01",
+      "skazanie-o-skorpione-02",
+      "skazanie-o-skorpione-03",
+      "skazanie-o-skorpione-04",
+      "skazanie-o-skorpione-05",
+      "skazanie-o-skorpione-06",
+      "skazanie-o-skorpione-07"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Том 45"
+    },
+    "status": "no_translation",
+    "words": 59
+  },
+  {
+    "slug": "re-if-nacuki-rem-len-blyu-rej-tom",
+    "title": "Re:IF Нацуки Рем (Лень, блю-рей том)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 9,
+    "part_slugs": [
+      "re-if-nacuki-rem-len-blyu-rej-tom-01",
+      "re-if-nacuki-rem-len-blyu-rej-tom-02",
+      "re-if-nacuki-rem-len-blyu-rej-tom-03",
+      "re-if-nacuki-rem-len-blyu-rej-tom-04",
+      "re-if-nacuki-rem-len-blyu-rej-tom-05",
+      "re-if-nacuki-rem-len-blyu-rej-tom-06",
+      "re-if-nacuki-rem-len-blyu-rej-tom-07",
+      "re-if-nacuki-rem-len-blyu-rej-tom-08",
+      "re-if-nacuki-rem-len-blyu-rej-tom-09"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 59379,
+    "subgroup": "Нацуки Рем IF (Лень)"
+  },
+  {
+    "slug": "nacuki-rem-if-len-veb-glavy",
+    "title": "Нацуки Рем IF (Лень, веб-главы)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 7,
+    "part_slugs": [
+      "nacuki-rem-if-len-veb-glavy-01",
+      "nacuki-rem-if-len-veb-glavy-02",
+      "nacuki-rem-if-len-veb-glavy-03",
+      "nacuki-rem-if-len-veb-glavy-04",
+      "nacuki-rem-if-len-veb-glavy-05",
+      "nacuki-rem-if-len-veb-glavy-06",
+      "nacuki-rem-if-len-veb-glavy-07"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 32991,
+    "subgroup": "Нацуки Рем IF (Лень)"
+  },
+  {
+    "slug": "re-if-kasaneru-zhadnost-blyu-rej-tom",
+    "title": "Re:IF Касанеру (Жадность, блю-рей том)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 9,
+    "part_slugs": [
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-01",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-02",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-03",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-04",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-05",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-06",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-07",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-08",
+      "re-if-kasaneru-zhadnost-blyu-rej-tom-09"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 10433,
+    "subgroup": "Касанеру IF (Жадность)"
+  },
+  {
+    "slug": "ayamacu-if-gordynya",
+    "title": "Аямацу IF (Гордыня)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "ayamacu-if-gordynya-01",
+      "ayamacu-if-gordynya-02"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 33"
+    },
+    "status": "ok",
+    "words": 12833
+  },
+  {
+    "slug": "oboreru-if-gnev",
+    "title": "Обореру IF (Гнев)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "oboreru-if-gnev-01",
+      "oboreru-if-gnev-02"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 19785
+  },
+  {
+    "slug": "cugihagu-if-chrevougodie",
+    "title": "Цугихагу IF (Чревоугодие)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "cugihagu-if-chrevougodie-01",
+      "cugihagu-if-chrevougodie-02"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "ok",
+    "words": 19065
+  },
+  {
+    "slug": "mimagau-if",
+    "title": "Мимагау IF",
+    "title_jp": "ゼロカラミマガウイセカイセイカツ",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "mimagau-if-01",
+      "mimagau-if-02"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 22827
+  },
+  {
+    "slug": "azamuku-if",
+    "title": "Азамуку IF",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "azamuku-if-01",
+      "azamuku-if-02"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 33"
+    },
+    "status": "ok",
+    "words": 20784
+  },
+  {
+    "slug": "sasageru-if",
+    "title": "Сасагеру IF",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "sasageru-if-01",
+      "sasageru-if-02"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Том 43"
+    },
+    "status": "ok",
+    "words": 25187
+  },
+  {
+    "slug": "stolichnye-pohozhdeniya-emilii",
+    "title": "Столичные похождения Эмилии",
+    "title_jp": "エミリアの王都観光記",
+    "category": "side",
+    "tags": [
+      "Мими",
+      "Пак",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "stolichnye-pohozhdeniya-emilii"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "ok",
+    "words": 1759
+  },
+  {
+    "slug": "rabotenka-dlya-felt",
+    "title": "Работёнка для Фельт",
+    "title_jp": "フェルトちゃんのお仕事",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Эльза",
+      "Эмилия",
+      "Пак",
+      "Вильгельм",
+      "Феликс",
+      "Мими"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "rabotenka-dlya-felt"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "ok",
+    "words": 2232
+  },
+  {
+    "slug": "ram-ne-znakomitsya",
+    "title": "Рам не знакомится",
+    "title_jp": "ラムのナンパお断り",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Гастон",
+      "Кэмберли",
+      "Рам",
+      "Рачинс"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ram-ne-znakomitsya"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "ok",
+    "words": 1859
+  },
+  {
+    "slug": "rem-vpervye-vstrechaet-subaru",
+    "title": "Рем впервые встречает Субару",
+    "title_jp": "レム、スバルと出会う",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод: tlf_tatarin; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "rem-vpervye-vstrechaet-subaru"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "ok",
+    "words": 1786
+  },
+  {
+    "slug": "neuklyuzhij-duet",
+    "title": "Неуклюжий Дуэт",
+    "title_jp": "不器用な二人組",
+    "category": "side",
+    "tags": [
+      "Пак",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "neuklyuzhij-duet"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "ok",
+    "words": 2060
+  },
+  {
+    "slug": "za-kulisami-zhizni-v-alternativnom-mire-s-nulya",
+    "title": "За кулисами жизни в альтернативном мире с нуля",
+    "title_jp": "ゼロから始める前日譚 陣営結成秘話舞台裏",
+    "category": "side",
+    "tags": [
+      "Эмилия",
+      "Пак",
+      "Кадомон",
+      "Плам",
+      "Гастон",
+      "Рачинс",
+      "Кэмберли"
+    ],
+    "translator": "Перевод: tlf_tatarin , ZHABA; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "za-kulisami-zhizni-v-alternativnom-mire-s-nulya"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "ok",
+    "words": 2940
+  },
+  {
+    "slug": "urok-astronomii-ot-emilii",
+    "title": "Урок астрономии от Эмилии",
+    "title_jp": "エミリアの星空教室",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рем",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "urok-astronomii-ot-emilii"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 2069
+  },
+  {
+    "slug": "tyuremnaya-zhizn-felt",
+    "title": "Тюремная жизнь Фельт",
+    "title_jp": "フェルトちゃんの監禁生活",
+    "category": "side",
+    "tags": [
+      "Кэрол",
+      "Райнхард",
+      "Фельт"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tyuremnaya-zhizn-felt"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 1857
+  },
+  {
+    "slug": "nochnye-zanyatiya-s-ram",
+    "title": "Ночные занятия с Рам",
+    "title_jp": "ラムと夜の勉強会",
+    "category": "side",
+    "tags": [
+      "Рам",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "nochnye-zanyatiya-s-ram"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 2129
+  },
+  {
+    "slug": "latte-art-rem",
+    "title": "Латте-арт Рем",
+    "title_jp": "レムのラテアート",
+    "category": "side",
+    "tags": [
+      "Рам",
+      "Рем",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "latte-art-rem"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 2171
+  },
+  {
+    "slug": "velikolepnaya-zhizn-dvoreckogo-nacuki-subaru",
+    "title": "Великолепная жизнь дворецкого Нацуки Субару",
+    "title_jp": "ナツキ・スバルの華麗なる家令生活",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Эмилия",
+      "Пак",
+      "Беатрис"
+    ],
+    "translator": "Перевод: tlf_tatarin; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "velikolepnaya-zhizn-dvoreckogo-nacuki-subaru"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 2275
+  },
+  {
+    "slug": "devichya-vecherinka-v-osobnyake-rozvaalya-vannaya-komnata",
+    "title": "Девичья вечеринка в особняке Розвааля: Ванная комната",
+    "title_jp": "ロズワール邸女子会 (お風呂場編)",
+    "category": "side",
+    "tags": [
+      "Эмилия",
+      "Рам",
+      "Рем",
+      "Беатрис"
+    ],
+    "translator": "Перевод: tlf_tatarin; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "devichya-vecherinka-v-osobnyake-rozvaalya-vannaya-komnata"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 2027,
+    "subgroup": "Девичья вечеринка в особняке Розвааля"
+  },
+  {
+    "slug": "devichya-vecherinka-v-osobnyake-rozvaalya-garderobnaya",
+    "title": "Девичья вечеринка в особняке Розвааля: Гардеробная",
+    "title_jp": "ロズワール邸女子会 (衣裳部屋編)",
+    "category": "side",
+    "tags": [
+      "Эмилия",
+      "Рем",
+      "Рам",
+      "Пак",
+      "Беатрис",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "devichya-vecherinka-v-osobnyake-rozvaalya-garderobnaya"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 2"
+    },
+    "status": "ok",
+    "words": 2191,
+    "subgroup": "Девичья вечеринка в особняке Розвааля"
+  },
+  {
+    "slug": "pervoe-svidanie-emilii",
+    "title": "Первое свидание Эмилии",
+    "title_jp": "エミリアの初デート",
+    "category": "side",
+    "tags": [
+      "Пак",
+      "Петра",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "pervoe-svidanie-emilii"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 2032
+  },
+  {
+    "slug": "felt-vse-videla",
+    "title": "Фельт всё видела!",
+    "title_jp": "フェルトちゃんは見た！",
+    "category": "side",
+    "tags": [
+      "Кэрол",
+      "Луанна",
+      "Райнхард",
+      "Фельт"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "felt-vse-videla"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 2071
+  },
+  {
+    "slug": "pervyj-vyhod-felt-v-svet",
+    "title": "Первый выход Фельт в свет",
+    "title_jp": "フェルトちゃん表舞台へ上がる",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Райнхард",
+      "Хейнкель",
+      "Кэрол",
+      "Гримм"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "pervyj-vyhod-felt-v-svet"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 2411
+  },
+  {
+    "slug": "slozhnaya-natura-ram",
+    "title": "Сложная натура Рам",
+    "title_jp": "ラムの姉心は複雑",
+    "category": "side",
+    "tags": [
+      "Рам",
+      "Рем",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "slozhnaya-natura-ram"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 1976
+  },
+  {
+    "slug": "luchshij-den-v-zhizni-rem",
+    "title": "Лучший день в жизни Рем",
+    "title_jp": "レムの人生最良の日",
+    "category": "side",
+    "tags": [
+      "Рем",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "luchshij-den-v-zhizni-rem"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 2074
+  },
+  {
+    "slug": "lozhnyj-pridvornyj-mag",
+    "title": "Ложный придворный маг",
+    "title_jp": "偽りの宮廷魔導師",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия",
+      "Эццо"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "lozhnyj-pridvornyj-mag"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 22
+  },
+  {
+    "slug": "da-zdravstvujte-menya-priscillu-akt-uveseleniya",
+    "title": "Да здравствуйте меня, Присциллу! Акт Увеселения",
+    "title_jp": "プリシラの妾万歳、余興編",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Лейп",
+      "Присцилла",
+      "Шульт"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "da-zdravstvujte-menya-priscillu-akt-uveseleniya"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 4"
+    },
+    "status": "ok",
+    "words": 2253
+  },
+  {
+    "slug": "felt-chan-verbuet-banditov",
+    "title": "Фельт-чан вербует бандитов",
+    "title_jp": "フェルトちゃん、チンピラを拾う",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Ром",
+      "Райнхард",
+      "Гастон",
+      "Рачинс",
+      "Кэмберли"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "felt-chan-verbuet-banditov"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 4"
+    },
+    "status": "ok",
+    "words": 2605
+  },
+  {
+    "slug": "zapisi-o-procvetanii-anastasii",
+    "title": "Записи о процветании Анастасии",
+    "title_jp": "アナスタシアの細腕繁盛記",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Шарфидна",
+      "Мими",
+      "Хетаро",
+      "Рикардо",
+      "Юлиус",
+      "Йешуа"
+    ],
+    "translator": "Перевод и редактура: Fzt05",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zapisi-o-procvetanii-anastasii"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 4"
+    },
+    "status": "ok",
+    "words": 1500
+  },
+  {
+    "slug": "saga-o-velikoj-gospozhe-krush-nachinaetsya",
+    "title": "Сага о Великой Госпоже Круш начинается",
+    "title_jp": "クルシュ様偉人伝開幕☆",
+    "category": "side",
+    "tags": [
+      "Бин",
+      "Круш",
+      "Феликс"
+    ],
+    "translator": "Перевод и редактура: Tori",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "saga-o-velikoj-gospozhe-krush-nachinaetsya"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 4"
+    },
+    "status": "ok",
+    "words": 2013,
+    "subgroup": "Сага о Великой Госпоже Круш"
+  },
+  {
+    "slug": "odinokij-volk-iz-truschob-burnye-dni-felt",
+    "title": "Одинокий волк из трущоб: Бурные дни Фельт",
+    "title_jp": "スラムの一匹狼、フェルトちゃんの騒々しい日常",
+    "category": "side",
+    "tags": [
+      "Фельт"
+    ],
+    "translator": "Перевод: tlf_tatarin; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "odinokij-volk-iz-truschob-burnye-dni-felt"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 5"
+    },
+    "status": "ok",
+    "words": 2512
+  },
+  {
+    "slug": "svitok-anastasii-s-dvizhuschejsya-kartinkoj",
+    "title": "Свиток Анастасии с движущейся картинкой",
+    "title_jp": "アナスタシアの引っ越し絵巻",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Мими",
+      "Тиви",
+      "Хетаро",
+      "Рикардо",
+      "Юлиус",
+      "Йешуа"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "svitok-anastasii-s-dvizhuschejsya-kartinkoj"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 5"
+    },
+    "status": "ok",
+    "words": 2501
+  },
+  {
+    "slug": "saga-o-velikoj-gospozhe-krush-klyatva",
+    "title": "Сага о Великой Госпоже Круш | Клятва",
+    "title_jp": "クルシュ様偉人伝序幕、誓いの章☆",
+    "category": "side",
+    "tags": [
+      "Круш",
+      "Феликс"
+    ],
+    "translator": "Перевод и редактура: Tori",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "saga-o-velikoj-gospozhe-krush-klyatva"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 5"
+    },
+    "status": "ok",
+    "words": 2491,
+    "subgroup": "Сага о Великой Госпоже Круш"
+  },
+  {
+    "slug": "deviche-serdce-rem-oh-kak-neprosto-ponyat",
+    "title": "Девичье сердце Рем ох как непросто понять",
+    "title_jp": "レムの乙女心は超複雑",
+    "category": "side",
+    "tags": [
+      "Рем",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: Tori",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "deviche-serdce-rem-oh-kak-neprosto-ponyat"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 5"
+    },
+    "status": "ok",
+    "words": 439
+  },
+  {
+    "slug": "istoriya-geroya-nachavshayasya-s-nulya",
+    "title": "История героя, начавшаяся с нуля",
+    "title_jp": "ゼロから始まる英雄譚",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Эмилия",
+      "Пак",
+      "Беатрис",
+      "Рем",
+      "Рам",
+      "Розвааль",
+      "Петра",
+      "Лилиана",
+      "Киритака",
+      "Динас"
+    ],
+    "translator": "Перевод и редактура: Винсент",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "istoriya-geroya-nachavshayasya-s-nulya"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 1"
+    },
+    "status": "ok",
+    "words": 18690
+  },
+  {
+    "slug": "bespokojnyj-vyhodnoj-rem",
+    "title": "Беспокойный выходной Рем",
+    "title_jp": "メイド長の心休まらない休日",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Эмилия",
+      "Рем",
+      "Рам",
+      "Беатрис",
+      "Пак",
+      "Розвааль"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "bespokojnyj-vyhodnoj-rem"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 1"
+    },
+    "status": "ok",
+    "words": 8082
+  },
+  {
+    "slug": "den-kogda-ya-perestal-byt-zvezdoj-posledovatelem",
+    "title": "День, когда я перестал быть Звездой-Последователем",
+    "title_jp": "後追い星をやめた日",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Лейп",
+      "Присцилла",
+      "Шульт"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "den-kogda-ya-perestal-byt-zvezdoj-posledovatelem"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 1"
+    },
+    "status": "ok",
+    "words": 11935
+  },
+  {
+    "slug": "emiliya-v-strane-chudes",
+    "title": "Эмилия в Стране чудес",
+    "title_jp": "エミリア・イン・ワンダーランド",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Эмилия",
+      "Рем",
+      "Рам",
+      "Беатрис",
+      "Пак"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "emiliya-v-strane-chudes"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 1"
+    },
+    "status": "ok",
+    "words": 4933
+  },
+  {
+    "slug": "den-kogda-anastasiya-nachala-svoj-put-k-uspehu",
+    "title": "День, когда Анастасия начала свой путь к успеху",
+    "title_jp": "アナスタシア立身記念日",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Рикардо"
+    ],
+    "translator": "Перевод и редактура: Fzt05",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "den-kogda-anastasiya-nachala-svoj-put-k-uspehu"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 1"
+    },
+    "status": "ok",
+    "words": 2129
+  },
+  {
+    "slug": "saga-o-velikoj-gospozhe-krush-vnezapnoe-poyavlenie-ferrisa",
+    "title": "Сага о Великой Госпоже Круш | Внезапное появление Ферриса",
+    "title_jp": "クルシュ様偉人伝序幕、フェリス爆誕☆",
+    "category": "side",
+    "tags": [
+      "Круш",
+      "Феликс",
+      "Фурье",
+      "Меккарт"
+    ],
+    "translator": "Перевод: Rather",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "saga-o-velikoj-gospozhe-krush-vnezapnoe-poyavlenie-ferrisa"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 1"
+    },
+    "status": "ok",
+    "words": 2325,
+    "subgroup": "Сага о Великой Госпоже Круш"
+  },
+  {
+    "slug": "felt-chan-sobiraet-huliganskij-otryad",
+    "title": "Фельт-чан собирает хулиганский отряд",
+    "title_jp": "フェルトちゃん、愚連隊の結成",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Ром",
+      "Райнхард",
+      "Гастон",
+      "Рачинс",
+      "Кэмберли",
+      "Кэрол",
+      "Гримм"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "felt-chan-sobiraet-huliganskij-otryad"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 6"
+    },
+    "status": "ok",
+    "words": 2420
+  },
+  {
+    "slug": "put-torgovca-anastasii-iz-kararagi",
+    "title": "Путь торговца Анастасии из Карараги",
+    "title_jp": "アナスタシアのカララギ商人道",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Рикардо",
+      "Тюден"
+    ],
+    "translator": "Перевод и редактура: Fzt05",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "put-torgovca-anastasii-iz-kararagi"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 6"
+    },
+    "status": "ok",
+    "words": 1973
+  },
+  {
+    "slug": "saga-o-velikoj-gospozhe-krush-obuchenie-u-sinego",
+    "title": "Сага о Великой Госпоже Круш | Обучение у «Синего»",
+    "title_jp": "クルシュ様偉人伝序幕、《青》のお勉強",
+    "category": "side",
+    "tags": [
+      "Круш",
+      "Феликс",
+      "Фурье",
+      "Маркос",
+      "Гарич",
+      "Бордо"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "saga-o-velikoj-gospozhe-krush-obuchenie-u-sinego"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 6"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сага о Великой Госпоже Круш"
+  },
+  {
+    "slug": "visual-complete",
+    "title": "Visual Complete",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Феликс",
+      "Меккарт",
+      "Кэрол",
+      "Гримм",
+      "Рикардо",
+      "Мими",
+      "Тиви",
+      "Хетаро",
+      "Йешуа",
+      "Шульт",
+      "Сириус",
+      "Осло"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "visual-complete"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 6"
+    },
+    "status": "partial",
+    "words": 840
+  },
+  {
+    "slug": "zhurnal-bibliotekarya-beatris-restart",
+    "title": "Журнал библиотекаря Беатрис: Рестарт",
+    "title_jp": "司書ベアトリスの業務日誌・再開",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Розвааль",
+      "Рем",
+      "Эмилия",
+      "Рам",
+      "Субару"
+    ],
+    "translator": "Перевод: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zhurnal-bibliotekarya-beatris-restart"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 7"
+    },
+    "status": "ok",
+    "words": 2767,
+    "subgroup": "Журнал библиотекаря Беатрис"
+  },
+  {
+    "slug": "pogozhij-denek-velikogo-myau-myau-duha-po-imeni-pak",
+    "title": "Погожий денёк Великого мяу-мяу Духа по имени Пак",
+    "title_jp": "大精霊パックのにゃんにゃん日和",
+    "category": "side",
+    "tags": [
+      "Пак",
+      "Эмилия",
+      "Субару"
+    ],
+    "translator": "Перевод: иско; Редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "pogozhij-denek-velikogo-myau-myau-duha-po-imeni-pak"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 7"
+    },
+    "status": "ok",
+    "words": 1877
+  },
+  {
+    "slug": "zhurnal-bibliotekarya-beatris-tretya-stranica",
+    "title": "Журнал библиотекаря Беатрис: Третья страница",
+    "title_jp": "司書ベアトリスの業務日誌・三枚目",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Розвааль",
+      "Рам"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zhurnal-bibliotekarya-beatris-tretya-stranica"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 8"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Журнал библиотекаря Беатрис"
+  },
+  {
+    "slug": "ulovki-velikogo-myau-myau-duha-po-imeni-pak",
+    "title": "Уловки Великого мяу-мяу Духа по имени Пак",
+    "title_jp": "大精霊パックのにゃんにゃん悪巧み",
+    "category": "side",
+    "tags": [
+      "Пак",
+      "Эмилия",
+      "Розвааль"
+    ],
+    "translator": "Перевод: иско; Редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ulovki-velikogo-myau-myau-duha-po-imeni-pak"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 8"
+    },
+    "status": "ok",
+    "words": 2257
+  },
+  {
+    "slug": "dumaya-o-tebe-v-noch-pered-reshayuschej-bitvoj",
+    "title": "Думая о тебе в ночь перед решающей битвой",
+    "title_jp": "君想う決戦前夜",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "dumaya-o-tebe-v-noch-pered-reshayuschej-bitvoj"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 8"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "pesn-lyubvi-dlya-e-m-t",
+    "title": "Песнь любви для E.M.T.",
+    "title_jp": "Ｅ・Ｍ・Ｔにラブソングを",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод: Kitten; Редактура: Aoqi",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "pesn-lyubvi-dlya-e-m-t"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 5931
+  },
+  {
+    "slug": "ram-eto-zakon",
+    "title": "Рам — это Закон",
+    "title_jp": "ラム・イズ・オーダー",
+    "category": "side",
+    "tags": [
+      "Пак",
+      "Рам",
+      "Рем",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ram-eto-zakon"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 8958
+  },
+  {
+    "slug": "operaciya-kokkuri",
+    "title": "Операция Коккури",
+    "title_jp": "オペレーション・ＫＯＫＫＵＲＩ",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: HaziVsroslyak , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "operaciya-kokkuri"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 7528
+  },
+  {
+    "slug": "neohotnoe-obeschanie-bibliotekarya-beatris",
+    "title": "Неохотное обещание библиотекаря Беатрис",
+    "title_jp": "司書ベアトリスの不本意な約束",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Петра",
+      "Рем",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "neohotnoe-obeschanie-bibliotekarya-beatris"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 6447
+  },
+  {
+    "slug": "nekotorye-lyubyat-poholodnee",
+    "title": "Некоторые любят похолоднее",
+    "title_jp": "冷たいのがお好き",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Петра",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод: Kitten; Редактура: Kitten , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "nekotorye-lyubyat-poholodnee"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 7401
+  },
+  {
+    "slug": "alkogolnaya-panika",
+    "title": "Алкогольная паника",
+    "title_jp": "アルコール・パニック",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод: HaziVsroslyak; Редактура: HaziVsroslyak , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "alkogolnaya-panika"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 8208
+  },
+  {
+    "slug": "neprostye-otnosheniya-gospozhi-i-sluzhanki-emilii-i-ram",
+    "title": "Непростые отношения госпожи и служанки Эмилии и Рам",
+    "title_jp": "エミリアとラムの主従凸凹",
+    "category": "side",
+    "tags": [
+      "Рам",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "neprostye-otnosheniya-gospozhi-i-sluzhanki-emilii-i-ram"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 2406
+  },
+  {
+    "slug": "tyagoty-uborki-beatris-i-rem",
+    "title": "Тяготы уборки Беатрис и Рем",
+    "title_jp": "ベアトリスとレムのお掃除は大変",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Рем"
+    ],
+    "translator": "Перевод и редактура: HaziVsroslyak",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tyagoty-uborki-beatris-i-rem"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Танпэнсю 2"
+    },
+    "status": "ok",
+    "words": 2424
+  },
+  {
+    "slug": "ochen-neprostye-otnosheniya-gospozhi-i-sluzhanki-emilii-i-ra",
+    "title": "Очень непростые отношения госпожи и служанки Эмилии и Рам",
+    "title_jp": "エミリアとラムの主従凸凸凹凹",
+    "category": "side",
+    "tags": [
+      "Рам",
+      "Рем",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод: Kitten; Редактура: Kitten , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ochen-neprostye-otnosheniya-gospozhi-i-sluzhanki-emilii-i-ra"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 2312
+  },
+  {
+    "slug": "tyagoty-sluzhby-beatris-i-rem",
+    "title": "Тяготы службы Беатрис и Рем",
+    "title_jp": "ベアトリスとレムのご奉仕は大変",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Рем",
+      "Субару"
+    ],
+    "translator": "Перевод и редактура: HaziVsroslyak",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tyagoty-sluzhby-beatris-i-rem"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 2062
+  },
+  {
+    "slug": "igra-v-korolya",
+    "title": "Игра в Короля",
+    "title_jp": "王様",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "igra-v-korolya"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "no_translation",
+    "words": 20
+  },
+  {
+    "slug": "zaputannye-lyubovnye-otnosheniya-garfielya-i-ram",
+    "title": "Запутанные любовные отношения Гарфиэля и Рам",
+    "title_jp": "ガーフィールとラムの、拗れ拗れの恋事情",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Рам",
+      "Розвааль"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zaputannye-lyubovnye-otnosheniya-garfielya-i-ram"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 10"
+    },
+    "status": "ok",
+    "words": 2169
+  },
+  {
+    "slug": "ochen-zaputannye-lyubovnye-otnosheniya-garfielya-i-ram",
+    "title": "Очень запутанные любовные отношения Гарфиэля и Рам",
+    "title_jp": "ガーフィールとラムの、拗れ拗れ拗れの恋事情",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Рам",
+      "Рем"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ochen-zaputannye-lyubovnye-otnosheniya-garfielya-i-ram"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 11"
+    },
+    "status": "ok",
+    "words": 2232
+  },
+  {
+    "slug": "ochen-ochen-zaputannye-i-zakruchennye-lyubovnye-otnosheniya-",
+    "title": "Очень-очень запутанные и закрученные любовные отношения Гарфиэля и Рам",
+    "title_jp": "ガーフィールとラムの、拗れ拗れ拗れのひねくれ恋事情",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Рам"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ochen-ochen-zaputannye-i-zakruchennye-lyubovnye-otnosheniya-"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 12"
+    },
+    "status": "ok",
+    "words": 2012
+  },
+  {
+    "slug": "ochen-ochen-zaputannye-i-zakruchennye-lyubovnye-otnosheniya--2",
+    "title": "Очень-очень запутанные и закрученные любовные отношения Гарфиэля и Рам | ZERO",
+    "title_jp": "ガーフィールとラムの、拗れ拗れ拗れのひねくれ恋事情ZERO",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Рам",
+      "Розвааль"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ochen-ochen-zaputannye-i-zakruchennye-lyubovnye-otnosheniya--2"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 13"
+    },
+    "status": "ok",
+    "words": 1930
+  },
+  {
+    "slug": "komanda-lesa-elior-v-ozhidanii-ottepeli",
+    "title": "Команда леса Элиор | В ожидании оттепели",
+    "title_jp": "エリオール大森林チーム 雪解けの季節を待って",
+    "category": "side",
+    "tags": [
+      "Арч",
+      "Петельгейзе",
+      "Фортуна",
+      "Эмилия"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "komanda-lesa-elior-v-ozhidanii-ottepeli"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 14"
+    },
+    "status": "ok",
+    "words": 2052
+  },
+  {
+    "slug": "komanda-lesa-kremaldi-dni-chto-nikogda-ne-vernutsya",
+    "title": "Команда леса Кремальди | Дни, что никогда не вернутся",
+    "title_jp": "クレマルディの森チーム 二度とは帰らない日々",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Ехидна",
+      "Розвааль",
+      "Рюдзу"
+    ],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "komanda-lesa-kremaldi-dni-chto-nikogda-ne-vernutsya"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 14"
+    },
+    "status": "ok",
+    "words": 1994
+  },
+  {
+    "slug": "bolshoe-ocenochnoe-soveschanie-lagerya-emilii",
+    "title": "Большое оценочное совещание лагеря Эмилии",
+    "title_jp": "エミリア陣営大反省会",
+    "category": "side",
+    "tags": [
+      "Аннерозе",
+      "Беатрис",
+      "Гарфиэль",
+      "Клинд",
+      "Отто",
+      "Петра",
+      "Рам",
+      "Розвааль",
+      "Субару",
+      "Фредерика",
+      "Эмилия"
+    ],
+    "translator": "Перевод: Pogchie; Редактура: Pogchie , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "bolshoe-ocenochnoe-soveschanie-lagerya-emilii"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 2405
+  },
+  {
+    "slug": "vedmy-posle-chaepitiya",
+    "title": "Ведьмы после чаепития",
+    "title_jp": "魔女のアフターティーパーティー",
+    "category": "side",
+    "tags": [
+      "Омега",
+      "Ехидна",
+      "Минерва",
+      "Сехмет",
+      "Кармилла",
+      "Тифон",
+      "Дафна"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vedmy-posle-chaepitiya"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 2674,
+    "subgroup": "Ведьмы после чаепития"
+  },
+  {
+    "slug": "nichem-ne-primechatelnyj-den",
+    "title": "Ничем не примечательный день",
+    "title_jp": "なんてことのない一日",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "nichem-ne-primechatelnyj-den"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "moya-ne-ochen-poryadochnaya-ledi",
+    "title": "Моя не очень порядочная леди",
+    "title_jp": "マイ・フェア・バッドレディ",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Диас",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Родригес",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Культ Сателлы",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "moya-ne-ochen-poryadochnaya-ledi"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Танпэнсю 3"
+    },
+    "status": "ok",
+    "words": 7394
+  },
+  {
+    "slug": "mir-glazami-petry",
+    "title": "Мир глазами Петры",
+    "title_jp": "──ペトラの見た世界",
+    "category": "side",
+    "tags": [
+      "Мейли",
+      "Петра",
+      "Рам",
+      "Розвааль",
+      "Субару"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "Фан-арты: Rokaroka",
+    "parts": 1,
+    "part_slugs": [
+      "mir-glazami-petry"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Танпэнсю 3"
+    },
+    "status": "ok",
+    "words": 7268
+  },
+  {
+    "slug": "lyubyaschij-mir-glazami-petry",
+    "title": "Любящий мир глазами Петры",
+    "title_jp": "ペトラから見た恋心的世界",
+    "category": "side",
+    "tags": [
+      "Петра",
+      "Рам",
+      "Рем",
+      "Субару"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "lyubyaschij-mir-glazami-petry"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Танпэнсю 3"
+    },
+    "status": "ok",
+    "words": 2147
+  },
+  {
+    "slug": "samyj-obyknovennyj-i-schastlivyj-den-rem",
+    "title": "Самый обыкновенный и счастливый день Рем",
+    "title_jp": "レムの極々平凡で幸せな一日",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "samyj-obyknovennyj-i-schastlivyj-den-rem"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Танпэнсю 3"
+    },
+    "status": "ok",
+    "words": 8364
+  },
+  {
+    "slug": "devochka-iz-kararagi-vstrechaet-kotyat",
+    "title": "Девочка из Карараги встречает котят",
+    "title_jp": "カララギガール・ミーツ・キャッツ",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Дидли",
+      "Мими",
+      "Разкул",
+      "Рикардо",
+      "Тиви",
+      "Тюден",
+      "Хетаро"
+    ],
+    "translator": "Перевод и редактура: Fzt05",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "devochka-iz-kararagi-vstrechaet-kotyat"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Танпэнсю 3"
+    },
+    "status": "ok",
+    "words": 17514
+  },
+  {
+    "slug": "solnechnyj-luchik-na-vode",
+    "title": "Солнечный лучик на воде",
+    "title_jp": "陽光、水面を照らして──",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Шульт"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "solnechnyj-luchik-na-vode"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Танпэнсю 3"
+    },
+    "status": "ok",
+    "words": 7815
+  },
+  {
+    "slug": "ukus-lyubvi-i-strasti-mimi-perlbaton",
+    "title": "Укус любви и страсти Мими Перлбатон",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Йешуа",
+      "Мими",
+      "Отто",
+      "Рам",
+      "Тиви",
+      "Хетаро",
+      "Эмилия"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ukus-lyubvi-i-strasti-mimi-perlbaton"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 16"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "da-zdravstvujte-menya-priscillu-akt-otca-alkogolika",
+    "title": "Да здравствуйте меня, Присциллу! Акт Отца-Алкоголика",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Хейнкель"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "da-zdravstvujte-menya-priscillu-akt-otca-alkogolika"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 16"
+    },
+    "status": "ok",
+    "words": 2724
+  },
+  {
+    "slug": "pervaya-ostorozhnaya-enciklopediya-jeshua-yukliusa",
+    "title": "Первая осторожная энциклопедия Йешуа Юклиуса",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Йешуа",
+      "Мими",
+      "Тиви",
+      "Хетаро",
+      "Юлиус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "pervaya-ostorozhnaya-enciklopediya-jeshua-yukliusa"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 17"
+    },
+    "status": "ok",
+    "words": 2322
+  },
+  {
+    "slug": "vtoraya-ostorozhnaya-enciklopediya-jeshua-yukliusa",
+    "title": "Вторая осторожная энциклопедия Йешуа Юклиуса",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Йешуа",
+      "Лай",
+      "Шульт"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vtoraya-ostorozhnaya-enciklopediya-jeshua-yukliusa"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 18"
+    },
+    "status": "ok",
+    "words": 2577
+  },
+  {
+    "slug": "tretya-ostorozhnaya-enciklopediya-jeshua-yukliusa",
+    "title": "Третья осторожная энциклопедия Йешуа Юклиуса",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Альвиеро",
+      "Йешуа",
+      "Юлиус"
+    ],
+    "translator": "Перевод: Перакстаз",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tretya-ostorozhnaya-enciklopediya-jeshua-yukliusa"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 19"
+    },
+    "status": "ok",
+    "words": 2112
+  },
+  {
+    "slug": "korolevskaya-zhizn-felt-chan-s-nulya",
+    "title": "Королевская жизнь Фельт-чан с нуля",
+    "title_jp": "フェルトちゃん、ゼロから始める王選生活",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Райнхард",
+      "Гастон",
+      "Рачинс",
+      "Кэмберли",
+      "Ром",
+      "Гримм",
+      "Кэрол"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "korolevskaya-zhizn-felt-chan-s-nulya"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Танпэнсю 4"
+    },
+    "status": "ok",
+    "words": 12368
+  },
+  {
+    "slug": "korolevskaya-zhizn-s-nulya-zolotaya-lvica-i-svyatoj-mecha",
+    "title": "Королевская жизнь с нуля: Золотая Львица и Святой Меча",
+    "title_jp": "ゼロから始める王選生活 『金獅子と剣聖",
+    "category": "side",
+    "tags": [
+      "Фельт",
+      "Райнхард",
+      "Гастон",
+      "Рачинс",
+      "Кэмберли",
+      "Ром",
+      "Флам",
+      "Грассис",
+      "Ирия",
+      "Карифа",
+      "Дольтеро",
+      "Сафис"
+    ],
+    "translator": "Перевод и редактура: Pogchie",
+    "fanart": "Фан-арты: Pon",
+    "parts": 1,
+    "part_slugs": [
+      "korolevskaya-zhizn-s-nulya-zolotaya-lvica-i-svyatoj-mecha"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Танпэнсю 4"
+    },
+    "status": "ok",
+    "words": 17589
+  },
+  {
+    "slug": "gordost-fanatizm-i-zombi",
+    "title": "Гордость, Фанатизм и Зомби",
+    "title_jp": "高慢と偏屈とゾンビ",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Сфинкс",
+      "Шульт",
+      "Яэ"
+    ],
+    "translator": "Перевод с английского, сверка с японским: Mirastis; Редактура: Mirastis , MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "gordost-fanatizm-i-zombi"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Танпэнсю 4"
+    },
+    "status": "ok",
+    "words": 19744
+  },
+  {
+    "slug": "torgovye-zametki-otto-o-radostyah-i-pechali",
+    "title": "Торговые Заметки Отто о Радостях и Печали",
+    "title_jp": "オットーの悲喜交々行商録",
+    "category": "side",
+    "tags": [
+      "Мароне",
+      "Отто",
+      "Фуруфу"
+    ],
+    "translator": "Перевод: Kitten; Редактура: Kitten , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "torgovye-zametki-otto-o-radostyah-i-pechali"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Танпэнсю 4"
+    },
+    "status": "ok",
+    "words": 11292
+  },
+  {
+    "slug": "chaepitie-v-den-duraka",
+    "title": "Чаепитие в День Дурака",
+    "title_jp": "エイプリルでフールなティータイム",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Tori",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "chaepitie-v-den-duraka"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Танпэнсю 4"
+    },
+    "status": "ok",
+    "words": 2349
+  },
+  {
+    "slug": "chetvertaya-ostorozhnaya-enciklopediya-jeshua-yukliusa",
+    "title": "Четвёртая осторожная энциклопедия Йешуа Юклиуса",
+    "title_jp": "",
+    "category": "side",
+    "tags": [
+      "Альвиеро",
+      "Йешуа",
+      "Юлиус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "chetvertaya-ostorozhnaya-enciklopediya-jeshua-yukliusa"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 2491
+  },
+  {
+    "slug": "vy-vse-nadoedlivye-ya-polagayu",
+    "title": "Вы все надоедливые, я полагаю.",
+    "title_jp": "ベアトリスのみんな困ったもんかしら",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Субару",
+      "Шарфидна",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vy-vse-nadoedlivye-ya-polagayu"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 21"
+    },
+    "status": "ok",
+    "words": 2435
+  },
+  {
+    "slug": "prikvel-k-korolevskim-vyboram-preemnik-sinego",
+    "title": "Приквел к Королевским Выборам: Преемник Синего",
+    "title_jp": "王選前日譚 青の継承者",
+    "category": "side",
+    "tags": [
+      "Феликс",
+      "Круш",
+      "Фурье",
+      "Гарич",
+      "Розвааль",
+      "Клинд",
+      "Маркос",
+      "Хейнкель",
+      "Луанна",
+      "Гримм",
+      "Кэрол"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "prikvel-k-korolevskim-vyboram-preemnik-sinego"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 5"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "devochka-iz-kararagi-i-koshachij-glaz",
+    "title": "Девочка из Карараги и кошачий глаз",
+    "title_jp": "カララギガール＆キャッツアイ",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Рикардо",
+      "Мими",
+      "Тиви",
+      "Хетаро",
+      "Роши",
+      "Шарфидна",
+      "Сироро",
+      "Райзель",
+      "Капелла"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "devochka-iz-kararagi-i-koshachij-glaz"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 5"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "tri-idiota-vydvigayutsya-zemlyanoj-pauk",
+    "title": "Три Идиота Выдвигаются: Земляной Паук",
+    "title_jp": "三馬鹿が行く！ 土蜘蛛編",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Гарфиэль",
+      "Отто",
+      "Беатрис",
+      "Розвааль",
+      "Петра",
+      "Фредерика",
+      "Рюдзу",
+      "Эмилия",
+      "Регин",
+      "Мароне",
+      "Бунгам",
+      "ЗемлянойПаук"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tri-idiota-vydvigayutsya-zemlyanoj-pauk"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 5"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Три Идиота Выдвигаются"
+  },
+  {
+    "slug": "vy-vse-nadoedlivye-ya-polagayu-v-samom-dele",
+    "title": "Вы все надоедливые, я полагаю! В самом деле!",
+    "title_jp": "ベアトリスのみんな困ったもんかしら! なのよ！",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Мейли",
+      "Рам",
+      "Субару",
+      "Шарфидна",
+      "Эмилия",
+      "Юлиус"
+    ],
+    "translator": "Перевод и редактура: Песчаный Храм",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vy-vse-nadoedlivye-ya-polagayu-v-samom-dele"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 22"
+    },
+    "status": "ok",
+    "words": 1822
+  },
+  {
+    "slug": "zolotaya-lvica-i-svyatoj-mecha-svirepost-lva-pervaya-hronika",
+    "title": "Золотая Львица и Святой Меча / Свирепость Льва, Первая хроника",
+    "title_jp": "金獅子と剣聖 獅子奮迅記①",
+    "category": "side",
+    "tags": [
+      "Райнхард",
+      "Сириус",
+      "Фельт"
+    ],
+    "translator": "Перевод с английского: Holy_Guardian; Редактура: Amnesia, hat3r",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zolotaya-lvica-i-svyatoj-mecha-svirepost-lva-pervaya-hronika"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 23"
+    },
+    "status": "ok",
+    "words": 2595,
+    "subgroup": "Золотая Львица и Святой Меча"
+  },
+  {
+    "slug": "da-zdravstvujte-menya-priscillu-pora-zagovorov-v-teni",
+    "title": "Да здравствуйте меня, Присциллу! Пора заговоров в тени",
+    "title_jp": "プリシラ様の妾万歳！陰謀の影編",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Хейнкель",
+      "Шульт"
+    ],
+    "translator": "Перевод и редактура: Hector Witcher , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "da-zdravstvujte-menya-priscillu-pora-zagovorov-v-teni"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 23"
+    },
+    "status": "ok",
+    "words": 2647
+  },
+  {
+    "slug": "sestry-oni-iz-skrytoj-derevni-ex-den-blagosloveniya",
+    "title": "Сёстры-Они из Скрытой Деревни Ex: День благословения",
+    "title_jp": "──隠れ里の鬼姉妹Ｅｘ 祝福の日",
+    "category": "side",
+    "tags": [],
+    "translator": "Перевод и редактура:",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "sestry-oni-iz-skrytoj-derevni-ex-den-blagosloveniya"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 6"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "tri-idiota-vydvigayutsya-proklyataya-statuya-bogini",
+    "title": "Три Идиота Выдвигаются: Проклятая Статуя Богини",
+    "title_jp": "三馬鹿が行く！ 呪われた女神像編",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Гарфиэль",
+      "Отто",
+      "Розвааль",
+      "Клинд",
+      "Беатрис",
+      "Петра",
+      "Фредерика",
+      "Рам",
+      "Эмилия",
+      "Гвейн"
+    ],
+    "translator": "Перевод и редактура: Pogchie",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tri-idiota-vydvigayutsya-proklyataya-statuya-bogini"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 6"
+    },
+    "status": "ok",
+    "words": 24961,
+    "subgroup": "Три Идиота Выдвигаются"
+  },
+  {
+    "slug": "vedmy-posle-chaepitiya-trebovaniya-byt-vedmoj",
+    "title": "Ведьмы после чаепития / Требования быть Ведьмой",
+    "title_jp": "魔女のアフターティーパーティー 魔女の条件",
+    "category": "side",
+    "tags": [
+      "Омега",
+      "Ехидна",
+      "Колетт",
+      "Пальмира"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vedmy-posle-chaepitiya-trebovaniya-byt-vedmoj"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 6"
+    },
+    "status": "ok",
+    "words": 9661,
+    "subgroup": "Ведьмы после чаепития"
+  },
+  {
+    "slug": "vedmy-posle-chaepitiya-ocenochnoe-soveschanie-vedm",
+    "title": "Ведьмы после чаепития / Оценочное совещание Ведьм",
+    "title_jp": "魔女のアフターティーパーティー 魔女たちの反省会",
+    "category": "side",
+    "tags": [
+      "Омега",
+      "Ехидна",
+      "Минерва",
+      "Сехмет",
+      "Кармилла",
+      "Тифон",
+      "Дафна"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vedmy-posle-chaepitiya-ocenochnoe-soveschanie-vedm"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Танпэнсю 6"
+    },
+    "status": "ok",
+    "words": 2636,
+    "subgroup": "Ведьмы после чаепития"
+  },
+  {
+    "slug": "zolotaya-lvica-i-svyatoj-mecha-svirepost-lva-vtoraya-hronika",
+    "title": "Золотая Львица и Святой Меча / Свирепость Льва, Вторая хроника",
+    "title_jp": "金獅子と剣聖 獅子奮迅記②",
+    "category": "side",
+    "tags": [
+      "Райнхард",
+      "Рассел",
+      "Сириус",
+      "Фельт"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zolotaya-lvica-i-svyatoj-mecha-svirepost-lva-vtoraya-hronika"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 24"
+    },
+    "status": "ok",
+    "words": 2423,
+    "subgroup": "Золотая Львица и Святой Меча"
+  },
+  {
+    "slug": "da-zdravstvujte-menya-priscillu-pora-obyavleniya-vojny",
+    "title": "Да здравствуйте меня, Присциллу! Пора объявления войны",
+    "title_jp": "プリシラ様の妾万歳！宣戦布告編",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Шульт"
+    ],
+    "translator": "Перевод и редактура: Hector Witcher , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "da-zdravstvujte-menya-priscillu-pora-obyavleniya-vojny"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 24"
+    },
+    "status": "ok",
+    "words": 2612
+  },
+  {
+    "slug": "zolotaya-lvica-i-svyatoj-mecha-svirepost-lva-tretya-hronika",
+    "title": "Золотая Львица и Святой Меча / Свирепость Льва, Третья хроника",
+    "title_jp": "金獅子と剣聖 獅子奮迅記③",
+    "category": "side",
+    "tags": [
+      "Райнхард",
+      "Рассел",
+      "Фельт"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zolotaya-lvica-i-svyatoj-mecha-svirepost-lva-tretya-hronika"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "ok",
+    "words": 2824,
+    "subgroup": "Золотая Львица и Святой Меча"
+  },
+  {
+    "slug": "da-zdravstvujte-menya-priscillu-pora-priblizheniya-besporyad",
+    "title": "Да здравствуйте меня, Присциллу! Пора приближения беспорядков",
+    "title_jp": "プリシラ様の妾万歳！動乱の予感編",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Хейнкель",
+      "Шульт"
+    ],
+    "translator": "Перевод и редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "da-zdravstvujte-menya-priscillu-pora-priblizheniya-besporyad"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "ok",
+    "words": 1857
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-pustye-slova-oni",
+    "title": "Временная паранойя Рем / Пустые слова Они",
+    "title_jp": "暫定レムの疑心暗鬼／鬼の空念仏編",
+    "category": "side",
+    "tags": [
+      "Луи",
+      "Рем",
+      "Хоули"
+    ],
+    "translator": "Перевод и редактура: djoenfoej , MilkyWay .",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-pustye-slova-oni"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 26"
+    },
+    "status": "ok",
+    "words": 2507,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-nedug-oni",
+    "title": "Временная паранойя Рем / Недуг Они",
+    "title_jp": "暫定レムの疑心暗鬼／鬼の霍乱編",
+    "category": "side",
+    "tags": [
+      "Винсент",
+      "Луи",
+      "Мизельда",
+      "Рем",
+      "Таритта"
+    ],
+    "translator": "Перевод и редактура: djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-nedug-oni"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 27"
+    },
+    "status": "ok",
+    "words": 2794,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-chto-delaet-oni-silnee",
+    "title": "Временная паранойя Рем / Что делает Они сильнее",
+    "title_jp": "暫定レムの疑心暗鬼／鬼に金棒編",
+    "category": "side",
+    "tags": [
+      "Зикр",
+      "Мизельда",
+      "Присцилла",
+      "Рем"
+    ],
+    "translator": "Перевод и редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-chto-delaet-oni-silnee"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 28"
+    },
+    "status": "ok",
+    "words": 1776,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-ne-vse-v-etom-mire-demony",
+    "title": "Временная паранойя Рем / Не все в этом мире демоны",
+    "title_jp": "暫定レムの疑心暗鬼／渡る世間に鬼はなし編",
+    "category": "side",
+    "tags": [
+      "Присцилла",
+      "Рем",
+      "Хейнкель",
+      "Шульт"
+    ],
+    "translator": "Перевод и редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-ne-vse-v-etom-mire-demony"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 29"
+    },
+    "status": "ok",
+    "words": 1669,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-otdyhaj-poka-ne-prishel-oni",
+    "title": "Временная паранойя Рем / Отдыхай, пока не пришёл Они",
+    "title_jp": "暫定レムの疑心暗鬼／鬼の居ぬ間に洗濯編",
+    "category": "side",
+    "tags": [
+      "Куна",
+      "Рем",
+      "Хоули"
+    ],
+    "translator": "Перевод и редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-otdyhaj-poka-ne-prishel-oni"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 30"
+    },
+    "status": "ok",
+    "words": 2409,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "suschnost-mecha",
+    "title": "Сущность Меча",
+    "title_jp": "Sword Identity",
+    "category": "side",
+    "tags": [
+      "Аракия",
+      "Беллстетз",
+      "Винсент",
+      "Гоз",
+      "Джамал",
+      "Йорна",
+      "Кафма",
+      "Могуро",
+      "Мэделин",
+      "Сесилус",
+      "Танза",
+      "Тодд",
+      "Убирк",
+      "Чиша"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "suschnost-mecha-01",
+      "suschnost-mecha-02"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 7"
+    },
+    "status": "ok",
+    "words": 27907
+  },
+  {
+    "slug": "alaya-liga",
+    "title": "Алая Лига",
+    "title_jp": "緋色連盟",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Присцилла",
+      "Хейнкель",
+      "Шульт"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "alaya-liga"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 7"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-zdes-zhivet-oni-ili-obitaet-zmeya",
+    "title": "Временная паранойя Рем / Здесь живёт Они или обитает Змея?",
+    "title_jp": "暫定レムの疑心暗鬼／鬼が住むか蛇が住むか編",
+    "category": "side",
+    "tags": [
+      "Мэделин",
+      "Рем",
+      "Флоп"
+    ],
+    "translator": "Перевод и редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-zdes-zhivet-oni-ili-obitaet-zmeya"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 31"
+    },
+    "status": "ok",
+    "words": 1432,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-kak-shvatit-oni-za-sheyu",
+    "title": "Временная паранойя Рем / Как схватить Они за шею",
+    "title_jp": "暫定レムの疑心暗鬼／鬼の首を取ったよう編",
+    "category": "side",
+    "tags": [
+      "Катя",
+      "Рем"
+    ],
+    "translator": "Перевод и редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-kak-shvatit-oni-za-sheyu"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 32"
+    },
+    "status": "ok",
+    "words": 2276,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "budte-so-mnoj-pleyady",
+    "title": "Будьте со мной, Плеяды",
+    "title_jp": "Stand by me Pleiades",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Аннерозе",
+      "Беатрис",
+      "Гарфиэль",
+      "Клинд",
+      "Мейли",
+      "Отто",
+      "Петра",
+      "Рам",
+      "Розвааль",
+      "Фредерика",
+      "Эмилия",
+      "Юлиус"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "budte-so-mnoj-pleyady"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 8"
+    },
+    "status": "ok",
+    "words": 6358,
+    "subgroup": "Будьте со мной, Плеяды"
+  },
+  {
+    "slug": "budte-so-mnoj-pleyady-vozvraschenie-bludnogo-syna",
+    "title": "Будьте со мной, Плеяды | Возвращение блудного сына",
+    "title_jp": "Stand by me Pleiades 放蕩息子の帰還",
+    "category": "side",
+    "tags": [
+      "Анастасия",
+      "Аннерозе",
+      "Беатрис",
+      "Гарфиэль",
+      "Клинд",
+      "Мазеран",
+      "Мейли",
+      "Отто",
+      "Петра",
+      "Рам",
+      "Розвааль",
+      "Фрамир",
+      "Фредерика",
+      "Эмилия",
+      "Юлиус"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "budte-so-mnoj-pleyady-vozvraschenie-bludnogo-syna"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 8"
+    },
+    "status": "ok",
+    "words": 6163,
+    "subgroup": "Будьте со мной, Плеяды"
+  },
+  {
+    "slug": "budte-so-mnoj-pleyady-muzhskie-peregovory-petry",
+    "title": "Будьте со мной, Плеяды | Мужские переговоры Петры",
+    "title_jp": "Stand by me Pleiades ペトラの男前交渉",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Гарфиэль",
+      "Отто",
+      "Петра",
+      "Рам",
+      "Розвааль",
+      "Фредерика",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "budte-so-mnoj-pleyady-muzhskie-peregovory-petry"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 8"
+    },
+    "status": "ok",
+    "words": 13291,
+    "subgroup": "Будьте со мной, Плеяды"
+  },
+  {
+    "slug": "budte-so-mnoj-pleyady-nevesta-krovi-frederika",
+    "title": "Будьте со мной, Плеяды | Невеста Крови Фредерика",
+    "title_jp": "Stand by me Pleiades フレデリカの血の花嫁",
+    "category": "side",
+    "tags": [
+      "Беатрис",
+      "Гарфиэль",
+      "Отто",
+      "Петра",
+      "Фредерика",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "budte-so-mnoj-pleyady-nevesta-krovi-frederika"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 8"
+    },
+    "status": "ok",
+    "words": 15700,
+    "subgroup": "Будьте со мной, Плеяды"
+  },
+  {
+    "slug": "ochen-surovoe-pravosudie",
+    "title": "Очень суровое правосудие",
+    "title_jp": "Very Very Rough Justice",
+    "category": "side",
+    "tags": [
+      "Гарфиэль",
+      "Лено",
+      "Рам",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ochen-surovoe-pravosudie"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Танпэнсю 8"
+    },
+    "status": "ok",
+    "words": 7115
+  },
+  {
+    "slug": "zemlya-volkov-smert-slabym-poschady-ne-budet-zero-devyat-boz",
+    "title": "Земля Волков / Смерть слабым, Пощады не будет ZERO: Девять Божественных Генералов",
+    "title_jp": "狼の国／弱者死すべし慈悲はないZERO九神将",
+    "category": "side",
+    "tags": [
+      "Аракия",
+      "Балрой",
+      "Гоз",
+      "Груви",
+      "Могуро",
+      "Ольбарт",
+      "Сесилус",
+      "Чиша"
+    ],
+    "translator": "Перевод: ZHABA , djoenfoej; Редактура: Винсент , djoenfoej",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zemlya-volkov-smert-slabym-poschady-ne-budet-zero-devyat-boz"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 33"
+    },
+    "status": "ok",
+    "words": 2641
+  },
+  {
+    "slug": "vremennaya-paranojya-rem-dazhe-oni-dayut-dorogu-slezam",
+    "title": "Временная паранойя Рем / Даже Они дают дорогу слезам",
+    "title_jp": "暫定レムの疑心暗鬼／鬼の目にも涙編",
+    "category": "side",
+    "tags": [
+      "Джамал",
+      "Катя",
+      "Рем",
+      "Субару",
+      "Тодд"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vremennaya-paranojya-rem-dazhe-oni-dayut-dorogu-slezam"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Том 34"
+    },
+    "status": "ok",
+    "words": 2611,
+    "subgroup": "Временная паранойя Рем"
+  },
+  {
+    "slug": "bratstvo-pleyad",
+    "title": "Братство Плеяд",
+    "title_jp": "Brotherhood of Pleiades",
+    "category": "side",
+    "tags": [
+      "Субару",
+      "Густав",
+      "Танза",
+      "Идра",
+      "Хиайн",
+      "Вайц",
+      "Сесилус"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "bratstvo-pleyad-01",
+      "bratstvo-pleyad-02"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Танпэнсю 9"
+    },
+    "status": "ok",
+    "words": 31345
+  },
+  {
+    "slug": "iris-i-ternovyj-korol",
+    "title": "Ирис и Терновый Король",
+    "title_jp": "アイリスと茨の王",
+    "category": "side",
+    "tags": [
+      "Волкас",
+      "Ирис",
+      "Ринек",
+      "Телиора",
+      "Уитакер",
+      "Югард"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 2,
+    "part_slugs": [
+      "iris-i-ternovyj-korol-01",
+      "iris-i-ternovyj-korol-02"
+    ],
+    "read_after": {
+      "arc": 8,
+      "container": "Танпэнсю 10"
+    },
+    "status": "ok",
+    "words": 37208
+  },
+  {
+    "slug": "odnazhdy-v-lugunike",
+    "title": "Однажды в Лугунике",
+    "title_jp": "Once Upon a Time in LUGUNICA",
+    "category": "side",
+    "tags": [
+      "Розвааль",
+      "Рандхал",
+      "Бельмонт",
+      "Маркос",
+      "Рассел",
+      "Хейнкель",
+      "Райнхард",
+      "Лено"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "odnazhdy-v-lugunike"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 11"
+    },
+    "status": "ok",
+    "words": 16199,
+    "subgroup": "Однажды в Лугунике"
+  },
+  {
+    "slug": "ostorozhnaya-enciklopediya-jeshua-yukliusa-ex",
+    "title": "Осторожная энциклопедия Йешуа Юклиуса Ex",
+    "title_jp": "ヨシュア・ユークリウスの油断大敵慎重百科Ex",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ostorozhnaya-enciklopediya-jeshua-yukliusa-ex"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 11"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "borba-petry-v-lagere-emilii",
+    "title": "Борьба Петры в лагере Эмилии",
+    "title_jp": "ペトラのエミリア陣営奮闘記",
+    "category": "side",
+    "tags": [
+      "Петра",
+      "Клинд",
+      "Рам",
+      "Аннерозе",
+      "Фредерика",
+      "Розвааль",
+      "Диас",
+      "Мейли",
+      "Лено",
+      "Гвейн"
+    ],
+    "translator": "Перевод: Ramen; Редактура: Ramen , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "borba-petry-v-lagere-emilii"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 11"
+    },
+    "status": "ok",
+    "words": 11989
+  },
+  {
+    "slug": "ukus-lyubvi-i-strasti-mimi-perlbaton-2",
+    "title": "Укус любви и страсти Мими Перлбатон",
+    "title_jp": "ミミ・パールバトンのアイとジョーネツのガブリ",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ukus-lyubvi-i-strasti-mimi-perlbaton-2"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 11"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "strazhi-bagrovogo-plameni",
+    "title": "Стражи Багрового Пламени",
+    "title_jp": "紅炎の守護者",
+    "category": "side",
+    "tags": [
+      "Альдебаран",
+      "Яэ",
+      "Шульт",
+      "Сесилус",
+      "Чиша"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "strazhi-bagrovogo-plameni"
+    ],
+    "read_after": {
+      "arc": 9,
+      "container": "Танпэнсю 12"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "polozhenie-del-bagrovoj-sakury-yae-tendzen",
+    "title": "Положение дел Багровой Сакуры Яэ Тэндзэн",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "polozhenie-del-bagrovoj-sakury-yae-tendzen"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Том 44"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "rapsodiya-pristelly",
+    "title": "Рапсодия Пристеллы",
+    "title_jp": "Priestella Rhapsody",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "rapsodiya-pristelly"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Танпэнсю 14"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "hroniki-zakulisnoj-borby-garfielya-tinzelya",
+    "title": "Хроники закулисной борьбы Гарфиэля Тинзеля",
+    "title_jp": "ガーフィール・ティンゼルの根回し奮闘記",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "hroniki-zakulisnoj-borby-garfielya-tinzelya"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Танпэнсю 14"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "hroniki-userdnoj-borby-otto-suvena-na-postelnom-rezhime",
+    "title": "Хроники усердной борьбы Отто Сувена на постельном режиме",
+    "title_jp": "オットー・スーウェンの安静奮闘記",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "hroniki-userdnoj-borby-otto-suvena-na-postelnom-rezhime"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Танпэнсю 14"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Хроники усердной борьбы Отто Сувена"
+  },
+  {
+    "slug": "vedmy-posle-chaepitiya-omega-v-strane-chudes",
+    "title": "Ведьмы после чаепития / Омега в Стране чудес",
+    "title_jp": "魔女のアフターティーパーティー／Omega in Wonderland",
+    "category": "side",
+    "tags": [
+      "Омега",
+      "Ехидна",
+      "Колетт",
+      "Пальмира",
+      "Ноэль",
+      "Сион",
+      "Лира",
+      "Занк",
+      "Микли"
+    ],
+    "translator": "Перевод: AandihcE; Редактура: AandihcE , Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "vedmy-posle-chaepitiya-omega-v-strane-chudes"
+    ],
+    "read_after": {
+      "arc": 10,
+      "container": "Танпэнсю 14"
+    },
+    "status": "ok",
+    "words": 20226,
+    "subgroup": "Ведьмы после чаепития"
+  },
+  {
+    "slug": "visual-complete-tom-1-emiliya",
+    "title": "Visual Complete Том 1: Эмилия",
+    "title_jp": "",
+    "category": "comic_alive",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "visual-complete-tom-1-emiliya"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "visual-complete-tom-2-ram",
+    "title": "Visual Complete Том 2: Рам",
+    "title_jp": "",
+    "category": "comic_alive",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "visual-complete-tom-2-ram"
+    ],
+    "read_after": {
+      "arc": 1,
+      "container": "Том 1"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "visual-complete-tom-3-rem",
+    "title": "Visual Complete Том 3: Рем",
+    "title_jp": "",
+    "category": "comic_alive",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "visual-complete-tom-3-rem"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 6"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "krovavyj-snegopad-nad-vladeniyami-orkosa",
+    "title": "Кровавый снегопад над владениями Оркоса",
+    "title_jp": "オルコス領の赤雪",
+    "category": "comic_alive",
+    "tags": [
+      "Виктор",
+      "Игорь",
+      "Логрес",
+      "Макариста",
+      "Мейли",
+      "Нора",
+      "Эльза"
+    ],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "krovavyj-snegopad-nad-vladeniyami-orkosa"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 18185
+  },
+  {
+    "slug": "tri-idiota-vydvigayutsya-bolshie-poiski-poteryannogo-otryada",
+    "title": "Три Идиота Выдвигаются: Большие поиски потерянного отряда",
+    "title_jp": "",
+    "category": "comic_alive",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tri-idiota-vydvigayutsya-bolshie-poiski-poteryannogo-otryada"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Три Идиота Выдвигаются"
+  },
+  {
+    "slug": "tri-idiota-vydvigayutsya-lyubovnaya-gruppa-podderzhki",
+    "title": "Три Идиота Выдвигаются: Любовная группа поддержки",
+    "title_jp": "",
+    "category": "comic_alive",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "tri-idiota-vydvigayutsya-lyubovnaya-gruppa-podderzhki"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Три Идиота Выдвигаются"
+  },
+  {
+    "slug": "garem-if-pohot",
+    "title": "Гарем IF (Похоть)",
+    "title_jp": "胡蝶之夢",
+    "category": "if",
+    "tags": [],
+    "translator": "Перевод: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "garem-if-pohot"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 8420
+  },
+  {
+    "slug": "shkolnaya-zhizn-tscheslavie",
+    "title": "Школьная Жизнь (Тщеславие)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "Перевод: Энди , MilkyWay",
+    "fanart": "",
+    "parts": 4,
+    "part_slugs": [
+      "shkolnaya-zhizn-tscheslavie-01",
+      "shkolnaya-zhizn-tscheslavie-02",
+      "shkolnaya-zhizn-tscheslavie-03",
+      "shkolnaya-zhizn-tscheslavie-04"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 37276
+  },
+  {
+    "slug": "kasaneru-if-zhadnost-veb-glava",
+    "title": "Касанеру IF (Жадность, веб-глава)",
+    "title_jp": "",
+    "category": "if",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "kasaneru-if-zhadnost-veb-glava"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 16065,
+    "subgroup": "Касанеру IF (Жадность)"
+  },
+  {
+    "slug": "2017-ochen-schastlivyj-den-rozhdeniya-emilii",
+    "title": "2017 — Очень счастливый День Рождения Эмилии",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "Перевод и редактура: Semiramis , MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2017-ochen-schastlivyj-den-rozhdeniya-emilii"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 1741
+  },
+  {
+    "slug": "2017-novostnaya-gazeta-lugunika-2",
+    "title": "2017 — Новостная газета «Лугуника» 2",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2017-novostnaya-gazeta-lugunika-2"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "2018-pamyatnyj-sneg-prikvel-dni-lzheca",
+    "title": "2018 — Памятный Снег Приквел: Дни Лжеца",
+    "title_jp": "Memory Snow 前日譚／Liar Days",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2018-pamyatnyj-sneg-prikvel-dni-lzheca"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 2483
+  },
+  {
+    "slug": "2019-uzy-lda-prodolzhenie-moroznye-denki",
+    "title": "2019 — Узы Льда Продолжение: Морозные Деньки",
+    "title_jp": "氷結の絆 後日譚 氷結な日々",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2019-uzy-lda-prodolzhenie-moroznye-denki"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "2021-dnevnik-schastya",
+    "title": "2021 — Дневник Счастья",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "Перевод и редактура: imy11",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2021-dnevnik-schastya"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 2400
+  },
+  {
+    "slug": "2022-chaepitie-dvuh-vedm",
+    "title": "2022 — Чаепитие двух Ведьм",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "Перевод: MilkyWay; Редактура: Sergirym",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2022-chaepitie-dvuh-vedm"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 2354
+  },
+  {
+    "slug": "2023-nasyschennoe-priklyuchenie-dvuh-vedm",
+    "title": "2023 — Насыщенное приключение двух Ведьм",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2023-nasyschennoe-priklyuchenie-dvuh-vedm"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "2024-siyaj-siyaj-malenkaya-zvezdochka",
+    "title": "2024 — Сияй, сияй, Маленькая Звёздочка",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2024-siyaj-siyaj-malenkaya-zvezdochka"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "2025-chto-esli-dve-vedmy",
+    "title": "2025 — Что, если две Ведьмы…",
+    "title_jp": "",
+    "category": "birthday_emilia",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2025-chto-esli-dve-vedmy"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "2017-den-blagosloveniya-ex-vecherinka-v-chest-dnya-rozhdeniy",
+    "title": "2017 — День Благословения Ex: Вечеринка в честь Дня Рождения Рем",
+    "title_jp": "祝福の日Ex レムの誕生日を祝い隊",
+    "category": "birthday_remram",
+    "tags": [
+      "Пак",
+      "Рем",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Tori",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2017-den-blagosloveniya-ex-vecherinka-v-chest-dnya-rozhdeniy"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 2217,
+    "subgroup": "2017 — День Благословения Ex"
+  },
+  {
+    "slug": "2017-den-blagosloveniya-ex-den-rem-rin",
+    "title": "2017 — День Благословения Ex: День Рем-рин",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "Перевод: Sergirym; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2017-den-blagosloveniya-ex-den-rem-rin"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 2401,
+    "subgroup": "2017 — День Благословения Ex"
+  },
+  {
+    "slug": "2018-sestry-oni-iz-skrytoj-derevni-dobro-pozhalovat-na-veche",
+    "title": "2018 — Сёстры-Они из Скрытой Деревни: Добро пожаловать на вечеринку",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2018-sestry-oni-iz-skrytoj-derevni-dobro-pozhalovat-na-veche"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2018-novostnaya-gazeta-lugunika-3",
+    "title": "2018 — Новостная газета «Лугуника» 3",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2018-novostnaya-gazeta-lugunika-3"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "2019-sestry-oni-iz-skrytoj-derevni-schastlivyj-durnoj-son",
+    "title": "2019 — Сёстры-Они из Скрытой Деревни: Счастливый дурной сон",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2019-sestry-oni-iz-skrytoj-derevni-schastlivyj-durnoj-son"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2020-sestry-oni-iz-skrytoj-derevni-rol-oni",
+    "title": "2020 — Сёстры-Они из Скрытой Деревни: Роль Они",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2020-sestry-oni-iz-skrytoj-derevni-rol-oni"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2022-sestry-oni-iz-skrytoj-derevni-s-stry-nochnyh-grez",
+    "title": "2022 — Сёстры-Они из Скрытой Деревни: Сëстры ночных грёз",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2022-sestry-oni-iz-skrytoj-derevni-s-stry-nochnyh-grez"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2023-sestry-oni-iz-skrytoj-derevni-do-i-posle-pleyad",
+    "title": "2023 — Сёстры-Они из Скрытой Деревни: До и После Плеяд",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "Перевод на английский: Eminent Translations; Перевод на русский: Sergirym; Редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2023-sestry-oni-iz-skrytoj-derevni-do-i-posle-pleyad"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "ok",
+    "words": 2719,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2024-sestry-oni-iz-skrytoj-derevni-tysyacha-molitvennyh-zhur",
+    "title": "2024 — Сёстры-Они из Скрытой Деревни: Тысяча молитвенных журавликов оригами",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2024-sestry-oni-iz-skrytoj-derevni-tysyacha-molitvennyh-zhur"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 33"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2025-sestry-oni-iz-skrytoj-derevni-noktyurn-gornichnyh",
+    "title": "2025 — Сёстры-Они из Скрытой Деревни: Ноктюрн горничных",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2025-sestry-oni-iz-skrytoj-derevni-noktyurn-gornichnyh"
+    ],
+    "read_after": {
+      "arc": 7,
+      "container": "Том 33"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "2026-sestry-oni-iz-skrytoj-derevni-udemonvitelnost",
+    "title": "2026 — Сёстры-Они из Скрытой Деревни: Удемонвительность",
+    "title_jp": "",
+    "category": "birthday_remram",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "2026-sestry-oni-iz-skrytoj-derevni-udemonvitelnost"
+    ],
+    "read_after": {
+      "arc": 6,
+      "container": "Том 25"
+    },
+    "status": "no_translation",
+    "words": 2,
+    "subgroup": "Сёстры-Они из Скрытой Деревни"
+  },
+  {
+    "slug": "drugoj-mir-reinkarnaciya",
+    "title": "Другой мир / Реинкарнация",
+    "title_jp": "異世界・転生ＳＳペーパー",
+    "category": "event",
+    "tags": [],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "drugoj-mir-reinkarnaciya"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "ok",
+    "words": 387
+  },
+  {
+    "slug": "dnevnik-praktiki-bloga-emilii",
+    "title": "Дневник практики блога Эмилии",
+    "title_jp": "エミリアのブログ練習用日記",
+    "category": "event",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "dnevnik-praktiki-bloga-emilii"
+    ],
+    "read_after": {
+      "arc": 2,
+      "container": "Том 3"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "smert-muchenika",
+    "title": "Смерть Мученика",
+    "title_jp": "とある殉教者の訃報",
+    "category": "event",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "smert-muchenika"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 1184
+  },
+  {
+    "slug": "zhizn-v-beskonechnom-lete-s-nulya",
+    "title": "Жизнь в бесконечном лете с нуля",
+    "title_jp": "Re: ゼロから始める常夏生活",
+    "category": "event",
+    "tags": [
+      "Беатрис",
+      "Пак",
+      "Рам",
+      "Рем",
+      "Розвааль",
+      "Субару",
+      "Эмилия"
+    ],
+    "translator": "Перевод и редактура: Tori",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zhizn-v-beskonechnom-lete-s-nulya"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 2432
+  },
+  {
+    "slug": "novostnaya-gazeta-lugunika-1",
+    "title": "Новостная газета «Лугуника» 1",
+    "title_jp": "",
+    "category": "event",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "novostnaya-gazeta-lugunika-1"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "ya-slyshu-muzyku-festivalya",
+    "title": "Я слышу музыку фестиваля",
+    "title_jp": "リゼロ Ex～祭囃子が聞こえる～",
+    "category": "event",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ya-slyshu-muzyku-festivalya"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "strannoe-chaepitie-subaru",
+    "title": "Странное чаепитие Субару",
+    "title_jp": "",
+    "category": "event",
+    "tags": [],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "strannoe-chaepitie-subaru"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 921
+  },
+  {
+    "slug": "isekaj-kvartet-drugoj-mir-drugoj-epizod",
+    "title": "Исекай Квартет: Другой мир, Другой эпизод",
+    "title_jp": "",
+    "category": "event",
+    "tags": [],
+    "translator": "Перевод и редактура: MilkyWay",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "isekaj-kvartet-drugoj-mir-drugoj-epizod"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 3506
+  },
+  {
+    "slug": "ganzel-i-gretel",
+    "title": "Ганзель и Гретель",
+    "title_jp": "",
+    "category": "event",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "ganzel-i-gretel"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "no_translation",
+    "words": 2
+  },
+  {
+    "slug": "menyu-v-alternativnom-mire-s-nulya",
+    "title": "Меню в альтернативном мире с нуля",
+    "title_jp": "",
+    "category": "event",
+    "tags": [],
+    "translator": "Перевод на английский: PaperKaminari; Перевод на русский: Gradient",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "menyu-v-alternativnom-mire-s-nulya"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 1859
+  },
+  {
+    "slug": "zloba-pered-teatrom",
+    "title": "Злоба перед Театром",
+    "title_jp": "劇場前悪意",
+    "category": "event",
+    "tags": [
+      "Сириус",
+      "Регулус",
+      "Лай",
+      "Лой",
+      "Капелла",
+      "Гарек"
+    ],
+    "translator": "Перевод и редактура: Энди",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "zloba-pered-teatrom"
+    ],
+    "read_after": {
+      "arc": 5,
+      "container": "Том 20"
+    },
+    "status": "ok",
+    "words": 2164
+  },
+  {
+    "slug": "istoriya-pro-otto-i-poteryavshegosya-rebenka",
+    "title": "История про Отто и потерявшегося ребёнка",
+    "title_jp": "",
+    "category": "twitter",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "istoriya-pro-otto-i-poteryavshegosya-rebenka"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 824
+  },
+  {
+    "slug": "istoriya-ko-dnyu-rozhdeniya-yuliusa",
+    "title": "История ко Дню Рождения Юлиуса",
+    "title_jp": "",
+    "category": "twitter",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 1,
+    "part_slugs": [
+      "istoriya-ko-dnyu-rozhdeniya-yuliusa"
+    ],
+    "read_after": {
+      "arc": 3,
+      "container": "Том 9"
+    },
+    "status": "ok",
+    "words": 1159
+  },
+  {
+    "slug": "one-day-ii",
+    "title": "One Day II",
+    "title_jp": "",
+    "category": "side",
+    "tags": [],
+    "translator": "",
+    "fanart": "",
+    "parts": 7,
+    "part_slugs": [
+      "one-day-ii-01",
+      "one-day-ii-02",
+      "one-day-ii-03",
+      "one-day-ii-04",
+      "one-day-ii-05",
+      "one-day-ii-06",
+      "one-day-ii-07"
+    ],
+    "read_after": {
+      "arc": 4,
+      "container": "Том 15"
+    },
+    "status": "ok",
+    "words": 27742,
+    "subgroup": "One Day"
+  }
+]

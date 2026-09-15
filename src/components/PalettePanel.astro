@@ -1,0 +1,139 @@
+---
+import Icon from "./Icon.astro";
+// Кнопка-палитра справа внизу + панель оформления (ТЗ §6).
+// Логика — в src/scripts/theme.ts (подключается в Base).
+---
+
+<button class="pfab" id="paletteBtn" type="button" aria-label="Оформление">
+  <Icon name="palette" size={19} />
+</button>
+
+<div class="ppanel" id="palettePanel">
+  <h2>Оформление</h2>
+  <div class="grp">
+    <div class="chips" id="mode">
+      <button class="chip" data-v="dark">Тёмная</button>
+      <button class="chip" data-v="light">Светлая</button>
+    </div>
+  </div>
+  <div class="grp">
+    <span>Тема арки</span>
+    <div class="chips" id="autoTheme">
+      <button class="chip" data-v="on">Своя у каждой</button>
+      <button class="chip" data-v="off">Одна везде</button>
+    </div>
+  </div>
+  <div class="grp"><span>Тёмные</span><div class="swatches" id="swDark"></div></div>
+  <div class="grp"><span>Светлые</span><div class="swatches" id="swLight"></div></div>
+</div>
+
+<style is:global>
+  .pfab {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 46;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    border: 1px solid var(--rule);
+    background: color-mix(in srgb, var(--paper-2) 92%, transparent);
+    color: var(--c);
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 16px 44px -20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .pfab:hover { transform: scale(1.06); border-color: var(--c); }
+  .ppanel {
+    position: fixed;
+    right: 18px;
+    bottom: 76px;
+    z-index: 60;
+    width: min(380px, calc(100vw - 32px));
+    max-height: 74vh;
+    overflow: auto;
+    padding: 22px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.22s;
+  }
+  .ppanel.open { opacity: 1; visibility: visible; transform: none; }
+  .ppanel h2 {
+    margin: 0 0 16px;
+    font: 600 11px "Golos Text", sans-serif;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--c);
+  }
+  .ppanel .grp { margin-bottom: 18px; }
+  .ppanel .grp > span {
+    display: block;
+    margin-bottom: 9px;
+    font: 500 10px "Golos Text", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .ppanel .chips { display: flex; gap: 7px; flex-wrap: wrap; }
+  .ppanel .chip {
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink-dim);
+    font: 500 12.5px "Golos Text", sans-serif;
+    cursor: pointer;
+    transition: 0.18s;
+  }
+  .ppanel .chip:hover { color: var(--ink); }
+  .ppanel .chip[aria-pressed="true"] {
+    color: var(--paper);
+    background: var(--c);
+    border-color: var(--c);
+  }
+  .ppanel .swatches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+  }
+  .ppanel .sw {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    background: transparent;
+    color: var(--ink-dim);
+    font: 500 12.5px "Golos Text", sans-serif;
+    cursor: pointer;
+    transition: 0.18s;
+  }
+  .ppanel .sw:hover { color: var(--ink); }
+  .ppanel .sw[aria-pressed="true"] { color: var(--c); border-color: var(--c); }
+  .ppanel .sw i {
+    position: relative;
+    width: 26px;
+    height: 16px;
+    border-radius: 3px;
+    flex: none;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    overflow: hidden;
+  }
+  .ppanel .sw i span {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    width: 6px;
+    border-radius: 2px;
+  }
+</style>

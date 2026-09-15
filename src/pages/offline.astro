@@ -1,0 +1,28 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Офлайн — Re:Zero" theme="amethyst">
+  <div class="box">
+    <h1>Нет сети</h1>
+    <p>
+      Эта страница ещё не сохранена для офлайна. Открытые ранее главы и
+      «скачанные» арки доступны без интернета — вернись к ним из оглавления.
+    </p>
+    <p><a href="/">← на заглавную</a></p>
+  </div>
+</Base>
+
+<style>
+  .box {
+    max-width: 30rem;
+    margin: 12vh auto;
+    text-align: center;
+  }
+  h1 {
+    font: 400 clamp(28px, 5vw, 40px) "Forum", serif;
+    color: var(--gold-soft);
+  }
+  p { color: var(--ink-dim); }
+  a { color: var(--c); }
+</style>

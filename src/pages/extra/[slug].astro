@@ -1,0 +1,181 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import Base from "../../layouts/Base.astro";
+import { REGISTRY, CATEGORY_LABEL } from "../../lib/extra";
+import { heroFor, heroFocus, heroZoom } from "../../lib/covers";
+
+// подменю глав — для любой истории, реально разбитой на части в источнике
+export async function getStaticPaths() {
+  const items = REGISTRY.filter((r) => r.parts > 1);
+  const extraAll = await getCollection("extra");
+  const bySlug = new Map(extraAll.map((e) => [e.id, e]));
+  return items.map((item) => ({
+    params: { slug: item.slug },
+    props: {
+      item,
+      parts: item.part_slugs.map((s) => bySlug.get(s)).filter((e) => e != null),
+    },
+  }));
+}
+
+const { item, parts } = Astro.props;
+// заставки/карточки под конкретную историю — пока их нет, страница выглядит
+// так же нейтрально, как /extra (никакой разницы в стиле, см. Cover/heroFor —
+// они и так тихо ничего не рисуют, если файла нет)
+const hero = heroFor(item.slug);
+const heroPos = heroFocus(item.slug);
+const heroZ = heroZoom(item.slug);
+---
+
+<Base title={`${item.title} · Дополнительно`} backHref="/extra" backLabel="Дополнительно">
+  <div class="top" style={`--hero-pos: ${heroPos}; --hero-zoom: ${heroZ}`}>
+    {hero && <Image class="bg" src={hero} alt="" widths={[900, 1600, 2200]} sizes="100vw" loading="eager" />}
+    <div class="grad"></div>
+    <div class="in">
+      <p class="eyebrow">{CATEGORY_LABEL[item.category]}</p>
+      <h1>{item.title}</h1>
+      {item.title_jp && <p class="jp" lang="ja">{item.title_jp}</p>}
+      <p class="stat">
+        {item.parts} {item.parts === 1 ? "часть" : "частей"}
+        {item.translator ? ` · перевод: ${item.translator}` : ""}
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="bar">
+      <h2>Части</h2>
+      <span class="prog" id="prog"></span>
+    </div>
+    <div class="rows" id="rows">
+      {parts.map((p, i) => (
+        <a class="row" href={`/read/extra/${p.id}`} data-id={`extra/${p.id}`}>
+          <span class="n">{i + 1}</span>
+          <span class="t">{p.data.title || `Часть ${i + 1}`}</span>
+          <span class="meta"></span>
+        </a>
+      ))}
+    </div>
+
+    <p class="toolbar">
+      <button id="markAllRead" type="button">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+        отметить все части прочитанными
+      </button>
+    </p>
+  </div>
+</Base>
+
+<style>
+  .top {
+    position: relative;
+    min-height: clamp(300px, 48vh, 460px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 108px 24px 40px;
+    overflow: hidden;
+    margin: -74px calc(50% - 50vw) 0;
+    isolation: isolate;
+  }
+  .top .bg {
+    position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%;
+    object-fit: cover; object-position: var(--hero-pos, 50% 50%); opacity: 0.92;
+    transform: scale(var(--hero-zoom, 1));
+  }
+  .top .grad {
+    position: absolute; inset: 0; z-index: -1;
+    background: linear-gradient(
+      to bottom, transparent 0%, transparent 30%,
+      color-mix(in srgb, var(--paper) 55%, var(--c) 6%) 60%,
+      color-mix(in srgb, var(--paper) 97%, var(--c) 5%) 100%
+    );
+  }
+  .top::before {
+    content: "";
+    position: absolute; inset: 0; z-index: -3;
+    background: radial-gradient(60% 90% at 50% 0%, color-mix(in srgb, var(--c) 12%, transparent), transparent 70%);
+  }
+  .eyebrow { font: 500 11px var(--ui); letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-dim); margin: 0 0 14px; }
+  h1 { font: 400 clamp(28px, 5vw, 46px) "Forum", serif; color: var(--gold-soft); margin: 0 0 6px; letter-spacing: 0.04em; }
+  .jp { font-style: italic; font-size: 14px; color: var(--ink-dim); margin: 0; }
+  .stat { margin: 18px 0 0; font: 500 12px var(--ui); letter-spacing: 0.1em; color: var(--ink-dim); }
+
+  .wrap { max-width: 780px; margin: 0 auto; }
+  .bar {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule); padding-bottom: 12px; margin: 34px 0 22px;
+  }
+  .bar h2 { margin: 0; font: 400 23px "Forum", serif; color: var(--gold-soft); letter-spacing: 0.04em; }
+  .bar .prog { font: 500 12px var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim); }
+
+  .rows { display: grid; gap: 8px; margin-bottom: 16px; }
+  .row {
+    display: grid; grid-template-columns: 40px 1fr auto; align-items: center; gap: 16px;
+    border: 1px solid var(--rule); border-radius: 8px; background: var(--paper-2);
+    padding: 13px 18px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .row:hover { border-color: var(--c); transform: translateX(3px); box-shadow: 0 6px 20px -10px color-mix(in srgb, var(--c) 45%, transparent); }
+  .row .n { font: 500 13px var(--ui); color: var(--ink-dim); text-align: center; font-variant-numeric: tabular-nums; }
+  .row .t { font-size: 17px; font-style: italic; }
+  .row .meta { font: 500 10px var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim); white-space: nowrap; }
+  .row.done { opacity: 0.62; }
+  .row.done .meta { color: var(--c); opacity: 1; }
+  .row.current { border-color: var(--c); background: color-mix(in srgb, var(--c) 9%, var(--paper-2)); }
+
+  .toolbar { margin-bottom: 60px; }
+  .toolbar button {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: none; border: 1px solid var(--rule); border-radius: 6px;
+    color: var(--ink-dim); font: 500 12.5px var(--ui); letter-spacing: 0.04em;
+    padding: 9px 16px; cursor: pointer;
+  }
+  .toolbar button:hover { border-color: var(--c); color: var(--c); }
+
+  @media (max-width: 560px) {
+    .row { grid-template-columns: 28px 1fr; }
+    .row .meta { grid-column: 2; justify-self: start; }
+  }
+</style>
+
+<script>
+  // прогресс по частям — тот же принцип, что на странице арки
+  let progress: Record<string, number> = {};
+  try {
+    progress = JSON.parse(localStorage.getItem("rz:progress") || "{}");
+  } catch {}
+  const rows = [...document.querySelectorAll<HTMLElement>(".row[data-id]")];
+  let done = 0;
+  let lastRead = -1;
+  rows.forEach((r, i) => {
+    const p = progress[r.dataset.id!] ?? 0;
+    if (p >= 0.9) {
+      r.classList.add("done");
+      r.querySelector(".meta")!.textContent = "прочитано";
+      done++;
+      lastRead = i;
+    } else if (p > 0.02) {
+      r.querySelector(".meta")!.textContent = `${Math.round(p * 100)}%`;
+    }
+  });
+  if (lastRead >= 0 && lastRead + 1 < rows.length) {
+    rows[lastRead + 1].classList.add("current");
+    rows[lastRead + 1].querySelector(".meta")!.textContent = "продолжить";
+  } else if (lastRead < 0 && rows[0]) {
+    rows[0].querySelector(".meta")!.textContent = "начать";
+  }
+  const prog = document.getElementById("prog");
+  if (prog && rows.length) prog.textContent = `прочитано ${Math.round((done / rows.length) * 100)}%`;
+
+  document.getElementById("markAllRead")?.addEventListener("click", () => {
+    if (!confirm(`Отметить все ${rows.length} часть(и) прочитанными?`)) return;
+    try {
+      rows.forEach((r) => (progress[r.dataset.id!] = 1));
+      localStorage.setItem("rz:progress", JSON.stringify(progress));
+    } catch {}
+    location.reload();
+  });
+</script>

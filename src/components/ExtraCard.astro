@@ -1,0 +1,101 @@
+---
+import type { ExtraEntry } from "../lib/extra";
+import { CATEGORY_TAG } from "../lib/extra";
+
+interface Props {
+  item: ExtraEntry;
+  cat: string;
+}
+const { item, cat } = Astro.props;
+
+// подменю глав — у любой истории, реально разбитой на части в источнике
+// (единственный, кто был раньше исключён — «Мимагау IF» с безликими
+// «Часть 1/2», — получил осмысленные названия и подменю тоже, см.
+// content/extra/mimagau-if-0{1,2}.md)
+const hasSubmenu = item.parts > 1;
+const href = hasSubmenu ? `/extra/${item.slug}` : `/read/extra/${item.part_slugs[0]}`;
+const ra = item.read_after;
+// счётчик частей — только пока перевод есть: для «нет перевода» историй
+// показывать «N глав» бессмысленно, читать всё равно нечего
+const showParts = item.status === "ok" && item.parts > 1;
+---
+
+{
+  cat === "ex" ? (
+    <a
+      class="exbook"
+      href={href}
+      data-slug={item.slug}
+      data-status={item.status}
+      data-arc={ra?.arc ?? ""}
+      data-container={ra?.container ?? ""}
+      data-parts={item.part_slugs.join(",")}
+    >
+      <div class="exlbl">{CATEGORY_TAG[cat]}</div>
+      <h4>{item.title}</h4>
+      {item.title_jp && <p class="exjp" lang="ja">{item.title_jp}</p>}
+      <p class="meta">
+        {showParts && <span class="parts">{item.parts} частей</span>}
+        <span class="state"></span>
+      </p>
+    </a>
+  ) : (
+    <a
+      class="row"
+      href={href}
+      data-slug={item.slug}
+      data-status={item.status}
+      data-arc={ra?.arc ?? ""}
+      data-container={ra?.container ?? ""}
+      data-parts={item.part_slugs.join(",")}
+    >
+      <span class="mid">
+        <span class="kind">{CATEGORY_TAG[cat]}</span>
+        <span class="t">{item.title}</span>
+        {showParts && <span class="partsn">{item.parts} частей</span>}
+      </span>
+      <span class="meta"></span>
+    </a>
+  )
+}
+
+<style>
+  .row {
+    display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 16px;
+    border: 1px solid var(--rule); border-radius: 8px; background: var(--paper-2);
+    padding: 13px 18px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  a.row:hover { border-color: var(--c); transform: translateX(3px); box-shadow: 0 6px 20px -10px color-mix(in srgb, var(--c) 45%, transparent); }
+  .row .mid { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .row .t { font-size: 17px; font-style: italic; }
+  .row .kind {
+    flex: none; font: 600 9.5px var(--ui); letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--c); border: 1px solid var(--rule); border-radius: 100px; padding: 3px 9px;
+  }
+  .row .partsn { font: 500 11px var(--ui); color: var(--ink-dim); opacity: 0.75; }
+  .row .meta {
+    font: 500 10px var(--ui); letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim); white-space: nowrap;
+  }
+  .row[data-state="read"] { opacity: 0.62; }
+  .row[data-state="read"] .meta { color: var(--c); opacity: 1; }
+  .row[data-state="locked"], .row[data-state="notr"] { pointer-events: none; opacity: 0.5; }
+  .row[data-state="notr"] .t { color: var(--ink-dim); }
+
+  .exbook {
+    display: block; border: 1px solid var(--rule); border-left: 3px solid var(--gold-soft); border-radius: 10px;
+    background: linear-gradient(160deg, color-mix(in srgb, var(--c) 7%, var(--paper-2)), var(--paper-2));
+    padding: 20px 24px; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  a.exbook:hover { border-color: var(--gold-soft); transform: translateY(-2px); box-shadow: 0 14px 34px -18px color-mix(in srgb, var(--c) 55%, transparent); }
+  .exbook .exlbl { font: 600 10px var(--ui); letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 6px; }
+  .exbook h4 { margin: 0 0 4px; font: 400 21px "Forum", serif; color: var(--gold-soft); letter-spacing: 0.02em; }
+  .exbook .exjp { font-style: italic; color: var(--ink-dim); font-size: 13px; margin: 0 0 10px; }
+  .exbook .meta { display: flex; justify-content: space-between; gap: 12px; margin: 8px 0 0; font: 500 11px var(--ui); color: var(--ink-dim); letter-spacing: 0.06em; }
+  .exbook[data-state="read"] { opacity: 0.68; }
+  .exbook[data-state="locked"], .exbook[data-state="notr"] { pointer-events: none; opacity: 0.5; }
+
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 1fr; }
+    .row .meta { justify-self: start; }
+  }
+</style>

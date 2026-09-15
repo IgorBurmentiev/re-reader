@@ -1,0 +1,2154 @@
+{
+  "arc": 8,
+  "generator": "fb2_to_md.py",
+  "source": [
+    "8 арка Главы 1-74 + интерлюдия ReZero.fb2"
+  ],
+  "orphan_images": [
+    "i_182.jpg"
+  ],
+  "images_total": 182,
+  "volume": null,
+  "book_title": "Unknown",
+  "annotation": "",
+  "mode": "flat",
+  "chapters": [
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Изменение условий победы",
+      "phase": 1,
+      "volume": null,
+      "words": 3587,
+      "paragraphs": 208,
+      "illustrations": [
+        "i_001.jpg",
+        "i_002.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 70
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Обиды",
+      "phase": 1,
+      "volume": null,
+      "words": 4342,
+      "paragraphs": 263,
+      "illustrations": [
+        "i_003.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Три причины",
+      "phase": 1,
+      "volume": null,
+      "words": 4692,
+      "paragraphs": 277,
+      "illustrations": [
+        "i_004.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_004.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Воинские инстинкты",
+      "phase": 1,
+      "volume": null,
+      "words": 3483,
+      "paragraphs": 218,
+      "illustrations": [
+        "i_005.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_005.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Прощение",
+      "phase": 1,
+      "volume": null,
+      "words": 6226,
+      "paragraphs": 412,
+      "illustrations": [
+        "i_006.jpg",
+        "i_007.jpg",
+        "i_008.jpg",
+        "i_009.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_006.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_007.jpg",
+          "after_paragraph": 9
+        },
+        {
+          "image": "i_008.jpg",
+          "after_paragraph": 40
+        },
+        {
+          "image": "i_009.jpg",
+          "after_paragraph": 310
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "6",
+      "title": "Я не буду просить прощения",
+      "phase": 1,
+      "volume": null,
+      "words": 4778,
+      "paragraphs": 301,
+      "illustrations": [
+        "i_010.jpg",
+        "i_011.jpg",
+        "i_012.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_010.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_011.jpg",
+          "after_paragraph": 205
+        },
+        {
+          "image": "i_012.jpg",
+          "after_paragraph": 275
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "7",
+      "title": "Тодд Фанг",
+      "phase": 1,
+      "volume": null,
+      "words": 150,
+      "paragraphs": 10,
+      "illustrations": [
+        "i_013.jpg",
+        "i_014.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_013.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 8
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "8",
+      "title": "Перспективы на будущее",
+      "phase": 1,
+      "volume": null,
+      "words": 3833,
+      "paragraphs": 231,
+      "illustrations": [
+        "i_015.jpg",
+        "i_016.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_015.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_016.jpg",
+          "after_paragraph": 226
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "9",
+      "title": "Решая, что любить",
+      "phase": 1,
+      "volume": null,
+      "words": 4994,
+      "paragraphs": 300,
+      "illustrations": [
+        "i_017.jpg",
+        "i_018.jpg",
+        "i_019.jpg",
+        "i_020.jpg",
+        "i_021.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_018.jpg",
+          "after_paragraph": 158
+        },
+        {
+          "image": "i_019.jpg",
+          "after_paragraph": 288
+        },
+        {
+          "image": "i_020.jpg",
+          "after_paragraph": 295
+        },
+        {
+          "image": "i_021.jpg",
+          "after_paragraph": 295
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "10",
+      "title": "Никто не одинок",
+      "phase": 1,
+      "volume": null,
+      "words": 6118,
+      "paragraphs": 406,
+      "illustrations": [
+        "i_022.jpg",
+        "i_023.jpg",
+        "i_024.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_022.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_023.jpg",
+          "after_paragraph": 102
+        },
+        {
+          "image": "i_024.jpg",
+          "after_paragraph": 355
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "011",
+      "type": "chapter",
+      "number": "11",
+      "label": "11",
+      "title": "Заткнись",
+      "phase": 1,
+      "volume": null,
+      "words": 5556,
+      "paragraphs": 300,
+      "illustrations": [
+        "i_025.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_025.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "012",
+      "type": "chapter",
+      "number": "12",
+      "label": "12",
+      "title": "Нацуки Субару и Винсент Авелюкс",
+      "phase": 1,
+      "volume": null,
+      "words": 5646,
+      "paragraphs": 324,
+      "illustrations": [
+        "i_026.jpg",
+        "i_027.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_026.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_027.jpg",
+          "after_paragraph": 163
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "013",
+      "type": "chapter",
+      "number": "13",
+      "label": "13",
+      "title": "Каждая рана",
+      "phase": 1,
+      "volume": null,
+      "words": 6568,
+      "paragraphs": 398,
+      "illustrations": [
+        "i_028.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_028.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "014",
+      "type": "chapter",
+      "number": "14",
+      "label": "14",
+      "title": "Королевство и Империя",
+      "phase": 1,
+      "volume": null,
+      "words": 6709,
+      "paragraphs": 395,
+      "illustrations": [
+        "i_029.jpg",
+        "i_030.jpg",
+        "i_031.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_029.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_030.jpg",
+          "after_paragraph": 334
+        },
+        {
+          "image": "i_031.jpg",
+          "after_paragraph": 391
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "015",
+      "type": "chapter",
+      "number": "15",
+      "label": "15",
+      "title": "Хвалитель",
+      "phase": 1,
+      "volume": null,
+      "words": 3580,
+      "paragraphs": 194,
+      "illustrations": [
+        "i_032.jpg",
+        "i_033.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_032.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_033.jpg",
+          "after_paragraph": 190
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "016",
+      "type": "chapter",
+      "number": "16",
+      "label": "16",
+      "title": "Катаклизм нежити",
+      "phase": 2,
+      "volume": null,
+      "words": 5597,
+      "paragraphs": 314,
+      "illustrations": [
+        "i_034.jpg",
+        "i_035.jpg",
+        "i_036.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_034.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_035.jpg",
+          "after_paragraph": 47
+        },
+        {
+          "image": "i_036.jpg",
+          "after_paragraph": 310
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "017",
+      "type": "chapter",
+      "number": "17",
+      "label": "17",
+      "title": "Магический подход",
+      "phase": 2,
+      "volume": null,
+      "words": 4330,
+      "paragraphs": 257,
+      "illustrations": [
+        "i_037.jpg",
+        "i_038.jpg",
+        "i_039.jpg",
+        "i_040.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_037.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_038.jpg",
+          "after_paragraph": 145
+        },
+        {
+          "image": "i_039.jpg",
+          "after_paragraph": 249
+        },
+        {
+          "image": "i_040.jpg",
+          "after_paragraph": 252
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "018",
+      "type": "chapter",
+      "number": "18",
+      "label": "18",
+      "title": "Мимолетное воссоединение",
+      "phase": 2,
+      "volume": null,
+      "words": 4839,
+      "paragraphs": 298,
+      "illustrations": [
+        "i_041.jpg",
+        "i_042.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_041.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_042.jpg",
+          "after_paragraph": 295
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "019",
+      "type": "chapter",
+      "number": "19",
+      "label": "19",
+      "title": "Стратагема Валги Кромвеля",
+      "phase": 2,
+      "volume": null,
+      "words": 5715,
+      "paragraphs": 346,
+      "illustrations": [
+        "i_043.jpg",
+        "i_044.jpg",
+        "i_045.jpg",
+        "i_046.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_043.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_044.jpg",
+          "after_paragraph": 155
+        },
+        {
+          "image": "i_045.jpg",
+          "after_paragraph": 333
+        },
+        {
+          "image": "i_046.jpg",
+          "after_paragraph": 341
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "020",
+      "type": "chapter",
+      "number": "20",
+      "label": "20",
+      "title": "Два огонька",
+      "phase": 2,
+      "volume": null,
+      "words": 5954,
+      "paragraphs": 321,
+      "illustrations": [
+        "i_047.jpg",
+        "i_048.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_047.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_048.jpg",
+          "after_paragraph": 318
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "021",
+      "type": "chapter",
+      "number": "21",
+      "label": "21",
+      "title": "Неизбежная судьба",
+      "phase": 2,
+      "volume": null,
+      "words": 4001,
+      "paragraphs": 224,
+      "illustrations": [
+        "i_049.jpg",
+        "i_050.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_049.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_050.jpg",
+          "after_paragraph": 47
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "022",
+      "type": "chapter",
+      "number": "22",
+      "label": "22",
+      "title": "Хочу верить. Не могу простить",
+      "phase": 2,
+      "volume": null,
+      "words": 6660,
+      "paragraphs": 421,
+      "illustrations": [
+        "i_051.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_051.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "023",
+      "type": "chapter",
+      "number": "23",
+      "label": "23",
+      "title": "Луи",
+      "phase": 2,
+      "volume": null,
+      "words": 5211,
+      "paragraphs": 351,
+      "illustrations": [
+        "i_052.jpg",
+        "i_053.jpg",
+        "i_054.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_052.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_053.jpg",
+          "after_paragraph": 126
+        },
+        {
+          "image": "i_054.jpg",
+          "after_paragraph": 344
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "024",
+      "type": "chapter",
+      "number": "24",
+      "label": "24",
+      "title": "Идти к свету",
+      "phase": 2,
+      "volume": null,
+      "words": 6030,
+      "paragraphs": 391,
+      "illustrations": [
+        "i_055.jpg",
+        "i_056.jpg",
+        "i_057.jpg",
+        "i_058.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_055.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_056.jpg",
+          "after_paragraph": 206
+        },
+        {
+          "image": "i_057.jpg",
+          "after_paragraph": 223
+        },
+        {
+          "image": "i_058.jpg",
+          "after_paragraph": 387
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "025",
+      "type": "chapter",
+      "number": "25",
+      "label": "25",
+      "title": "Предсмертное пожелание",
+      "phase": 2,
+      "volume": null,
+      "words": 5382,
+      "paragraphs": 334,
+      "illustrations": [
+        "i_059.jpg",
+        "i_060.jpg",
+        "i_061.jpg",
+        "i_062.jpg",
+        "i_063.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_059.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_060.jpg",
+          "after_paragraph": 122
+        },
+        {
+          "image": "i_061.jpg",
+          "after_paragraph": 211
+        },
+        {
+          "image": "i_062.jpg",
+          "after_paragraph": 281
+        },
+        {
+          "image": "i_063.jpg",
+          "after_paragraph": 325
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "026",
+      "type": "chapter",
+      "number": "26",
+      "label": "26",
+      "title": "Ядовитая Принцесса",
+      "phase": 2,
+      "volume": null,
+      "words": 6133,
+      "paragraphs": 366,
+      "illustrations": [
+        "i_064.jpg",
+        "i_065.jpg",
+        "i_066.jpg",
+        "i_067.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_064.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_065.jpg",
+          "after_paragraph": 38
+        },
+        {
+          "image": "i_066.jpg",
+          "after_paragraph": 74
+        },
+        {
+          "image": "i_067.jpg",
+          "after_paragraph": 361
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "027",
+      "type": "chapter",
+      "number": "27",
+      "label": "27",
+      "title": "Беллстетз Фондальфон",
+      "phase": 2,
+      "volume": null,
+      "words": 7524,
+      "paragraphs": 449,
+      "illustrations": [
+        "i_068.jpg",
+        "i_069.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_068.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_069.jpg",
+          "after_paragraph": 445
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "028",
+      "type": "chapter",
+      "number": "28",
+      "label": "28",
+      "title": "Братья и сестры Империи",
+      "phase": 2,
+      "volume": null,
+      "words": 5095,
+      "paragraphs": 313,
+      "illustrations": [
+        "i_070.jpg",
+        "i_071.jpg",
+        "i_072.jpg",
+        "i_073.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_070.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_071.jpg",
+          "after_paragraph": 167
+        },
+        {
+          "image": "i_072.jpg",
+          "after_paragraph": 268
+        },
+        {
+          "image": "i_073.jpg",
+          "after_paragraph": 296
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "029",
+      "type": "chapter",
+      "number": "29",
+      "label": "29",
+      "title": "Я не желала любви",
+      "phase": 3,
+      "volume": null,
+      "words": 2940,
+      "paragraphs": 191,
+      "illustrations": [
+        "i_074.jpg",
+        "i_075.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_074.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_075.jpg",
+          "after_paragraph": 84
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "030",
+      "type": "chapter",
+      "number": "30",
+      "label": "30",
+      "title": "Плохие новости",
+      "phase": 3,
+      "volume": null,
+      "words": 4858,
+      "paragraphs": 241,
+      "illustrations": [
+        "i_076.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_076.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "031",
+      "type": "chapter",
+      "number": "31",
+      "label": "31",
+      "title": "Каменная Глыба",
+      "phase": 3,
+      "volume": null,
+      "words": 4941,
+      "paragraphs": 244,
+      "illustrations": [
+        "i_077.jpg",
+        "i_078.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_077.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_078.jpg",
+          "after_paragraph": 47
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "032",
+      "type": "chapter",
+      "number": "32",
+      "label": "32",
+      "title": "Отбор участников",
+      "phase": 3,
+      "volume": null,
+      "words": 4537,
+      "paragraphs": 257,
+      "illustrations": [
+        "i_079.jpg",
+        "i_080.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_079.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_080.jpg",
+          "after_paragraph": 20
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "033",
+      "type": "chapter",
+      "number": "33",
+      "label": "33",
+      "title": "Вердикт о любви",
+      "phase": 3,
+      "volume": null,
+      "words": 4225,
+      "paragraphs": 234,
+      "illustrations": [
+        "i_081.jpg",
+        "i_082.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_081.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_082.jpg",
+          "after_paragraph": 65
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "034",
+      "type": "chapter",
+      "number": "34",
+      "label": "34",
+      "title": "Без объяснений не прощу",
+      "phase": 3,
+      "volume": null,
+      "words": 4311,
+      "paragraphs": 277,
+      "illustrations": [
+        "i_083.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_083.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "035",
+      "type": "chapter",
+      "number": "35",
+      "label": "35",
+      "title": "Работа с риском для жизни",
+      "phase": 3,
+      "volume": null,
+      "words": 3788,
+      "paragraphs": 208,
+      "illustrations": [
+        "i_084.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_084.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "036",
+      "type": "chapter",
+      "number": "36",
+      "label": "36",
+      "title": "Столица нежити Рапгана",
+      "phase": 3,
+      "volume": null,
+      "words": 4262,
+      "paragraphs": 257,
+      "illustrations": [
+        "i_085.jpg",
+        "i_086.jpg",
+        "i_087.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_085.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_086.jpg",
+          "after_paragraph": 86
+        },
+        {
+          "image": "i_087.jpg",
+          "after_paragraph": 187
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "037",
+      "type": "chapter",
+      "number": "37",
+      "label": "37",
+      "title": "Время предзнаменований",
+      "phase": 3,
+      "volume": null,
+      "words": 4750,
+      "paragraphs": 226,
+      "illustrations": [
+        "i_088.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_088.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "038",
+      "type": "chapter",
+      "number": "38",
+      "label": "38",
+      "title": "Роуэн Сегмунт",
+      "phase": 3,
+      "volume": null,
+      "words": 4487,
+      "paragraphs": 226,
+      "illustrations": [
+        "i_089.jpg",
+        "i_090.jpg",
+        "i_091.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_089.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_090.jpg",
+          "after_paragraph": 169
+        },
+        {
+          "image": "i_091.jpg",
+          "after_paragraph": 213
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "039",
+      "type": "chapter",
+      "number": "39",
+      "label": "39",
+      "title": "Смех неограниченного",
+      "phase": 3,
+      "volume": null,
+      "words": 4558,
+      "paragraphs": 253,
+      "illustrations": [
+        "i_092.jpg",
+        "i_093.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_092.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_093.jpg",
+          "after_paragraph": 241
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "040",
+      "type": "chapter",
+      "number": "40",
+      "label": "40",
+      "title": "Незначительная угроза",
+      "phase": 3,
+      "volume": null,
+      "words": 3229,
+      "paragraphs": 185,
+      "illustrations": [
+        "i_094.jpg",
+        "i_095.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_094.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_095.jpg",
+          "after_paragraph": 105
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "041",
+      "type": "chapter",
+      "number": "41",
+      "label": "41",
+      "title": "Местонахождение ада",
+      "phase": 3,
+      "volume": null,
+      "words": 4640,
+      "paragraphs": 227,
+      "illustrations": [
+        "i_096.jpg",
+        "i_097.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_096.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_097.jpg",
+          "after_paragraph": 215
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "042",
+      "type": "chapter",
+      "number": "42",
+      "label": "42",
+      "title": "Великий раб",
+      "phase": 3,
+      "volume": null,
+      "words": 3691,
+      "paragraphs": 206,
+      "illustrations": [
+        "i_098.jpg",
+        "i_099.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_098.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_099.jpg",
+          "after_paragraph": 131
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "043",
+      "type": "chapter",
+      "number": "43",
+      "label": "43",
+      "title": "Каждому по заветному желанию",
+      "phase": 3,
+      "volume": null,
+      "words": 4995,
+      "paragraphs": 276,
+      "illustrations": [
+        "i_100.jpg",
+        "i_101.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_100.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_101.jpg",
+          "after_paragraph": 251
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "interlude-00",
+      "type": "interlude",
+      "number": null,
+      "label": "Интерлюдия",
+      "title": "Убирк",
+      "phase": 3,
+      "volume": null,
+      "words": 5600,
+      "paragraphs": 298,
+      "illustrations": [
+        "i_102.jpg",
+        "i_103.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_102.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_103.jpg",
+          "after_paragraph": 162
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "044",
+      "type": "chapter",
+      "number": "44",
+      "label": "44",
+      "title": "Как отвечать на доверие",
+      "phase": 4,
+      "volume": null,
+      "words": 4568,
+      "paragraphs": 255,
+      "illustrations": [
+        "i_104.jpg",
+        "i_105.jpg",
+        "i_106.jpg",
+        "i_107.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_104.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_105.jpg",
+          "after_paragraph": 36
+        },
+        {
+          "image": "i_106.jpg",
+          "after_paragraph": 85
+        },
+        {
+          "image": "i_107.jpg",
+          "after_paragraph": 122
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "045",
+      "type": "chapter",
+      "number": "45",
+      "label": "45",
+      "title": "Как падали звезды",
+      "phase": 4,
+      "volume": null,
+      "words": 3508,
+      "paragraphs": 195,
+      "illustrations": [
+        "i_108.jpg",
+        "i_109.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_108.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_109.jpg",
+          "after_paragraph": 192
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "046",
+      "type": "chapter",
+      "number": "46",
+      "label": "46",
+      "title": "Вкус ветра",
+      "phase": 4,
+      "volume": null,
+      "words": 3227,
+      "paragraphs": 239,
+      "illustrations": [
+        "i_110.jpg",
+        "i_111.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_110.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_111.jpg",
+          "after_paragraph": 128
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "047",
+      "type": "chapter",
+      "number": "47",
+      "label": "47",
+      "title": "Танза",
+      "phase": 4,
+      "volume": null,
+      "words": 4620,
+      "paragraphs": 274,
+      "illustrations": [
+        "i_112.jpg",
+        "i_113.jpg",
+        "i_114.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_112.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_113.jpg",
+          "after_paragraph": 181
+        },
+        {
+          "image": "i_114.jpg",
+          "after_paragraph": 265
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "048",
+      "type": "chapter",
+      "number": "48",
+      "label": "48",
+      "title": "Терновое Проклятие",
+      "phase": 4,
+      "volume": null,
+      "words": 3430,
+      "paragraphs": 181,
+      "illustrations": [
+        "i_115.jpg",
+        "i_116.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_115.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_116.jpg",
+          "after_paragraph": 13
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "049",
+      "type": "chapter",
+      "number": "49",
+      "label": "49",
+      "title": "Терновый Король",
+      "phase": 4,
+      "volume": null,
+      "words": 3269,
+      "paragraphs": 185,
+      "illustrations": [
+        "i_117.jpg",
+        "i_118.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_117.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_118.jpg",
+          "after_paragraph": 77
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "050",
+      "type": "chapter",
+      "number": "50",
+      "label": "50",
+      "title": "Югард Волакия",
+      "phase": 4,
+      "volume": null,
+      "words": 4833,
+      "paragraphs": 268,
+      "illustrations": [
+        "i_119.jpg",
+        "i_120.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_119.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_120.jpg",
+          "after_paragraph": 263
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "051",
+      "type": "chapter",
+      "number": "51",
+      "label": "51",
+      "title": "Теннозан",
+      "phase": 4,
+      "volume": null,
+      "words": 3978,
+      "paragraphs": 209,
+      "illustrations": [
+        "i_121.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_121.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "052",
+      "type": "chapter",
+      "number": "52",
+      "label": "52",
+      "title": "Медиум О'Коннелл",
+      "phase": 4,
+      "volume": null,
+      "words": 3667,
+      "paragraphs": 200,
+      "illustrations": [
+        "i_122.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_122.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "053",
+      "type": "chapter",
+      "number": "53",
+      "label": "53",
+      "title": "Магический Стрелок",
+      "phase": 4,
+      "volume": null,
+      "words": 7434,
+      "paragraphs": 395,
+      "illustrations": [
+        "i_123.jpg",
+        "i_124.jpg",
+        "i_125.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_123.jpg",
+          "after_paragraph": 2
+        },
+        {
+          "image": "i_124.jpg",
+          "after_paragraph": 83
+        },
+        {
+          "image": "i_125.jpg",
+          "after_paragraph": 274
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "054",
+      "type": "chapter",
+      "number": "54",
+      "label": "54",
+      "title": "Сомато",
+      "phase": 4,
+      "volume": null,
+      "words": 5208,
+      "paragraphs": 333,
+      "illustrations": [
+        "i_126.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_126.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "055",
+      "type": "chapter",
+      "number": "55",
+      "label": "55",
+      "title": "Мэделин Эшарт",
+      "phase": 4,
+      "volume": null,
+      "words": 7694,
+      "paragraphs": 422,
+      "illustrations": [
+        "i_127.jpg",
+        "i_128.jpg",
+        "i_129.jpg",
+        "i_130.jpg",
+        "i_131.jpg",
+        "i_132.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_127.jpg",
+          "after_paragraph": 2
+        },
+        {
+          "image": "i_128.jpg",
+          "after_paragraph": 41
+        },
+        {
+          "image": "i_129.jpg",
+          "after_paragraph": 156
+        },
+        {
+          "image": "i_130.jpg",
+          "after_paragraph": 248
+        },
+        {
+          "image": "i_131.jpg",
+          "after_paragraph": 309
+        },
+        {
+          "image": "i_132.jpg",
+          "after_paragraph": 395
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "056",
+      "type": "chapter",
+      "number": "56",
+      "label": "56",
+      "title": "Аракия",
+      "phase": 4,
+      "volume": null,
+      "words": 3923,
+      "paragraphs": 243,
+      "illustrations": [
+        "i_133.jpg",
+        "i_134.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_133.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_134.jpg",
+          "after_paragraph": 105
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "057",
+      "type": "chapter",
+      "number": "57",
+      "label": "57",
+      "title": "Сесилус Сегмунт",
+      "phase": 4,
+      "volume": null,
+      "words": 9472,
+      "paragraphs": 493,
+      "illustrations": [
+        "i_135.jpg",
+        "i_136.jpg",
+        "i_137.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_135.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_136.jpg",
+          "after_paragraph": 253
+        },
+        {
+          "image": "i_137.jpg",
+          "after_paragraph": 485
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "058",
+      "type": "chapter",
+      "number": "58",
+      "label": "58",
+      "title": "Доказательство существования",
+      "phase": 4,
+      "volume": null,
+      "words": 4796,
+      "paragraphs": 256,
+      "illustrations": [
+        "i_138.jpg",
+        "i_139.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_138.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_139.jpg",
+          "after_paragraph": 254
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "059",
+      "type": "chapter",
+      "number": "59",
+      "label": "59",
+      "title": "Сфинкс",
+      "phase": 4,
+      "volume": null,
+      "words": 10237,
+      "paragraphs": 662,
+      "illustrations": [
+        "i_140.jpg",
+        "i_141.jpg",
+        "i_142.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_140.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_141.jpg",
+          "after_paragraph": 498
+        },
+        {
+          "image": "i_142.jpg",
+          "after_paragraph": 627
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "060",
+      "type": "chapter",
+      "number": "60",
+      "label": "60",
+      "title": "Ведьма",
+      "phase": 4,
+      "volume": null,
+      "words": 1700,
+      "paragraphs": 102,
+      "illustrations": [
+        "i_143.jpg",
+        "i_144.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_143.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_144.jpg",
+          "after_paragraph": 94
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "061",
+      "type": "chapter",
+      "number": "61",
+      "label": "61",
+      "title": "Палладио Манеска",
+      "phase": 5,
+      "volume": null,
+      "words": 4211,
+      "paragraphs": 258,
+      "illustrations": [
+        "i_145.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_145.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "062",
+      "type": "chapter",
+      "number": "62",
+      "label": "62",
+      "title": "Сила любви",
+      "phase": 5,
+      "volume": null,
+      "words": 3818,
+      "paragraphs": 227,
+      "illustrations": [
+        "i_146.jpg",
+        "i_147.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_146.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_147.jpg",
+          "after_paragraph": 218
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "063",
+      "type": "chapter",
+      "number": "63",
+      "label": "63",
+      "title": "С чудом на устах",
+      "phase": 5,
+      "volume": null,
+      "words": 3489,
+      "paragraphs": 232,
+      "illustrations": [
+        "i_148.jpg",
+        "i_149.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_148.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_149.jpg",
+          "after_paragraph": 200
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "064",
+      "type": "chapter",
+      "number": "64",
+      "label": "64",
+      "title": "Родитель и дитя Империи",
+      "phase": 5,
+      "volume": null,
+      "words": 4456,
+      "paragraphs": 263,
+      "illustrations": [
+        "i_150.jpg",
+        "i_151.jpg",
+        "i_152.jpg",
+        "i_153.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_150.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_151.jpg",
+          "after_paragraph": 140
+        },
+        {
+          "image": "i_152.jpg",
+          "after_paragraph": 254
+        },
+        {
+          "image": "i_153.jpg",
+          "after_paragraph": 258
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "065",
+      "type": "chapter",
+      "number": "65",
+      "label": "65",
+      "title": "Звездопад на столицу Империи",
+      "phase": 5,
+      "volume": null,
+      "words": 6129,
+      "paragraphs": 382,
+      "illustrations": [
+        "i_154.jpg",
+        "i_155.jpg",
+        "i_156.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_154.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_155.jpg",
+          "after_paragraph": 311
+        },
+        {
+          "image": "i_156.jpg",
+          "after_paragraph": 333
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "066",
+      "type": "chapter",
+      "number": "66",
+      "label": "66",
+      "title": "Магическая Кристальная Пушка",
+      "phase": 5,
+      "volume": null,
+      "words": 4201,
+      "paragraphs": 258,
+      "illustrations": [
+        "i_157.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_157.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "067",
+      "type": "chapter",
+      "number": "67",
+      "label": "67",
+      "title": "С картами на руках",
+      "phase": 5,
+      "volume": null,
+      "words": 4282,
+      "paragraphs": 265,
+      "illustrations": [
+        "i_158.jpg",
+        "i_159.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_158.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_159.jpg",
+          "after_paragraph": 260
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "068",
+      "type": "chapter",
+      "number": "68",
+      "label": "68",
+      "title": "Мужчина, в которого я влюбилась",
+      "phase": 5,
+      "volume": null,
+      "words": 4278,
+      "paragraphs": 268,
+      "illustrations": [
+        "i_160.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_160.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "069",
+      "type": "chapter",
+      "number": "69",
+      "label": "69",
+      "title": "Прощаю",
+      "phase": 5,
+      "volume": null,
+      "words": 2858,
+      "paragraphs": 186,
+      "illustrations": [
+        "i_161.jpg",
+        "i_162.jpg",
+        "i_163.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_161.jpg",
+          "after_paragraph": 2
+        },
+        {
+          "image": "i_162.jpg",
+          "after_paragraph": 123
+        },
+        {
+          "image": "i_163.jpg",
+          "after_paragraph": 167
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "070",
+      "type": "chapter",
+      "number": "70",
+      "label": "70",
+      "title": "Последняя стратагема",
+      "phase": 5,
+      "volume": null,
+      "words": 3196,
+      "paragraphs": 183,
+      "illustrations": [
+        "i_164.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_164.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "071",
+      "type": "chapter",
+      "number": "71",
+      "label": "71",
+      "title": "Героические Грезы",
+      "phase": 5,
+      "volume": null,
+      "words": 4590,
+      "paragraphs": 332,
+      "illustrations": [
+        "i_165.jpg",
+        "i_166.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_165.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_166.jpg",
+          "after_paragraph": 325
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "072",
+      "type": "chapter",
+      "number": "72",
+      "label": "72",
+      "title": "Принцесса Солнца",
+      "phase": 5,
+      "volume": null,
+      "words": 3568,
+      "paragraphs": 247,
+      "illustrations": [
+        "i_167.jpg",
+        "i_168.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_167.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_168.jpg",
+          "after_paragraph": 161
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "073",
+      "type": "chapter",
+      "number": "73",
+      "label": "73",
+      "title": "Заклятый враг",
+      "phase": 5,
+      "volume": null,
+      "words": 3969,
+      "paragraphs": 289,
+      "illustrations": [
+        "i_169.jpg",
+        "i_170.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_169.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_170.jpg",
+          "after_paragraph": 89
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "074",
+      "type": "chapter",
+      "number": "74",
+      "label": "74",
+      "title": "Любовь",
+      "phase": 5,
+      "volume": null,
+      "words": 5627,
+      "paragraphs": 383,
+      "illustrations": [
+        "i_171.jpg",
+        "i_172.jpg",
+        "i_173.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_171.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_172.jpg",
+          "after_paragraph": 137
+        },
+        {
+          "image": "i_173.jpg",
+          "after_paragraph": 377
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "epilogue-00",
+      "type": "epilogue",
+      "number": null,
+      "label": "Конец",
+      "title": "Присцилла Бариэль",
+      "phase": 5,
+      "volume": null,
+      "words": 8642,
+      "paragraphs": 543,
+      "illustrations": [
+        "i_174.jpg",
+        "i_175.jpg",
+        "i_176.jpg",
+        "i_177.jpg",
+        "i_178.jpg",
+        "i_179.jpg",
+        "i_180.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_174.jpg",
+          "after_paragraph": 1
+        },
+        {
+          "image": "i_175.jpg",
+          "after_paragraph": 370
+        },
+        {
+          "image": "i_176.jpg",
+          "after_paragraph": 377
+        },
+        {
+          "image": "i_177.jpg",
+          "after_paragraph": 396
+        },
+        {
+          "image": "i_178.jpg",
+          "after_paragraph": 435
+        },
+        {
+          "image": "i_179.jpg",
+          "after_paragraph": 479
+        },
+        {
+          "image": "i_180.jpg",
+          "after_paragraph": 480
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "prologue-00",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Альдебаран",
+      "phase": 5,
+      "volume": null,
+      "words": 1,
+      "paragraphs": 1,
+      "illustrations": [
+        "i_181.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_181.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "flat-scan"
+    }
+  ]
+}

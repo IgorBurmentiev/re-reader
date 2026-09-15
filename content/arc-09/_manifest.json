@@ -1,0 +1,1585 @@
+{
+  "arc": 9,
+  "source": [
+    "9_арка,_Главы_1_59_+_Интерлюдии_+_Финал_+_Побочные_истории.epub"
+  ],
+  "toc_labels": [
+    "ГЛАВА 1, МОЛИТВЫ, КАК ОБЛАКА",
+    "ГЛАВА 2, ИГРАТЬ В ЗЛОДЕЯ",
+    "ГЛАВА 3, КАЖДЫЙ ПО ТЕБЕ СКОРБИТ",
+    "ГЛАВА 4, ДУРЫНДА",
+    "ГЛАВА 5, ДЕВЯТЬСОТ ТРИДЦАТЬ ОДИН УДАР",
+    "ГЛАВА 6, НОВЫЙ ПУТЬ",
+    "ИНТЕРЛЮДИЯ, КАТЯ ОРЕЛИ",
+    "ГЛАВА 7, ВОССОЕДИНЕНИЕ В ПЕСЧАНОМ ВЕТРЕ",
+    "ГЛАВА 8, КАК СОЖАЛЕТЬ",
+    "ГЛАВА 9, ВЫСОКОЭФФЕКТИВНАЯ МАГИЧЕСКАЯ ИНДУКЦИОННАЯ ДВЕРЬ",
+    "ГЛАВА 10, ЛИМИТ ТРИ ДНЯ",
+    "ГЛАВА 11, ТЕБЯ БОЛЬШЕ НЕТ С НАМИ",
+    "ГЛАВА 12, ЗВЁЗДНЫЙ СВЕТ ЗА ПРЕДЕЛОМ МИРИАД",
+    "ГЛАВА 13, САМЫЙ ЛЮБИМЫЙ И САМЫЙ НЕЛЮБИМЫЙ",
+    "ПОБОЧНАЯ ИСТОРИЯ, ПРОИСШЕСТВИЕ С БОГОМ СМЕРТИ КАРАРАГИ ①",
+    "ПОБОЧНАЯ ИСТОРИЯ, ЗЕМЛЯ ВОЗРОЖДАЮЩИХСЯ ВОЛКОВ / ОХОТНИКИ ЗА НЕЖИТЬЮ ①",
+    "ПОБОЧНАЯ ИСТОРИЯ, NO STELLA NO LIFE ①",
+    "ПРОЛОГ, ДНИ ПОГОНИ ЗА ЗВЕЗДОЙ",
+    "ГЛАВА 14, СИЛЬНЕЙШИЙ",
+    "ГЛАВА 15, ПРОИГРАВШИЙ",
+    "ГЛАВА 16, СООБЩНИКИ",
+    "ГЛАВА 17, ПОЖАЛУЙСТА, НЕ ПРОЩАЙТЕ МЕНЯ",
+    "ГЛАВА 18, СТОКРАТНАЯ ГОЛОВОБОЛЬ",
+    "ГЛАВА 19, ОБРАТНОЕ ОБЫГРЫВАНИЕ",
+    "ГЛАВА 20, САМОПОЖЕРТВОВАНИЕ",
+    "ГЛАВА 21, ВАЛГА КРОМВЕЛЬ",
+    "ГЛАВА 22, КАК ЗАКОНЧИТЬ БИТВУ",
+    "ГЛАВА 23, ВСЕ АКТЁРЫ В СБОРЕ",
+    "ПОБОЧНАЯ ИСТОРИЯ, ПРОИСШЕСТВИЕ С БОГОМ СМЕРТИ КАРАРАГИ ②",
+    "ПОБОЧНАЯ ИСТОРИЯ, ЗЕМЛЯ ВОЗРОЖДАЮЩИХСЯ ВОЛКОВ / ОХОТНИКИ ЗА НЕЖИТЬЮ ②",
+    "ПОБОЧНАЯ ИСТОРИЯ, NO STELLA NO LIFE ②",
+    "ПРОЛОГ, СКАЗ О СНЕ ВЕДЬМЫ",
+    "ГЛАВА 24, ЕСТЕСТВЕННЫЕ ВРАГИ ЧЕЛОВЕЧЕСТВА",
+    "ГЛАВА 25, ЭМИЛИЯ БЫЛА В ГНЕВЕ",
+    "ГЛАВА 26, ДЕМОН МЕЧА VS БАГРОВАЯ САКУРА",
+    "ГЛАВА 27, СЛОВА РЕБЁНКА",
+    "ГЛАВА 28, СТРОФА ИЗ ЛЕГЕНДЫ",
+    "ГЛАВА 29, СЛАБОЕ ЗВЕНО",
+    "ГЛАВА 30, ПЛАН Б",
+    "ГЛАВА 31, РАБОТА НА ВСЕ СТО",
+    "ГЛАВА 32, МУЖЧИНА ПО ИМЕНИ КЛИНД",
+    "ГЛАВА 33, ДЕВУШКА ПО ИМЕНИ ПЕТРА ЛЕЙТЕ",
+    "ГЛАВА 34, ВЛЕЧЕНИЕ",
+    "ГЛАВА 35, ПРОБУДИЛАСЬ ЗВЕЗДА",
+    "ГЛАВА 36, ТЕЗИС",
+    "ПОБОЧНАЯ ИСТОРИЯ, ПРОИСШЕСТВИЕ С БОГОМ СМЕРТИ КАРАРАГИ ③",
+    "ПОБОЧНАЯ ИСТОРИЯ, ЗЕМЛЯ ВОЗРОЖДАЮЩИХСЯ ВОЛКОВ / ОХОТНИКИ ЗА НЕЖИТЬЮ ③",
+    "ПОБОЧНАЯ ИСТОРИЯ, NO STELLA NO LIFE ③",
+    "ПРОЛОГ, БЛАГОСЛОВЕНИЕ ВЕДЬМЫ",
+    "ГЛАВА 37, ОБРАЗ МЫШЛЕНИЯ",
+    "ГЛАВА 38, СОЖЖЁННЫЙ СОЛНЦЕМ",
+    "ГЛАВА 39, КРАСНАЯ ЛИНИЯ",
+    "ГЛАВА 40, ВСПЫШКА РЕМНАТЫ",
+    "ГЛАВА 41, ИЗРЕКИ УЗУРПАТОРУ",
+    "ГЛАВА 42, ОТДАВАЯ ВСЕГО СЕБЯ",
+    "ГЛАВА 43, ИСТИННОЕ ИМЯ",
+    "ГЛАВА 44, ПОДКОВЁРНЫЙ СГОВОР",
+    "ГЛАВА 45, СТОЛКНОВЕНИЕ АНОМАЛИЙ",
+    "ГЛАВА 46, ВЕДЬМА УНЫНИЯ",
+    "ГЛАВА 47, “ГОЛОС”",
+    "ГЛАВА 48, ВЫСШЕЕ СУЩЕСТВО",
+    "ГЛАВА 49, МАГ",
+    "ПОБОЧНАЯ ИСТОРИЯ, ПРОИСШЕСТВИЕ С БОГОМ СМЕРТИ КАРАРАГИ ④",
+    "ПОБОЧНАЯ ИСТОРИЯ, ЗЕМЛЯ ВОЗРОЖДАЮЩИХСЯ ВОЛКОВ / ОХОТНИКИ ЗА НЕЖИТЬЮ ④",
+    "ПОБОЧНАЯ ИСТОРИЯ, NO STELLA NO LIFE ④",
+    "ГЛАВА 50, ЛЕДОВОЕ ПОБОИЩЕ",
+    "ГЛАВА 51, ЯЭ ТЭНДЗЭН",
+    "ГЛАВА 52, АЛЬДЕБАРАН I",
+    "ГЛАВА 53, АЛЬДЕБАРАН II",
+    "ГЛАВА 54, «ВЕДЬМАК» ПРОТИВ «ВЕДЬМЫ»",
+    "ГЛАВА 54, АГРЕССОР ВЛАДЕНИЙ",
+    "ГЛАВА 55, ПЕТРА ЛЕЙТЕ",
+    "ГЛАВА 56, ПОСЛЕДНЯЯ СЛУЖБА",
+    "ГЛАВА 57, ЛЯЗГ ЦЕПЕЙ",
+    "ГЛАВА 59, НЕ ХОРОШО",
+    "ИНТЕРЛЮДИЯ, КРИК ЛЮБВИ",
+    "ФИНАЛ, REWEAVEПослесловие Таппэя:",
+    "Послесловие Таппэя:"
+  ],
+  "orphan_images": [
+    "i_101.png",
+    "i_102.png"
+  ],
+  "images_total": 102,
+  "generator": "epub_to_md.py",
+  "chapters": [
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Молитвы, как облака",
+      "phase": 1,
+      "volume": null,
+      "words": 3439,
+      "paragraphs": 216,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_003.html"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Играть в злодея",
+      "phase": 1,
+      "volume": null,
+      "words": 3377,
+      "paragraphs": 182,
+      "illustrations": [
+        "i_001.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 142
+        }
+      ],
+      "source_ref": "index_split_004.html +index_split_005.html +index_split_006.html"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Каждый по тебе скорбит",
+      "phase": 1,
+      "volume": null,
+      "words": 4162,
+      "paragraphs": 265,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_007.html"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Дурында",
+      "phase": 1,
+      "volume": null,
+      "words": 3926,
+      "paragraphs": 275,
+      "illustrations": [
+        "i_002.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 274
+        }
+      ],
+      "source_ref": "index_split_008.html +index_split_009.html"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Девятьсот тридцать один удар",
+      "phase": 1,
+      "volume": null,
+      "words": 5108,
+      "paragraphs": 353,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_010.html"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "6",
+      "title": "Новый путь",
+      "phase": 1,
+      "volume": null,
+      "words": 5321,
+      "paragraphs": 375,
+      "illustrations": [
+        "i_003.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 204
+        }
+      ],
+      "source_ref": "index_split_011.html +index_split_012.html +index_split_013.html"
+    },
+    {
+      "slug": "interlude-00",
+      "type": "interlude",
+      "number": null,
+      "label": "Интерлюдия",
+      "title": "Катя Орели",
+      "phase": 1,
+      "volume": null,
+      "words": 2232,
+      "paragraphs": 158,
+      "illustrations": [
+        "i_004.jpg",
+        "i_005.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_004.jpg",
+          "after_paragraph": 62
+        },
+        {
+          "image": "i_005.jpg",
+          "after_paragraph": 156
+        }
+      ],
+      "source_ref": "index_split_014.html +index_split_015.html +index_split_016.html +index_split_017.html"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "7",
+      "title": "Воссоединение в песчаном ветре",
+      "phase": 1,
+      "volume": null,
+      "words": 2954,
+      "paragraphs": 172,
+      "illustrations": [
+        "i_006.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_006.jpg",
+          "after_paragraph": 144
+        }
+      ],
+      "source_ref": "index_split_018.html +index_split_019.html +index_split_020.html"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "8",
+      "title": "Как сожалеть",
+      "phase": 1,
+      "volume": null,
+      "words": 3210,
+      "paragraphs": 209,
+      "illustrations": [
+        "i_007.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_007.jpg",
+          "after_paragraph": 208
+        }
+      ],
+      "source_ref": "index_split_021.html +index_split_022.html"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "9",
+      "title": "Высокоэффективная магическая индукционная дверь",
+      "phase": 1,
+      "volume": null,
+      "words": 4257,
+      "paragraphs": 248,
+      "illustrations": [
+        "i_008.jpg",
+        "i_009.jpg",
+        "i_010.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.jpg",
+          "after_paragraph": 10
+        },
+        {
+          "image": "i_009.jpg",
+          "after_paragraph": 159
+        },
+        {
+          "image": "i_010.jpg",
+          "after_paragraph": 206
+        }
+      ],
+      "source_ref": "index_split_023.html +index_split_024.html +index_split_025.html +index_split_026.html +index_split_027.html +index_split_028.html +index_split_029.html"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "10",
+      "title": "Лимит три дня",
+      "phase": 1,
+      "volume": null,
+      "words": 3980,
+      "paragraphs": 184,
+      "illustrations": [
+        "i_011.jpg",
+        "i_012.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_011.jpg",
+          "after_paragraph": 4
+        },
+        {
+          "image": "i_012.jpg",
+          "after_paragraph": 40
+        }
+      ],
+      "source_ref": "index_split_030.html +index_split_031.html +index_split_032.html +index_split_033.html +index_split_034.html"
+    },
+    {
+      "slug": "011",
+      "type": "chapter",
+      "number": "11",
+      "label": "11",
+      "title": "Тебя больше нет с нами",
+      "phase": 1,
+      "volume": null,
+      "words": 5460,
+      "paragraphs": 265,
+      "illustrations": [
+        "i_013.jpg",
+        "i_014.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_013.jpg",
+          "after_paragraph": 30
+        },
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 256
+        }
+      ],
+      "source_ref": "index_split_035.html +index_split_036.html +index_split_037.html +index_split_038.html +index_split_039.html"
+    },
+    {
+      "slug": "012",
+      "type": "chapter",
+      "number": "12",
+      "label": "12",
+      "title": "Звёздный свет за пределом мириад",
+      "phase": 1,
+      "volume": null,
+      "words": 6659,
+      "paragraphs": 315,
+      "illustrations": [
+        "i_015.jpg",
+        "i_016.jpg",
+        "i_017.jpg",
+        "i_018.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_015.jpg",
+          "after_paragraph": 53
+        },
+        {
+          "image": "i_016.jpg",
+          "after_paragraph": 190
+        },
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 210
+        },
+        {
+          "image": "i_018.jpg",
+          "after_paragraph": 311
+        }
+      ],
+      "source_ref": "index_split_040.html +index_split_041.html +index_split_042.html +index_split_043.html +index_split_044.html +index_split_045.html +index_split_046.html +index_split_047.html"
+    },
+    {
+      "slug": "013",
+      "type": "chapter",
+      "number": "13",
+      "label": "13",
+      "title": "Самый любимый и самый нелюбимый",
+      "phase": 1,
+      "volume": null,
+      "words": 1811,
+      "paragraphs": 97,
+      "illustrations": [
+        "i_019.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_019.jpg",
+          "after_paragraph": 94
+        }
+      ],
+      "source_ref": "index_split_048.html +index_split_049.html +index_split_050.html"
+    },
+    {
+      "slug": "prologue-00",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Дни погони за звездой",
+      "phase": 2,
+      "volume": null,
+      "words": 897,
+      "paragraphs": 62,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_055.html"
+    },
+    {
+      "slug": "014",
+      "type": "chapter",
+      "number": "14",
+      "label": "14",
+      "title": "Сильнейший",
+      "phase": 2,
+      "volume": null,
+      "words": 5420,
+      "paragraphs": 204,
+      "illustrations": [
+        "i_021.jpg",
+        "i_022.jpg",
+        "i_023.png",
+        "i_024.jpg",
+        "i_025.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_021.jpg",
+          "after_paragraph": 57
+        },
+        {
+          "image": "i_022.jpg",
+          "after_paragraph": 100
+        },
+        {
+          "image": "i_023.png",
+          "after_paragraph": 177
+        },
+        {
+          "image": "i_024.jpg",
+          "after_paragraph": 184
+        },
+        {
+          "image": "i_025.jpg",
+          "after_paragraph": 199
+        }
+      ],
+      "source_ref": "index_split_056.html +index_split_057.html +index_split_058.html +index_split_059.html +index_split_060.html +index_split_061.html +index_split_062.html +index_split_063.html +index_split_064.html +index_split_065.html"
+    },
+    {
+      "slug": "015",
+      "type": "chapter",
+      "number": "15",
+      "label": "15",
+      "title": "Проигравший",
+      "phase": 2,
+      "volume": null,
+      "words": 4003,
+      "paragraphs": 193,
+      "illustrations": [
+        "i_026.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_026.jpg",
+          "after_paragraph": 148
+        }
+      ],
+      "source_ref": "index_split_066.html +index_split_067.html +index_split_068.html"
+    },
+    {
+      "slug": "016",
+      "type": "chapter",
+      "number": "16",
+      "label": "16",
+      "title": "Сообщники",
+      "phase": 2,
+      "volume": null,
+      "words": 3913,
+      "paragraphs": 206,
+      "illustrations": [
+        "i_027.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_027.jpg",
+          "after_paragraph": 118
+        }
+      ],
+      "source_ref": "index_split_069.html +index_split_070.html +index_split_071.html"
+    },
+    {
+      "slug": "017",
+      "type": "chapter",
+      "number": "17",
+      "label": "17",
+      "title": "Пожалуйста, не прощайте меня",
+      "phase": 2,
+      "volume": null,
+      "words": 3633,
+      "paragraphs": 186,
+      "illustrations": [
+        "i_028.jpg",
+        "i_029.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_028.jpg",
+          "after_paragraph": 79
+        },
+        {
+          "image": "i_029.jpg",
+          "after_paragraph": 184
+        }
+      ],
+      "source_ref": "index_split_072.html +index_split_073.html +index_split_074.html +index_split_075.html"
+    },
+    {
+      "slug": "018",
+      "type": "chapter",
+      "number": "18",
+      "label": "18",
+      "title": "Стократная головоболь",
+      "phase": 2,
+      "volume": null,
+      "words": 3517,
+      "paragraphs": 187,
+      "illustrations": [
+        "i_030.jpg",
+        "i_031.jpg",
+        "i_032.jpg",
+        "i_033.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_030.jpg",
+          "after_paragraph": 49
+        },
+        {
+          "image": "i_031.jpg",
+          "after_paragraph": 72
+        },
+        {
+          "image": "i_032.jpg",
+          "after_paragraph": 171
+        },
+        {
+          "image": "i_033.jpg",
+          "after_paragraph": 183
+        }
+      ],
+      "source_ref": "index_split_076.html +index_split_077.html +index_split_078.html +index_split_079.html +index_split_080.html +index_split_081.html +index_split_082.html +index_split_083.html"
+    },
+    {
+      "slug": "019",
+      "type": "chapter",
+      "number": "19",
+      "label": "19",
+      "title": "Обратное обыгрывание",
+      "phase": 2,
+      "volume": null,
+      "words": 3972,
+      "paragraphs": 195,
+      "illustrations": [
+        "i_034.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_034.jpg",
+          "after_paragraph": 147
+        }
+      ],
+      "source_ref": "index_split_084.html +index_split_085.html +index_split_086.html"
+    },
+    {
+      "slug": "020",
+      "type": "chapter",
+      "number": "20",
+      "label": "20",
+      "title": "Самопожертвование",
+      "phase": 2,
+      "volume": null,
+      "words": 4224,
+      "paragraphs": 239,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_087.html"
+    },
+    {
+      "slug": "021",
+      "type": "chapter",
+      "number": "21",
+      "label": "21",
+      "title": "Валга Кромвель",
+      "phase": 2,
+      "volume": null,
+      "words": 10053,
+      "paragraphs": 448,
+      "illustrations": [
+        "i_035.jpg",
+        "i_036.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_035.jpg",
+          "after_paragraph": 324
+        },
+        {
+          "image": "i_036.jpg",
+          "after_paragraph": 350
+        }
+      ],
+      "source_ref": "index_split_088.html +index_split_089.html +index_split_090.html +index_split_091.html +index_split_092.html"
+    },
+    {
+      "slug": "022",
+      "type": "chapter",
+      "number": "22",
+      "label": "22",
+      "title": "Как закончить битву",
+      "phase": 2,
+      "volume": null,
+      "words": 3623,
+      "paragraphs": 195,
+      "illustrations": [
+        "i_037.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_037.jpg",
+          "after_paragraph": 76
+        }
+      ],
+      "source_ref": "index_split_093.html +index_split_094.html +index_split_095.html"
+    },
+    {
+      "slug": "023",
+      "type": "chapter",
+      "number": "23",
+      "label": "23",
+      "title": "Все актёры в сборе",
+      "phase": 2,
+      "volume": null,
+      "words": 3914,
+      "paragraphs": 207,
+      "illustrations": [
+        "i_038.jpg",
+        "i_039.jpg",
+        "i_040.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_038.jpg",
+          "after_paragraph": 161
+        },
+        {
+          "image": "i_039.jpg",
+          "after_paragraph": 161
+        },
+        {
+          "image": "i_040.jpg",
+          "after_paragraph": 204
+        }
+      ],
+      "source_ref": "index_split_096.html +index_split_097.html +index_split_098.html +index_split_099.html +index_split_100.html"
+    },
+    {
+      "slug": "prologue-01",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Сказ о сне ведьмы",
+      "phase": 3,
+      "volume": null,
+      "words": 1030,
+      "paragraphs": 73,
+      "illustrations": [
+        "i_042.jpg",
+        "i_043.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_042.jpg",
+          "after_paragraph": 25
+        },
+        {
+          "image": "i_043.jpg",
+          "after_paragraph": 71
+        }
+      ],
+      "source_ref": "index_split_105.html +index_split_106.html +index_split_107.html +index_split_108.html"
+    },
+    {
+      "slug": "024",
+      "type": "chapter",
+      "number": "24",
+      "label": "24",
+      "title": "Естественные враги человечества",
+      "phase": 3,
+      "volume": null,
+      "words": 5282,
+      "paragraphs": 244,
+      "illustrations": [
+        "i_044.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_044.jpg",
+          "after_paragraph": 243
+        }
+      ],
+      "source_ref": "index_split_109.html +index_split_110.html"
+    },
+    {
+      "slug": "025",
+      "type": "chapter",
+      "number": "25",
+      "label": "25",
+      "title": "Эмилия была в гневе",
+      "phase": 3,
+      "volume": null,
+      "words": 3235,
+      "paragraphs": 202,
+      "illustrations": [
+        "i_045.jpg",
+        "i_046.jpg",
+        "i_047.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_045.jpg",
+          "after_paragraph": 89
+        },
+        {
+          "image": "i_046.jpg",
+          "after_paragraph": 174
+        },
+        {
+          "image": "i_047.jpg",
+          "after_paragraph": 192
+        }
+      ],
+      "source_ref": "index_split_111.html +index_split_112.html +index_split_113.html +index_split_114.html +index_split_115.html +index_split_116.html +index_split_117.html"
+    },
+    {
+      "slug": "026",
+      "type": "chapter",
+      "number": "26",
+      "label": "26",
+      "title": "Демон меча vs багровая сакура",
+      "phase": 3,
+      "volume": null,
+      "words": 2969,
+      "paragraphs": 145,
+      "illustrations": [
+        "i_048.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_048.jpg",
+          "after_paragraph": 128
+        }
+      ],
+      "source_ref": "index_split_118.html +index_split_119.html +index_split_120.html"
+    },
+    {
+      "slug": "027",
+      "type": "chapter",
+      "number": "27",
+      "label": "27",
+      "title": "Слова ребёнка",
+      "phase": 3,
+      "volume": null,
+      "words": 4623,
+      "paragraphs": 234,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_121.html"
+    },
+    {
+      "slug": "028",
+      "type": "chapter",
+      "number": "28",
+      "label": "28",
+      "title": "Строфа из легенды",
+      "phase": 3,
+      "volume": null,
+      "words": 2563,
+      "paragraphs": 170,
+      "illustrations": [
+        "i_049.jpg",
+        "i_050.jpg",
+        "i_051.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_049.jpg",
+          "after_paragraph": 54
+        },
+        {
+          "image": "i_050.jpg",
+          "after_paragraph": 154
+        },
+        {
+          "image": "i_051.jpg",
+          "after_paragraph": 165
+        }
+      ],
+      "source_ref": "index_split_122.html +index_split_123.html +index_split_124.html +index_split_125.html +index_split_126.html +index_split_127.html +index_split_128.html"
+    },
+    {
+      "slug": "029",
+      "type": "chapter",
+      "number": "29",
+      "label": "29",
+      "title": "Слабое звено",
+      "phase": 3,
+      "volume": null,
+      "words": 1209,
+      "paragraphs": 75,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_129.html"
+    },
+    {
+      "slug": "030",
+      "type": "chapter",
+      "number": "30",
+      "label": "30",
+      "title": "План Б",
+      "phase": 3,
+      "volume": null,
+      "words": 3117,
+      "paragraphs": 168,
+      "illustrations": [
+        "i_052.jpg",
+        "i_053.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_052.jpg",
+          "after_paragraph": 144
+        },
+        {
+          "image": "i_053.jpg",
+          "after_paragraph": 166
+        }
+      ],
+      "source_ref": "index_split_130.html +index_split_131.html +index_split_132.html +index_split_133.html"
+    },
+    {
+      "slug": "031",
+      "type": "chapter",
+      "number": "31",
+      "label": "31",
+      "title": "Работа на все сто",
+      "phase": 3,
+      "volume": null,
+      "words": 3929,
+      "paragraphs": 196,
+      "illustrations": [
+        "i_054.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_054.jpg",
+          "after_paragraph": 195
+        }
+      ],
+      "source_ref": "index_split_134.html +index_split_135.html"
+    },
+    {
+      "slug": "032",
+      "type": "chapter",
+      "number": "32",
+      "label": "32",
+      "title": "Мужчина по имени Клинд",
+      "phase": 3,
+      "volume": null,
+      "words": 4106,
+      "paragraphs": 217,
+      "illustrations": [
+        "i_055.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_055.jpg",
+          "after_paragraph": 216
+        }
+      ],
+      "source_ref": "index_split_136.html +index_split_137.html"
+    },
+    {
+      "slug": "033",
+      "type": "chapter",
+      "number": "33",
+      "label": "33",
+      "title": "Девушка по имени Петра Лейте",
+      "phase": 3,
+      "volume": null,
+      "words": 2644,
+      "paragraphs": 143,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_138.html"
+    },
+    {
+      "slug": "034",
+      "type": "chapter",
+      "number": "34",
+      "label": "34",
+      "title": "Влечение",
+      "phase": 3,
+      "volume": null,
+      "words": 4327,
+      "paragraphs": 204,
+      "illustrations": [
+        "i_056.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_056.jpg",
+          "after_paragraph": 203
+        }
+      ],
+      "source_ref": "index_split_139.html +index_split_140.html"
+    },
+    {
+      "slug": "035",
+      "type": "chapter",
+      "number": "35",
+      "label": "35",
+      "title": "Пробудилась звезда",
+      "phase": 3,
+      "volume": null,
+      "words": 5475,
+      "paragraphs": 316,
+      "illustrations": [
+        "i_057.jpg",
+        "i_058.jpg",
+        "i_059.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_057.jpg",
+          "after_paragraph": 178
+        },
+        {
+          "image": "i_058.jpg",
+          "after_paragraph": 272
+        },
+        {
+          "image": "i_059.jpg",
+          "after_paragraph": 308
+        }
+      ],
+      "source_ref": "index_split_141.html +index_split_142.html +index_split_143.html +index_split_144.html +index_split_145.html +index_split_146.html +index_split_147.html"
+    },
+    {
+      "slug": "036",
+      "type": "chapter",
+      "number": "36",
+      "label": "36",
+      "title": "Тезис",
+      "phase": 3,
+      "volume": null,
+      "words": 4259,
+      "paragraphs": 204,
+      "illustrations": [
+        "i_060.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_060.jpg",
+          "after_paragraph": 25
+        }
+      ],
+      "source_ref": "index_split_148.html +index_split_149.html +index_split_150.html"
+    },
+    {
+      "slug": "prologue-02",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Благословение ведьмы",
+      "phase": 4,
+      "volume": null,
+      "words": 1002,
+      "paragraphs": 79,
+      "illustrations": [
+        "i_063.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_063.jpg",
+          "after_paragraph": 50
+        }
+      ],
+      "source_ref": "index_split_156.html +index_split_157.html +index_split_158.html"
+    },
+    {
+      "slug": "037",
+      "type": "chapter",
+      "number": "37",
+      "label": "37",
+      "title": "Образ мышления",
+      "phase": 4,
+      "volume": null,
+      "words": 3844,
+      "paragraphs": 224,
+      "illustrations": [
+        "i_064.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_064.jpg",
+          "after_paragraph": 168
+        }
+      ],
+      "source_ref": "index_split_159.html +index_split_160.html +index_split_161.html"
+    },
+    {
+      "slug": "038",
+      "type": "chapter",
+      "number": "38",
+      "label": "38",
+      "title": "Сожжённый солнцем",
+      "phase": 4,
+      "volume": null,
+      "words": 4323,
+      "paragraphs": 278,
+      "illustrations": [
+        "i_065.png",
+        "i_066.jpg",
+        "i_067.jpg",
+        "i_068.jpg",
+        "i_069.jpg",
+        "i_070.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_065.png",
+          "after_paragraph": 29
+        },
+        {
+          "image": "i_066.jpg",
+          "after_paragraph": 185
+        },
+        {
+          "image": "i_067.jpg",
+          "after_paragraph": 207
+        },
+        {
+          "image": "i_068.jpg",
+          "after_paragraph": 215
+        },
+        {
+          "image": "i_069.jpg",
+          "after_paragraph": 221
+        },
+        {
+          "image": "i_070.jpg",
+          "after_paragraph": 272
+        }
+      ],
+      "source_ref": "index_split_162.html +index_split_163.html +index_split_164.html +index_split_165.html +index_split_166.html +index_split_167.html +index_split_168.html +index_split_169.html +index_split_170.html +index_split_171.html +index_split_172.html +index_split_173.html"
+    },
+    {
+      "slug": "039",
+      "type": "chapter",
+      "number": "39",
+      "label": "39",
+      "title": "Красная линия",
+      "phase": 4,
+      "volume": null,
+      "words": 3081,
+      "paragraphs": 205,
+      "illustrations": [
+        "i_071.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_071.jpg",
+          "after_paragraph": 144
+        }
+      ],
+      "source_ref": "index_split_174.html +index_split_175.html +index_split_176.html"
+    },
+    {
+      "slug": "040",
+      "type": "chapter",
+      "number": "40",
+      "label": "40",
+      "title": "Вспышка ремнаты",
+      "phase": 4,
+      "volume": null,
+      "words": 3325,
+      "paragraphs": 210,
+      "illustrations": [
+        "i_072.jpg",
+        "i_073.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_072.jpg",
+          "after_paragraph": 39
+        },
+        {
+          "image": "i_073.jpg",
+          "after_paragraph": 105
+        }
+      ],
+      "source_ref": "index_split_177.html +index_split_178.html +index_split_179.html +index_split_180.html +index_split_181.html"
+    },
+    {
+      "slug": "041",
+      "type": "chapter",
+      "number": "41",
+      "label": "41",
+      "title": "Изреки узурпатору",
+      "phase": 4,
+      "volume": null,
+      "words": 2559,
+      "paragraphs": 164,
+      "illustrations": [
+        "i_074.jpg",
+        "i_075.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_074.jpg",
+          "after_paragraph": 160
+        },
+        {
+          "image": "i_075.png",
+          "after_paragraph": 160
+        }
+      ],
+      "source_ref": "index_split_182.html +index_split_183.html +index_split_184.html +index_split_185.html"
+    },
+    {
+      "slug": "042",
+      "type": "chapter",
+      "number": "42",
+      "label": "42",
+      "title": "Отдавая всего себя",
+      "phase": 4,
+      "volume": null,
+      "words": 3951,
+      "paragraphs": 295,
+      "illustrations": [
+        "i_076.jpg",
+        "i_077.png",
+        "i_078.png",
+        "i_079.png",
+        "i_080.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_076.jpg",
+          "after_paragraph": 61
+        },
+        {
+          "image": "i_077.png",
+          "after_paragraph": 108
+        },
+        {
+          "image": "i_078.png",
+          "after_paragraph": 254
+        },
+        {
+          "image": "i_079.png",
+          "after_paragraph": 259
+        },
+        {
+          "image": "i_080.jpg",
+          "after_paragraph": 290
+        }
+      ],
+      "source_ref": "index_split_186.html +index_split_187.html +index_split_188.html +index_split_189.html +index_split_190.html +index_split_191.html +index_split_192.html +index_split_193.html +index_split_194.html +index_split_195.html"
+    },
+    {
+      "slug": "043",
+      "type": "chapter",
+      "number": "43",
+      "label": "43",
+      "title": "Истинное имя",
+      "phase": 4,
+      "volume": null,
+      "words": 2717,
+      "paragraphs": 171,
+      "illustrations": [
+        "i_081.jpg",
+        "i_082.jpg",
+        "i_083.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_081.jpg",
+          "after_paragraph": 74
+        },
+        {
+          "image": "i_082.jpg",
+          "after_paragraph": 106
+        },
+        {
+          "image": "i_083.png",
+          "after_paragraph": 168
+        }
+      ],
+      "source_ref": "index_split_196.html +index_split_197.html +index_split_198.html +index_split_199.html +index_split_200.html +index_split_201.html"
+    },
+    {
+      "slug": "044",
+      "type": "chapter",
+      "number": "44",
+      "label": "44",
+      "title": "Подковёрный сговор",
+      "phase": 4,
+      "volume": null,
+      "words": 3059,
+      "paragraphs": 208,
+      "illustrations": [
+        "i_084.png",
+        "i_085.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_084.png",
+          "after_paragraph": 84
+        },
+        {
+          "image": "i_085.jpg",
+          "after_paragraph": 206
+        }
+      ],
+      "source_ref": "index_split_202.html +index_split_203.html +index_split_204.html +index_split_205.html"
+    },
+    {
+      "slug": "045",
+      "type": "chapter",
+      "number": "45",
+      "label": "45",
+      "title": "Столкновение аномалий",
+      "phase": 4,
+      "volume": null,
+      "words": 6227,
+      "paragraphs": 422,
+      "illustrations": [
+        "i_086.jpg",
+        "i_087.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_086.jpg",
+          "after_paragraph": 85
+        },
+        {
+          "image": "i_087.jpg",
+          "after_paragraph": 123
+        }
+      ],
+      "source_ref": "index_split_206.html +index_split_207.html +index_split_208.html +index_split_209.html +index_split_210.html"
+    },
+    {
+      "slug": "046",
+      "type": "chapter",
+      "number": "46",
+      "label": "46",
+      "title": "Ведьма уныния",
+      "phase": 4,
+      "volume": null,
+      "words": 5406,
+      "paragraphs": 281,
+      "illustrations": [
+        "i_088.jpg",
+        "i_089.png",
+        "i_090.png",
+        "i_091.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_088.jpg",
+          "after_paragraph": 113
+        },
+        {
+          "image": "i_089.png",
+          "after_paragraph": 244
+        },
+        {
+          "image": "i_090.png",
+          "after_paragraph": 252
+        },
+        {
+          "image": "i_091.jpg",
+          "after_paragraph": 269
+        }
+      ],
+      "source_ref": "index_split_211.html +index_split_212.html +index_split_213.html +index_split_214.html +index_split_215.html +index_split_216.html +index_split_217.html +index_split_218.html +index_split_219.html"
+    },
+    {
+      "slug": "047",
+      "type": "chapter",
+      "number": "47",
+      "label": "47",
+      "title": "Голос",
+      "phase": 4,
+      "volume": null,
+      "words": 3049,
+      "paragraphs": 144,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_220.html"
+    },
+    {
+      "slug": "048",
+      "type": "chapter",
+      "number": "48",
+      "label": "48",
+      "title": "Высшее существо",
+      "phase": 4,
+      "volume": null,
+      "words": 4830,
+      "paragraphs": 191,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_221.html"
+    },
+    {
+      "slug": "049",
+      "type": "chapter",
+      "number": "49",
+      "label": "49",
+      "title": "Маг",
+      "phase": 4,
+      "volume": null,
+      "words": 4120,
+      "paragraphs": 145,
+      "illustrations": [
+        "i_092.jpg",
+        "i_093.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_092.jpg",
+          "after_paragraph": 15
+        },
+        {
+          "image": "i_093.jpg",
+          "after_paragraph": 138
+        }
+      ],
+      "source_ref": "index_split_222.html +index_split_223.html +index_split_224.html +index_split_225.html +index_split_226.html"
+    },
+    {
+      "slug": "050",
+      "type": "chapter",
+      "number": "50",
+      "label": "50",
+      "title": "Ледовое побоище",
+      "phase": 5,
+      "volume": null,
+      "words": 3881,
+      "paragraphs": 184,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_231.html"
+    },
+    {
+      "slug": "051",
+      "type": "chapter",
+      "number": "51",
+      "label": "51",
+      "title": "Яэ Тэндзэн",
+      "phase": 5,
+      "volume": null,
+      "words": 6266,
+      "paragraphs": 179,
+      "illustrations": [
+        "i_095.jpg",
+        "i_096.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_095.jpg",
+          "after_paragraph": 54
+        },
+        {
+          "image": "i_096.png",
+          "after_paragraph": 177
+        }
+      ],
+      "source_ref": "index_split_232.html +index_split_233.html +index_split_234.html +index_split_235.html"
+    },
+    {
+      "slug": "052",
+      "type": "chapter",
+      "number": "52",
+      "label": "52",
+      "title": "Альдебаран I",
+      "phase": 5,
+      "volume": null,
+      "words": 4328,
+      "paragraphs": 144,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_236.html"
+    },
+    {
+      "slug": "053",
+      "type": "chapter",
+      "number": "53",
+      "label": "53",
+      "title": "Альдебаран II",
+      "phase": 5,
+      "volume": null,
+      "words": 4883,
+      "paragraphs": 159,
+      "illustrations": [
+        "i_097.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_097.jpg",
+          "after_paragraph": 158
+        }
+      ],
+      "source_ref": "index_split_237.html +index_split_238.html"
+    },
+    {
+      "slug": "054",
+      "type": "chapter",
+      "number": "54",
+      "label": "54",
+      "title": "«Ведьмак» против «Ведьмы»",
+      "phase": 5,
+      "volume": null,
+      "words": 5209,
+      "paragraphs": 228,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_239.html"
+    },
+    {
+      "slug": "055",
+      "type": "chapter",
+      "number": "55",
+      "label": "54",
+      "title": "Агрессор владений",
+      "phase": 5,
+      "volume": null,
+      "words": 4104,
+      "paragraphs": 180,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_240.html"
+    },
+    {
+      "slug": "056",
+      "type": "chapter",
+      "number": "56",
+      "label": "55",
+      "title": "Петра Лейте",
+      "phase": 5,
+      "volume": null,
+      "words": 8665,
+      "paragraphs": 394,
+      "illustrations": [
+        "i_098.jpg",
+        "i_099.jpg",
+        "i_100.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_098.jpg",
+          "after_paragraph": 181
+        },
+        {
+          "image": "i_099.jpg",
+          "after_paragraph": 191
+        },
+        {
+          "image": "i_100.jpg",
+          "after_paragraph": 297
+        }
+      ],
+      "source_ref": "index_split_241.html +index_split_242.html +index_split_243.html +index_split_244.html +index_split_245.html +index_split_246.html +index_split_247.html"
+    },
+    {
+      "slug": "057",
+      "type": "chapter",
+      "number": "57",
+      "label": "56",
+      "title": "Последняя служба",
+      "phase": 5,
+      "volume": null,
+      "words": 3657,
+      "paragraphs": 147,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_248.html"
+    },
+    {
+      "slug": "058",
+      "type": "chapter",
+      "number": "58",
+      "label": "57",
+      "title": "Лязг цепей",
+      "phase": 5,
+      "volume": null,
+      "words": 4261,
+      "paragraphs": 223,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_249.html"
+    },
+    {
+      "slug": "059",
+      "type": "chapter",
+      "number": "59",
+      "label": "59",
+      "title": "Не хорошо",
+      "phase": 5,
+      "volume": null,
+      "words": 3341,
+      "paragraphs": 183,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_250.html"
+    },
+    {
+      "slug": "interlude-01",
+      "type": "interlude",
+      "number": null,
+      "label": "Интерлюдия",
+      "title": "Крик любви",
+      "phase": 5,
+      "volume": null,
+      "words": 1315,
+      "paragraphs": 57,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_251.html"
+    },
+    {
+      "slug": "epilogue-00",
+      "type": "epilogue",
+      "number": null,
+      "label": "Финал",
+      "title": "REWEAVE",
+      "phase": 5,
+      "volume": null,
+      "words": 3988,
+      "paragraphs": 184,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_252.html"
+    },
+    {
+      "slug": "extra-00",
+      "type": "extra",
+      "number": null,
+      "label": "Послесловие",
+      "title": "Таппэя",
+      "phase": 5,
+      "volume": null,
+      "words": 452,
+      "paragraphs": 29,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_253.html +index_split_254.html +index_split_255.html +index_split_256.html +index_split_257.html +index_split_258.html +index_split_259.html +index_split_260.html +index_split_261.html +index_split_262.html +index_split_263.html +index_split_264.html +index_split_265.html +index_split_266.html +index_split_267.html +index_split_268.html +index_split_269.html +index_split_270.html +index_split_271.html +index_split_272.html +index_split_273.html +index_split_274.html +index_split_275.html"
+    }
+  ]
+}

@@ -1,0 +1,596 @@
+[
+  {
+    "arc": "1",
+    "slug": "arc-01",
+    "title": "Хаотичный первый день",
+    "aka": [
+      "День в столице"
+    ],
+    "theme": "amethyst",
+    "theme_light": "lavender",
+    "volumes": "1",
+    "structure": "ln",
+    "expected_total": null
+  },
+  {
+    "arc": "2",
+    "slug": "arc-02",
+    "title": "Бурная неделя",
+    "aka": [
+      "Суматошная неделя",
+      "Неделя в особняке"
+    ],
+    "theme": "midnight",
+    "theme_light": "parchment",
+    "volumes": "2–3",
+    "structure": "ln",
+    "expected_total": null
+  },
+  {
+    "arc": "3",
+    "slug": "arc-03",
+    "title": "Возвращение в столицу",
+    "aka": [
+      "Правда о Нуле"
+    ],
+    "theme": "lagoon",
+    "theme_light": "lagoon-light",
+    "volumes": "4–9",
+    "structure": "ln",
+    "expected_total": null
+  },
+  {
+    "arc": "4",
+    "slug": "arc-04",
+    "title": "Вечный контракт",
+    "theme": "conifer",
+    "theme_light": "mint",
+    "volumes": "10–15",
+    "structure": "wn",
+    "expected_total": 136,
+    "expected_chapters": 136,
+    "nonstandard": [
+      "2.5",
+      "123 (A)",
+      "123 (B)"
+    ],
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            23
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            24,
+            51
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            52,
+            71
+          ],
+          [
+            72,
+            79
+          ]
+        ]
+      },
+      {
+        "n": 4,
+        "ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            80,
+            97
+          ]
+        ]
+      },
+      {
+        "n": 5,
+        "ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            98,
+            117
+          ]
+        ]
+      },
+      {
+        "n": 6,
+        "ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            118,
+            136
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "arc": "5",
+    "slug": "arc-05",
+    "title": "Звёзды, что творят историю",
+    "theme": "ash",
+    "theme_light": "mist",
+    "volumes": "16–20",
+    "structure": "wn",
+    "expected_total": 81,
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            19
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            20,
+            36
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            37,
+            48
+          ]
+        ]
+      },
+      {
+        "n": 4,
+        "ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            49,
+            60
+          ]
+        ]
+      },
+      {
+        "n": 5,
+        "ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            61,
+            81
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "arc": "6",
+    "slug": "arc-06",
+    "title": "Коридор воспоминаний",
+    "theme": "wormwood",
+    "theme_light": "meadow",
+    "volumes": "21–25",
+    "structure": "wn",
+    "expected_total": 90,
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            18
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            19,
+            33
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            34,
+            54
+          ]
+        ]
+      },
+      {
+        "n": 4,
+        "ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            55,
+            70
+          ]
+        ]
+      },
+      {
+        "n": 5,
+        "ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            71,
+            90
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "arc": "7",
+    "slug": "arc-07",
+    "title": "Страна волков",
+    "theme": "frost",
+    "theme_light": "crust",
+    "volumes": "26–33",
+    "structure": "wn",
+    "expected_total": 116,
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            13,
+            24
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            25,
+            39
+          ]
+        ]
+      },
+      {
+        "n": 4,
+        "ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            40,
+            54
+          ]
+        ]
+      },
+      {
+        "n": 5,
+        "ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            55,
+            60
+          ]
+        ]
+      },
+      {
+        "n": 6,
+        "ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            61,
+            75
+          ]
+        ]
+      },
+      {
+        "n": 7,
+        "ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            76,
+            96
+          ]
+        ]
+      },
+      {
+        "n": 8,
+        "ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            97,
+            110
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "arc": "8",
+    "slug": "arc-08",
+    "title": "Винсент Волакия",
+    "theme": "sakura",
+    "theme_light": "blush",
+    "volumes": "34–38",
+    "structure": "wn",
+    "expected_total": 77,
+    "expected_chapters": 74,
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            15
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            16,
+            28
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            29,
+            43
+          ]
+        ]
+      },
+      {
+        "n": 4,
+        "ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            44,
+            60
+          ]
+        ]
+      },
+      {
+        "n": 5,
+        "ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            61,
+            74
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "arc": "9",
+    "slug": "arc-09",
+    "title": "Свет безымянной звезды",
+    "theme": "ember",
+    "theme_light": "dawn",
+    "volumes": "39–43",
+    "structure": "wn",
+    "expected_total": 78,
+    "expected_chapters": 59,
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            13
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            14,
+            23
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            24,
+            36
+          ]
+        ]
+      },
+      {
+        "n": 4,
+        "ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            37,
+            49
+          ]
+        ]
+      },
+      {
+        "n": 5,
+        "ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            50,
+            59
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "arc": "10",
+    "slug": "arc-10",
+    "title": "Страна Короля Льва",
+    "theme": "nocturne",
+    "theme_light": "sepia",
+    "volumes": "44–…",
+    "structure": "wn",
+    "status": "онгоинг",
+    "expected_total": 35,
+    "phases": [
+      {
+        "n": 1,
+        "ranges": [
+          [
+            1,
+            12
+          ]
+        ]
+      },
+      {
+        "n": 2,
+        "ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            13,
+            24
+          ]
+        ]
+      },
+      {
+        "n": 3,
+        "ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            25,
+            35
+          ]
+        ]
+      }
+    ]
+  }
+]

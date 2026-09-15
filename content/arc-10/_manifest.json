@@ -1,0 +1,843 @@
+{
+  "arc": 10,
+  "source": [
+    "Арка_10,_главы_1_24,_прологи,_интерлюдии.epub",
+    "10_10-33.epub",
+    "11_10-34.epub",
+    "12_10-35.epub",
+    "1_10-25.epub",
+    "2_10-26.epub",
+    "3_10-27.epub",
+    "4_10-28.epub",
+    "5_10-interlude3.epub",
+    "6_10-29.epub",
+    "7_10-30.epub",
+    "8_10-31.epub",
+    "9_10-32.epub"
+  ],
+  "toc_labels": [
+    "АРКА 10 — ПРОЛОГ",
+    "АРКА 10 — ГЛАВА 13",
+    "АРКА 10 — ГЛАВА 14",
+    "АРКА 10 — ГЛАВА 15",
+    "АРКА 10 — ГЛАВА 16",
+    "АРКА 10 — ГЛАВА 17",
+    "АРКА 10 — ГЛАВА 18",
+    "АРКА 10 — ГЛАВА 19",
+    "АРКА 10 — ГЛАВА 20",
+    "АРКА 10 — ГЛАВА 21",
+    "АРКА 10 — ГЛАВА 22",
+    "АРКА 10 — ГЛАВА 23",
+    "АРКА 10 — ГЛАВА 24",
+    "АРКА 10 — ИНТЕРЛЮДИЯ",
+    "ПОСЛЕСЛОВИЕ"
+  ],
+  "orphan_images": [
+    "i_034.jpg",
+    "i_035.jpg",
+    "i_036.jpg",
+    "i_037.jpg"
+  ],
+  "images_total": 38,
+  "generator": "epub_to_md.py",
+  "chapters": [
+    {
+      "slug": "prologue-00",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Роковая ночь",
+      "phase": 1,
+      "volume": null,
+      "words": 791,
+      "paragraphs": 40,
+      "illustrations": [
+        "i_001.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 39
+        }
+      ],
+      "source_ref": "index_split_003.html +index_split_004.html"
+    },
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Друзья",
+      "phase": 1,
+      "volume": null,
+      "words": 4433,
+      "paragraphs": 197,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_005.html"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Таинство церкви",
+      "phase": 1,
+      "volume": null,
+      "words": 4271,
+      "paragraphs": 194,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_006.html"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Проблеск света",
+      "phase": 1,
+      "volume": null,
+      "words": 4411,
+      "paragraphs": 203,
+      "illustrations": [
+        "i_002.jpg",
+        "i_003.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 32
+        },
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 201
+        }
+      ],
+      "source_ref": "index_split_007.html +index_split_008.html +index_split_009.html +index_split_010.html"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Ю а вэлкам",
+      "phase": 1,
+      "volume": null,
+      "words": 3458,
+      "paragraphs": 147,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_011.html"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Итог небольшого крюка",
+      "phase": 1,
+      "volume": null,
+      "words": 3350,
+      "paragraphs": 159,
+      "illustrations": [
+        "i_004.jpg",
+        "i_005.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_004.jpg",
+          "after_paragraph": 157
+        },
+        {
+          "image": "i_005.jpg",
+          "after_paragraph": 157
+        }
+      ],
+      "source_ref": "index_split_012.html +index_split_013.html +index_split_014.html"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "6",
+      "title": "Белое каление",
+      "phase": 1,
+      "volume": null,
+      "words": 4001,
+      "paragraphs": 193,
+      "illustrations": [
+        "i_006.jpg",
+        "i_007.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_006.jpg",
+          "after_paragraph": 12
+        },
+        {
+          "image": "i_007.jpg",
+          "after_paragraph": 186
+        }
+      ],
+      "source_ref": "index_split_015.html +index_split_016.html +index_split_017.html +index_split_018.html +index_split_019.html"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "7",
+      "title": "Май фрэнд",
+      "phase": 1,
+      "volume": null,
+      "words": 5304,
+      "paragraphs": 265,
+      "illustrations": [
+        "i_008.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.jpg",
+          "after_paragraph": 181
+        }
+      ],
+      "source_ref": "index_split_020.html +index_split_021.html +index_split_022.html"
+    },
+    {
+      "slug": "interlude-00",
+      "type": "interlude",
+      "number": null,
+      "label": "Интерлюдия",
+      "title": "Почему?",
+      "phase": 1,
+      "volume": null,
+      "words": 2800,
+      "paragraphs": 139,
+      "illustrations": [
+        "i_009.jpg",
+        "i_010.jpg",
+        "i_011.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_009.jpg",
+          "after_paragraph": 113
+        },
+        {
+          "image": "i_010.jpg",
+          "after_paragraph": 117
+        },
+        {
+          "image": "i_011.jpg",
+          "after_paragraph": 136
+        }
+      ],
+      "source_ref": "index_split_023.html"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "8",
+      "title": "Итог выбора",
+      "phase": 1,
+      "volume": null,
+      "words": 4466,
+      "paragraphs": 211,
+      "illustrations": [
+        "i_012.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_012.jpg",
+          "after_paragraph": 82
+        }
+      ],
+      "source_ref": "index_split_024.html +index_split_025.html +index_split_026.html"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "9",
+      "title": "Нытик",
+      "phase": 1,
+      "volume": null,
+      "words": 4888,
+      "paragraphs": 245,
+      "illustrations": [
+        "i_013.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_013.jpg",
+          "after_paragraph": 244
+        }
+      ],
+      "source_ref": "index_split_027.html +index_split_028.html"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "10",
+      "title": "Недоверие",
+      "phase": 1,
+      "volume": null,
+      "words": 5638,
+      "paragraphs": 265,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_029.html"
+    },
+    {
+      "slug": "011",
+      "type": "chapter",
+      "number": "11",
+      "label": "11",
+      "title": "Почему сияет драконий жемчуг",
+      "phase": 1,
+      "volume": null,
+      "words": 4508,
+      "paragraphs": 201,
+      "illustrations": [
+        "i_014.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 200
+        }
+      ],
+      "source_ref": "index_split_030.html +index_split_031.html"
+    },
+    {
+      "slug": "012",
+      "type": "chapter",
+      "number": "12",
+      "label": "12",
+      "title": "Стон",
+      "phase": 1,
+      "volume": null,
+      "words": 2943,
+      "paragraphs": 118,
+      "illustrations": [
+        "i_015.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_015.jpg",
+          "after_paragraph": 117
+        }
+      ],
+      "source_ref": "index_split_032.html +index_split_033.html"
+    },
+    {
+      "slug": "extra-00",
+      "type": "extra",
+      "number": null,
+      "label": "Послесловие",
+      "title": "Добро пожаловать в послесловие! С вами Таппэй Нагацуки! Он же Серый Кот!",
+      "phase": 1,
+      "volume": null,
+      "words": 503,
+      "paragraphs": 20,
+      "illustrations": [
+        "i_016.jpg",
+        "i_017.jpg",
+        "i_018.jpg",
+        "i_019.png",
+        "i_020.png",
+        "i_021.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_016.jpg",
+          "after_paragraph": 14
+        },
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 14
+        },
+        {
+          "image": "i_018.jpg",
+          "after_paragraph": 14
+        },
+        {
+          "image": "i_019.png",
+          "after_paragraph": 14
+        },
+        {
+          "image": "i_020.png",
+          "after_paragraph": 14
+        },
+        {
+          "image": "i_021.png",
+          "after_paragraph": 14
+        }
+      ],
+      "source_ref": "index_split_034.html +index_split_035.html +index_split_036.html +index_split_037.html +index_split_038.html +index_split_039.html +index_split_040.html"
+    },
+    {
+      "slug": "prologue-01",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Белое и черное",
+      "phase": 2,
+      "volume": null,
+      "words": 896,
+      "paragraphs": 33,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_041.html"
+    },
+    {
+      "slug": "013",
+      "type": "chapter",
+      "number": "13",
+      "label": "13",
+      "title": "Не запятнать кровью",
+      "phase": 2,
+      "volume": null,
+      "words": 3839,
+      "paragraphs": 187,
+      "illustrations": [
+        "i_022.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_022.jpg",
+          "after_paragraph": 186
+        }
+      ],
+      "source_ref": "index_split_042.html +index_split_043.html"
+    },
+    {
+      "slug": "014",
+      "type": "chapter",
+      "number": "14",
+      "label": "14",
+      "title": "Мятежник",
+      "phase": 2,
+      "volume": null,
+      "words": 3476,
+      "paragraphs": 156,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_044.html"
+    },
+    {
+      "slug": "015",
+      "type": "chapter",
+      "number": "15",
+      "label": "15",
+      "title": "С тобой хоть в ад",
+      "phase": 2,
+      "volume": null,
+      "words": 3996,
+      "paragraphs": 183,
+      "illustrations": [
+        "i_023.jpg",
+        "i_024.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_023.jpg",
+          "after_paragraph": 37
+        },
+        {
+          "image": "i_024.jpg",
+          "after_paragraph": 181
+        }
+      ],
+      "source_ref": "index_split_045.html +index_split_046.html +index_split_047.html +index_split_048.html"
+    },
+    {
+      "slug": "016",
+      "type": "chapter",
+      "number": "16",
+      "label": "16",
+      "title": "Удар исподтишка",
+      "phase": 2,
+      "volume": null,
+      "words": 4881,
+      "paragraphs": 251,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_049.html"
+    },
+    {
+      "slug": "017",
+      "type": "chapter",
+      "number": "17",
+      "label": "17",
+      "title": "Сгорите же дотла",
+      "phase": 2,
+      "volume": null,
+      "words": 5177,
+      "paragraphs": 280,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_050.html"
+    },
+    {
+      "slug": "018",
+      "type": "chapter",
+      "number": "18",
+      "label": "18",
+      "title": "Чудесный сон",
+      "phase": 2,
+      "volume": null,
+      "words": 4960,
+      "paragraphs": 239,
+      "illustrations": [
+        "i_025.jpg",
+        "i_026.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_025.jpg",
+          "after_paragraph": 161
+        },
+        {
+          "image": "i_026.jpg",
+          "after_paragraph": 237
+        }
+      ],
+      "source_ref": "index_split_051.html +index_split_052.html +index_split_053.html +index_split_054.html"
+    },
+    {
+      "slug": "019",
+      "type": "chapter",
+      "number": "19",
+      "label": "19",
+      "title": "Враг не по зубам",
+      "phase": 2,
+      "volume": null,
+      "words": 4196,
+      "paragraphs": 222,
+      "illustrations": [
+        "i_027.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_027.jpg",
+          "after_paragraph": 221
+        }
+      ],
+      "source_ref": "index_split_055.html +index_split_056.html"
+    },
+    {
+      "slug": "020",
+      "type": "chapter",
+      "number": "20",
+      "label": "20",
+      "title": "Овечка в собачьем зеркале",
+      "phase": 2,
+      "volume": null,
+      "words": 3996,
+      "paragraphs": 237,
+      "illustrations": [
+        "i_028.jpg",
+        "i_029.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_028.jpg",
+          "after_paragraph": 137
+        },
+        {
+          "image": "i_029.jpg",
+          "after_paragraph": 235
+        }
+      ],
+      "source_ref": "index_split_057.html +index_split_058.html +index_split_059.html +index_split_060.html"
+    },
+    {
+      "slug": "021",
+      "type": "chapter",
+      "number": "21",
+      "label": "21",
+      "title": "Шесть языков",
+      "phase": 2,
+      "volume": null,
+      "words": 4309,
+      "paragraphs": 212,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_061.html"
+    },
+    {
+      "slug": "022",
+      "type": "chapter",
+      "number": "22",
+      "label": "22",
+      "title": "Задел и отказ",
+      "phase": 2,
+      "volume": null,
+      "words": 5670,
+      "paragraphs": 270,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_062.html"
+    },
+    {
+      "slug": "023",
+      "type": "chapter",
+      "number": "23",
+      "label": "23",
+      "title": "Как найти лучший выбор",
+      "phase": 2,
+      "volume": null,
+      "words": 4266,
+      "paragraphs": 262,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index_split_063.html"
+    },
+    {
+      "slug": "024",
+      "type": "chapter",
+      "number": "24",
+      "label": "24",
+      "title": "Лучший человек",
+      "phase": 2,
+      "volume": null,
+      "words": 4597,
+      "paragraphs": 279,
+      "illustrations": [
+        "i_030.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_030.jpg",
+          "after_paragraph": 170
+        }
+      ],
+      "source_ref": "index_split_064.html +index_split_065.html +index_split_066.html"
+    },
+    {
+      "slug": "interlude-01",
+      "type": "interlude",
+      "number": null,
+      "label": "Интерлюдия",
+      "title": "Золото и Золото",
+      "phase": 2,
+      "volume": null,
+      "words": 880,
+      "paragraphs": 41,
+      "illustrations": [
+        "i_031.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_031.jpg",
+          "after_paragraph": 40
+        }
+      ],
+      "source_ref": "index_split_067.html +index_split_068.html"
+    },
+    {
+      "slug": "extra-01",
+      "type": "extra",
+      "number": null,
+      "label": "Послесловие",
+      "title": "",
+      "phase": 2,
+      "volume": null,
+      "words": 523,
+      "paragraphs": 23,
+      "illustrations": [
+        "i_032.png",
+        "i_033.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_032.png",
+          "after_paragraph": 16
+        },
+        {
+          "image": "i_033.png",
+          "after_paragraph": 16
+        }
+      ],
+      "source_ref": "index_split_069.html +index_split_070.html +index_split_071.html +index_split_072.html +index_split_073.html +index_split_074.html +index_split_075.html"
+    },
+    {
+      "slug": "025",
+      "type": "chapter",
+      "number": "25",
+      "label": "25",
+      "title": "Так хочу любить твою улыбку",
+      "phase": 3,
+      "volume": null,
+      "words": 2995,
+      "paragraphs": 141,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "026",
+      "type": "chapter",
+      "number": "26",
+      "label": "26",
+      "title": "Слова поздравления",
+      "phase": 3,
+      "volume": null,
+      "words": 6589,
+      "paragraphs": 328,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "027",
+      "type": "chapter",
+      "number": "27",
+      "label": "27",
+      "title": "Солнце, что не взойдет на западе",
+      "phase": 3,
+      "volume": null,
+      "words": 4476,
+      "paragraphs": 242,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "028",
+      "type": "chapter",
+      "number": "28",
+      "label": "28",
+      "title": "И к чему это все теперь?",
+      "phase": 3,
+      "volume": null,
+      "words": 4299,
+      "paragraphs": 275,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "interlude-02",
+      "type": "interlude",
+      "number": null,
+      "label": "Интерлюдия",
+      "title": "Братья и сестры",
+      "phase": 3,
+      "volume": null,
+      "words": 2857,
+      "paragraphs": 129,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "029",
+      "type": "chapter",
+      "number": "29",
+      "label": "29",
+      "title": "Миссия серой звезды",
+      "phase": 3,
+      "volume": null,
+      "words": 4454,
+      "paragraphs": 199,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "030",
+      "type": "chapter",
+      "number": "30",
+      "label": "30",
+      "title": "Шариковая ручка",
+      "phase": 3,
+      "volume": null,
+      "words": 4118,
+      "paragraphs": 204,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "031",
+      "type": "chapter",
+      "number": "31",
+      "label": "31",
+      "title": "С возвращением. Я дома",
+      "phase": 3,
+      "volume": null,
+      "words": 4362,
+      "paragraphs": 222,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "032",
+      "type": "chapter",
+      "number": "32",
+      "label": "32",
+      "title": "А-а-а-а-а …",
+      "phase": 3,
+      "volume": null,
+      "words": 4311,
+      "paragraphs": 254,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "033",
+      "type": "chapter",
+      "number": "33",
+      "label": "33",
+      "title": "Тройной аксель в суматохе, или бесконечный режим полоскания",
+      "phase": 3,
+      "volume": null,
+      "words": 4238,
+      "paragraphs": 272,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "034",
+      "type": "chapter",
+      "number": "34",
+      "label": "34",
+      "title": "В решающий миг",
+      "phase": 3,
+      "volume": null,
+      "words": 3885,
+      "paragraphs": 198,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
+      "slug": "035",
+      "type": "chapter",
+      "number": "35",
+      "label": "35",
+      "title": "Белая овечка",
+      "phase": 3,
+      "volume": null,
+      "words": 4067,
+      "paragraphs": 211,
+      "illustrations": [
+        "i_038.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_038.jpg",
+          "after_paragraph": 9
+        }
+      ],
+      "source_ref": "index_split_000.html +index_split_001.html +index_split_002.html"
+    }
+  ]
+}

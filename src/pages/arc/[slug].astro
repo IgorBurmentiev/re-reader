@@ -1,0 +1,645 @@
+---
+import { getCollection } from "astro:content";
+import { Image, getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import { ARCS, arcBySlug, ARC_JP } from "../../lib/arcs";
+import { heroFor } from "../../lib/covers";
+import type { ArcUnlockMeta, ChapterMeta } from "../../lib/unlock";
+
+export async function getStaticPaths() {
+  return ARCS.map((a) => ({ params: { slug: a.slug } }));
+}
+
+const { slug } = Astro.params;
+const arc = arcBySlug(slug!)!;
+
+const entries = (await getCollection("chapters"))
+  .filter((e) => e.id.startsWith(`${arc.slug}/`))
+  .sort((a, b) => (a.data.order_release ?? 0) - (b.data.order_release ?? 0));
+
+// синопсис (raw markdown рядом с главами)
+const synFiles = import.meta.glob<string>("/content/arc-*/_synopsis.md", {
+  query: "?raw",
+  import: "default",
+});
+const synKey = Object.keys(synFiles).find((k) => k.includes(`/${arc.slug}/`));
+const synopsis = synKey ? (await synFiles[synKey]()).trim() : "";
+
+// все иллюстрации арки — без обрезки: галерея показывает строку, кнопка «показать все»
+// раскрывает всё (хоть 150 штук).
+const illoFiles = import.meta.glob<{ default: ImageMetadata }>(
+  "/content/arc-*/images/i_*.{jpg,jpeg,png,webp}",
+  { eager: true },
+);
+const gallery = Object.entries(illoFiles)
+  .filter(([k]) => k.includes(`/${arc.slug}/images/`))
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, m]) => m.default);
+// полноразмерный вариант для лайтбокса (в ленте — мелкие превью, на весь экран
+// нужен нормальный размер, а не превью-вариант).
+const galleryFull = await Promise.all(
+  gallery.map((g) =>
+    getImage({ src: g, width: Math.min(g.width, 2000), format: "webp" }),
+  ),
+);
+
+// порядок глав внутри тома/фазы — строго по order_release (порядку выхода).
+// Никакой пересортировки по типу: пролог арки 8 «Альдебаран» намеренно идёт
+// последним, послесловия — в конце своего тома, и т.п.
+const groupBy: "volume" | "phase" = arc.structure === "ln" ? "volume" : "phase";
+const groups = new Map<string, typeof entries>();
+for (const e of entries) {
+  const key = String(e.data[groupBy] ?? "—");
+  if (!groups.has(key)) groups.set(key, []);
+  groups.get(key)!.push(e);
+}
+for (const list of groups.values())
+  list.sort((a, b) => (a.data.order_release ?? 0) - (b.data.order_release ?? 0));
+
+const kindLabel: Record<string, string> = {
+  prologue: "Пролог", epilogue: "Эпилог", interlude: "Интерлюдия",
+  side: "Побочная история", if: "IF-история", extra: "Бонус",
+};
+// слово-ярлык для строки: если в источнике осмысленное слово («Финал», «Конец»,
+// «Послесловие») — берём его, иначе — по типу.
+const kindWord = (t: string, label?: string) =>
+  label && !/^\d/.test(label) && label !== "Интерлюдия" && label !== "Пролог"
+    ? label
+    : kindLabel[t] || t;
+const chapterCount = entries.filter((e) => e.data.type === "chapter").length;
+const hero = heroFor(arc.slug);
+
+// данные для проверки новых открытий в «Дополнительно» (тот же тост, что и
+// на главной/на /extra) — тут нужны ВСЕ арки, не только текущая
+const allChapters = await getCollection("chapters");
+const chapterMeta: Record<string, ChapterMeta> = {};
+for (const c of allChapters) {
+  if (c.data.type !== "chapter") continue;
+  chapterMeta[c.id] = { arc: c.data.arc, number: c.data.number, volume: c.data.volume };
+}
+const arcsMeta: Record<string, ArcUnlockMeta> = {};
+for (const a of ARCS) {
+  arcsMeta[a.arc] = { structure: a.structure, volumes: a.volumes, phases: a.phases ?? [] };
+}
+---
+
+<Base title={`Арка ${arc.arc}. ${arc.title}`} theme={arc.theme} backHref="/" backLabel="все арки">
+  <div class="top">
+    {hero && <Image class="bg" src={hero} alt="" widths={[900, 1600, 2200]} sizes="100vw" loading="eager" />}
+    <div class="grad"></div>
+    <div class="in">
+      <div class="jp" lang="ja">{ARC_JP[arc.arc]?.jp ?? "零"}</div>
+      {ARC_JP[arc.arc]?.romaji && <div class="romaji">{ARC_JP[arc.arc].romaji}</div>}
+      <p class="eyebrow">Re:Zero — жизнь с нуля в альтернативном мире</p>
+      <h1>Арка {arc.arc}</h1>
+      <p class="atitle">«{arc.title}»</p>
+      <p class="stat">
+        тома {arc.volumes} · {chapterCount} глав{arc.phases?.length ? ` · ${arc.phases.length} фаз` : ""}
+        {arc.status ? ` · ${arc.status}` : ""}
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    {
+      synopsis && (
+        <div class="syn" tabindex="0">
+          <span class="lbl">Об арке · наведи, чтобы прочесть</span>
+          <div class="syn-body">
+            {synopsis.split(/\n\s*\n/).map((p) => (
+              <p>{p}</p>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    {
+      gallery.length > 0 && (
+        <>
+          <div class="bar">
+            <h2>Иллюстрации арки</h2>
+            <span class="gbtns">
+              <button class="chip" id="galExpand" type="button" data-n={gallery.length}>
+                развернуть список ({gallery.length})
+              </button>
+              <button class="chip" id="galReveal" type="button">показать все</button>
+            </span>
+          </div>
+          <p class="ghint">
+            клик — показать; повторный клик по открытой — на весь экран
+          </p>
+          <div class="gallery" id="gal">
+            {gallery.map((g, i) => (
+              <button class="gitem" type="button" data-i={i} data-full={galleryFull[i].src}>
+                <Image src={g} alt="" widths={[280, 560]} sizes="(max-width:640px) 42vw, 260px" loading="lazy" />
+              </button>
+            ))}
+          </div>
+        </>
+      )
+    }
+
+    <div class="bar">
+      <h2>Главы</h2>
+      <span class="prog" id="prog"></span>
+    </div>
+
+    {
+      [...groups.entries()].map(([key, list]) => (
+        <section>
+          <h3 class="vol">
+            {groupBy === "volume"
+              ? key === "—" ? "Прочее" : `Том ${key}`
+              : key === "—" ? "Вне фаз" : `Фаза ${key}`}
+          </h3>
+          <div class="rows">
+            {list.map((e) => (
+              <a class:list={["row", `k-${e.data.type}`]} href={`/read/${e.id}`} data-id={e.id}>
+                <span class="n">
+                  {e.data.type === "chapter"
+                    ? String(e.data.number ?? "").padStart(2, "0")
+                    : "◆"}
+                </span>
+                <span class="mid">
+                  {e.data.type !== "chapter" && (
+                    <span class="kind">{kindWord(e.data.type, e.data.label)}</span>
+                  )}
+                  <span class="t">
+                    {e.data.title || (e.data.type === "chapter" ? "—" : "")}
+                  </span>
+                  {groupBy === "phase" && e.data.volume && (
+                    <span class="volsm">том {e.data.volume}</span>
+                  )}
+                </span>
+                <span class="meta"></span>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))
+    }
+
+    <p class="toolbar">
+      <button id="offline" type="button" data-slug={arc.slug}>
+        <Icon name="download" size={15} /> скачать арку для офлайна
+      </button>
+      <button id="markAllRead" type="button">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+        отметить все главы прочитанными
+      </button>
+    </p>
+  </div>
+
+  <div id="alb" aria-hidden="true"><img alt="" /></div>
+</Base>
+
+<style>
+  .top {
+    position: relative;
+    min-height: clamp(320px, 66vh, 620px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 108px 24px 44px;
+    overflow: hidden;
+    margin: -74px calc(50% - 50vw) 0;
+    isolation: isolate;
+  }
+  .top .bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* верх заставки остаётся почти нетронутым — арт виден целиком;
+       затемнение копится только внизу, за текстом */
+    opacity: 0.92;
+  }
+  .top .grad {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 38%,
+      color-mix(in srgb, var(--paper) 55%, var(--c) 6%) 66%,
+      color-mix(in srgb, var(--paper) 97%, var(--c) 5%) 100%
+    );
+  }
+  .jp {
+    font: clamp(26px, 5vw, 46px) "Forum", "Noto Serif JP", serif;
+    letter-spacing: 0.14em;
+    color: var(--c);
+    opacity: 0.55;
+    margin-bottom: 6px;
+  }
+  .romaji {
+    font: 500 10.5px var(--ui);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    opacity: 0.75;
+    margin-bottom: 16px;
+  }
+  .eyebrow {
+    font: 500 11px var(--ui);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font: 400 clamp(32px, 6vw, 58px) "Forum", serif;
+    color: var(--gold-soft);
+    margin: 0 0 6px;
+    letter-spacing: 0.04em;
+  }
+  .atitle { font-style: italic; font-size: clamp(18px, 2.6vw, 24px); margin: 0; }
+  .stat {
+    margin: 22px 0 0;
+    font: 500 12px var(--ui);
+    letter-spacing: 0.12em;
+    color: var(--ink-dim);
+  }
+
+  .wrap { max-width: 920px; margin: 0 auto; }
+
+  .syn {
+    position: relative;
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--c);
+    border-radius: 8px;
+    background: var(--paper-2);
+    padding: 22px 28px;
+    margin: 4px 0 34px;
+    overflow: hidden;
+  }
+  .syn .lbl {
+    display: block;
+    font: 600 10px var(--ui);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 12px;
+  }
+  .syn-body {
+    font-size: 16.5px;
+    line-height: 1.75;
+    font-style: italic;
+    filter: blur(6px);
+    opacity: 0.5;
+    transition: filter 0.25s, opacity 0.25s;
+  }
+  .syn-body p { margin: 0 0 0.8em; }
+  .syn-body p:last-child { margin-bottom: 0; }
+  .syn:hover .syn-body,
+  .syn:focus-within .syn-body,
+  .syn:focus .syn-body { filter: none; opacity: 1; }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 12px;
+    margin: 34px 0 22px;
+  }
+  .bar h2 {
+    margin: 0;
+    font: 400 23px "Forum", serif;
+    color: var(--gold-soft);
+    letter-spacing: 0.04em;
+  }
+  .bar .prog {
+    font: 500 12px var(--ui);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 13px;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    background: none;
+    color: var(--ink-dim);
+    font: 500 12px var(--ui);
+    cursor: pointer;
+  }
+  .chip:hover { color: var(--c); border-color: var(--c); }
+
+  .ghint {
+    font: 500 11px var(--ui);
+    color: var(--ink-dim);
+    letter-spacing: 0.03em;
+    margin: 0 0 12px;
+  }
+  .gbtns { display: flex; gap: 8px; flex-wrap: wrap; }
+  .gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--c) transparent;
+  }
+  .gallery::-webkit-scrollbar { height: 8px; }
+  .gallery::-webkit-scrollbar-track {
+    background: var(--paper-2);
+    border-radius: 100px;
+  }
+  .gallery::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--c) 55%, transparent);
+    border-radius: 100px;
+  }
+  .gallery::-webkit-scrollbar-thumb:hover { background: var(--c); }
+  .gallery.all {
+    flex-wrap: wrap;
+    overflow: visible;
+    scrollbar-width: auto;
+  }
+  .gitem {
+    flex: 0 0 auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    line-height: 0;
+  }
+  /* высота фиксирована, ширина — по натуральным пропорциям: широкие развороты
+     остаются широкими, узкие одностраничные — узкими. Никакого cover/искажения. */
+  .gitem :global(img) {
+    height: 200px;
+    width: auto;
+    max-width: none;
+    object-fit: contain;
+    filter: blur(18px) saturate(0.5);
+    transition: filter 0.4s;
+  }
+  .gallery.all .gitem :global(img) { height: 232px; }
+  .gitem.shown :global(img) { filter: none; }
+  .gitem.shown { cursor: zoom-in; }
+
+  #alb {
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.94);
+    display: none;
+    place-content: center;
+    cursor: zoom-out;
+    padding: 20px;
+  }
+  #alb.open { display: grid; }
+  #alb img {
+    max-width: 95vw;
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  section { margin-bottom: 30px; }
+  .vol {
+    font: 500 11px var(--ui);
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--c);
+    opacity: 0.8;
+    margin: 26px 0 12px;
+  }
+  .rows { display: grid; gap: 8px; }
+  .row {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--paper-2);
+    padding: 13px 18px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .row:hover {
+    border-color: var(--c);
+    transform: translateX(3px);
+    box-shadow: 0 6px 20px -10px color-mix(in srgb, var(--c) 45%, transparent);
+  }
+  .row .n {
+    font: 500 12px var(--ui);
+    color: var(--ink-dim);
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+  .row .mid { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .row .t { font-size: 18px; font-style: italic; }
+  .row .kind {
+    flex: none;
+    font: 600 9.5px var(--ui);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    padding: 3px 9px;
+  }
+  .row .volsm { font: 500 11px var(--ui); color: var(--ink-dim); opacity: 0.7; }
+  .row .meta {
+    font: 500 10px var(--ui);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    white-space: nowrap;
+  }
+  .row.done { opacity: 0.6; }
+  .row.done .meta { color: var(--c); opacity: 1; }
+  .row.current {
+    border-color: var(--c);
+    background: color-mix(in srgb, var(--c) 9%, var(--paper-2));
+  }
+  .k-extra .t, .k-side .t { color: var(--ink-dim); }
+
+  .toolbar { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .toolbar button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    color: var(--ink-dim);
+    font: 500 12.5px var(--ui);
+    letter-spacing: 0.04em;
+    padding: 9px 16px;
+    cursor: pointer;
+  }
+  .toolbar button:hover { border-color: var(--c); color: var(--c); }
+  .toolbar button:disabled { opacity: 0.6; cursor: default; }
+
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 40px 1fr; }
+    .row .meta { grid-column: 2; justify-self: start; }
+  }
+</style>
+
+<script
+  is:inline
+  define:vars={{ ARC_UNLOCK_DATA: { chapterMeta, arcsMeta } }}
+>
+  window.__ARC_UNLOCK__ = ARC_UNLOCK_DATA;
+</script>
+<script>
+  import { REGISTRY } from "../../lib/extra";
+  import { computeUnlocked } from "../../lib/unlock";
+  import { checkAndToastUnlocks } from "../../lib/unlockToast";
+  import { initListScroll } from "../../scripts/listScroll";
+
+  initListScroll();
+
+  // ── галерея: клик — показать; повторный клик по открытой — на весь экран ──
+  const gal = document.getElementById("gal");
+  const alb = document.getElementById("alb");
+  const albImg = alb?.querySelector("img") as HTMLImageElement | undefined;
+  const items = [...(gal?.querySelectorAll<HTMLElement>(".gitem") ?? [])];
+  items.forEach((b) => {
+    b.addEventListener("click", () => {
+      if (!b.classList.contains("shown")) {
+        b.classList.add("shown");
+        return;
+      }
+      const full = b.dataset.full || b.querySelector("img")?.src;
+      if (full && albImg && alb) {
+        albImg.src = full;
+        alb.classList.add("open");
+      }
+    });
+  });
+  alb?.addEventListener("click", () => alb.classList.remove("open"));
+  addEventListener("keydown", (e) => {
+    if (e.key === "Escape") alb?.classList.remove("open");
+  });
+
+  // «развернуть список» — раскладка (лента ⇄ сетка); «показать все» — снять размытие
+  const gExpand = document.getElementById("galExpand");
+  const gReveal = document.getElementById("galReveal");
+  gExpand?.addEventListener("click", () => {
+    const open = gal?.classList.toggle("all");
+    gExpand.textContent = open
+      ? "свернуть список"
+      : `развернуть список (${gExpand.dataset.n})`;
+  });
+  gReveal?.addEventListener("click", () => {
+    const anyHidden = items.some((b) => !b.classList.contains("shown"));
+    items.forEach((b) => b.classList.toggle("shown", anyHidden));
+    gReveal.textContent = anyHidden ? "скрыть все" : "показать все";
+  });
+
+  // ── прогресс по арке: ЧИТАЕТЕ / ПРОЧИТАНО / НЕ НАЧАТА ──
+  let progress: Record<string, number> = {};
+  try {
+    progress = JSON.parse(localStorage.getItem("rz:progress") || "{}");
+  } catch {}
+  const rows = [...document.querySelectorAll<HTMLElement>(".row[data-id]")];
+  let done = 0;
+  let lastRead = -1;
+  rows.forEach((r, i) => {
+    const p = progress[r.dataset.id!] ?? 0;
+    if (p >= 0.9) {
+      r.classList.add("done");
+      r.querySelector(".meta")!.textContent = "прочитано";
+      done++;
+      lastRead = i;
+    } else if (p > 0.02) {
+      r.querySelector(".meta")!.textContent = `${Math.round(p * 100)}%`;
+    }
+  });
+  if (lastRead >= 0 && lastRead + 1 < rows.length) {
+    rows[lastRead + 1].classList.add("current");
+    rows[lastRead + 1].querySelector(".meta")!.textContent = "продолжить";
+  } else if (lastRead < 0 && rows[0]) {
+    rows[0].querySelector(".meta")!.textContent = "начать";
+  }
+  const prog = document.getElementById("prog");
+  if (prog && rows.length)
+    prog.textContent = `прочитано ${Math.round((done / rows.length) * 100)}%`;
+
+  // ── скачать арку для офлайна ──
+  const off = document.getElementById("offline") as HTMLButtonElement | null;
+  const oslug = off?.dataset.slug;
+  const OFFKEY = `rz:offline:${oslug}`;
+  if (off) {
+    try {
+      if (localStorage.getItem(OFFKEY)) off.textContent = "арка сохранена ✓";
+    } catch {}
+    off.addEventListener("click", async () => {
+      const sw = navigator.serviceWorker?.controller;
+      if (!sw) {
+        off.textContent = "офлайн-кэш доступен только в собранной версии";
+        return;
+      }
+      off.disabled = true;
+      off.textContent = "загрузка…";
+      const data = await fetch(`/precache/${oslug}.json`).then((r) => r.json());
+      const urls = [...data.pages, ...data.assets];
+      const onMsg = (e: MessageEvent) => {
+        const m = e.data || {};
+        if (m.type === "cache-progress")
+          off.textContent = `загрузка… ${m.done}/${m.total}`;
+        if (m.type === "cache-done") {
+          off.textContent = "арка сохранена ✓";
+          off.disabled = false;
+          try {
+            localStorage.setItem(OFFKEY, String(Date.now()));
+          } catch {}
+          navigator.serviceWorker.removeEventListener("message", onMsg);
+        }
+      };
+      navigator.serviceWorker.addEventListener("message", onMsg);
+      sw.postMessage({ type: "cache-urls", urls });
+    });
+  }
+
+  // ── отметить все главы арки прочитанными разом (например, восстанавливая
+  //    прогресс по памяти после чтения на другом сайте) ──
+  document.getElementById("markAllRead")?.addEventListener("click", () => {
+    if (!confirm(`Отметить все ${rows.length} глав(ы) этой арки прочитанными?`)) return;
+    try {
+      const p: Record<string, number> = JSON.parse(localStorage.getItem("rz:progress") || "{}");
+      rows.forEach((r) => (p[r.dataset.id!] = 1));
+      localStorage.setItem("rz:progress", JSON.stringify(p));
+    } catch {}
+    location.reload();
+  });
+
+  // ── уведомление «открыто в Дополнительном» — тот же тост, что на главной
+  //    и на /extra; здесь тоже (а не только на главной), чтобы был шанс
+  //    увидеть, даже если после чтения зашёл сразу в оглавление арки, а не
+  //    на главную. В самой читалке не показываем — сознательно ──
+  {
+    const data = (window as any).__ARC_UNLOCK__;
+    if (data) {
+      let progress: Record<string, number> = {};
+      try {
+        progress = JSON.parse(localStorage.getItem("rz:progress") || "{}");
+      } catch {}
+      const its = REGISTRY.map((r) => ({ slug: r.slug, read_after: r.read_after }));
+      const unlocked = computeUnlocked(progress, data.chapterMeta, data.arcsMeta, its);
+      checkAndToastUnlocks(unlocked, (slug) => REGISTRY.find((r) => r.slug === slug)?.title);
+    }
+  }
+</script>

@@ -1,0 +1,1467 @@
+{
+  "arc": 6,
+  "generator": "pdf_to_md.py",
+  "source": [
+    "Арка 6 Re_Zero.pdf"
+  ],
+  "ocr_pages": [],
+  "image_pages": [
+    1,
+    60,
+    97,
+    1326,
+    1583,
+    1628,
+    1629,
+    1648,
+    1713,
+    1728,
+    1754,
+    1772,
+    1792,
+    1837,
+    1874,
+    1995,
+    2056,
+    2174,
+    2278,
+    2444,
+    2489,
+    2574,
+    2582,
+    2609,
+    2667,
+    2690,
+    2751
+  ],
+  "images_total": 27,
+  "chapters": [
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Возвращение Драконьей Повозки",
+      "phase": 1,
+      "volume": null,
+      "words": 4063,
+      "paragraphs": 195,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Его способ оказать теплый прием",
+      "phase": 1,
+      "volume": null,
+      "words": 4885,
+      "paragraphs": 211,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.24"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Клетка маленькой девочки",
+      "phase": 1,
+      "volume": null,
+      "words": 5210,
+      "paragraphs": 259,
+      "illustrations": [
+        "i_002.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_002.jpeg",
+          "after_paragraph": 258
+        }
+      ],
+      "source_ref": "pdf p.50"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Причина, чтобы вытащить тебя отсюда",
+      "phase": 1,
+      "volume": null,
+      "words": 5804,
+      "paragraphs": 186,
+      "illustrations": [
+        "i_003.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_003.jpeg",
+          "after_paragraph": 185
+        }
+      ],
+      "source_ref": "pdf p.81"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Каждое их беспокойство",
+      "phase": 1,
+      "volume": null,
+      "words": 4326,
+      "paragraphs": 205,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.111"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "6",
+      "title": "Подпись Юклиуса",
+      "phase": 1,
+      "volume": null,
+      "words": 2976,
+      "paragraphs": 148,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.135"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "7",
+      "title": "Стремясь к Песчаному Морю",
+      "phase": 1,
+      "volume": null,
+      "words": 4351,
+      "paragraphs": 229,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.152"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "8",
+      "title": "Посвящение Песчаных Дюн",
+      "phase": 1,
+      "volume": null,
+      "words": 6250,
+      "paragraphs": 320,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.177"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "9",
+      "title": "Прорываясь сквозь Песчаное Время",
+      "phase": 1,
+      "volume": null,
+      "words": 4877,
+      "paragraphs": 235,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.213"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "10",
+      "title": "Будто Вспышка",
+      "phase": 1,
+      "volume": null,
+      "words": 5356,
+      "paragraphs": 267,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.241"
+    },
+    {
+      "slug": "011",
+      "type": "chapter",
+      "number": "11",
+      "label": "11",
+      "title": "Плачущий Голос",
+      "phase": 1,
+      "volume": null,
+      "words": 4045,
+      "paragraphs": 236,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.274"
+    },
+    {
+      "slug": "012",
+      "type": "chapter",
+      "number": "12",
+      "label": "12",
+      "title": "Крещение Сторожевой Башни",
+      "phase": 1,
+      "volume": null,
+      "words": 6737,
+      "paragraphs": 383,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.300"
+    },
+    {
+      "slug": "013",
+      "type": "chapter",
+      "number": "13",
+      "label": "13",
+      "title": "Насмешка Песка",
+      "phase": 1,
+      "volume": null,
+      "words": 6573,
+      "paragraphs": 386,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.342"
+    },
+    {
+      "slug": "014",
+      "type": "chapter",
+      "number": "14",
+      "label": "14",
+      "title": "Вера, Построенная на Песке",
+      "phase": 1,
+      "volume": null,
+      "words": 7111,
+      "paragraphs": 308,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.382"
+    },
+    {
+      "slug": "015",
+      "type": "chapter",
+      "number": "15",
+      "label": "15",
+      "title": "Разбросанные по Песку",
+      "phase": 1,
+      "volume": null,
+      "words": 4454,
+      "paragraphs": 197,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.419"
+    },
+    {
+      "slug": "016",
+      "type": "chapter",
+      "number": "16",
+      "label": "16",
+      "title": "Пережеванные останки",
+      "phase": 1,
+      "volume": null,
+      "words": 3977,
+      "paragraphs": 206,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.444"
+    },
+    {
+      "slug": "017",
+      "type": "chapter",
+      "number": "17",
+      "label": "17",
+      "title": "Король Песчаного Моря",
+      "phase": 1,
+      "volume": null,
+      "words": 8294,
+      "paragraphs": 323,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.468"
+    },
+    {
+      "slug": "018",
+      "type": "chapter",
+      "number": "18",
+      "label": "18",
+      "title": "Хранитель Песчаной Башни",
+      "phase": 1,
+      "volume": null,
+      "words": 6949,
+      "paragraphs": 251,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.514"
+    },
+    {
+      "slug": "019",
+      "type": "chapter",
+      "number": "19",
+      "label": "19",
+      "title": "Местонахождение Мудреца",
+      "phase": 2,
+      "volume": null,
+      "words": 5710,
+      "paragraphs": 270,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.550"
+    },
+    {
+      "slug": "020",
+      "type": "chapter",
+      "number": "20",
+      "label": "20",
+      "title": "Шаула ≠ Мудрец = Флюгель",
+      "phase": 2,
+      "volume": null,
+      "words": 6921,
+      "paragraphs": 338,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.582"
+    },
+    {
+      "slug": "021",
+      "type": "chapter",
+      "number": "21",
+      "label": "21",
+      "title": "Испытание Монолита",
+      "phase": 2,
+      "volume": null,
+      "words": 6299,
+      "paragraphs": 269,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.620"
+    },
+    {
+      "slug": "022",
+      "type": "chapter",
+      "number": "22",
+      "label": "22",
+      "title": "Астеризм Белого Звездного Неба",
+      "phase": 2,
+      "volume": null,
+      "words": 6807,
+      "paragraphs": 311,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.654"
+    },
+    {
+      "slug": "023",
+      "type": "chapter",
+      "number": "23",
+      "label": "23",
+      "title": "Оценка библиотеки третьего этажа Тайгета",
+      "phase": 2,
+      "volume": null,
+      "words": 5127,
+      "paragraphs": 298,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.693"
+    },
+    {
+      "slug": "024",
+      "type": "chapter",
+      "number": "24",
+      "label": "24",
+      "title": "Злой Экзаменатор",
+      "phase": 2,
+      "volume": null,
+      "words": 5805,
+      "paragraphs": 331,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.725"
+    },
+    {
+      "slug": "025",
+      "type": "chapter",
+      "number": "25",
+      "label": "25",
+      "title": "Человек, ждущий на 2-м этаже Электра",
+      "phase": 2,
+      "volume": null,
+      "words": 5533,
+      "paragraphs": 303,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.759"
+    },
+    {
+      "slug": "026",
+      "type": "chapter",
+      "number": "26",
+      "label": "26",
+      "title": "Палочник",
+      "phase": 2,
+      "volume": null,
+      "words": 4938,
+      "paragraphs": 268,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.793"
+    },
+    {
+      "slug": "027",
+      "type": "chapter",
+      "number": "27",
+      "label": "27",
+      "title": "Преграда Электры",
+      "phase": 2,
+      "volume": null,
+      "words": 6257,
+      "paragraphs": 281,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.823"
+    },
+    {
+      "slug": "028",
+      "type": "chapter",
+      "number": "28",
+      "label": "28",
+      "title": "Юлиус Юклиус",
+      "phase": 2,
+      "volume": null,
+      "words": 2431,
+      "paragraphs": 118,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.857"
+    },
+    {
+      "slug": "029",
+      "type": "chapter",
+      "number": "29",
+      "label": "29",
+      "title": "Неудачник",
+      "phase": 2,
+      "volume": null,
+      "words": 4238,
+      "paragraphs": 189,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.872"
+    },
+    {
+      "slug": "030",
+      "type": "chapter",
+      "number": "30",
+      "label": "30",
+      "title": "Стратегия Захвата Второго Этажа",
+      "phase": 2,
+      "volume": null,
+      "words": 4503,
+      "paragraphs": 239,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.896"
+    },
+    {
+      "slug": "031",
+      "type": "chapter",
+      "number": "31",
+      "label": "31",
+      "title": "Поощрение сотрудничества в Башне",
+      "phase": 2,
+      "volume": null,
+      "words": 8167,
+      "paragraphs": 412,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.922"
+    },
+    {
+      "slug": "032",
+      "type": "chapter",
+      "number": "32",
+      "label": "32",
+      "title": "Кто ты такой?",
+      "phase": 2,
+      "volume": null,
+      "words": 4644,
+      "paragraphs": 229,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.969"
+    },
+    {
+      "slug": "033",
+      "type": "chapter",
+      "number": "33",
+      "label": "33",
+      "title": "■■■\u0000■■■",
+      "phase": 2,
+      "volume": null,
+      "words": 5662,
+      "paragraphs": 280,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.997"
+    },
+    {
+      "slug": "034",
+      "type": "chapter",
+      "number": "34",
+      "label": "34",
+      "title": "Выйдя из круглосуточного магазина, я увидел удивительный мир",
+      "phase": 3,
+      "volume": null,
+      "words": 7176,
+      "paragraphs": 327,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1032"
+    },
+    {
+      "slug": "035",
+      "type": "chapter",
+      "number": "35",
+      "label": "35",
+      "title": "Тонкие отношения",
+      "phase": 3,
+      "volume": null,
+      "words": 4736,
+      "paragraphs": 220,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1074"
+    },
+    {
+      "slug": "036",
+      "type": "chapter",
+      "number": "36",
+      "label": "36",
+      "title": "Место облегчения",
+      "phase": 3,
+      "volume": null,
+      "words": 5177,
+      "paragraphs": 252,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1100"
+    },
+    {
+      "slug": "037",
+      "type": "chapter",
+      "number": "37",
+      "label": "37",
+      "title": "Сон Папье-маше",
+      "phase": 3,
+      "volume": null,
+      "words": 5058,
+      "paragraphs": 233,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1129"
+    },
+    {
+      "slug": "038",
+      "type": "chapter",
+      "number": "38",
+      "label": "38",
+      "title": "Кто ты?",
+      "phase": 3,
+      "volume": null,
+      "words": 6566,
+      "paragraphs": 289,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1156"
+    },
+    {
+      "slug": "039",
+      "type": "chapter",
+      "number": "39",
+      "label": "39",
+      "title": "Руины",
+      "phase": 3,
+      "volume": null,
+      "words": 3919,
+      "paragraphs": 150,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1192"
+    },
+    {
+      "slug": "040",
+      "type": "chapter",
+      "number": "40",
+      "label": "40",
+      "title": "Покинутый Звёздами",
+      "phase": 3,
+      "volume": null,
+      "words": 4375,
+      "paragraphs": 169,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1214"
+    },
+    {
+      "slug": "041",
+      "type": "chapter",
+      "number": "41",
+      "label": "41",
+      "title": "Запах спокойствия",
+      "phase": 3,
+      "volume": null,
+      "words": 3483,
+      "paragraphs": 125,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1238"
+    },
+    {
+      "slug": "042",
+      "type": "chapter",
+      "number": "42",
+      "label": "42",
+      "title": "Башня мертвых",
+      "phase": 3,
+      "volume": null,
+      "words": 5564,
+      "paragraphs": 284,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1257"
+    },
+    {
+      "slug": "043",
+      "type": "chapter",
+      "number": "43",
+      "label": "43",
+      "title": "Башня живых",
+      "phase": 3,
+      "volume": null,
+      "words": 6477,
+      "paragraphs": 267,
+      "illustrations": [
+        "i_004.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_004.jpeg",
+          "after_paragraph": 266
+        }
+      ],
+      "source_ref": "pdf p.1291"
+    },
+    {
+      "slug": "044",
+      "type": "chapter",
+      "number": "44",
+      "label": "44",
+      "title": "Медаль крови",
+      "phase": 3,
+      "volume": null,
+      "words": 2354,
+      "paragraphs": 99,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1327"
+    },
+    {
+      "slug": "045",
+      "type": "chapter",
+      "number": "45",
+      "label": "45",
+      "title": "Объятия вины",
+      "phase": 3,
+      "volume": null,
+      "words": 3101,
+      "paragraphs": 146,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1340"
+    },
+    {
+      "slug": "046",
+      "type": "chapter",
+      "number": "46",
+      "label": "46",
+      "title": "Мейли Портрут",
+      "phase": 3,
+      "volume": null,
+      "words": 4997,
+      "paragraphs": 223,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1359"
+    },
+    {
+      "slug": "047",
+      "type": "chapter",
+      "number": "47",
+      "label": "47",
+      "title": "Я не прощу",
+      "phase": 3,
+      "volume": null,
+      "words": 4110,
+      "paragraphs": 202,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1387"
+    },
+    {
+      "slug": "048",
+      "type": "chapter",
+      "number": "48",
+      "label": "48",
+      "title": "Убийство входит в привычку",
+      "phase": 3,
+      "volume": null,
+      "words": 2792,
+      "paragraphs": 144,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1412"
+    },
+    {
+      "slug": "049",
+      "type": "chapter",
+      "number": "49",
+      "label": "49",
+      "title": "Ты жалкая копия",
+      "phase": 3,
+      "volume": null,
+      "words": 4003,
+      "paragraphs": 205,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1430"
+    },
+    {
+      "slug": "050",
+      "type": "chapter",
+      "number": "50",
+      "label": "50",
+      "title": "Ты абсолютно жалкая копия",
+      "phase": 3,
+      "volume": null,
+      "words": 4603,
+      "paragraphs": 243,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1454"
+    },
+    {
+      "slug": "051",
+      "type": "chapter",
+      "number": "51",
+      "label": "51",
+      "title": "Башня живых PART 2",
+      "phase": 3,
+      "volume": null,
+      "words": 3059,
+      "paragraphs": 147,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1483"
+    },
+    {
+      "slug": "052",
+      "type": "chapter",
+      "number": "52",
+      "label": "52",
+      "title": "Боже, пожалуйста, прости меня",
+      "phase": 3,
+      "volume": null,
+      "words": 4581,
+      "paragraphs": 230,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1501"
+    },
+    {
+      "slug": "053",
+      "type": "chapter",
+      "number": "53",
+      "label": "53",
+      "title": "――Прозвенел, голос",
+      "phase": 3,
+      "volume": null,
+      "words": 4928,
+      "paragraphs": 253,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1528"
+    },
+    {
+      "slug": "054",
+      "type": "chapter",
+      "number": "54",
+      "label": "54",
+      "title": "Re: Жизнь с нуля в альтернативном мире",
+      "phase": 3,
+      "volume": null,
+      "words": 4872,
+      "paragraphs": 276,
+      "illustrations": [
+        "i_005.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_005.jpeg",
+          "after_paragraph": 275
+        }
+      ],
+      "source_ref": "pdf p.1559"
+    },
+    {
+      "slug": "055",
+      "type": "chapter",
+      "number": "55",
+      "label": "55",
+      "title": "Ты, ожидающий оттепель",
+      "phase": 4,
+      "volume": null,
+      "words": 6307,
+      "paragraphs": 330,
+      "illustrations": [
+        "i_006.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_006.jpeg",
+          "after_paragraph": 329
+        }
+      ],
+      "source_ref": "pdf p.1590"
+    },
+    {
+      "slug": "056",
+      "type": "chapter",
+      "number": "56",
+      "label": "56",
+      "title": "Разговор о будущем",
+      "phase": 4,
+      "volume": null,
+      "words": 2990,
+      "paragraphs": 160,
+      "illustrations": [
+        "i_008.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.jpeg",
+          "after_paragraph": 159
+        }
+      ],
+      "source_ref": "pdf p.1630"
+    },
+    {
+      "slug": "057",
+      "type": "chapter",
+      "number": "57",
+      "label": "57",
+      "title": "Давайте пока отложим это",
+      "phase": 4,
+      "volume": null,
+      "words": 4426,
+      "paragraphs": 217,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1650"
+    },
+    {
+      "slug": "058",
+      "type": "chapter",
+      "number": "58",
+      "label": "58",
+      "title": "Это - есть это, сие - есть сие",
+      "phase": 4,
+      "volume": null,
+      "words": 4847,
+      "paragraphs": 263,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1675"
+    },
+    {
+      "slug": "059",
+      "type": "chapter",
+      "number": "59",
+      "label": "59",
+      "title": "Смех посреди белого мира",
+      "phase": 4,
+      "volume": null,
+      "words": 3774,
+      "paragraphs": 195,
+      "illustrations": [
+        "i_009.jpeg",
+        "i_010.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_009.jpeg",
+          "after_paragraph": 193
+        },
+        {
+          "image": "i_010.jpeg",
+          "after_paragraph": 193
+        }
+      ],
+      "source_ref": "pdf p.1704"
+    },
+    {
+      "slug": "060",
+      "type": "chapter",
+      "number": "60",
+      "label": "60",
+      "title": "Одно место под солнцем",
+      "phase": 4,
+      "volume": null,
+      "words": 4392,
+      "paragraphs": 206,
+      "illustrations": [
+        "i_011.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_011.jpeg",
+          "after_paragraph": 205
+        }
+      ],
+      "source_ref": "pdf p.1729"
+    },
+    {
+      "slug": "061",
+      "type": "chapter",
+      "number": "61",
+      "label": "61",
+      "title": "――Встань",
+      "phase": 4,
+      "volume": null,
+      "words": 6403,
+      "paragraphs": 350,
+      "illustrations": [
+        "i_012.jpeg",
+        "i_013.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_012.jpeg",
+          "after_paragraph": 348
+        },
+        {
+          "image": "i_013.jpeg",
+          "after_paragraph": 348
+        }
+      ],
+      "source_ref": "pdf p.1757"
+    },
+    {
+      "slug": "062",
+      "type": "chapter",
+      "number": "62",
+      "label": "62",
+      "title": "Гул коллапса",
+      "phase": 4,
+      "volume": null,
+      "words": 3990,
+      "paragraphs": 205,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1800"
+    },
+    {
+      "slug": "063",
+      "type": "chapter",
+      "number": "63",
+      "label": "63",
+      "title": "Пять препятствий",
+      "phase": 4,
+      "volume": null,
+      "words": 4459,
+      "paragraphs": 223,
+      "illustrations": [
+        "i_014.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_014.jpeg",
+          "after_paragraph": 222
+        }
+      ],
+      "source_ref": "pdf p.1823"
+    },
+    {
+      "slug": "064",
+      "type": "chapter",
+      "number": "64",
+      "label": "64",
+      "title": "Второе препятствие",
+      "phase": 4,
+      "volume": null,
+      "words": 4020,
+      "paragraphs": 196,
+      "illustrations": [
+        "i_015.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_015.jpeg",
+          "after_paragraph": 195
+        }
+      ],
+      "source_ref": "pdf p.1851"
+    },
+    {
+      "slug": "065",
+      "type": "chapter",
+      "number": "65",
+      "label": "65",
+      "title": "Второе, Пятое, а затем――",
+      "phase": 4,
+      "volume": null,
+      "words": 4410,
+      "paragraphs": 192,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1877"
+    },
+    {
+      "slug": "066",
+      "type": "chapter",
+      "number": "66",
+      "label": "66",
+      "title": "Конец жизни, ведущий к второму шансу",
+      "phase": 4,
+      "volume": null,
+      "words": 4889,
+      "paragraphs": 240,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1904"
+    },
+    {
+      "slug": "067",
+      "type": "chapter",
+      "number": "67",
+      "label": "67",
+      "title": "Маленький король",
+      "phase": 4,
+      "volume": null,
+      "words": 4846,
+      "paragraphs": 226,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1934"
+    },
+    {
+      "slug": "068",
+      "type": "chapter",
+      "number": "68",
+      "label": "68",
+      "title": "Женщина созвездия Скорпиона",
+      "phase": 4,
+      "volume": null,
+      "words": 5069,
+      "paragraphs": 247,
+      "illustrations": [
+        "i_016.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_016.jpeg",
+          "after_paragraph": 246
+        }
+      ],
+      "source_ref": "pdf p.1964"
+    },
+    {
+      "slug": "069",
+      "type": "chapter",
+      "number": "69",
+      "label": "69",
+      "title": "Несообразный удар меча",
+      "phase": 4,
+      "volume": null,
+      "words": 5314,
+      "paragraphs": 258,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.1997"
+    },
+    {
+      "slug": "070",
+      "type": "chapter",
+      "number": "70",
+      "label": "70",
+      "title": "Преданная звезда",
+      "phase": 4,
+      "volume": null,
+      "words": 4014,
+      "paragraphs": 192,
+      "illustrations": [
+        "i_017.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_017.jpeg",
+          "after_paragraph": 191
+        }
+      ],
+      "source_ref": "pdf p.2031"
+    },
+    {
+      "slug": "071",
+      "type": "chapter",
+      "number": "71",
+      "label": "71",
+      "title": "Первый пункт",
+      "phase": 5,
+      "volume": null,
+      "words": 4279,
+      "paragraphs": 204,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2059"
+    },
+    {
+      "slug": "072",
+      "type": "chapter",
+      "number": "72",
+      "label": "72",
+      "title": "■■\u0000■",
+      "phase": 5,
+      "volume": null,
+      "words": 8383,
+      "paragraphs": 364,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2086"
+    },
+    {
+      "slug": "073",
+      "type": "chapter",
+      "number": "73",
+      "label": "73",
+      "title": "Нацуки Субару",
+      "phase": 5,
+      "volume": null,
+      "words": 4924,
+      "paragraphs": 227,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2140"
+    },
+    {
+      "slug": "074",
+      "type": "chapter",
+      "number": "74",
+      "label": "74",
+      "title": "Нацуки Субару",
+      "phase": 5,
+      "volume": null,
+      "words": 4702,
+      "paragraphs": 144,
+      "illustrations": [
+        "i_018.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_018.jpeg",
+          "after_paragraph": 143
+        }
+      ],
+      "source_ref": "pdf p.2172"
+    },
+    {
+      "slug": "075",
+      "type": "chapter",
+      "number": "75",
+      "label": "75",
+      "title": "Луис Арнеб",
+      "phase": 5,
+      "volume": null,
+      "words": 7384,
+      "paragraphs": 325,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2205"
+    },
+    {
+      "slug": "076",
+      "type": "chapter",
+      "number": "76",
+      "label": "76",
+      "title": "Ад, носящий имя самого себя",
+      "phase": 5,
+      "volume": null,
+      "words": 5004,
+      "paragraphs": 203,
+      "illustrations": [
+        "i_019.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_019.jpeg",
+          "after_paragraph": 202
+        }
+      ],
+      "source_ref": "pdf p.2252"
+    },
+    {
+      "slug": "077",
+      "type": "chapter",
+      "number": "77",
+      "label": "77",
+      "title": "Сигнальный огонь контратаки",
+      "phase": 5,
+      "volume": null,
+      "words": 4123,
+      "paragraphs": 178,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2285"
+    },
+    {
+      "slug": "078",
+      "type": "chapter",
+      "number": "78",
+      "label": "78",
+      "title": "Четыре угла",
+      "phase": 5,
+      "volume": null,
+      "words": 6345,
+      "paragraphs": 151,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2311"
+    },
+    {
+      "slug": "079",
+      "type": "chapter",
+      "number": "79",
+      "label": "79",
+      "title": "READY STEADY GO",
+      "phase": 5,
+      "volume": null,
+      "words": 7097,
+      "paragraphs": 170,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2350"
+    },
+    {
+      "slug": "080",
+      "type": "chapter",
+      "number": "80",
+      "label": "80",
+      "title": "Духовная смерть",
+      "phase": 5,
+      "volume": null,
+      "words": 4186,
+      "paragraphs": 140,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2393"
+    },
+    {
+      "slug": "081",
+      "type": "chapter",
+      "number": "81",
+      "label": "81",
+      "title": "――Рад первой встрече",
+      "phase": 5,
+      "volume": null,
+      "words": 3833,
+      "paragraphs": 138,
+      "illustrations": [
+        "i_020.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_020.jpeg",
+          "after_paragraph": 137
+        }
+      ],
+      "source_ref": "pdf p.2420"
+    },
+    {
+      "slug": "082",
+      "type": "chapter",
+      "number": "82",
+      "label": "82",
+      "title": "Сражение с оковами",
+      "phase": 5,
+      "volume": null,
+      "words": 5479,
+      "paragraphs": 201,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2445"
+    },
+    {
+      "slug": "083",
+      "type": "chapter",
+      "number": "83",
+      "label": "83",
+      "title": "Рам",
+      "phase": 5,
+      "volume": null,
+      "words": 6287,
+      "paragraphs": 285,
+      "illustrations": [
+        "i_021.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_021.jpeg",
+          "after_paragraph": 284
+        }
+      ],
+      "source_ref": "pdf p.2480"
+    },
+    {
+      "slug": "084",
+      "type": "chapter",
+      "number": "84",
+      "label": "84",
+      "title": "И раз! И Два!",
+      "phase": 5,
+      "volume": null,
+      "words": 4069,
+      "paragraphs": 153,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2522"
+    },
+    {
+      "slug": "085",
+      "type": "chapter",
+      "number": "85",
+      "label": "85",
+      "title": "Хороший неудачник",
+      "phase": 5,
+      "volume": null,
+      "words": 6572,
+      "paragraphs": 437,
+      "illustrations": [
+        "i_022.jpeg",
+        "i_023.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_022.jpeg",
+          "after_paragraph": 435
+        },
+        {
+          "image": "i_023.jpeg",
+          "after_paragraph": 435
+        }
+      ],
+      "source_ref": "pdf p.2549"
+    },
+    {
+      "slug": "086",
+      "type": "chapter",
+      "number": "86",
+      "label": "86",
+      "title": "Беседа о том, что было вчера",
+      "phase": 5,
+      "volume": null,
+      "words": 6249,
+      "paragraphs": 382,
+      "illustrations": [
+        "i_024.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_024.jpeg",
+          "after_paragraph": 381
+        }
+      ],
+      "source_ref": "pdf p.2584"
+    },
+    {
+      "slug": "087",
+      "type": "chapter",
+      "number": "87",
+      "label": "87",
+      "title": "Отдаленный взгляд",
+      "phase": 5,
+      "volume": null,
+      "words": 4989,
+      "paragraphs": 331,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2614"
+    },
+    {
+      "slug": "088",
+      "type": "chapter",
+      "number": "88",
+      "label": "88",
+      "title": "…..Я прошу воли у тебя",
+      "phase": 5,
+      "volume": null,
+      "words": 4979,
+      "paragraphs": 338,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "pdf p.2638"
+    },
+    {
+      "slug": "089",
+      "type": "chapter",
+      "number": "89",
+      "label": "89",
+      "title": "Шаула",
+      "phase": 5,
+      "volume": null,
+      "words": 4974,
+      "paragraphs": 330,
+      "illustrations": [
+        "i_025.jpeg",
+        "i_026.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_025.jpeg",
+          "after_paragraph": 328
+        },
+        {
+          "image": "i_026.jpeg",
+          "after_paragraph": 328
+        }
+      ],
+      "source_ref": "pdf p.2663"
+    },
+    {
+      "slug": "090",
+      "type": "chapter",
+      "number": "90",
+      "label": "90",
+      "title": "Герой",
+      "phase": 5,
+      "volume": null,
+      "words": 13728,
+      "paragraphs": 851,
+      "illustrations": [
+        "i_027.jpeg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_027.jpeg",
+          "after_paragraph": 850
+        }
+      ],
+      "source_ref": "pdf p.2693"
+    }
+  ]
+}

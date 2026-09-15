@@ -1,0 +1,473 @@
+{
+  "arc": 2,
+  "generator": "fb2_to_md.py",
+  "source": [
+    "Том 2 Re_Zero.fb2",
+    "Том 3 Re_Zero.fb2"
+  ],
+  "orphan_images": [
+    "i_018.jpg",
+    "i_036.jpg"
+  ],
+  "images_total": 36,
+  "volume": 3,
+  "book_title": "Re:Zero. Жизнь с нуля в альтернативном мире 3",
+  "annotation": "Полный решимости, Субару возвращается в первый день в поместье Розвааля. Юноша мобилизует свои воспоминания о временной петле, изо всех сил стараясь сделать наилучший выбор и предотвратить трагедию. Субару вынужден действовать без права на ошибку, и груз ответственности тяжёлым бременем ложится на его плечи. День за днём гнетущий страх разъедает душу героя, а надежда стремительно тает… Похоже, Субару уже готов сдаться, но в последний момент Эмилия протягивает ему руку помощи… «С улыбкой встанем рядом и поговорим о будущем, которое наступит завтра».",
+  "mode": "structured",
+  "chapters": [
+    {
+      "slug": "extra-00",
+      "type": "extra",
+      "number": null,
+      "label": "",
+      "title": "Иллюстрации",
+      "phase": null,
+      "volume": 2,
+      "words": 5,
+      "paragraphs": 5,
+      "illustrations": [
+        "i_001.jpg",
+        "i_002.jpg",
+        "i_003.jpg",
+        "i_004.jpg",
+        "i_005.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_004.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_005.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "section 0"
+    },
+    {
+      "slug": "prologue-00",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Путь к искуплению",
+      "phase": null,
+      "volume": 2,
+      "words": 145,
+      "paragraphs": 7,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "section 1"
+    },
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Пробуждение",
+      "phase": null,
+      "volume": 2,
+      "words": 5158,
+      "paragraphs": 274,
+      "illustrations": [
+        "i_006.jpg",
+        "i_007.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_006.jpg",
+          "after_paragraph": 55
+        },
+        {
+          "image": "i_007.jpg",
+          "after_paragraph": 104
+        }
+      ],
+      "source_ref": "section 2"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Дожить до утра",
+      "phase": null,
+      "volume": 2,
+      "words": 16442,
+      "paragraphs": 831,
+      "illustrations": [
+        "i_008.jpg",
+        "i_009.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.jpg",
+          "after_paragraph": 478
+        },
+        {
+          "image": "i_009.jpg",
+          "after_paragraph": 617
+        }
+      ],
+      "source_ref": "section 3"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Лязг цепей",
+      "phase": null,
+      "volume": 2,
+      "words": 10543,
+      "paragraphs": 506,
+      "illustrations": [
+        "i_010.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_010.jpg",
+          "after_paragraph": 347
+        }
+      ],
+      "source_ref": "section 4"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Сумеречная игра в салки",
+      "phase": null,
+      "volume": 2,
+      "words": 10676,
+      "paragraphs": 504,
+      "illustrations": [
+        "i_011.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_011.jpg",
+          "after_paragraph": 389
+        }
+      ],
+      "source_ref": "section 5"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Долгожданное утро",
+      "phase": null,
+      "volume": 2,
+      "words": 10814,
+      "paragraphs": 581,
+      "illustrations": [
+        "i_012.jpg",
+        "i_013.jpg",
+        "i_014.jpg",
+        "i_015.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_012.jpg",
+          "after_paragraph": 59
+        },
+        {
+          "image": "i_013.jpg",
+          "after_paragraph": 200
+        },
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 330
+        },
+        {
+          "image": "i_015.jpg",
+          "after_paragraph": 535
+        }
+      ],
+      "source_ref": "section 6"
+    },
+    {
+      "slug": "extra-01",
+      "type": "extra",
+      "number": null,
+      "label": "Постскриптум",
+      "title": "",
+      "phase": null,
+      "volume": 2,
+      "words": 834,
+      "paragraphs": 33,
+      "illustrations": [
+        "i_016.jpg",
+        "i_017.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_016.jpg",
+          "after_paragraph": 16
+        },
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 16
+        }
+      ],
+      "source_ref": "section 7"
+    },
+    {
+      "slug": "extra-02",
+      "type": "extra",
+      "number": null,
+      "label": "",
+      "title": "Иллюстрации",
+      "phase": null,
+      "volume": 3,
+      "words": 17,
+      "paragraphs": 9,
+      "illustrations": [
+        "i_019.jpg",
+        "i_020.jpg",
+        "i_021.jpg",
+        "i_022.jpg",
+        "i_023.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_019.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_020.jpg",
+          "after_paragraph": 1
+        },
+        {
+          "image": "i_021.jpg",
+          "after_paragraph": 2
+        },
+        {
+          "image": "i_022.jpg",
+          "after_paragraph": 3
+        },
+        {
+          "image": "i_023.jpg",
+          "after_paragraph": 4
+        }
+      ],
+      "source_ref": "section 0"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "1",
+      "title": "Перезагрузка Субару Нацуки",
+      "phase": null,
+      "volume": 3,
+      "words": 7480,
+      "paragraphs": 366,
+      "illustrations": [
+        "i_024.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_024.jpg",
+          "after_paragraph": 28
+        }
+      ],
+      "source_ref": "section 1"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "2",
+      "title": "Слёзы, которые иссякли",
+      "phase": null,
+      "volume": 3,
+      "words": 9924,
+      "paragraphs": 456,
+      "illustrations": [
+        "i_025.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_025.jpg",
+          "after_paragraph": 147
+        }
+      ],
+      "source_ref": "section 2"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "3",
+      "title": "Что значит «мужество»",
+      "phase": null,
+      "volume": 3,
+      "words": 12619,
+      "paragraphs": 675,
+      "illustrations": [
+        "i_026.jpg",
+        "i_027.jpg",
+        "i_028.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_026.jpg",
+          "after_paragraph": 120
+        },
+        {
+          "image": "i_027.jpg",
+          "after_paragraph": 332
+        },
+        {
+          "image": "i_028.jpg",
+          "after_paragraph": 652
+        }
+      ],
+      "source_ref": "section 3"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "4",
+      "title": "Пути одержимых демонами",
+      "phase": null,
+      "volume": 3,
+      "words": 13076,
+      "paragraphs": 617,
+      "illustrations": [
+        "i_029.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_029.jpg",
+          "after_paragraph": 70
+        }
+      ],
+      "source_ref": "section 4"
+    },
+    {
+      "slug": "interlude-00",
+      "type": "interlude",
+      "number": null,
+      "label": "Интермедия",
+      "title": "Рем",
+      "phase": null,
+      "volume": 3,
+      "words": 2856,
+      "paragraphs": 123,
+      "illustrations": [
+        "i_030.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_030.jpg",
+          "after_paragraph": 54
+        }
+      ],
+      "source_ref": "section 5"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "5",
+      "title": "Ва-банк",
+      "phase": null,
+      "volume": 3,
+      "words": 4205,
+      "paragraphs": 224,
+      "illustrations": [
+        "i_031.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_031.jpg",
+          "after_paragraph": 141
+        }
+      ],
+      "source_ref": "section 6"
+    },
+    {
+      "slug": "epilogue-00",
+      "type": "epilogue",
+      "number": null,
+      "label": "Эпилог",
+      "title": "Разговор о будущем",
+      "phase": null,
+      "volume": 3,
+      "words": 4660,
+      "paragraphs": 220,
+      "illustrations": [
+        "i_032.jpg",
+        "i_033.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_032.jpg",
+          "after_paragraph": 149
+        },
+        {
+          "image": "i_033.jpg",
+          "after_paragraph": 212
+        }
+      ],
+      "source_ref": "section 7"
+    },
+    {
+      "slug": "interlude-01",
+      "type": "interlude",
+      "number": null,
+      "label": "Интермедия",
+      "title": "Тайная беседа под луной",
+      "phase": null,
+      "volume": 3,
+      "words": 1807,
+      "paragraphs": 93,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "section 8"
+    },
+    {
+      "slug": "extra-03",
+      "type": "extra",
+      "number": null,
+      "label": "Постскриптум",
+      "title": "",
+      "phase": null,
+      "volume": 3,
+      "words": 995,
+      "paragraphs": 49,
+      "illustrations": [
+        "i_034.jpg",
+        "i_035.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_034.jpg",
+          "after_paragraph": 23
+        },
+        {
+          "image": "i_035.jpg",
+          "after_paragraph": 28
+        }
+      ],
+      "source_ref": "section 9"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+---
+// Простые стилизованные иконки, наследуют цвет через currentColor —
+// т.е. перекрашиваются под тему сайта. Иконку сайта/приложения делаем отдельно.
+interface Props {
+  name:
+    | "palette"
+    | "settings"
+    | "sun"
+    | "moon"
+    | "search"
+    | "book"
+    | "chevron-left"
+    | "chevron-right"
+    | "download"
+    | "eye";
+  size?: number;
+}
+const { name, size = 20 } = Astro.props;
+
+const P: Record<string, string> = {
+  palette:
+    'M12 3a9 9 0 0 0 0 18c1.7 0 2.5-1.3 2.5-2.5 0-1-.7-1.6-.7-2.5 0-.8.7-1.5 1.5-1.5H17a4 4 0 0 0 4-4c0-4.4-4-7-9-7Zm-4.5 9A1.5 1.5 0 1 1 7.5 9 1.5 1.5 0 0 1 7.5 12Zm3-4A1.5 1.5 0 1 1 10.5 5 1.5 1.5 0 0 1 10.5 8Zm5 0A1.5 1.5 0 1 1 15.5 5 1.5 1.5 0 0 1 15.5 8Z',
+  settings:
+    'M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.4 4a6.5 6.5 0 0 0-.1-1.2l2-1.6-2-3.4-2.4 1a6.6 6.6 0 0 0-2-1.2L15.5 3h-7l-.4 2.4a6.6 6.6 0 0 0-2 1.2l-2.4-1-2 3.4 2 1.6a6.6 6.6 0 0 0 0 2.4l-2 1.6 2 3.4 2.4-1c.6.5 1.3.9 2 1.2L8.5 21h7l.4-2.4c.7-.3 1.4-.7 2-1.2l2.4 1 2-3.4-2-1.6c.06-.4.1-.8.1-1.2Z',
+  sun: 'M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0-5v3m0 14v3M2 12h3m14 0h3M4.9 4.9l2.1 2.1m10 10 2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1',
+  moon: 'M20 14.5A8 8 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z',
+  search: 'M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M15.5 15.5 21 21',
+  book: 'M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Zm0 0v13m12 0H8',
+  "chevron-left": 'M15 5l-7 7 7 7',
+  "chevron-right": 'M9 5l7 7-7 7',
+  download: 'M12 3v12m0 0 4-4m-4 4-4-4M4 19h16',
+  eye: 'M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Zm10 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z',
+};
+
+const filled = name === "palette" || name === "settings";
+---
+
+<svg
+  class="icon"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill={filled ? "currentColor" : "none"}
+  stroke={filled ? "none" : "currentColor"}
+  stroke-width="1.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+><path d={P[name]}></path></svg>
+
+<style>
+  .icon {
+    display: inline-block;
+    vertical-align: -0.15em;
+    flex: none;
+  }
+</style>

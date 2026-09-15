@@ -1,0 +1,1490 @@
+{
+  "arc": 5,
+  "source": [
+    "5 арка.epub"
+  ],
+  "toc_labels": [
+    "Глава 1 — «Всё всегда начинается с гостя»",
+    "Глава 2 — «Родословная Позёра»",
+    "Глава 3 — «Каждому Своя Перспектива»",
+    "Глава 4 — «В Пути»",
+    "Глава 5 — «Город Водных Врат – Пристелла»",
+    "Глава 6 — «Два Рыцаря Духов, Два Жадных Торговца и Один Бескорыстный Ангел»",
+    "Глава 7 — «Грешный Человек Отправляется в Плавание»",
+    "Глава 8 — «Попутчики с морской болезнью»",
+    "Глава 9 — «Ценность Певицы»",
+    "Глава 10 — «Путь Города Воды»",
+    "Глава 11 — «Неожиданная встреча, Грядущая встреча, Непреднамеренная встреча»",
+    "Глава 12 — «Давящая Атмосфера Чайной Комнаты»",
+    "Глава 13 — «Приятный ужин»",
+    "Глава 14 — «Демон Меча Под Луной»",
+    "Глава 15 — «Гробовая тишина»",
+    "Глава 16 — «Незваный гость»",
+    "Глава 17 — «Привычные доспехи»",
+    "Глава 18 — «Между танцем и песней»",
+    "Глава 19 — «Театральная Злоба»",
+    "Глава 20 — «Чувства, возвышающие друг друга»",
+    "Глава 21 — «Оптимальное решение»",
+    "Глава 22 — «Сверка лёгкого ответа»",
+    "Глава 23 — «Ситуация выходит из-под контроля»",
+    "Глава 24 — «Исход Ледяного Пламени»",
+    "Глава 25 — «Театр Льва»",
+    "Глава 26 — «Острие любви»",
+    "Глава 27 — «Раздражающий голос»",
+    "Глава 28 — «Военный совет в шрамах»",
+    "Глава 29 — «Великолепный Тигр»",
+    "Глава 30 — «Тигр и кошка под луной»",
+    "Глава 31 — «Цена ошибки»",
+    "Глава 32 — «Совещание по захвату ратуши»",
+    "Глава 33 — «Штурм городской ратуши»",
+    "Глава 34 — «Битва на мечах и хаос»",
+    "Глава 35 — «Засада и внезапное нападение»",
+    "Глава 36 — «Начало и конец любви»",
+    "Глава 37 — «Ликвидация последствий поражения»",
+    "Глава 38 — «Требования Культа Ведьмы»",
+    "Глава 39 — «Рыцарская доблесть и запоздавший человек»",
+    "Глава 40 — «Заражение Гневом»",
+    "Глава 41 — «Иллюзия Героя»",
+    "Глава 42 — «Новейший герой и древнейший герой»",
+    "Глава 43 — «Что было до встречи»",
+    "Глава 44 — «Поговорим начистоту»",
+    "Глава 45 — «Неизбежное проклятие»",
+    "Глава 46 — «Состояние души»",
+    "Глава 47 — «Накануне штурма по отвоеванию города»",
+    "Глава 48 — «Тот, кого я однажды полюблю»",
+    "Глава 49 — «Начало битвы с Жадностью»",
+    "Глава 50 — «Узы Любви»",
+    "Глава 51 — «Играющая Злоба»",
+    "Глава 52 — «Звёзды и Архиепископы Греха»",
+    "Глава 53 — «Город хаоса»",
+    "Глава 54 — «Боевая мощь некомбатантов»",
+    "Глава 55 — «Бог Войны и Претендент»",
+    "Глава 56 — «Подписывая развод»",
+    "Глава 57 — «Местонахождение сердца»",
+    "Глава 58 — «Я верю»",
+    "Глава 59 — «Регулус Корниас»",
+    "Глава 60 — «Один конец и одна битва»",
+    "Глава 61 — «Жертвы территории»",
+    "Глава 62 — «Похвала воина»",
+    "Глава 63 — «Страсть Лилианы Маскарад»",
+    "Глава 64 — «Меланхолия Лилианы Маскарад»",
+    "Глава 65 — «Сожаление Лилианы Маскарад»",
+    "Глава 66 — «Сцена Лилианы Маскарад»",
+    "Глава 67 — «Лилиана Маскарад»",
+    "Глава 68 — «Гурман, пожирающий имена»",
+    "Глава 69 — «Отвратительный банкет»",
+    "Глава 70 — «Еда»",
+    "Глава 71 — «Демон Меча против Бывшей Святой Меча»",
+    "Глава 72 — «Святой Меча против Предыдущего Святого Меча»",
+    "Глава 73 — «Терезия ван Астрея»",
+    "Глава 74 — «Итоги обороны Пристеллы, часть 1»",
+    "Глава 75 — «Итоги обороны Пристеллы, часть 2»",
+    "Глава 76 — «Итоги обороны Пристеллы, часть 3»",
+    "Глава 77 — «Безымянный рыцарь»",
+    "Глава 78 — «Рябь, оставшаяся в Пристелле»",
+    "Глава 79 — «Сторожевая Башня Плеяды»",
+    "Глава 80 — «Оставляя рябь на водной глади»",
+    "Глава 81 — «Наполняющий сосуд Жадности»"
+  ],
+  "orphan_images": [
+    "i_039.jpg"
+  ],
+  "images_total": 39,
+  "generator": "epub_to_md.py",
+  "chapters": [
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Всё всегда начинается с гостя",
+      "phase": 1,
+      "volume": null,
+      "words": 3867,
+      "paragraphs": 209,
+      "illustrations": [
+        "i_001.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 105
+        }
+      ],
+      "source_ref": "Arka-5-0001.html"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Родословная Позёра",
+      "phase": 1,
+      "volume": null,
+      "words": 3397,
+      "paragraphs": 202,
+      "illustrations": [
+        "i_002.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 136
+        }
+      ],
+      "source_ref": "Arka-5-0002.html"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "Каждому Своя Перспектива",
+      "phase": 1,
+      "volume": null,
+      "words": 4719,
+      "paragraphs": 178,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0003.html"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "В Пути",
+      "phase": 1,
+      "volume": null,
+      "words": 3435,
+      "paragraphs": 137,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0004.html"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Город Водных Врат – Пристелла",
+      "phase": 1,
+      "volume": null,
+      "words": 3806,
+      "paragraphs": 157,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0005.html"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "6",
+      "title": "Два Рыцаря Духов, Два Жадных Торговца и Один Бескорыстный Ангел",
+      "phase": 1,
+      "volume": null,
+      "words": 4131,
+      "paragraphs": 194,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0006.html"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "7",
+      "title": "Грешный Человек Отправляется в Плавание",
+      "phase": 1,
+      "volume": null,
+      "words": 2576,
+      "paragraphs": 129,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0007.html"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "8",
+      "title": "Попутчики с морской болезнью",
+      "phase": 1,
+      "volume": null,
+      "words": 3642,
+      "paragraphs": 197,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0008.html"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "9",
+      "title": "Ценность Певицы",
+      "phase": 1,
+      "volume": null,
+      "words": 3255,
+      "paragraphs": 165,
+      "illustrations": [
+        "i_003.jpg",
+        "i_004.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 3
+        },
+        {
+          "image": "i_004.jpg",
+          "after_paragraph": 159
+        }
+      ],
+      "source_ref": "Arka-5-0009.html"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "10",
+      "title": "Путь Города Воды",
+      "phase": 1,
+      "volume": null,
+      "words": 4017,
+      "paragraphs": 241,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0010.html"
+    },
+    {
+      "slug": "011",
+      "type": "chapter",
+      "number": "11",
+      "label": "11",
+      "title": "Неожиданная встреча, Грядущая встреча, Непреднамеренная встреча",
+      "phase": 1,
+      "volume": null,
+      "words": 3713,
+      "paragraphs": 207,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0011.html"
+    },
+    {
+      "slug": "012",
+      "type": "chapter",
+      "number": "12",
+      "label": "12",
+      "title": "Давящая Атмосфера Чайной Комнаты",
+      "phase": 1,
+      "volume": null,
+      "words": 3506,
+      "paragraphs": 164,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0012.html"
+    },
+    {
+      "slug": "013",
+      "type": "chapter",
+      "number": "13",
+      "label": "13",
+      "title": "Приятный ужин",
+      "phase": 1,
+      "volume": null,
+      "words": 2782,
+      "paragraphs": 114,
+      "illustrations": [
+        "i_005.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_005.jpg",
+          "after_paragraph": 101
+        }
+      ],
+      "source_ref": "Arka-5-0013.html"
+    },
+    {
+      "slug": "014",
+      "type": "chapter",
+      "number": "14",
+      "label": "14",
+      "title": "Демон Меча Под Луной",
+      "phase": 1,
+      "volume": null,
+      "words": 3838,
+      "paragraphs": 168,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0014.html"
+    },
+    {
+      "slug": "015",
+      "type": "chapter",
+      "number": "15",
+      "label": "15",
+      "title": "Гробовая тишина",
+      "phase": 1,
+      "volume": null,
+      "words": 6595,
+      "paragraphs": 376,
+      "illustrations": [
+        "i_006.jpg",
+        "i_007.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_006.jpg",
+          "after_paragraph": 359
+        },
+        {
+          "image": "i_007.jpg",
+          "after_paragraph": 373
+        }
+      ],
+      "source_ref": "Arka-5-0015.html"
+    },
+    {
+      "slug": "016",
+      "type": "chapter",
+      "number": "16",
+      "label": "16",
+      "title": "Незваный гость",
+      "phase": 1,
+      "volume": null,
+      "words": 4848,
+      "paragraphs": 306,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0016.html"
+    },
+    {
+      "slug": "017",
+      "type": "chapter",
+      "number": "17",
+      "label": "17",
+      "title": "Привычные доспехи",
+      "phase": 1,
+      "volume": null,
+      "words": 3736,
+      "paragraphs": 209,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0017.html"
+    },
+    {
+      "slug": "018",
+      "type": "chapter",
+      "number": "18",
+      "label": "18",
+      "title": "Между танцем и песней",
+      "phase": 1,
+      "volume": null,
+      "words": 4382,
+      "paragraphs": 237,
+      "illustrations": [
+        "i_008.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.jpg",
+          "after_paragraph": 235
+        }
+      ],
+      "source_ref": "Arka-5-0018.html"
+    },
+    {
+      "slug": "019",
+      "type": "chapter",
+      "number": "19",
+      "label": "19",
+      "title": "Театральная Злоба",
+      "phase": 1,
+      "volume": null,
+      "words": 3343,
+      "paragraphs": 150,
+      "illustrations": [
+        "i_009.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_009.jpg",
+          "after_paragraph": 147
+        }
+      ],
+      "source_ref": "Arka-5-0019.html"
+    },
+    {
+      "slug": "020",
+      "type": "chapter",
+      "number": "20",
+      "label": "20",
+      "title": "Чувства, возвышающие друг друга",
+      "phase": 2,
+      "volume": null,
+      "words": 3489,
+      "paragraphs": 222,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0020.html"
+    },
+    {
+      "slug": "021",
+      "type": "chapter",
+      "number": "21",
+      "label": "21",
+      "title": "Оптимальное решение",
+      "phase": 2,
+      "volume": null,
+      "words": 3531,
+      "paragraphs": 143,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0021.html"
+    },
+    {
+      "slug": "022",
+      "type": "chapter",
+      "number": "22",
+      "label": "22",
+      "title": "Сверка лёгкого ответа",
+      "phase": 2,
+      "volume": null,
+      "words": 3126,
+      "paragraphs": 209,
+      "illustrations": [
+        "i_010.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_010.jpg",
+          "after_paragraph": 137
+        }
+      ],
+      "source_ref": "Arka-5-0022.html"
+    },
+    {
+      "slug": "023",
+      "type": "chapter",
+      "number": "23",
+      "label": "23",
+      "title": "Ситуация выходит из-под контроля",
+      "phase": 2,
+      "volume": null,
+      "words": 3956,
+      "paragraphs": 250,
+      "illustrations": [
+        "i_011.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_011.jpg",
+          "after_paragraph": 248
+        }
+      ],
+      "source_ref": "Arka-5-0023.html"
+    },
+    {
+      "slug": "024",
+      "type": "chapter",
+      "number": "24",
+      "label": "24",
+      "title": "Исход Ледяного Пламени",
+      "phase": 2,
+      "volume": null,
+      "words": 3794,
+      "paragraphs": 271,
+      "illustrations": [
+        "i_012.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_012.jpg",
+          "after_paragraph": 269
+        }
+      ],
+      "source_ref": "Arka-5-0024.html"
+    },
+    {
+      "slug": "025",
+      "type": "chapter",
+      "number": "25",
+      "label": "25",
+      "title": "Театр Льва",
+      "phase": 2,
+      "volume": null,
+      "words": 4248,
+      "paragraphs": 222,
+      "illustrations": [
+        "i_013.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_013.jpg",
+          "after_paragraph": 170
+        }
+      ],
+      "source_ref": "Arka-5-0025.html"
+    },
+    {
+      "slug": "026",
+      "type": "chapter",
+      "number": "26",
+      "label": "26",
+      "title": "Острие любви",
+      "phase": 2,
+      "volume": null,
+      "words": 3201,
+      "paragraphs": 178,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0026.html"
+    },
+    {
+      "slug": "027",
+      "type": "chapter",
+      "number": "27",
+      "label": "27",
+      "title": "Раздражающий голос",
+      "phase": 2,
+      "volume": null,
+      "words": 3177,
+      "paragraphs": 197,
+      "illustrations": [
+        "i_014.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 74
+        },
+        {
+          "image": "i_014.jpg",
+          "after_paragraph": 105
+        }
+      ],
+      "source_ref": "Arka-5-0027.html"
+    },
+    {
+      "slug": "028",
+      "type": "chapter",
+      "number": "28",
+      "label": "28",
+      "title": "Военный совет в шрамах",
+      "phase": 2,
+      "volume": null,
+      "words": 4106,
+      "paragraphs": 225,
+      "illustrations": [
+        "i_015.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_015.jpg",
+          "after_paragraph": 222
+        }
+      ],
+      "source_ref": "Arka-5-0028.html"
+    },
+    {
+      "slug": "029",
+      "type": "chapter",
+      "number": "29",
+      "label": "29",
+      "title": "Великолепный Тигр",
+      "phase": 2,
+      "volume": null,
+      "words": 4032,
+      "paragraphs": 244,
+      "illustrations": [
+        "i_016.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_016.jpg",
+          "after_paragraph": 241
+        }
+      ],
+      "source_ref": "Arka-5-0029.html"
+    },
+    {
+      "slug": "030",
+      "type": "chapter",
+      "number": "30",
+      "label": "30",
+      "title": "Тигр и кошка под луной",
+      "phase": 2,
+      "volume": null,
+      "words": 4638,
+      "paragraphs": 353,
+      "illustrations": [
+        "i_017.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 345
+        }
+      ],
+      "source_ref": "Arka-5-0030.html"
+    },
+    {
+      "slug": "031",
+      "type": "chapter",
+      "number": "31",
+      "label": "31",
+      "title": "Цена ошибки",
+      "phase": 2,
+      "volume": null,
+      "words": 6711,
+      "paragraphs": 535,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0031.html"
+    },
+    {
+      "slug": "032",
+      "type": "chapter",
+      "number": "32",
+      "label": "32",
+      "title": "Совещание по захвату ратуши",
+      "phase": 2,
+      "volume": null,
+      "words": 3607,
+      "paragraphs": 207,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0032.html"
+    },
+    {
+      "slug": "033",
+      "type": "chapter",
+      "number": "33",
+      "label": "33",
+      "title": "Штурм городской ратуши",
+      "phase": 2,
+      "volume": null,
+      "words": 3983,
+      "paragraphs": 254,
+      "illustrations": [
+        "i_018.jpg",
+        "i_019.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_018.jpg",
+          "after_paragraph": 127
+        },
+        {
+          "image": "i_019.jpg",
+          "after_paragraph": 134
+        }
+      ],
+      "source_ref": "Arka-5-0033.html"
+    },
+    {
+      "slug": "034",
+      "type": "chapter",
+      "number": "34",
+      "label": "34",
+      "title": "Битва на мечах и хаос",
+      "phase": 2,
+      "volume": null,
+      "words": 3818,
+      "paragraphs": 237,
+      "illustrations": [
+        "i_020.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_020.jpg",
+          "after_paragraph": 235
+        }
+      ],
+      "source_ref": "Arka-5-0034.html"
+    },
+    {
+      "slug": "035",
+      "type": "chapter",
+      "number": "35",
+      "label": "35",
+      "title": "Засада и внезапное нападение",
+      "phase": 2,
+      "volume": null,
+      "words": 3417,
+      "paragraphs": 238,
+      "illustrations": [
+        "i_021.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_021.jpg",
+          "after_paragraph": 236
+        }
+      ],
+      "source_ref": "Arka-5-0035.html"
+    },
+    {
+      "slug": "036",
+      "type": "chapter",
+      "number": "36",
+      "label": "36",
+      "title": "Начало и конец любви",
+      "phase": 2,
+      "volume": null,
+      "words": 3914,
+      "paragraphs": 205,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0036.html"
+    },
+    {
+      "slug": "037",
+      "type": "chapter",
+      "number": "37",
+      "label": "37",
+      "title": "Ликвидация последствий поражения",
+      "phase": 3,
+      "volume": null,
+      "words": 4353,
+      "paragraphs": 294,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0037.html"
+    },
+    {
+      "slug": "038",
+      "type": "chapter",
+      "number": "38",
+      "label": "38",
+      "title": "Требования Культа Ведьмы",
+      "phase": 3,
+      "volume": null,
+      "words": 3868,
+      "paragraphs": 215,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0038.html"
+    },
+    {
+      "slug": "039",
+      "type": "chapter",
+      "number": "39",
+      "label": "39",
+      "title": "Рыцарская доблесть и запоздавший человек",
+      "phase": 3,
+      "volume": null,
+      "words": 3668,
+      "paragraphs": 202,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0039.html"
+    },
+    {
+      "slug": "040",
+      "type": "chapter",
+      "number": "40",
+      "label": "40",
+      "title": "Заражение Гневом",
+      "phase": 3,
+      "volume": null,
+      "words": 3796,
+      "paragraphs": 150,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0040.html"
+    },
+    {
+      "slug": "041",
+      "type": "chapter",
+      "number": "41",
+      "label": "41",
+      "title": "Иллюзия Героя",
+      "phase": 3,
+      "volume": null,
+      "words": 3226,
+      "paragraphs": 205,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0041.html"
+    },
+    {
+      "slug": "042",
+      "type": "chapter",
+      "number": "42",
+      "label": "42",
+      "title": "Новейший герой и древнейший герой",
+      "phase": 3,
+      "volume": null,
+      "words": 4645,
+      "paragraphs": 287,
+      "illustrations": [
+        "i_022.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_022.jpg",
+          "after_paragraph": 160
+        }
+      ],
+      "source_ref": "Arka-5-0042.html"
+    },
+    {
+      "slug": "043",
+      "type": "chapter",
+      "number": "43",
+      "label": "43",
+      "title": "Что было до встречи",
+      "phase": 3,
+      "volume": null,
+      "words": 3589,
+      "paragraphs": 222,
+      "illustrations": [
+        "i_023.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_023.jpg",
+          "after_paragraph": 77
+        }
+      ],
+      "source_ref": "Arka-5-0043.html"
+    },
+    {
+      "slug": "044",
+      "type": "chapter",
+      "number": "44",
+      "label": "44",
+      "title": "Поговорим начистоту",
+      "phase": 3,
+      "volume": null,
+      "words": 4603,
+      "paragraphs": 266,
+      "illustrations": [
+        "i_024.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_024.jpg",
+          "after_paragraph": 143
+        }
+      ],
+      "source_ref": "Arka-5-0044.html"
+    },
+    {
+      "slug": "045",
+      "type": "chapter",
+      "number": "45",
+      "label": "45",
+      "title": "Неизбежное проклятие",
+      "phase": 3,
+      "volume": null,
+      "words": 3776,
+      "paragraphs": 260,
+      "illustrations": [
+        "i_025.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_025.png",
+          "after_paragraph": 105
+        }
+      ],
+      "source_ref": "Arka-5-0045.html"
+    },
+    {
+      "slug": "046",
+      "type": "chapter",
+      "number": "46",
+      "label": "46",
+      "title": "Состояние души",
+      "phase": 3,
+      "volume": null,
+      "words": 2484,
+      "paragraphs": 132,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0046.html"
+    },
+    {
+      "slug": "047",
+      "type": "chapter",
+      "number": "47",
+      "label": "47",
+      "title": "Накануне штурма по отвоеванию города",
+      "phase": 3,
+      "volume": null,
+      "words": 4439,
+      "paragraphs": 273,
+      "illustrations": [
+        "i_026.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_026.jpg",
+          "after_paragraph": 199
+        }
+      ],
+      "source_ref": "Arka-5-0047.html"
+    },
+    {
+      "slug": "048",
+      "type": "chapter",
+      "number": "48",
+      "label": "48",
+      "title": "Тот, кого я однажды полюблю",
+      "phase": 3,
+      "volume": null,
+      "words": 6098,
+      "paragraphs": 321,
+      "illustrations": [
+        "i_027.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_027.jpg",
+          "after_paragraph": 319
+        }
+      ],
+      "source_ref": "Arka-5-0048.html"
+    },
+    {
+      "slug": "049",
+      "type": "chapter",
+      "number": "49",
+      "label": "49",
+      "title": "Начало битвы с Жадностью",
+      "phase": 4,
+      "volume": null,
+      "words": 2778,
+      "paragraphs": 149,
+      "illustrations": [
+        "i_028.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_028.jpg",
+          "after_paragraph": 115
+        }
+      ],
+      "source_ref": "Arka-5-0049.html"
+    },
+    {
+      "slug": "050",
+      "type": "chapter",
+      "number": "50",
+      "label": "50",
+      "title": "Узы Любви",
+      "phase": 4,
+      "volume": null,
+      "words": 5929,
+      "paragraphs": 399,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0050.html"
+    },
+    {
+      "slug": "051",
+      "type": "chapter",
+      "number": "51",
+      "label": "51",
+      "title": "Играющая Злоба",
+      "phase": 4,
+      "volume": null,
+      "words": 5306,
+      "paragraphs": 358,
+      "illustrations": [
+        "i_029.png",
+        "i_030.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_029.png",
+          "after_paragraph": 91
+        },
+        {
+          "image": "i_030.jpg",
+          "after_paragraph": 138
+        }
+      ],
+      "source_ref": "Arka-5-0051.html"
+    },
+    {
+      "slug": "052",
+      "type": "chapter",
+      "number": "52",
+      "label": "52",
+      "title": "Звёзды и Архиепископы Греха",
+      "phase": 4,
+      "volume": null,
+      "words": 3140,
+      "paragraphs": 226,
+      "illustrations": [
+        "i_031.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_031.jpg",
+          "after_paragraph": 17
+        }
+      ],
+      "source_ref": "Arka-5-0052.html"
+    },
+    {
+      "slug": "053",
+      "type": "chapter",
+      "number": "53",
+      "label": "53",
+      "title": "Город хаоса",
+      "phase": 4,
+      "volume": null,
+      "words": 4857,
+      "paragraphs": 323,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0053.html"
+    },
+    {
+      "slug": "054",
+      "type": "chapter",
+      "number": "54",
+      "label": "54",
+      "title": "Боевая мощь некомбатантов",
+      "phase": 4,
+      "volume": null,
+      "words": 3401,
+      "paragraphs": 241,
+      "illustrations": [
+        "i_032.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_032.jpg",
+          "after_paragraph": 3
+        }
+      ],
+      "source_ref": "Arka-5-0054.html"
+    },
+    {
+      "slug": "055",
+      "type": "chapter",
+      "number": "55",
+      "label": "55",
+      "title": "Бог Войны и Претендент",
+      "phase": 4,
+      "volume": null,
+      "words": 3462,
+      "paragraphs": 294,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0055.html"
+    },
+    {
+      "slug": "056",
+      "type": "chapter",
+      "number": "56",
+      "label": "56",
+      "title": "Подписывая развод",
+      "phase": 4,
+      "volume": null,
+      "words": 4447,
+      "paragraphs": 304,
+      "illustrations": [
+        "i_033.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_033.png",
+          "after_paragraph": 292
+        }
+      ],
+      "source_ref": "Arka-5-0056.html"
+    },
+    {
+      "slug": "057",
+      "type": "chapter",
+      "number": "57",
+      "label": "57",
+      "title": "Местонахождение сердца",
+      "phase": 4,
+      "volume": null,
+      "words": 4598,
+      "paragraphs": 316,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0057.html"
+    },
+    {
+      "slug": "058",
+      "type": "chapter",
+      "number": "58",
+      "label": "58",
+      "title": "Я верю",
+      "phase": 4,
+      "volume": null,
+      "words": 3573,
+      "paragraphs": 255,
+      "illustrations": [
+        "i_034.jpg",
+        "i_035.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_034.jpg",
+          "after_paragraph": 120
+        },
+        {
+          "image": "i_035.jpg",
+          "after_paragraph": 249
+        }
+      ],
+      "source_ref": "Arka-5-0058.html"
+    },
+    {
+      "slug": "059",
+      "type": "chapter",
+      "number": "59",
+      "label": "59",
+      "title": "Регулус Корниас",
+      "phase": 4,
+      "volume": null,
+      "words": 3560,
+      "paragraphs": 158,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0059.html"
+    },
+    {
+      "slug": "060",
+      "type": "chapter",
+      "number": "60",
+      "label": "60",
+      "title": "Один конец и одна битва",
+      "phase": 4,
+      "volume": null,
+      "words": 4620,
+      "paragraphs": 290,
+      "illustrations": [
+        "i_036.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_036.jpg",
+          "after_paragraph": 287
+        }
+      ],
+      "source_ref": "Arka-5-0060.html"
+    },
+    {
+      "slug": "061",
+      "type": "chapter",
+      "number": "61",
+      "label": "61",
+      "title": "Жертвы территории",
+      "phase": 5,
+      "volume": null,
+      "words": 5151,
+      "paragraphs": 293,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0061.html"
+    },
+    {
+      "slug": "062",
+      "type": "chapter",
+      "number": "62",
+      "label": "62",
+      "title": "Похвала воина",
+      "phase": 5,
+      "volume": null,
+      "words": 4170,
+      "paragraphs": 322,
+      "illustrations": [
+        "i_037.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_037.jpg",
+          "after_paragraph": 266
+        }
+      ],
+      "source_ref": "Arka-5-0062.html"
+    },
+    {
+      "slug": "063",
+      "type": "chapter",
+      "number": "63",
+      "label": "63",
+      "title": "Страсть Лилианы Маскарад",
+      "phase": 5,
+      "volume": null,
+      "words": 4433,
+      "paragraphs": 290,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0063.html"
+    },
+    {
+      "slug": "064",
+      "type": "chapter",
+      "number": "64",
+      "label": "64",
+      "title": "Меланхолия Лилианы Маскарад",
+      "phase": 5,
+      "volume": null,
+      "words": 3376,
+      "paragraphs": 211,
+      "illustrations": [
+        "i_038.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_038.jpg",
+          "after_paragraph": 3
+        }
+      ],
+      "source_ref": "Arka-5-0064.html"
+    },
+    {
+      "slug": "065",
+      "type": "chapter",
+      "number": "65",
+      "label": "65",
+      "title": "Сожаление Лилианы Маскарад",
+      "phase": 5,
+      "volume": null,
+      "words": 5413,
+      "paragraphs": 281,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0065.html"
+    },
+    {
+      "slug": "066",
+      "type": "chapter",
+      "number": "66",
+      "label": "66",
+      "title": "Сцена Лилианы Маскарад",
+      "phase": 5,
+      "volume": null,
+      "words": 4439,
+      "paragraphs": 216,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0066.html"
+    },
+    {
+      "slug": "067",
+      "type": "chapter",
+      "number": "67",
+      "label": "67",
+      "title": "Лилиана Маскарад",
+      "phase": 5,
+      "volume": null,
+      "words": 5596,
+      "paragraphs": 397,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0067.html"
+    },
+    {
+      "slug": "068",
+      "type": "chapter",
+      "number": "68",
+      "label": "68",
+      "title": "Гурман, пожирающий имена",
+      "phase": 5,
+      "volume": null,
+      "words": 5275,
+      "paragraphs": 329,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0068.html"
+    },
+    {
+      "slug": "069",
+      "type": "chapter",
+      "number": "69",
+      "label": "69",
+      "title": "Отвратительный банкет",
+      "phase": 5,
+      "volume": null,
+      "words": 3268,
+      "paragraphs": 220,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0069.html"
+    },
+    {
+      "slug": "070",
+      "type": "chapter",
+      "number": "70",
+      "label": "70",
+      "title": "Еда",
+      "phase": 5,
+      "volume": null,
+      "words": 5270,
+      "paragraphs": 217,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0070.html"
+    },
+    {
+      "slug": "071",
+      "type": "chapter",
+      "number": "71",
+      "label": "71",
+      "title": "Демон Меча против Бывшей Святой Меча",
+      "phase": 5,
+      "volume": null,
+      "words": 3658,
+      "paragraphs": 177,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0071.html"
+    },
+    {
+      "slug": "072",
+      "type": "chapter",
+      "number": "72",
+      "label": "72",
+      "title": "Святой Меча против Предыдущего Святого Меча",
+      "phase": 5,
+      "volume": null,
+      "words": 1669,
+      "paragraphs": 81,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0072.html"
+    },
+    {
+      "slug": "073",
+      "type": "chapter",
+      "number": "73",
+      "label": "73",
+      "title": "Терезия ван Астрея",
+      "phase": 5,
+      "volume": null,
+      "words": 12452,
+      "paragraphs": 1019,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0073.html"
+    },
+    {
+      "slug": "074",
+      "type": "chapter",
+      "number": "74",
+      "label": "74",
+      "title": "Итоги обороны Пристеллы, часть 1",
+      "phase": 5,
+      "volume": null,
+      "words": 5035,
+      "paragraphs": 333,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0074.html"
+    },
+    {
+      "slug": "075",
+      "type": "chapter",
+      "number": "75",
+      "label": "75",
+      "title": "Итоги обороны Пристеллы, часть 2",
+      "phase": 5,
+      "volume": null,
+      "words": 3760,
+      "paragraphs": 219,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0075.html"
+    },
+    {
+      "slug": "076",
+      "type": "chapter",
+      "number": "76",
+      "label": "76",
+      "title": "Итоги обороны Пристеллы, часть 3",
+      "phase": 5,
+      "volume": null,
+      "words": 5424,
+      "paragraphs": 324,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0076.html"
+    },
+    {
+      "slug": "077",
+      "type": "chapter",
+      "number": "77",
+      "label": "77",
+      "title": "Безымянный рыцарь",
+      "phase": 5,
+      "volume": null,
+      "words": 2439,
+      "paragraphs": 160,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0077.html"
+    },
+    {
+      "slug": "078",
+      "type": "chapter",
+      "number": "78",
+      "label": "78",
+      "title": "Рябь, оставшаяся в Пристелле",
+      "phase": 5,
+      "volume": null,
+      "words": 6242,
+      "paragraphs": 315,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0078.html"
+    },
+    {
+      "slug": "079",
+      "type": "chapter",
+      "number": "79",
+      "label": "79",
+      "title": "Сторожевая Башня Плеяды",
+      "phase": 5,
+      "volume": null,
+      "words": 2595,
+      "paragraphs": 159,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0079.html"
+    },
+    {
+      "slug": "080",
+      "type": "chapter",
+      "number": "80",
+      "label": "80",
+      "title": "Оставляя рябь на водной глади",
+      "phase": 5,
+      "volume": null,
+      "words": 3988,
+      "paragraphs": 271,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0080.html"
+    },
+    {
+      "slug": "081",
+      "type": "chapter",
+      "number": "81",
+      "label": "81",
+      "title": "Наполняющий сосуд Жадности",
+      "phase": 5,
+      "volume": null,
+      "words": 3898,
+      "paragraphs": 255,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "Arka-5-0081.html"
+    }
+  ]
+}

@@ -1,0 +1,2456 @@
+{
+  "arc": 7,
+  "generator": "fb2_to_md.py",
+  "source": [
+    "Арка 7 Главы 1-110 ReZero.fb2"
+  ],
+  "orphan_images": [
+    "i_132.png"
+  ],
+  "images_total": 132,
+  "volume": null,
+  "book_title": "Арка 7 Главы 1-110 Re:Zero",
+  "annotation": "",
+  "mode": "flat",
+  "chapters": [
+    {
+      "slug": "001",
+      "type": "chapter",
+      "number": "1",
+      "label": "1",
+      "title": "Инициирование",
+      "phase": 1,
+      "volume": null,
+      "words": 8324,
+      "paragraphs": 475,
+      "illustrations": [
+        "i_001.jpg",
+        "i_002.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_001.jpg",
+          "after_paragraph": 196
+        },
+        {
+          "image": "i_002.jpg",
+          "after_paragraph": 452
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "002",
+      "type": "chapter",
+      "number": "2",
+      "label": "2",
+      "title": "Выслеживание животных",
+      "phase": 1,
+      "volume": null,
+      "words": 7182,
+      "paragraphs": 363,
+      "illustrations": [
+        "i_003.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_003.jpg",
+          "after_paragraph": 204
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "003",
+      "type": "chapter",
+      "number": "3",
+      "label": "3",
+      "title": "vs Рем",
+      "phase": 1,
+      "volume": null,
+      "words": 5255,
+      "paragraphs": 274,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "004",
+      "type": "chapter",
+      "number": "4",
+      "label": "4",
+      "title": "Смелый выбор",
+      "phase": 1,
+      "volume": null,
+      "words": 5444,
+      "paragraphs": 272,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "005",
+      "type": "chapter",
+      "number": "5",
+      "label": "5",
+      "title": "Тяжко быть мужчиной",
+      "phase": 1,
+      "volume": null,
+      "words": 6076,
+      "paragraphs": 330,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "006",
+      "type": "chapter",
+      "number": "6",
+      "label": "6",
+      "title": "Далеко на юге",
+      "phase": 1,
+      "volume": null,
+      "words": 6608,
+      "paragraphs": 351,
+      "illustrations": [
+        "i_004.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_004.png",
+          "after_paragraph": 176
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "007",
+      "type": "chapter",
+      "number": "7",
+      "label": "7",
+      "title": "Было тяжко быть мужчиной",
+      "phase": 1,
+      "volume": null,
+      "words": 6082,
+      "paragraphs": 337,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "008",
+      "type": "chapter",
+      "number": "8",
+      "label": "8",
+      "title": "Имя",
+      "phase": 1,
+      "volume": null,
+      "words": 10155,
+      "paragraphs": 561,
+      "illustrations": [
+        "i_005.png",
+        "i_006.png",
+        "i_007.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_005.png",
+          "after_paragraph": 244
+        },
+        {
+          "image": "i_006.png",
+          "after_paragraph": 444
+        },
+        {
+          "image": "i_007.png",
+          "after_paragraph": 556
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "009",
+      "type": "chapter",
+      "number": "9",
+      "label": "9",
+      "title": "Путь Империи",
+      "phase": 1,
+      "volume": null,
+      "words": 7959,
+      "paragraphs": 447,
+      "illustrations": [
+        "i_008.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_008.png",
+          "after_paragraph": 394
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "010",
+      "type": "chapter",
+      "number": "10",
+      "label": "10",
+      "title": "Племя Судрак",
+      "phase": 1,
+      "volume": null,
+      "words": 5855,
+      "paragraphs": 340,
+      "illustrations": [
+        "i_009.png",
+        "i_010.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_009.png",
+          "after_paragraph": 94
+        },
+        {
+          "image": "i_010.png",
+          "after_paragraph": 139
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "011",
+      "type": "chapter",
+      "number": "11",
+      "label": "11",
+      "title": "Ритуал Крови",
+      "phase": 1,
+      "volume": null,
+      "words": 7352,
+      "paragraphs": 447,
+      "illustrations": [
+        "i_011.png",
+        "i_012.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_011.png",
+          "after_paragraph": 202
+        },
+        {
+          "image": "i_012.png",
+          "after_paragraph": 434
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "012",
+      "type": "chapter",
+      "number": "12",
+      "label": "12",
+      "title": "Империя Волакия",
+      "phase": 1,
+      "volume": null,
+      "words": 6069,
+      "paragraphs": 402,
+      "illustrations": [
+        "i_013.png",
+        "i_014.png",
+        "i_015.png",
+        "i_016.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_013.png",
+          "after_paragraph": 234
+        },
+        {
+          "image": "i_014.png",
+          "after_paragraph": 364
+        },
+        {
+          "image": "i_015.png",
+          "after_paragraph": 387
+        },
+        {
+          "image": "i_016.png",
+          "after_paragraph": 389
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "013",
+      "type": "chapter",
+      "number": "13",
+      "label": "13",
+      "title": "Словно смертный",
+      "phase": 2,
+      "volume": null,
+      "words": 5372,
+      "paragraphs": 355,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "014",
+      "type": "chapter",
+      "number": "14",
+      "label": "14",
+      "title": "Непреодолимые ценности",
+      "phase": 2,
+      "volume": null,
+      "words": 4802,
+      "paragraphs": 304,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "015",
+      "type": "chapter",
+      "number": "15",
+      "label": "15",
+      "title": "Те, кого я хочу защитить",
+      "phase": 2,
+      "volume": null,
+      "words": 4556,
+      "paragraphs": 312,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "016",
+      "type": "chapter",
+      "number": "16",
+      "label": "16",
+      "title": "Ситуация в Империи",
+      "phase": 2,
+      "volume": null,
+      "words": 7078,
+      "paragraphs": 412,
+      "illustrations": [
+        "i_017.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_017.jpg",
+          "after_paragraph": 372
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "017",
+      "type": "chapter",
+      "number": "17",
+      "label": "17",
+      "title": "Подкрадывающееся зло",
+      "phase": 2,
+      "volume": null,
+      "words": 8145,
+      "paragraphs": 530,
+      "illustrations": [
+        "i_018.jpg",
+        "i_019.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_018.jpg",
+          "after_paragraph": 314
+        },
+        {
+          "image": "i_019.png",
+          "after_paragraph": 498
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "018",
+      "type": "chapter",
+      "number": "18",
+      "label": "18",
+      "title": "Битва в Городе-крепости Гуарал",
+      "phase": 2,
+      "volume": null,
+      "words": 8020,
+      "paragraphs": 538,
+      "illustrations": [
+        "i_020.png",
+        "i_021.png",
+        "i_022.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_020.png",
+          "after_paragraph": 168
+        },
+        {
+          "image": "i_021.png",
+          "after_paragraph": 188
+        },
+        {
+          "image": "i_022.png",
+          "after_paragraph": 399
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "019",
+      "type": "chapter",
+      "number": "19",
+      "label": "19",
+      "title": "Неприятное воссоединение",
+      "phase": 2,
+      "volume": null,
+      "words": 3980,
+      "paragraphs": 245,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "020",
+      "type": "chapter",
+      "number": "20",
+      "label": "20",
+      "title": "Император / Торговец / Нацуки Субару",
+      "phase": 2,
+      "volume": null,
+      "words": 8481,
+      "paragraphs": 534,
+      "illustrations": [
+        "i_023.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_023.png",
+          "after_paragraph": 424
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "021",
+      "type": "chapter",
+      "number": "21",
+      "label": "21",
+      "title": "Зикр Осман",
+      "phase": 2,
+      "volume": null,
+      "words": 4111,
+      "paragraphs": 223,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "022",
+      "type": "chapter",
+      "number": "22",
+      "label": "22",
+      "title": "План бескровной осады",
+      "phase": 2,
+      "volume": null,
+      "words": 5067,
+      "paragraphs": 313,
+      "illustrations": [
+        "i_024.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_024.png",
+          "after_paragraph": 189
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "023",
+      "type": "chapter",
+      "number": "23",
+      "label": "23",
+      "title": "Музыкантша Нацуми Шварц",
+      "phase": 2,
+      "volume": null,
+      "words": 10748,
+      "paragraphs": 702,
+      "illustrations": [
+        "i_025.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_025.png",
+          "after_paragraph": 453
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "024",
+      "type": "chapter",
+      "number": "24",
+      "label": "24",
+      "title": "Высокомерие",
+      "phase": 2,
+      "volume": null,
+      "words": 9027,
+      "paragraphs": 609,
+      "illustrations": [
+        "i_026.png",
+        "i_027.png",
+        "i_028.png",
+        "i_029.png",
+        "i_030.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_026.png",
+          "after_paragraph": 88
+        },
+        {
+          "image": "i_027.png",
+          "after_paragraph": 269
+        },
+        {
+          "image": "i_028.png",
+          "after_paragraph": 470
+        },
+        {
+          "image": "i_029.png",
+          "after_paragraph": 593
+        },
+        {
+          "image": "i_030.png",
+          "after_paragraph": 595
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "025",
+      "type": "chapter",
+      "number": "25",
+      "label": "25",
+      "title": "Воссоединение подобно горящей крови",
+      "phase": 3,
+      "volume": null,
+      "words": 4223,
+      "paragraphs": 294,
+      "illustrations": [
+        "i_031.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_031.png",
+          "after_paragraph": 109
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "026",
+      "type": "chapter",
+      "number": "26",
+      "label": "26",
+      "title": "Танцы за круглым столом",
+      "phase": 3,
+      "volume": null,
+      "words": 5105,
+      "paragraphs": 316,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "027",
+      "type": "chapter",
+      "number": "27",
+      "label": "27",
+      "title": "Имущие и неимущие",
+      "phase": 3,
+      "volume": null,
+      "words": 5227,
+      "paragraphs": 322,
+      "illustrations": [
+        "i_032.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_032.png",
+          "after_paragraph": 320
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "028",
+      "type": "chapter",
+      "number": "28",
+      "label": "28",
+      "title": "Условия победы",
+      "phase": 3,
+      "volume": null,
+      "words": 4871,
+      "paragraphs": 276,
+      "illustrations": [
+        "i_033.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_033.png",
+          "after_paragraph": 260
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "029",
+      "type": "chapter",
+      "number": "29",
+      "label": "29",
+      "title": "Каждому своё",
+      "phase": 3,
+      "volume": null,
+      "words": 3861,
+      "paragraphs": 214,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "030",
+      "type": "chapter",
+      "number": "30",
+      "label": "30",
+      "title": "Самопровозглашенный герой Нацуки Субару",
+      "phase": 3,
+      "volume": null,
+      "words": 3788,
+      "paragraphs": 271,
+      "illustrations": [
+        "i_034.png",
+        "i_035.png",
+        "i_036.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_034.png",
+          "after_paragraph": 50
+        },
+        {
+          "image": "i_035.png",
+          "after_paragraph": 251
+        },
+        {
+          "image": "i_036.png",
+          "after_paragraph": 263
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "031",
+      "type": "chapter",
+      "number": "31",
+      "label": "31",
+      "title": "Разговор земляков",
+      "phase": 3,
+      "volume": null,
+      "words": 3854,
+      "paragraphs": 265,
+      "illustrations": [
+        "i_037.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_037.png",
+          "after_paragraph": 150
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "032",
+      "type": "chapter",
+      "number": "32",
+      "label": "32",
+      "title": "Путь вперед",
+      "phase": 3,
+      "volume": null,
+      "words": 4719,
+      "paragraphs": 312,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "033",
+      "type": "chapter",
+      "number": "33",
+      "label": "33",
+      "title": "А теперь, путешествие в Город Демонов",
+      "phase": 3,
+      "volume": null,
+      "words": 5524,
+      "paragraphs": 380,
+      "illustrations": [
+        "i_038.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_038.png",
+          "after_paragraph": 321
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "034",
+      "type": "chapter",
+      "number": "34",
+      "label": "34",
+      "title": "Переполох в карете",
+      "phase": 3,
+      "volume": null,
+      "words": 7830,
+      "paragraphs": 469,
+      "illustrations": [
+        "i_039.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_039.png",
+          "after_paragraph": 318
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "035",
+      "type": "chapter",
+      "number": "35",
+      "label": "35",
+      "title": "Ночь для разговоров",
+      "phase": 3,
+      "volume": null,
+      "words": 4613,
+      "paragraphs": 298,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "036",
+      "type": "chapter",
+      "number": "36",
+      "label": "36",
+      "title": "Хаотический Город Демонов",
+      "phase": 3,
+      "volume": null,
+      "words": 5284,
+      "paragraphs": 292,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "037",
+      "type": "chapter",
+      "number": "37",
+      "label": "37",
+      "title": "Леди Замка Красного Лазурита",
+      "phase": 3,
+      "volume": null,
+      "words": 3029,
+      "paragraphs": 185,
+      "illustrations": [
+        "i_040.png",
+        "i_041.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_040.png",
+          "after_paragraph": 89
+        },
+        {
+          "image": "i_041.png",
+          "after_paragraph": 128
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "038",
+      "type": "chapter",
+      "number": "38",
+      "label": "38",
+      "title": "Награда спустя восемь лет",
+      "phase": 3,
+      "volume": null,
+      "words": 5381,
+      "paragraphs": 371,
+      "illustrations": [
+        "i_042.png",
+        "i_043.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_042.png",
+          "after_paragraph": 140
+        },
+        {
+          "image": "i_043.png",
+          "after_paragraph": 356
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "039",
+      "type": "chapter",
+      "number": "39",
+      "label": "39",
+      "title": "Порок",
+      "phase": 3,
+      "volume": null,
+      "words": 6970,
+      "paragraphs": 442,
+      "illustrations": [
+        "i_044.png",
+        "i_045.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_044.png",
+          "after_paragraph": 429
+        },
+        {
+          "image": "i_045.png",
+          "after_paragraph": 431
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "040",
+      "type": "chapter",
+      "number": "40",
+      "label": "40",
+      "title": "Насуки Субалу",
+      "phase": 4,
+      "volume": null,
+      "words": 4227,
+      "paragraphs": 272,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "041",
+      "type": "chapter",
+      "number": "41",
+      "label": "41",
+      "title": "Разговор за чашечкой чая",
+      "phase": 4,
+      "volume": null,
+      "words": 5570,
+      "paragraphs": 348,
+      "illustrations": [
+        "i_046.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_046.png",
+          "after_paragraph": 42
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "042",
+      "type": "chapter",
+      "number": "42",
+      "label": "42",
+      "title": "Зверь амбиций",
+      "phase": 4,
+      "volume": null,
+      "words": 4472,
+      "paragraphs": 276,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "043",
+      "type": "chapter",
+      "number": "43",
+      "label": "43",
+      "title": "Позади век",
+      "phase": 4,
+      "volume": null,
+      "words": 6148,
+      "paragraphs": 395,
+      "illustrations": [
+        "i_047.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_047.png",
+          "after_paragraph": 267
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "044",
+      "type": "chapter",
+      "number": "44",
+      "label": "44",
+      "title": "Сужающееся поле зрения",
+      "phase": 4,
+      "volume": null,
+      "words": 4415,
+      "paragraphs": 290,
+      "illustrations": [
+        "i_048.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_048.png",
+          "after_paragraph": 135
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "045",
+      "type": "chapter",
+      "number": "45",
+      "label": "45",
+      "title": "Конкон",
+      "phase": 4,
+      "volume": null,
+      "words": 4946,
+      "paragraphs": 341,
+      "illustrations": [
+        "i_049.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_049.png",
+          "after_paragraph": 293
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "046",
+      "type": "chapter",
+      "number": "46",
+      "label": "46",
+      "title": "Детское безрассудство",
+      "phase": 4,
+      "volume": null,
+      "words": 3830,
+      "paragraphs": 245,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "047",
+      "type": "chapter",
+      "number": "47",
+      "label": "47",
+      "title": "Неисчезнувшая ■■■■",
+      "phase": 4,
+      "volume": null,
+      "words": 4107,
+      "paragraphs": 314,
+      "illustrations": [
+        "i_050.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_050.png",
+          "after_paragraph": 221
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "048",
+      "type": "chapter",
+      "number": "48",
+      "label": "48",
+      "title": "Переплетенные цели в Городе Демонов",
+      "phase": 4,
+      "volume": null,
+      "words": 4971,
+      "paragraphs": 333,
+      "illustrations": [
+        "i_051.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_051.png",
+          "after_paragraph": 282
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "049",
+      "type": "chapter",
+      "number": "49",
+      "label": "49",
+      "title": "Так сошлись звезды",
+      "phase": 4,
+      "volume": null,
+      "words": 5240,
+      "paragraphs": 355,
+      "illustrations": [
+        "i_052.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_052.png",
+          "after_paragraph": 152
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "050",
+      "type": "chapter",
+      "number": "50",
+      "label": "50",
+      "title": "“Дыра” с прекрасным видом",
+      "phase": 4,
+      "volume": null,
+      "words": 5489,
+      "paragraphs": 363,
+      "illustrations": [
+        "i_053.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_053.png",
+          "after_paragraph": 361
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "051",
+      "type": "chapter",
+      "number": "51",
+      "label": "51",
+      "title": "Госпожа Города Демонов",
+      "phase": 4,
+      "volume": null,
+      "words": 4265,
+      "paragraphs": 257,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "052",
+      "type": "chapter",
+      "number": "52",
+      "label": "52",
+      "title": "Любовь к предательству непоколебима",
+      "phase": 4,
+      "volume": null,
+      "words": 4309,
+      "paragraphs": 299,
+      "illustrations": [
+        "i_054.png",
+        "i_055.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_054.png",
+          "after_paragraph": 1
+        },
+        {
+          "image": "i_055.png",
+          "after_paragraph": 158
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "053",
+      "type": "chapter",
+      "number": "53",
+      "label": "53",
+      "title": "За кулисами одиннадцатой секунды",
+      "phase": 4,
+      "volume": null,
+      "words": 6797,
+      "paragraphs": 514,
+      "illustrations": [
+        "i_056.png",
+        "i_057.png",
+        "i_058.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_056.png",
+          "after_paragraph": 8
+        },
+        {
+          "image": "i_057.png",
+          "after_paragraph": 162
+        },
+        {
+          "image": "i_058.png",
+          "after_paragraph": 506
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "054",
+      "type": "chapter",
+      "number": "54",
+      "label": "54",
+      "title": "Утопия Хаосфлейма",
+      "phase": 4,
+      "volume": null,
+      "words": 8434,
+      "paragraphs": 557,
+      "illustrations": [
+        "i_059.png",
+        "i_060.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_059.png",
+          "after_paragraph": 310
+        },
+        {
+          "image": "i_060.png",
+          "after_paragraph": 546
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "055",
+      "type": "chapter",
+      "number": "55",
+      "label": "55",
+      "title": "Диссонанс Города Демонов",
+      "phase": 5,
+      "volume": null,
+      "words": 5936,
+      "paragraphs": 407,
+      "illustrations": [
+        "i_061.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_061.png",
+          "after_paragraph": 15
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "056",
+      "type": "chapter",
+      "number": "56",
+      "label": "56",
+      "title": "Великое Бедствие",
+      "phase": 5,
+      "volume": null,
+      "words": 3288,
+      "paragraphs": 229,
+      "illustrations": [
+        "i_062.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_062.png",
+          "after_paragraph": 86
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "057",
+      "type": "chapter",
+      "number": "57",
+      "label": "57",
+      "title": "Жить по-мудрому не получится",
+      "phase": 5,
+      "volume": null,
+      "words": 4310,
+      "paragraphs": 299,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "058",
+      "type": "chapter",
+      "number": "58",
+      "label": "58",
+      "title": "Те, кому некуда обратиться",
+      "phase": 5,
+      "volume": null,
+      "words": 5836,
+      "paragraphs": 368,
+      "illustrations": [
+        "i_063.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_063.png",
+          "after_paragraph": 188
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "059",
+      "type": "chapter",
+      "number": "59",
+      "label": "59",
+      "title": "Таритта Судрак",
+      "phase": 5,
+      "volume": null,
+      "words": 6821,
+      "paragraphs": 485,
+      "illustrations": [
+        "i_064.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_064.png",
+          "after_paragraph": 478
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "060",
+      "type": "chapter",
+      "number": "60",
+      "label": "60",
+      "title": "Посев произошедшего",
+      "phase": 5,
+      "volume": null,
+      "words": 6134,
+      "paragraphs": 391,
+      "illustrations": [
+        "i_065.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_065.png",
+          "after_paragraph": 389
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "061",
+      "type": "chapter",
+      "number": "61",
+      "label": "54B",
+      "title": "Покрывая голубое небо",
+      "phase": 6,
+      "volume": null,
+      "words": 4472,
+      "paragraphs": 281,
+      "illustrations": [
+        "i_066.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_066.png",
+          "after_paragraph": 239
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "062",
+      "type": "chapter",
+      "number": "62",
+      "label": "55B",
+      "title": "Диссонанс Города-крепости",
+      "phase": 6,
+      "volume": null,
+      "words": 6113,
+      "paragraphs": 366,
+      "illustrations": [
+        "i_067.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_067.png",
+          "after_paragraph": 364
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "063",
+      "type": "chapter",
+      "number": "63",
+      "label": "56B",
+      "title": "Катастрофа летающих драконов",
+      "phase": 6,
+      "volume": null,
+      "words": 7520,
+      "paragraphs": 510,
+      "illustrations": [
+        "i_068.png",
+        "i_069.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_068.png",
+          "after_paragraph": 304
+        },
+        {
+          "image": "i_069.png",
+          "after_paragraph": 507
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "064",
+      "type": "chapter",
+      "number": "64",
+      "label": "57B",
+      "title": "Называйте меня идиотом, если хотите",
+      "phase": 6,
+      "volume": null,
+      "words": 5293,
+      "paragraphs": 332,
+      "illustrations": [
+        "i_070.png",
+        "i_071.png",
+        "i_072.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_070.png",
+          "after_paragraph": 166
+        },
+        {
+          "image": "i_071.png",
+          "after_paragraph": 265
+        },
+        {
+          "image": "i_072.png",
+          "after_paragraph": 323
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "065",
+      "type": "chapter",
+      "number": "65",
+      "label": "58B",
+      "title": "Те, кому не к кому обратиться",
+      "phase": 6,
+      "volume": null,
+      "words": 4083,
+      "paragraphs": 297,
+      "illustrations": [
+        "i_073.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_073.png",
+          "after_paragraph": 20
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "066",
+      "type": "chapter",
+      "number": "66",
+      "label": "59B",
+      "title": "Флоп О'Коннелл",
+      "phase": 6,
+      "volume": null,
+      "words": 8265,
+      "paragraphs": 515,
+      "illustrations": [
+        "i_074.png",
+        "i_075.png",
+        "i_076.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_074.png",
+          "after_paragraph": 199
+        },
+        {
+          "image": "i_075.png",
+          "after_paragraph": 354
+        },
+        {
+          "image": "i_076.png",
+          "after_paragraph": 503
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "067",
+      "type": "chapter",
+      "number": "67",
+      "label": "61",
+      "title": "Добро пожаловать… на Остров Гладиаторов!",
+      "phase": 6,
+      "volume": null,
+      "words": 6293,
+      "paragraphs": 380,
+      "illustrations": [
+        "i_077.png",
+        "i_078.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_077.png",
+          "after_paragraph": 46
+        },
+        {
+          "image": "i_078.png",
+          "after_paragraph": 212
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "068",
+      "type": "chapter",
+      "number": "68",
+      "label": "62",
+      "title": "Порядок острова",
+      "phase": 6,
+      "volume": null,
+      "words": 3858,
+      "paragraphs": 210,
+      "illustrations": [
+        "i_079.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_079.png",
+          "after_paragraph": 32
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "069",
+      "type": "chapter",
+      "number": "69",
+      "label": "63",
+      "title": "Спарка",
+      "phase": 6,
+      "volume": null,
+      "words": 6438,
+      "paragraphs": 431,
+      "illustrations": [
+        "i_080.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_080.png",
+          "after_paragraph": 101
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "070",
+      "type": "chapter",
+      "number": "70",
+      "label": "64",
+      "title": "Волшебные слова",
+      "phase": 6,
+      "volume": null,
+      "words": 5731,
+      "paragraphs": 400,
+      "illustrations": [
+        "i_081.png",
+        "i_082.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_081.png",
+          "after_paragraph": 333
+        },
+        {
+          "image": "i_082.png",
+          "after_paragraph": 351
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "071",
+      "type": "chapter",
+      "number": "71",
+      "label": "65",
+      "title": "Борец за школьную еду",
+      "phase": 6,
+      "volume": null,
+      "words": 5729,
+      "paragraphs": 318,
+      "illustrations": [
+        "i_083.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_083.png",
+          "after_paragraph": 141
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "072",
+      "type": "chapter",
+      "number": "72",
+      "label": "66",
+      "title": "Хиайн Ятс",
+      "phase": 6,
+      "volume": null,
+      "words": 6940,
+      "paragraphs": 379,
+      "illustrations": [
+        "i_084.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_084.png",
+          "after_paragraph": 320
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "073",
+      "type": "chapter",
+      "number": "73",
+      "label": "67",
+      "title": "За моляром",
+      "phase": 6,
+      "volume": null,
+      "words": 3475,
+      "paragraphs": 236,
+      "illustrations": [
+        "i_085.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_085.png",
+          "after_paragraph": 234
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "074",
+      "type": "chapter",
+      "number": "74",
+      "label": "68",
+      "title": "Наставление Волка-Меча",
+      "phase": 6,
+      "volume": null,
+      "words": 5737,
+      "paragraphs": 357,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "075",
+      "type": "chapter",
+      "number": "75",
+      "label": "69",
+      "title": "Прибытие из столицы Империи",
+      "phase": 6,
+      "volume": null,
+      "words": 6386,
+      "paragraphs": 442,
+      "illustrations": [
+        "i_086.png",
+        "i_087.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_086.png",
+          "after_paragraph": 177
+        },
+        {
+          "image": "i_087.png",
+          "after_paragraph": 346
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "076",
+      "type": "chapter",
+      "number": "76",
+      "label": "70",
+      "title": "Кое-что",
+      "phase": 7,
+      "volume": null,
+      "words": 5222,
+      "paragraphs": 345,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "077",
+      "type": "chapter",
+      "number": "77",
+      "label": "71",
+      "title": "Вода",
+      "phase": 7,
+      "volume": null,
+      "words": 5161,
+      "paragraphs": 336,
+      "illustrations": [
+        "i_088.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_088.jpg",
+          "after_paragraph": 246
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "078",
+      "type": "chapter",
+      "number": "78",
+      "label": "72",
+      "title": "Нелепые слухи",
+      "phase": 7,
+      "volume": null,
+      "words": 6885,
+      "paragraphs": 445,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "079",
+      "type": "chapter",
+      "number": "79",
+      "label": "73",
+      "title": "Вайц Логун",
+      "phase": 7,
+      "volume": null,
+      "words": 4460,
+      "paragraphs": 308,
+      "illustrations": [
+        "i_089.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_089.jpg",
+          "after_paragraph": 107
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "080",
+      "type": "chapter",
+      "number": "80",
+      "label": "74",
+      "title": "Идра Мисанга",
+      "phase": 7,
+      "volume": null,
+      "words": 4931,
+      "paragraphs": 339,
+      "illustrations": [
+        "i_090.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_090.jpg",
+          "after_paragraph": 322
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "081",
+      "type": "chapter",
+      "number": "81",
+      "label": "75",
+      "title": "I know”",
+      "phase": 7,
+      "volume": null,
+      "words": 11268,
+      "paragraphs": 758,
+      "illustrations": [
+        "i_091.jpg",
+        "i_092.jpg",
+        "i_093.jpg",
+        "i_094.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_091.jpg",
+          "after_paragraph": 149
+        },
+        {
+          "image": "i_092.jpg",
+          "after_paragraph": 387
+        },
+        {
+          "image": "i_093.jpg",
+          "after_paragraph": 742
+        },
+        {
+          "image": "i_094.png",
+          "after_paragraph": 745
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "082",
+      "type": "chapter",
+      "number": "82",
+      "label": "76",
+      "title": "Нежданные встречи в столице Империи",
+      "phase": 7,
+      "volume": null,
+      "words": 4949,
+      "paragraphs": 281,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "083",
+      "type": "chapter",
+      "number": "83",
+      "label": "77",
+      "title": "Ирония судьбы",
+      "phase": 7,
+      "volume": null,
+      "words": 5706,
+      "paragraphs": 340,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "084",
+      "type": "chapter",
+      "number": "84",
+      "label": "78",
+      "title": "Переменчивое воссоединение",
+      "phase": 7,
+      "volume": null,
+      "words": 6910,
+      "paragraphs": 442,
+      "illustrations": [
+        "i_095.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_095.png",
+          "after_paragraph": 440
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "085",
+      "type": "chapter",
+      "number": "85",
+      "label": "79",
+      "title": "Громкий алый смех",
+      "phase": 7,
+      "volume": null,
+      "words": 3940,
+      "paragraphs": 254,
+      "illustrations": [
+        "i_096.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_096.png",
+          "after_paragraph": 252
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "086",
+      "type": "chapter",
+      "number": "86",
+      "label": "80",
+      "title": "Айрис и Терновый Король",
+      "phase": 7,
+      "volume": null,
+      "words": 4267,
+      "paragraphs": 260,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "087",
+      "type": "chapter",
+      "number": "87",
+      "label": "81",
+      "title": "Свирепая Леди и Клоун",
+      "phase": 7,
+      "volume": null,
+      "words": 4601,
+      "paragraphs": 234,
+      "illustrations": [
+        "i_097.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_097.png",
+          "after_paragraph": 232
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "088",
+      "type": "chapter",
+      "number": "88",
+      "label": "82",
+      "title": "Повстанческие намерения",
+      "phase": 7,
+      "volume": null,
+      "words": 3646,
+      "paragraphs": 203,
+      "illustrations": [
+        "i_098.png",
+        "i_099.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_098.png",
+          "after_paragraph": 16
+        },
+        {
+          "image": "i_099.png",
+          "after_paragraph": 137
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "089",
+      "type": "chapter",
+      "number": "89",
+      "label": "83",
+      "title": "Война и поле боя",
+      "phase": 7,
+      "volume": null,
+      "words": 3446,
+      "paragraphs": 219,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "090",
+      "type": "chapter",
+      "number": "90",
+      "label": "84",
+      "title": "Чайная Комната",
+      "phase": 7,
+      "volume": null,
+      "words": 4061,
+      "paragraphs": 254,
+      "illustrations": [
+        "i_100.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_100.png",
+          "after_paragraph": 241
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "091",
+      "type": "chapter",
+      "number": "91",
+      "label": "85",
+      "title": "Друк",
+      "phase": 7,
+      "volume": null,
+      "words": 5255,
+      "paragraphs": 332,
+      "illustrations": [
+        "i_101.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_101.png",
+          "after_paragraph": 83
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "092",
+      "type": "chapter",
+      "number": "92",
+      "label": "86",
+      "title": "Пять Бастионов",
+      "phase": 7,
+      "volume": null,
+      "words": 4071,
+      "paragraphs": 224,
+      "illustrations": [
+        "i_102.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_102.png",
+          "after_paragraph": 219
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "093",
+      "type": "chapter",
+      "number": "93",
+      "label": "87",
+      "title": "Решающая битва на Бастионе",
+      "phase": 7,
+      "volume": null,
+      "words": 5017,
+      "paragraphs": 296,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "094",
+      "type": "chapter",
+      "number": "94",
+      "label": "88",
+      "title": "Новый ветер",
+      "phase": 7,
+      "volume": null,
+      "words": 5807,
+      "paragraphs": 344,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "095",
+      "type": "chapter",
+      "number": "95",
+      "label": "89",
+      "title": "Кафма Ирулюкс",
+      "phase": 7,
+      "volume": null,
+      "words": 4683,
+      "paragraphs": 265,
+      "illustrations": [
+        "i_103.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_103.png",
+          "after_paragraph": 263
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "096",
+      "type": "chapter",
+      "number": "96",
+      "label": "90",
+      "title": "Колыбельная ада",
+      "phase": 7,
+      "volume": null,
+      "words": 3825,
+      "paragraphs": 222,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "097",
+      "type": "chapter",
+      "number": "97",
+      "label": "91",
+      "title": "Стремясь по полю битвы",
+      "phase": 8,
+      "volume": null,
+      "words": 2542,
+      "paragraphs": 146,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "098",
+      "type": "chapter",
+      "number": "98",
+      "label": "92",
+      "title": "Возрождение отношений",
+      "phase": 8,
+      "volume": null,
+      "words": 4807,
+      "paragraphs": 307,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "099",
+      "type": "chapter",
+      "number": "99",
+      "label": "93",
+      "title": "Каменная армия",
+      "phase": 8,
+      "volume": null,
+      "words": 3574,
+      "paragraphs": 209,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "100",
+      "type": "chapter",
+      "number": "100",
+      "label": "94",
+      "title": "Причины сражаться",
+      "phase": 8,
+      "volume": null,
+      "words": 5411,
+      "paragraphs": 345,
+      "illustrations": [
+        "i_104.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_104.png",
+          "after_paragraph": 343
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "101",
+      "type": "chapter",
+      "number": "101",
+      "label": "95",
+      "title": "Противники на всех бастионах",
+      "phase": 8,
+      "volume": null,
+      "words": 7496,
+      "paragraphs": 480,
+      "illustrations": [
+        "i_105.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_105.png",
+          "after_paragraph": 478
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "102",
+      "type": "chapter",
+      "number": "102",
+      "label": "96",
+      "title": "Рисуя с глубокой любовью",
+      "phase": 8,
+      "volume": null,
+      "words": 4765,
+      "paragraphs": 309,
+      "illustrations": [
+        "i_106.jpg",
+        "i_107.jpg",
+        "i_108.png",
+        "i_109.png",
+        "i_110.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_106.jpg",
+          "after_paragraph": 106
+        },
+        {
+          "image": "i_107.jpg",
+          "after_paragraph": 106
+        },
+        {
+          "image": "i_108.png",
+          "after_paragraph": 243
+        },
+        {
+          "image": "i_109.png",
+          "after_paragraph": 293
+        },
+        {
+          "image": "i_110.png",
+          "after_paragraph": 295
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "103",
+      "type": "chapter",
+      "number": "103",
+      "label": "97",
+      "title": "Прибытие из-за пределов запада",
+      "phase": 8,
+      "volume": null,
+      "words": 4136,
+      "paragraphs": 257,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "104",
+      "type": "chapter",
+      "number": "104",
+      "label": "98",
+      "title": "Батальон Плеяд",
+      "phase": 8,
+      "volume": null,
+      "words": 4222,
+      "paragraphs": 224,
+      "illustrations": [
+        "i_111.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_111.png",
+          "after_paragraph": 134
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "105",
+      "type": "chapter",
+      "number": "105",
+      "label": "99",
+      "title": "Тот, кто правит небом",
+      "phase": 8,
+      "volume": null,
+      "words": 3626,
+      "paragraphs": 185,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "106",
+      "type": "chapter",
+      "number": "106",
+      "label": "100",
+      "title": "Множества изменений",
+      "phase": 8,
+      "volume": null,
+      "words": 5663,
+      "paragraphs": 359,
+      "illustrations": [
+        "i_112.png",
+        "i_113.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_112.png",
+          "after_paragraph": 184
+        },
+        {
+          "image": "i_113.png",
+          "after_paragraph": 355
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "107",
+      "type": "chapter",
+      "number": "107",
+      "label": "101",
+      "title": "Любовь — это пламя",
+      "phase": 8,
+      "volume": null,
+      "words": 2651,
+      "paragraphs": 157,
+      "illustrations": [
+        "i_114.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_114.png",
+          "after_paragraph": 146
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "108",
+      "type": "chapter",
+      "number": "108",
+      "label": "102",
+      "title": "Стена решимости",
+      "phase": 8,
+      "volume": null,
+      "words": 4167,
+      "paragraphs": 250,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "109",
+      "type": "chapter",
+      "number": "109",
+      "label": "103",
+      "title": "Звездный отсчет",
+      "phase": 8,
+      "volume": null,
+      "words": 3160,
+      "paragraphs": 181,
+      "illustrations": [
+        "i_115.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_115.png",
+          "after_paragraph": 88
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "110",
+      "type": "chapter",
+      "number": "110",
+      "label": "104",
+      "title": "Безумие бастионов: Часть I",
+      "phase": 8,
+      "volume": null,
+      "words": 3110,
+      "paragraphs": 194,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "111",
+      "type": "chapter",
+      "number": "111",
+      "label": "105",
+      "title": "Безумие бастионов: Часть II",
+      "phase": 8,
+      "volume": null,
+      "words": 4262,
+      "paragraphs": 289,
+      "illustrations": [
+        "i_116.png",
+        "i_117.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_116.png",
+          "after_paragraph": 68
+        },
+        {
+          "image": "i_117.png",
+          "after_paragraph": 191
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "112",
+      "type": "chapter",
+      "number": "112",
+      "label": "106",
+      "title": "Безумие бастионов: Часть III",
+      "phase": 8,
+      "volume": null,
+      "words": 5140,
+      "paragraphs": 310,
+      "illustrations": [
+        "i_118.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_118.png",
+          "after_paragraph": 306
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "113",
+      "type": "chapter",
+      "number": "113",
+      "label": "107",
+      "title": "Чиша Голд",
+      "phase": 8,
+      "volume": null,
+      "words": 11768,
+      "paragraphs": 656,
+      "illustrations": [
+        "i_119.png",
+        "i_120.png",
+        "i_121.png",
+        "i_122.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_119.png",
+          "after_paragraph": 12
+        },
+        {
+          "image": "i_120.png",
+          "after_paragraph": 50
+        },
+        {
+          "image": "i_121.png",
+          "after_paragraph": 534
+        },
+        {
+          "image": "i_122.png",
+          "after_paragraph": 638
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "114",
+      "type": "chapter",
+      "number": "114",
+      "label": "108",
+      "title": "Грядущее Великое Бедствие",
+      "phase": 8,
+      "volume": null,
+      "words": 4218,
+      "paragraphs": 259,
+      "illustrations": [
+        "i_123.png",
+        "i_124.png",
+        "i_125.png",
+        "i_126.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_123.png",
+          "after_paragraph": 104
+        },
+        {
+          "image": "i_124.png",
+          "after_paragraph": 156
+        },
+        {
+          "image": "i_125.png",
+          "after_paragraph": 173
+        },
+        {
+          "image": "i_126.png",
+          "after_paragraph": 254
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "115",
+      "type": "chapter",
+      "number": "115",
+      "label": "109",
+      "title": "Волк-Меч Империи",
+      "phase": 8,
+      "volume": null,
+      "words": 6736,
+      "paragraphs": 402,
+      "illustrations": [
+        "i_127.png",
+        "i_128.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_127.png",
+          "after_paragraph": 167
+        },
+        {
+          "image": "i_128.png",
+          "after_paragraph": 399
+        }
+      ],
+      "source_ref": "flat-scan"
+    },
+    {
+      "slug": "116",
+      "type": "chapter",
+      "number": "116",
+      "label": "110",
+      "title": "Поздравительные слова",
+      "phase": 8,
+      "volume": null,
+      "words": 10220,
+      "paragraphs": 633,
+      "illustrations": [
+        "i_129.png",
+        "i_130.png",
+        "i_131.png"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_129.png",
+          "after_paragraph": 189
+        },
+        {
+          "image": "i_130.png",
+          "after_paragraph": 608
+        },
+        {
+          "image": "i_131.png",
+          "after_paragraph": 629
+        }
+      ],
+      "source_ref": "flat-scan"
+    }
+  ]
+}
