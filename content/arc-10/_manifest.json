@@ -13,7 +13,8 @@
     "6_10-29.epub",
     "7_10-30.epub",
     "8_10-31.epub",
-    "9_10-32.epub"
+    "9_10-32.epub",
+    "13_10-36.epub"
   ],
   "toc_labels": [
     "АРКА 10 — ПРОЛОГ",
@@ -838,6 +839,20 @@
         }
       ],
       "source_ref": "index_split_000.html +index_split_001.html +index_split_002.html"
+    },
+    {
+      "slug": "036",
+      "type": "chapter",
+      "number": "36",
+      "label": "36",
+      "title": "Круглый идиот",
+      "phase": 3,
+      "volume": null,
+      "words": 3431,
+      "paragraphs": 205,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
     }
   ]
 }

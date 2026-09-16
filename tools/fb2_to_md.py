@@ -123,6 +123,13 @@ def render_block(node, images: list[str]) -> str:
         # звёздочки/ромбики (в т.ч. в *курсиве*) — это разделитель сцен, не абзац
         if is_scene_break(md.strip("*_ ")):
             return SCENE_BREAK
+        # номер подглавы, оформленный как «<p><strong>N </strong></p>» вместо
+        # вложенного <section>/<title> (арка 3, тома 7–8) — это тот же по смыслу
+        # маркер, что и nested-section ниже (даёт «## N»), просто в другой
+        # исходной разметке. Без этой ветки лишний пробел перед закрывающим **
+        # ломает CommonMark-эмфазис, и «**1 **» показывается на странице буквально
+        if re.fullmatch(r"\*{1,2}\s*[0-9]{1,3}\s*\*{1,2}", md):
+            return f"## {md.strip('*').strip()}"
         return md
     if tag == "subtitle":
         sub = inline_md(node).strip()
@@ -320,7 +327,16 @@ def build_flat(body, *, volume: int | None, default_phase: int | None,
         if cur is None:
             front_skipped += 1
             continue
-        buf.append(inline_md(el).strip() if tag == "p" else f"### {txt}")
+        if tag == "p":
+            md = inline_md(el).strip()
+            # см. комментарий у той же проверки в render_block() — маркер
+            # подглавы как «<p><strong>N </strong></p>», не через <subtitle>
+            if re.fullmatch(r"\*{1,2}\s*[0-9]{1,3}\s*\*{1,2}", md):
+                buf.append(f"## {md.strip('*').strip()}")
+            else:
+                buf.append(md)
+        else:
+            buf.append(f"### {txt}")
     flush()
     for c in chapters:
         c.translator = c.translator or credits["translator"]
