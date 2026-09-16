@@ -162,7 +162,7 @@ checkAndToastUnlocks(
 /* ─────────── скачать всё «Дополнительное» для офлайна — тот же приём, что у арок ─────────── */
 {
   const off = document.getElementById("offline") as HTMLButtonElement | null;
-  const oslug = off?.dataset.slug;
+  const oslug = off?.dataset.offlineSlug;
   const OFFKEY = `rz:offline:${oslug}`;
   if (off) {
     safe(() => {

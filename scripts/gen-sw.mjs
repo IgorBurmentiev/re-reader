@@ -31,7 +31,7 @@ const files = await walk(DIST);
 const urls = files.map(toUrl);
 
 // ── оболочка приложения: precache на install ──
-const shell = new Set(["/", "/offline/", "/search/", "/manifest.webmanifest"]);
+const shell = new Set(["/", "/extra/", "/offline/", "/search/", "/manifest.webmanifest"]);
 for (const u of urls) {
   if (/^\/_astro\/.*\.(js|css|woff2?)$/.test(u)) shell.add(u);
   if (/^\/pagefind\/(pagefind(-ui)?\.(js|css)|.*\.wasm.*|pagefind-.*\.js)$/.test(u))
@@ -47,7 +47,15 @@ const IMG_RE = /(?:src|href)="(\/_astro\/[^"]+\.(?:webp|avif|png|jpe?g))"/g;
 const SRCSET_RE = /srcset="([^"]+)"/g;
 for (const p of files) {
   const u = toUrl(p);
-  const m = u.match(/^\/read\/(arc-[^/]+|extra)\/[^/]+\/index\.html$/);
+  // страницы самих глав/частей — как и было
+  let m = u.match(/^\/read\/(arc-[^/]+|extra)\/[^/]+\/index\.html$/);
+  // + подменю конкретной истории «Дополнительного» (/extra/<slug>/ — список
+  // частей многочастевой истории) — без этого клик по истории из офлайн-списка
+  // на /extra вёл на несохранённую страницу, даже когда все главы уже скачаны
+  if (!m) {
+    const m2 = u.match(/^\/extra\/([^/]+)\/index\.html$/);
+    if (m2) m = [u, "extra"];
+  }
   if (!m) continue;
   const slug = m[1];
   (arcs[slug] ??= { pages: [], assets: new Set() });
