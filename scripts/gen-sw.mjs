@@ -142,7 +142,17 @@ self.addEventListener("fetch", (e) => {
   if (request.mode === "navigate") {
     e.respondWith(
       caches.match(request).then((cached) => {
-        const net = fetch(request).then((res) => {
+        // redirect: "manual" — ссылки на сайте без завершающего слэша (обычные
+        // href вида /arc/arc-01) сервер отвечает 307 на /arc/arc-01/. Обычный
+        // fetch() САМ незаметно проходит по этому редиректу, и тогда итоговый
+        // Response помечен как redirected=true — а браузер запрещает отвечать
+        // таким объектом на навигацию и молча отменяет её (DevTools покажет
+        // «(canceled)», 0мс, без единого намёка на причину). С "manual" редирект
+        // возвращается как opaqueredirect и передаётся браузеру как есть — тот
+        // сам совершает переход на /arc/arc-01/, и уже на этот адрес прилетает
+        // новое, отдельное событие fetch без всякого редиректа.
+        const net = fetch(request, { redirect: "manual" }).then((res) => {
+          if (res.type === "opaqueredirect") return res;
           if (!res.ok) throw new Error("bad status " + res.status);
           const copy = res.clone();
           caches.open(CACHE).then((c) => c.put(request, copy));
