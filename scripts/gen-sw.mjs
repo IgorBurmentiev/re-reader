@@ -124,28 +124,35 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(request.url);
   if (url.origin !== location.origin) return;
 
-  // навигации — network-first (с таймаутом), затем кэш, затем офлайн-страница.
+  // навигации — network-first, затем кэш, затем офлайн-страница.
   // Важно: fetch() резолвится (не падает в catch), даже если сервер ответил
   // ошибкой — плохое мобильное/поездное соединение нередко всё же достукивается
   // до Cloudflare, но получает 5xx/капчу капчпортала вместо страницы. Без
   // проверки res.ok сервис-воркер принимал такой ответ за «успех», показывал
-  // и даже кэшировал его поверх рабочей офлайн-копии. Таймаут — на случай,
-  // когда сеть просто медленно виснет: скачанная глава не должна ждать сеть,
-  // если её и так можно отдать мгновенно из кэша.
+  // и даже кэшировал его поверх рабочей офлайн-копии.
+  //
+  // Таймаут на сеть добавляем ТОЛЬКО если для этой страницы уже есть кэш —
+  // тогда есть смысл не ждать медленную/шаткую сеть дольше пары секунд, раз
+  // готовый ответ и так под рукой. Если кэша нет (первый заход на страницу),
+  // упасть всё равно некуда, кроме общей офлайн-заглушки — обрывать сеть по
+  // таймауту тут только вредно: у части читателей соединение до конкретно
+  // этого сервера медленнее 4с, но всё же рабочее, и без искусственного
+  // обрыва страница бы просто загрузилась чуть дольше.
   if (request.mode === "navigate") {
-    const timeout = (ms) =>
-      new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), ms));
     e.respondWith(
-      Promise.race([fetch(request), timeout(4000)])
-        .then((res) => {
+      caches.match(request).then((cached) => {
+        const net = fetch(request).then((res) => {
           if (!res.ok) throw new Error("bad status " + res.status);
           const copy = res.clone();
           caches.open(CACHE).then((c) => c.put(request, copy));
           return res;
-        })
-        .catch(() =>
-          caches.match(request).then((r) => r || caches.match("/offline/")),
-        ),
+        });
+        if (!cached) return net.catch(() => caches.match("/offline/"));
+        return Promise.race([
+          net,
+          new Promise((resolve) => setTimeout(() => resolve(cached), 4000)),
+        ]).catch(() => cached);
+      }),
     );
     return;
   }
