@@ -46,9 +46,36 @@ export function initOfflineDownload(buttonId: string, doneLabel: string): void {
     .catch(() => {});
 
   off.addEventListener("click", async () => {
-    const sw = navigator.serviceWorker?.controller;
+    let sw = navigator.serviceWorker?.controller;
+    // на самом первом визите на сайт страница может отрисоваться и стать
+    // кликабельной раньше, чем сервис-воркер успевает встать под управление
+    // (регистрация + install + activate — доля секунды, но клик может
+    // случиться раньше). Без этой подстраховки в такой момент показывалось
+    // "доступно только в собранной версии" — неправда, версия та самая,
+    // просто воркер ещё не готов.
+    if (!sw && navigator.serviceWorker) {
+      off.textContent = "секунду…";
+      // "ready" резолвится, когда воркер стал active — но это не то же самое,
+      // что "уже взял эту вкладку под контроль" (controller всё ещё может
+      // быть null в этот самый момент, событие controllerchange прилетает
+      // чуть позже отдельно). Ждём именно controllerchange, а не ready.
+      sw = await new Promise<ServiceWorker | null>((resolve) => {
+        const onChange = () => {
+          navigator.serviceWorker.removeEventListener("controllerchange", onChange);
+          resolve(navigator.serviceWorker.controller);
+        };
+        navigator.serviceWorker.addEventListener("controllerchange", onChange);
+        setTimeout(() => {
+          navigator.serviceWorker.removeEventListener("controllerchange", onChange);
+          resolve(navigator.serviceWorker.controller);
+        }, 5000);
+      });
+    }
     if (!sw) {
-      off.textContent = "офлайн-кэш доступен только в собранной версии";
+      off.textContent = navigator.serviceWorker
+        ? "офлайн-кэш ещё не готов — обновите страницу и попробуйте снова"
+        : "офлайн-кэш доступен только в собранной версии";
+      off.disabled = false;
       return;
     }
     off.disabled = true;

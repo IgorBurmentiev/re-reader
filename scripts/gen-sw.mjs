@@ -105,12 +105,22 @@ self.addEventListener("install", (e) => {
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys()
-      .then((ks) => Promise.all(
-        ks.filter((k) => k.startsWith("rezero-") && k !== CACHE).map((k) => caches.delete(k)),
-      ))
-      .then(() => self.clients.claim())
-      .then(() => self.clients.matchAll())
-      .then((cs) => cs.forEach((c) => c.postMessage({ type: "sw-updated", build: BUILD }))),
+      .then((ks) => {
+        const stale = ks.filter((k) => k.startsWith("rezero-") && k !== CACHE);
+        // тост «обновление загружено» имеет смысл только если реально была
+        // предыдущая версия кэша — на самом первом визите (stale пуст) это
+        // не обновление, а обычная установка, и врать про «обновление»
+        // новому читателю незачем.
+        const isRealUpdate = stale.length > 0;
+        return Promise.all(stale.map((k) => caches.delete(k))).then(() => isRealUpdate);
+      })
+      .then((isRealUpdate) =>
+        self.clients.claim().then(() => {
+          if (!isRealUpdate) return;
+          return self.clients.matchAll()
+            .then((cs) => cs.forEach((c) => c.postMessage({ type: "sw-updated", build: BUILD })));
+        }),
+      ),
   );
 });
 
