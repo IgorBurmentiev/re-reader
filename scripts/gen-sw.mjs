@@ -191,10 +191,20 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // хэшированные ассеты — cache-first
+  // хэшированные ассеты — cache-first.
+  // ignoreVary — сервер (замечено на astro preview, но не факт что только там)
+  // шлёт заголовок "Vary: Origin" на статику; браузер сам решает, слать ли заголовок
+  // Origin, и делает это по-разному для module-script'ов (cors) и обычных
+  // fetch()/<link> (no-cors) — из-за этого Cache API считает такие запросы
+  // РАЗНЫМИ и не находит совпадение, хотя URL один и тот же байт-в-байт файл.
+  // Офлайн это означало «не найдено в кэше» → настоящий сетевой fetch → падает
+  // с ERR_FAILED (главы грузились без reader.ts: не работал ни прогресс, ни
+  // оглавление, ни настройки читалки). Хэшированный неизменяемый ассет по
+  // определению не может отличаться в зависимости от Vary — эти заголовки
+  // при сверке кэша просто не имеют смысла для таких файлов.
   if (isImmutable(url.pathname)) {
     e.respondWith(
-      caches.match(request).then(
+      caches.match(request, { ignoreVary: true }).then(
         (hit) =>
           hit ||
           fetch(request).then((res) => {
