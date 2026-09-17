@@ -147,6 +147,16 @@ for (const a of ARCS) {
       <span class="prog" id="prog"></span>
     </div>
 
+    <p class="toolbar">
+      <button id="offline" type="button" data-slug={arc.slug}>
+        <Icon name="download" size={15} /> скачать арку для офлайна
+      </button>
+      <button id="markAllRead" type="button">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+        отметить все главы прочитанными
+      </button>
+    </p>
+
     {
       [...groups.entries()].map(([key, list]) => (
         <section>
@@ -181,16 +191,6 @@ for (const a of ARCS) {
         </section>
       ))
     }
-
-    <p class="toolbar">
-      <button id="offline" type="button" data-slug={arc.slug}>
-        <Icon name="download" size={15} /> скачать арку для офлайна
-      </button>
-      <button id="markAllRead" type="button">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
-        отметить все главы прочитанными
-      </button>
-    </p>
   </div>
 
   <div id="alb" aria-hidden="true"><img alt="" /></div>
@@ -474,7 +474,7 @@ for (const a of ARCS) {
   }
   .k-extra .t, .k-side .t { color: var(--ink-dim); }
 
-  .toolbar { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .toolbar { margin: 0 0 26px; display: flex; flex-wrap: wrap; gap: 10px; }
   .toolbar button {
     display: inline-flex;
     align-items: center;
