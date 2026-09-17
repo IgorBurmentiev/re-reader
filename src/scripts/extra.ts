@@ -1,6 +1,7 @@
 import { computeUnlocked } from "../lib/unlock";
 import { checkAndToastUnlocks } from "../lib/unlockToast";
 import { initListScroll } from "./listScroll";
+import { initOfflineDownload } from "./offlineDownload";
 
 initListScroll();
 
@@ -160,37 +161,5 @@ checkAndToastUnlocks(
 );
 
 /* ─────────── скачать всё «Дополнительное» для офлайна — тот же приём, что у арок ─────────── */
-{
-  const off = document.getElementById("offline") as HTMLButtonElement | null;
-  const oslug = off?.dataset.offlineSlug;
-  const OFFKEY = `rz:offline:${oslug}`;
-  if (off) {
-    safe(() => {
-      if (localStorage.getItem(OFFKEY)) off.textContent = "всё сохранено ✓";
-    });
-    off.addEventListener("click", async () => {
-      const sw = navigator.serviceWorker?.controller;
-      if (!sw) {
-        off.textContent = "офлайн-кэш доступен только в собранной версии";
-        return;
-      }
-      off.disabled = true;
-      off.textContent = "загрузка…";
-      const data = await fetch(`/precache/${oslug}.json`).then((r) => r.json());
-      const urls = [...data.pages, ...data.assets];
-      const onMsg = (e: MessageEvent) => {
-        const m = e.data || {};
-        if (m.type === "cache-progress") off.textContent = `загрузка… ${m.done}/${m.total}`;
-        if (m.type === "cache-done") {
-          off.textContent = "всё сохранено ✓";
-          off.disabled = false;
-          safe(() => localStorage.setItem(OFFKEY, String(Date.now())));
-          navigator.serviceWorker.removeEventListener("message", onMsg);
-        }
-      };
-      navigator.serviceWorker.addEventListener("message", onMsg);
-      sw.postMessage({ type: "cache-urls", urls });
-    });
-  }
-}
+initOfflineDownload("offline", "всё сохранено ✓");
 

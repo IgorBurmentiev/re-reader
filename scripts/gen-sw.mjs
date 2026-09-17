@@ -212,22 +212,30 @@ self.addEventListener("fetch", (e) => {
   );
 });
 
-// «скачать арку офлайн»: клиент шлёт список URL, кладём в текущий кэш
+// «скачать арку офлайн»: клиент шлёт список URL, кладём в текущий кэш.
+// Ошибка на отдельном файле не должна ронять весь процесс (одна битая
+// картинка не должна блокировать остальные 400 страниц) — но и молчать о
+// провале нельзя: раньше пустой catch проглатывал вообще все ошибки, и клиент
+// получал «готово», даже если реально не скачалось НИЧЕГО (например, кликнули
+// «скачать» без сети) — ложная уверенность хуже честной ошибки.
 self.addEventListener("message", (e) => {
   const d = e.data || {};
   if (d.type === "cache-urls" && Array.isArray(d.urls)) {
     e.waitUntil(
       caches.open(CACHE).then(async (c) => {
         let done = 0;
+        let failed = 0;
         for (const u of d.urls) {
           try {
             await c.add(u);
-          } catch {}
+          } catch {
+            failed++;
+          }
           done++;
           if (done % 20 === 0 || done === d.urls.length)
-            e.source && e.source.postMessage({ type: "cache-progress", done, total: d.urls.length });
+            e.source && e.source.postMessage({ type: "cache-progress", done, total: d.urls.length, failed });
         }
-        e.source && e.source.postMessage({ type: "cache-done", total: d.urls.length });
+        e.source && e.source.postMessage({ type: "cache-done", total: d.urls.length, failed });
       }),
     );
   }
