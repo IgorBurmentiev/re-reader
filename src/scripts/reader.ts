@@ -365,6 +365,19 @@ function progress() {
   });
 }
 addEventListener("scroll", progress, { passive: true });
+// при уходе со страницы через View Transitions браузер, готовя снимок для
+// перехода, сам прокручивает documentElement (замечено: скачком к низу
+// страницы) ДО события pagehide — этот синтетический scroll ловится нашим
+// же слушателем и записывает главу как «дочитана на 100%», хотя её просто
+// пролистнули кнопкой «дальше». pagehide снимает слушатель СЛИШКОМ ПОЗДНО
+// (после того самого скачка), поэтому опираемся на pageswap — оно у
+// cross-document view transitions стреляет раньше, до фазы снимка/скролла.
+// pagehide оставляем вторым слушателем — подстраховка для браузеров без
+// pageswap (переход там просто без глюка со скроллом, но снять слушатель
+// всё равно не помешает).
+const stopTrackingScroll = () => removeEventListener("scroll", progress);
+addEventListener("pageswap", stopTrackingScroll, { once: true });
+addEventListener("pagehide", stopTrackingScroll, { once: true });
 
 /* появление абзацев */
 const io = new IntersectionObserver(
