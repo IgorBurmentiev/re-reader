@@ -60,6 +60,16 @@ const text = $("#text");
     const fig = document.createElement("figure");
     fig.dataset.blur = S.spoil === "on" ? "on" : "off";
     img.removeAttribute("style");
+    // декодируем картинку сразу, как только браузер её догрузит — не трогая
+    // loading="lazy" (сеть по-прежнему тянется, только когда картинка
+    // реально приближается к экрану). Раньше декодирование + наложение
+    // спойлер-блюра откладывались до момента, когда картинка визуально
+    // попадала во вьюпорт, и это ощущалось как одиночный тяжёлый кадр прямо
+    // во время скролла; теперь эта работа сдвигается на момент, когда байты
+    // уже пришли — почти всегда чуть раньше, чем картинка попадёт в кадр.
+    const predecode = () => img.decode?.().catch(() => {});
+    if (img.complete) predecode();
+    else img.addEventListener("load", predecode, { once: true });
     fig.appendChild(img);
     const hide = document.createElement("button");
     hide.className = "fighide";
@@ -335,13 +345,25 @@ const PKEY = "reader:pos:" + location.pathname;
 const savedPos: { y: number; pct: number } | undefined = safe(() =>
   JSON.parse(localStorage.getItem(PKEY) || "null"),
 );
+let lastWrittenPct = -1;
 function progress() {
   const h = root;
   const pct = Math.min(100, Math.round((h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100)) || 0;
   bar.style.width = pct + "%";
   hpct.textContent = pct + "%";
+  // точную позицию для «вернуться туда же» сохраняем всегда — дешёвая одна
+  // запись, и от неё зависит точность восстановления прокрутки.
+  safe(() => localStorage.setItem(PKEY, JSON.stringify({ y: h.scrollTop, pct })));
+  // а вот общий прогресс (+ отметки для «Дополнительного») — только когда
+  // округлённый процент реально изменился: раньше это читало-парсило-
+  // писало 2-4 отдельных ключа localStorage на КАЖДОЕ scroll-событие, даже
+  // если видимый процент за это событие не сдвинулся ни на единицу —
+  // itself ничего не терял, но заметно ел кадровый бюджет при быстрой
+  // прокрутке (особенно на телефоне), особенно вместе с декодированием
+  // картинок на той же странице.
+  if (pct === lastWrittenPct) return;
+  lastWrittenPct = pct;
   safe(() => {
-    localStorage.setItem(PKEY, JSON.stringify({ y: h.scrollTop, pct }));
     const prog = JSON.parse(localStorage.getItem("rz:progress") || "{}");
     // не откатываем назад: если пролистали обратно перечитать что-то, статус
     // «прочитано» и общий процент не должны слетать
@@ -364,7 +386,20 @@ function progress() {
     }
   });
 }
-addEventListener("scroll", progress, { passive: true });
+// сколько бы раз браузер ни выстрелил 'scroll' между двумя отрисованными
+// кадрами (при инерционной прокрутке на телефоне это может быть несколько
+// раз за кадр) — считаем прогресс не чаще одного раза за реально
+// отрисованный кадр, синхронно с тем, что пользователь и так увидит.
+let scrollScheduled = false;
+function onScroll() {
+  if (scrollScheduled) return;
+  scrollScheduled = true;
+  requestAnimationFrame(() => {
+    scrollScheduled = false;
+    progress();
+  });
+}
+addEventListener("scroll", onScroll, { passive: true });
 // при уходе со страницы через View Transitions браузер, готовя снимок для
 // перехода, сам прокручивает documentElement (замечено: скачком к низу
 // страницы) ДО события pagehide — этот синтетический scroll ловится нашим
@@ -375,7 +410,7 @@ addEventListener("scroll", progress, { passive: true });
 // pagehide оставляем вторым слушателем — подстраховка для браузеров без
 // pageswap (переход там просто без глюка со скроллом, но снять слушатель
 // всё равно не помешает).
-const stopTrackingScroll = () => removeEventListener("scroll", progress);
+const stopTrackingScroll = () => removeEventListener("scroll", onScroll);
 addEventListener("pageswap", stopTrackingScroll, { once: true });
 addEventListener("pagehide", stopTrackingScroll, { once: true });
 

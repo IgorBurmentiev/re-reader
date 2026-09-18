@@ -22,6 +22,22 @@ function hashStr(s: string): string {
   return h.toString(36);
 }
 
+// раньше "скачано ✓" верило один раз сохранённой сигнатуре и никогда больше
+// не проверяло, что файлы физически ещё лежат в кэше — а браузер вправе сам
+// тихо стереть офлайн-кэш при нехватке места на устройстве. Из-за этого
+// кнопка могла годами утверждать «сохранено», хотя часть (или всё) уже
+// потерялось. Здесь — честная проверка по факту: реально ли каждый URL из
+// списка всё ещё отвечает из Cache Storage.
+async function verifyCached(urls: string[]): Promise<boolean> {
+  if (!("caches" in window)) return false;
+  const keys = await caches.keys();
+  const cacheName = keys.find((k) => k.startsWith("rezero-"));
+  if (!cacheName) return false;
+  const cache = await caches.open(cacheName);
+  const hits = await Promise.all(urls.map((u) => cache.match(u).then((r) => !!r)));
+  return hits.every(Boolean);
+}
+
 export function initOfflineDownload(buttonId: string, doneLabel: string): void {
   const off = document.getElementById(buttonId) as HTMLButtonElement | null;
   if (!off) return;
@@ -32,12 +48,19 @@ export function initOfflineDownload(buttonId: string, doneLabel: string): void {
   // кнопка останется в своём стартовом виде из разметки
   fetch(`/precache/${oslug}.json`)
     .then((r) => r.text())
-    .then((text) => {
+    .then(async (text) => {
       const sig = hashStr(text);
       const saved = safe(() => JSON.parse(localStorage.getItem(OFFKEY) || "null"));
       if (saved?.sig === sig) {
-        off.textContent = doneLabel;
-        off.disabled = true;
+        const data = JSON.parse(text);
+        const intact = await verifyCached([...data.pages, ...data.assets]);
+        if (intact) {
+          off.textContent = doneLabel;
+          off.disabled = true;
+        } else {
+          off.textContent = "часть офлайн-копии пропала (не хватает места на устройстве?) — нажмите, чтобы докачать";
+          off.disabled = false;
+        }
       } else if (saved) {
         off.textContent = "обновить офлайн-копию — вышло новое";
         off.disabled = false;
