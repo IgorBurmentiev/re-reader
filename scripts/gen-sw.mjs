@@ -40,6 +40,45 @@ for (const u of urls) {
   if (/^\/(icon-\d+\.png|favicon\.\w+)$/.test(u)) shell.add(u);
 }
 
+// ── обложки/фоны на главной, /extra/ и странице каждой арки ──
+// эти картинки не относятся ни к одной конкретной главе, поэтому их не
+// подхватывает сканирование ниже (оно смотрит только внутрь страниц самих
+// глав) — без этого при полностью офлайновом заходе (даже после «скачать
+// арку целиком») обложка арки на / и её же фоновая картинка на /arc/<slug>/
+// оставались пустыми, хотя сам текст и картинки глав открывались нормально.
+//
+// ВАЖНО: сканировать тут можно только строго ограниченные куски разметки —
+// hero-картинку (единственный <img class="bg">) и карточки (<div
+// class="cover">...</div>) — а НЕ всю страницу целиком: страницы арок и
+// «Дополнительного» также содержат полные фото-галереи (сотни картинок),
+// и попытка вытащить из HTML вообще все /_astro/*.webp раздула shell с
+// полусотни файлов до 3000+ и утянула бы в обязательную установку для
+// каждого нового читателя фактически все иллюстрации сайта разом.
+const COVER_SRC_RE = /(?:src|href)="(\/_astro\/[^"]+\.(?:webp|avif|png|jpe?g))"/g;
+const COVER_SRCSET_RE = /srcset="([^"]+)"/g;
+function collectImages(fragment) {
+  let mm;
+  while ((mm = COVER_SRC_RE.exec(fragment))) shell.add(mm[1]);
+  while ((mm = COVER_SRCSET_RE.exec(fragment)))
+    for (const part of mm[1].split(","))
+      if (/^\/_astro\//.test(part.trim())) shell.add(part.trim().split(/\s+/)[0]);
+}
+const coverPages = ["index.html", "extra/index.html"];
+for (const u of urls) {
+  if (/^\/arc\/[^/]+\/index\.html$/.test(u)) coverPages.push(u.slice(1));
+}
+for (const rel of coverPages) {
+  let html;
+  try {
+    html = await readFile(join(DIST, rel), "utf8");
+  } catch {
+    continue;
+  }
+  const hero = html.match(/<img[^>]*\sclass="bg"[^>]*>/);
+  if (hero) collectImages(hero[0]);
+  for (const m of html.matchAll(/<div class="cover"[^>]*>.*?<\/div>/g)) collectImages(m[0]);
+}
+
 // ── карта арок + «Дополнительного» (одним пакетом, как ещё одна «арка»):
 //    страницы глав + их картинки, для кнопки «скачать офлайн» ──
 const arcs = {};
@@ -128,6 +167,22 @@ const isImmutable = (u) =>
   /^\\/_astro\\/.*\\.(webp|avif|png|jpe?g|js|css|woff2?)$/.test(u) ||
   u.startsWith("/pagefind/");
 
+// самый последний рубеж: если ДАЖЕ /offline/ вдруг не нашёлся в кэше
+// (например браузер под нехваткой места сам подчистил кэш сайта, а сеть в
+// этот момент недоступна) — respondWith() ни в коем случае не должен
+// получить undefined. Такое приводит не к нашей странице "Нет сети", а к
+// голой сетевой ошибке браузера — с виду будто сайт вообще сломан. Этот
+// текст ни от чего не зависит (без внешних шрифтов/стилей), поэтому
+// сработает, даже если весь остальной кэш каким-то образом пуст.
+const LAST_RESORT_HTML = "<!doctype html><meta charset=utf-8>" +
+  "<meta name=viewport content=\\"width=device-width,initial-scale=1\\">" +
+  "<body style=\\"font:16px system-ui,sans-serif;background:#161116;color:#e8dfe0;" +
+  "max-width:30rem;margin:12vh auto;padding:0 20px;text-align:center\\">" +
+  "<h1 style=\\"font-weight:400\\">Нет сети</h1>" +
+  "<p>Не получилось ни загрузить страницу, ни найти сохранённую офлайн-копию. " +
+  "Проверьте подключение и обновите страницу.</p>" +
+  "<p><a href=\\"/\\" style=\\"color:#c9a15a\\">на заглавную</a></p>";
+
 self.addEventListener("fetch", (e) => {
   const { request } = e;
   if (request.method !== "GET") return;
@@ -180,12 +235,15 @@ self.addEventListener("fetch", (e) => {
         });
         const timeout = (ms, fallback) =>
           new Promise((resolve) => setTimeout(() => resolve(fallback), ms));
+        const lastResort = () =>
+          new Response(LAST_RESORT_HTML, { headers: { "Content-Type": "text/html; charset=utf-8" } });
         if (!cached) {
-          return Promise.race([net, timeout(12000, null)]).then(
-            (res) => res || caches.match("/offline/"),
-          ).catch(() => caches.match("/offline/"));
+          return Promise.race([net, timeout(12000, null)])
+            .then((res) => res || caches.match("/offline/"))
+            .catch(() => caches.match("/offline/"))
+            .then((res) => res || lastResort());
         }
-        return Promise.race([net, timeout(4000, cached)]).catch(() => cached);
+        return Promise.race([net, timeout(4000, cached)]).catch(() => cached || lastResort());
       }),
     );
     return;

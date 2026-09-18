@@ -263,6 +263,18 @@ const {
 
     <script>
       import "../scripts/theme.ts";
+      // без этого браузер официально вправе сам почистить наш офлайн-кэш
+      // при нехватке места на диске ("best-effort" storage) — что реально
+      // случилось у читателя: страница арки и /offline/ внезапно пропали из
+      // кэша посреди офлайн-чтения, хотя ничего не удалялось руками и сайт
+      // не обновлялся. persist() — это просто вежливая просьба не делать
+      // так с этим сайтом; в Chromium-браузерах решается тихо по своим
+      // эвристикам (без всплывающих окон), Safari API не поддерживает
+      // (вызов просто ничего не сделает), Firefox иногда сам спросит
+      // разрешения у пользователя.
+      if ("storage" in navigator && navigator.storage.persist) {
+        navigator.storage.persist().catch(() => {});
+      }
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () =>
           navigator.serviceWorker.register("/sw.js").catch(() => {}),
