@@ -479,7 +479,7 @@ const extraSeries = REGISTRY.map((s) => ({
 <script>
   import { applyTheme, previewArcTheme } from "../scripts/theme.ts";
   import { REGISTRY } from "../lib/extra.ts";
-  import { computeUnlocked, type ChapterMeta, type ArcUnlockMeta } from "../lib/unlock.ts";
+  import { computeUnlocked, READ_DONE, type ChapterMeta, type ArcUnlockMeta } from "../lib/unlock.ts";
   import { checkAndToastUnlocks } from "../lib/unlockToast.ts";
   import { initListScroll } from "../scripts/listScroll.ts";
 
@@ -541,7 +541,7 @@ const extraSeries = REGISTRY.map((s) => ({
       if (hasAnyProgress) {
         for (const ch of continueChapters as { id: string; href: string; label: string }[]) {
           const p = progress[ch.id] ?? 0;
-          if (p < 1) {
+          if (p < READ_DONE) {
             target = { href: ch.href, label: ch.label, pct: Math.round(p * 100) };
             break;
           }
@@ -570,9 +570,9 @@ const extraSeries = REGISTRY.map((s) => ({
           if (dismissed[s.slug]) return null;
           const hasAny = s.parts.some((p) => (progress[p.id] ?? 0) > 0);
           if (!hasAny) return null;
-          const allDone = s.parts.every((p) => (progress[p.id] ?? 0) >= 1);
+          const allDone = s.parts.every((p) => (progress[p.id] ?? 0) >= READ_DONE);
           if (allDone) return null;
-          const t = s.parts.find((p) => (progress[p.id] ?? 0) < 1);
+          const t = s.parts.find((p) => (progress[p.id] ?? 0) < READ_DONE);
           if (!t) return null;
           const pct = Math.round((progress[t.id] ?? 0) * 100);
           return { slug: s.slug, title: s.title, href: t.href, n: t.n, total: s.parts.length, pct, ts: touched[s.slug] ?? 0 };

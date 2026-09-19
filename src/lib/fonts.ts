@@ -1,37 +1,8 @@
 // 30 шрифтов в 5 группах, отбор под кириллицу (ТЗ §5).
-// Google Fonts CDN. Локальный Fontsource (offline) — оставлен на потом,
-// это единственная незакрытая оптимизация UI.
-export const GFONTS_HREF =
-  "https://fonts.googleapis.com/css2?" +
-  [
-    "family=EB+Garamond:ital,wght@0,400;0,500;1,400",
-    "family=Literata:ital,opsz@0,7..72;1,7..72",
-    "family=Forum",
-    "family=Podkova:wght@400;500",
-    "family=Bitter:ital@0;1",
-    "family=Kelly+Slab",
-    "family=Golos+Text:wght@400;500;600",
-    "family=Cuprum:ital@0;1",
-    "family=Jura",
-    "family=Philosopher:ital@0;1",
-    "family=Tenor+Sans",
-    "family=Yeseva+One",
-    "family=Ruslan+Display",
-    "family=Underdog",
-    "family=Bad+Script",
-    "family=Marck+Script",
-    "family=Neucha",
-    "family=Pacifico",
-    "family=Press+Start+2P",
-    "family=Amatic+SC:wght@400;700",
-    "family=Flow+Circular",
-    "family=Rubik+Doodle+Shadow",
-    "family=Rubik+Glitch",
-    "family=Kablammo",
-    "family=Montserrat+Underline",
-    "family=Tiny5",
-  ].join("&") +
-  "&display=swap";
+// Шрифты раздаются с самого сайта (public/fonts, см. scripts/fetch-fonts.mjs) —
+// не с серверов Google: так они лежат в офлайн-кэше и работают без интернета.
+// Чтобы добавить шрифт: допишите семейство в FAMILIES в scripts/fetch-fonts.mjs,
+// запустите `node scripts/fetch-fonts.mjs` и добавьте строку в FONT_GROUPS ниже.
 
 // [подпись, css-стек, group]
 export type FontEntry = [label: string, stack: string];

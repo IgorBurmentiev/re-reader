@@ -6,6 +6,7 @@
 //   • навигация (HTML)        — network-first, затем кэш, затем /offline/
 //   • /_astro/*.{js,css,woff2} и /pagefind/* — cache-first (иммутабельно, с хэшем)
 //   • /_astro/*.{webp,avif,png,jpg} — cache-first, но НЕ в precache (тяжёлые)
+//   • /fonts/*.woff2 — cache-first в отдельном кэше «fonts-<id>», догружаются фоном
 // Версия кэша = хэш от списка precache: новый билд → новый кэш, старый чистится.
 
 import { readdir, readFile, writeFile, mkdir, stat } from "node:fs/promises";
@@ -31,7 +32,7 @@ const files = await walk(DIST);
 const urls = files.map(toUrl);
 
 // ── оболочка приложения: precache на install ──
-const shell = new Set(["/", "/extra/", "/offline/", "/search/", "/manifest.webmanifest"]);
+const shell = new Set(["/", "/extra/", "/offline/", "/search/", "/manifest.webmanifest", "/fonts/fonts.css"]);
 for (const u of urls) {
   if (/^\/_astro\/.*\.(js|css|woff2?)$/.test(u)) shell.add(u);
   if (/^\/pagefind\/(pagefind(-ui)?\.(js|css)|.*\.wasm.*|pagefind-.*\.js)$/.test(u))
@@ -119,6 +120,13 @@ for (const [slug, v] of Object.entries(arcs)) {
   arcIndex[slug] = { pages: v.pages.length, assets: v.assets.size };
 }
 
+// ── файлы шрифтов (public/fonts, см. scripts/fetch-fonts.mjs): лежат в
+//    ОТДЕЛЬНОМ кэше, а не в build-кэше оболочки — иначе каждый деплой (новый
+//    BUILD_ID) стирал бы их и заставлял заново качать ~3 МБ. Имя кэша зависит
+//    только от самого списка шрифтов ──
+const FONTS = urls.filter((u) => /^\/fonts\/.*\.woff2$/.test(u)).sort();
+const FONTS_ID = createHash("sha1").update(FONTS.join("\n")).digest("hex").slice(0, 10);
+
 const SHELL = [...shell].sort();
 const BUILD_ID = createHash("sha1")
   .update(SHELL.join("\n"))
@@ -134,6 +142,8 @@ const SW = `// СГЕНЕРИРОВАНО scripts/gen-sw.mjs — не редак
 const BUILD = ${JSON.stringify(BUILD_ID)};
 const CACHE = "rezero-" + BUILD;
 const SHELL = ${JSON.stringify(SHELL)};
+const FONTS = ${JSON.stringify(FONTS)};
+const FONTS_CACHE = "fonts-" + ${JSON.stringify(FONTS_ID)};
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
@@ -145,6 +155,8 @@ self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys()
       .then((ks) => {
+        // кэш шрифтов живёт отдельно и пересоздаётся только при смене самого списка
+        ks.filter((k) => k.startsWith("fonts-") && k !== FONTS_CACHE).forEach((k) => caches.delete(k));
         const stale = ks.filter((k) => k.startsWith("rezero-") && k !== CACHE);
         // тост «обновление загружено» имеет смысл только если реально была
         // предыдущая версия кэша — на самом первом визите (stale пуст) это
@@ -249,6 +261,24 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
+  // файлы шрифтов — cache-first в отдельном кэше. ignoreVary — по той же
+  // причине, что и ниже (Vary: Origin у cors-запросов от @font-face).
+  if (url.pathname.startsWith("/fonts/") && url.pathname.endsWith(".woff2")) {
+    e.respondWith(
+      caches.open(FONTS_CACHE).then((c) =>
+        c.match(request, { ignoreVary: true }).then(
+          (hit) =>
+            hit ||
+            fetch(request).then((res) => {
+              if (res.ok) c.put(request, res.clone());
+              return res;
+            }),
+        ),
+      ),
+    );
+    return;
+  }
+
   // хэшированные ассеты — cache-first.
   // ignoreVary — сервер (замечено на astro preview, но не факт что только там)
   // шлёт заголовок "Vary: Origin" на статику; браузер сам решает, слать ли заголовок
@@ -314,6 +344,19 @@ self.addEventListener("message", (e) => {
             e.source && e.source.postMessage({ type: "cache-progress", done, total: d.urls.length, failed });
         }
         e.source && e.source.postMessage({ type: "cache-done", total: d.urls.length, failed });
+      }),
+    );
+  }
+  if (d.type === "cache-fonts") {
+    // досохраняем недостающие шрифты (порциями, не забивая канал); ошибки
+    // отдельных файлов не страшны — повторим при следующем заходе
+    e.waitUntil(
+      caches.open(FONTS_CACHE).then(async (c) => {
+        const missing = [];
+        for (const u of FONTS) if (!(await c.match(u))) missing.push(u);
+        for (let i = 0; i < missing.length; i += 6) {
+          await Promise.allSettled(missing.slice(i, i + 6).map((u) => c.add(u)));
+        }
       }),
     );
   }

@@ -505,7 +505,7 @@ for (const a of ARCS) {
 </script>
 <script>
   import { REGISTRY } from "../../lib/extra";
-  import { computeUnlocked } from "../../lib/unlock";
+  import { computeUnlocked, READ_DONE } from "../../lib/unlock";
   import { checkAndToastUnlocks } from "../../lib/unlockToast";
   import { initListScroll } from "../../scripts/listScroll";
   import { initOfflineDownload } from "../../scripts/offlineDownload";
@@ -560,7 +560,7 @@ for (const a of ARCS) {
   let lastRead = -1;
   rows.forEach((r, i) => {
     const p = progress[r.dataset.id!] ?? 0;
-    if (p >= 0.9) {
+    if (p >= READ_DONE) {
       r.classList.add("done");
       r.querySelector(".meta")!.textContent = "прочитано";
       done++;

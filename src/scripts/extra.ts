@@ -1,4 +1,4 @@
-import { computeUnlocked } from "../lib/unlock";
+import { computeUnlocked, READ_DONE } from "../lib/unlock";
 import { checkAndToastUnlocks } from "../lib/unlockToast";
 import { initListScroll } from "./listScroll";
 import { initOfflineDownload } from "./offlineDownload";
@@ -50,7 +50,7 @@ let doneCount = 0;
 rows.forEach((el) => {
   const status = el.dataset.status || "ok";
   const parts = (el.dataset.parts || "").split(",").filter(Boolean);
-  const readCount = parts.filter((p) => (progress[`extra/${p}`] ?? 0) >= 0.9).length;
+  const readCount = parts.filter((p) => (progress[`extra/${p}`] ?? 0) >= READ_DONE).length;
   const isRead = parts.length > 0 && readCount === parts.length;
   const isOpen = unlocked.has(el.dataset.slug!);
 

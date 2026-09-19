@@ -28,6 +28,9 @@ const TOM_MAX_CHAPTER: Record<number, number> = {
   44: 12, 45: 24,                                          // арка 10 (онгоинг, дальше не задано)
 };
 
+// глава/часть считается прочитанной только при ровно 100% (см. reader.ts)
+export const READ_DONE = 1;
+
 export interface ChapterMeta {
   arc: string;
   number?: string;
@@ -52,7 +55,7 @@ export function computeUnlocked(
   const maxNumByArc: Record<string, number> = {};
   const maxVolByArc: Record<string, number> = {};
   for (const [id, pct] of Object.entries(progress)) {
-    if (pct < 0.9) continue;
+    if (pct < READ_DONE) continue;
     const m = chapterMeta[id];
     if (!m) continue;
     if (m.number != null && !Number.isNaN(+m.number)) {

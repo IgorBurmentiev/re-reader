@@ -1,7 +1,6 @@
 ---
 import Icon from "../components/Icon.astro";
 import PalettePanel from "../components/PalettePanel.astro";
-import { GFONTS_HREF } from "../lib/fonts";
 
 interface Props {
   title: string;
@@ -39,9 +38,7 @@ const {
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/icon-192.png" />
     <meta name="theme-color" content="#0b0e18" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href={GFONTS_HREF} rel="stylesheet" />
+    <link href="/fonts/fonts.css" rel="stylesheet" />
     <script is:inline>
       // применяем сохранённую тему до отрисовки — без вспышки
       try {
@@ -277,7 +274,15 @@ const {
       }
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () =>
-          navigator.serviceWorker.register("/sw.js").catch(() => {}),
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(() => navigator.serviceWorker.ready)
+            .then((reg) => {
+              // фоново, без спешки: досохранить в офлайн-кэш ВСЕ шрифты (а не
+              // только те, что уже понадобились на открытых страницах)
+              setTimeout(() => reg.active?.postMessage({ type: "cache-fonts" }), 3000);
+            })
+            .catch(() => {}),
         );
         let refreshing = false;
         navigator.serviceWorker.addEventListener("message", (e) => {
