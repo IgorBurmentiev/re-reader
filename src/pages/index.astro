@@ -148,7 +148,7 @@ const extraSeries = REGISTRY.map((s) => ({
     </p>
   </footer>
 
-  <button id="wipeProgress" class="devwipe" type="button" aria-label="Стереть прогресс чтения (для тестирования)">
+  <button id="wipeProgress" class="devwipe" type="button" title="Стереть весь прогресс чтения" aria-label="Стереть весь прогресс чтения (для тестирования)">
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0-1 14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L4 6" />
       <path d="M10 11v6M14 11v6" />
@@ -240,42 +240,56 @@ const extraSeries = REGISTRY.map((s) => ({
     gap: 10px;
   }
   .extraResumes[hidden] { display: none; }
-  .extraResumes .chip {
+  /* чипы создаются скриптом (innerHTML), поэтому Astro не навешивает на них
+     свой scoped-атрибут — без :global эти стили просто не применялись */
+  .extraResumes :global(.chip) {
     display: flex;
     align-items: center;
     gap: 8px;
     border: 1px solid var(--rule);
     border-radius: 20px;
     background: color-mix(in srgb, var(--paper-2) 80%, transparent);
-    padding: 6px 8px 6px 14px;
+    padding: 6px 6px 6px 14px;
     font: 500 12px var(--ui);
     color: var(--ink);
     backdrop-filter: blur(6px);
+    transition: border-color 0.2s;
   }
-  .extraResumes .chip a {
+  .extraResumes :global(.chip:hover) { border-color: var(--c); }
+  .extraResumes :global(.chip a) {
     display: flex;
     align-items: baseline;
     gap: 7px;
     color: inherit;
     max-width: 220px;
   }
-  .extraResumes .chip .t {
+  .extraResumes :global(.chip .t) {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .extraResumes .chip .p { color: var(--c); white-space: nowrap; font-size: 11px; }
-  .extraResumes .chip .x {
-    border: none;
+  .extraResumes :global(.chip .p) { color: var(--c); white-space: nowrap; font-size: 11px; }
+  .extraResumes :global(.chip .x) {
+    display: grid;
+    place-content: center;
+    width: 22px;
+    height: 22px;
+    flex: none;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
     background: none;
     color: var(--ink-dim);
     cursor: pointer;
-    font-size: 15px;
-    line-height: 1;
-    padding: 2px 4px;
-    border-radius: 50%;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
   }
-  .extraResumes .chip .x:hover { color: var(--ink); background: var(--rule); }
+  .extraResumes :global(.chip .x:hover),
+  .extraResumes :global(.chip .x:focus-visible) {
+    color: var(--c);
+    border-color: var(--c);
+    background: color-mix(in srgb, var(--c) 12%, transparent);
+    outline: none;
+  }
 
   section { margin-top: 8px; }
   .shead {
@@ -463,8 +477,7 @@ const extraSeries = REGISTRY.map((s) => ({
 </style>
 
 <script>
-  import { THEMES } from "../lib/themes";
-  import { applyTheme } from "../scripts/theme.ts";
+  import { applyTheme, previewArcTheme } from "../scripts/theme.ts";
   import { REGISTRY } from "../lib/extra.ts";
   import { computeUnlocked, type ChapterMeta, type ArcUnlockMeta } from "../lib/unlock.ts";
   import { checkAndToastUnlocks } from "../lib/unlockToast.ts";
@@ -501,34 +514,12 @@ const extraSeries = REGISTRY.map((s) => ({
   });
 
   // ── навести на карточку → тема этой арки (если «своя у каждой») ──
-  const root = document.documentElement;
-  let siteAuto = true;
-  try {
-    siteAuto = JSON.parse(localStorage.getItem("rz:site") || "{}").auto !== "off";
-  } catch {}
-  const setVars = (id: string) => {
-    const t = THEMES[id];
-    if (!t) return;
-    const r = root.style;
-    r.setProperty("--paper", t.p);
-    r.setProperty("--paper-2", t.p2);
-    r.setProperty("--ink", t.i);
-    r.setProperty("--ink-dim", t.d);
-    r.setProperty("--c", t.g);
-    r.setProperty("--gold", t.g);
-    r.setProperty("--gold-soft", t.gs);
-    r.setProperty("--rule", t.g + "4a");
-    root.dataset.mode = t.m;
-  };
   const sec = document.getElementById("arcsSec")!;
   sec.addEventListener("mouseover", (e) => {
-    if (!siteAuto) return;
     const a = (e.target as HTMLElement).closest<HTMLElement>(".arc[data-theme]");
-    if (a) setVars(a.dataset.theme!);
+    if (a) previewArcTheme(a.dataset.theme!);
   });
-  sec.addEventListener("mouseleave", () => {
-    if (siteAuto) applyTheme();
-  });
+  sec.addEventListener("mouseleave", () => applyTheme());
 
   // ── «продолжить» ──
   // Считаем цель заново при каждом визите из rz:progress — никакого отдельного
@@ -601,12 +592,16 @@ const extraSeries = REGISTRY.map((s) => ({
               <span class="t">${c.title}</span>
               <span class="p">${c.total > 1 ? "часть " + c.n + " · " : ""}${c.pct}%</span>
             </a>
-            <button class="x" type="button" data-slug="${c.slug}" aria-label="Убрать из списка">×</button>
+            <button class="x" type="button" data-slug="${c.slug}" data-title="${c.title.replace(/"/g, "&quot;")}" title="Убрать с главной (прогресс сохранится)" aria-label="Убрать с главной"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
           </div>`,
           )
           .join("");
         wrap.querySelectorAll(".x").forEach((btn) =>
           btn.addEventListener("click", () => {
+            const title = (btn as HTMLElement).dataset.title || "эту историю";
+            if (!confirm(`Убрать «${title}» с главной страницы?
+
+Прогресс чтения сохранится, а кнопка вернётся, как только вы снова откроете эту историю.`)) return;
             try {
               const d = JSON.parse(localStorage.getItem("rz:extra:dismissed") || "{}");
               d[(btn as HTMLElement).dataset.slug!] = true;

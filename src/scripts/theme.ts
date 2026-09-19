@@ -29,8 +29,7 @@ function effectiveId(): string {
   return id;
 }
 
-export function applyTheme() {
-  const id = effectiveId();
+function paintVars(id: string) {
   const t = THEMES[id];
   const r = root.style;
   r.setProperty("--paper", t.p);
@@ -42,6 +41,25 @@ export function applyTheme() {
   r.setProperty("--gold-soft", t.gs);
   r.setProperty("--rule", t.g + "4a");
   root.dataset.mode = t.m;
+}
+
+// превью темы арки при наведении на её карточку на главной. Уважает выбор
+// пользователя: при «своя у каждой арки» выключенной ничего не меняет, а
+// ручной день/ночь применяется и здесь (иначе при выбранной светлой теме
+// наведение на арку возвращало тёмную палитру арки). Состояние читаем из
+// того же объекта S, что правят кнопки панели палитры, — не «снимок на
+// момент загрузки страницы».
+export function previewArcTheme(arcThemeId: string) {
+  if (S.auto !== "on" || !THEMES[arcThemeId]) return;
+  let id = arcThemeId;
+  if (S.mode && THEMES[id].m !== S.mode && PAIR[id]) id = PAIR[id];
+  paintVars(id);
+}
+
+export function applyTheme() {
+  const id = effectiveId();
+  const t = THEMES[id];
+  paintVars(id);
   root.dataset.theme = id;
   document.querySelectorAll<HTMLElement>(".sw").forEach((x) =>
     x.setAttribute("aria-pressed", String(x.dataset.t === id)),
