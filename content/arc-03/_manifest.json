@@ -14,15 +14,8 @@
     "i_038.jpg",
     "i_057.jpg",
     "i_070.jpg",
-    "i_071.jpg",
-    "i_072.jpg",
-    "i_073.jpg",
     "i_091.png",
-    "i_103.jpg",
-    "i_104.jpg",
-    "i_105.jpg",
-    "i_106.jpg",
-    "i_107.jpg"
+    "i_103.jpg"
   ],
   "images_total": 107,
   "volume": 9,
@@ -693,6 +686,37 @@
       "source_ref": "section 7"
     },
     {
+      "slug": "extra-09",
+      "type": "extra",
+      "number": null,
+      "label": "Начальные иллюстрации",
+      "title": "",
+      "phase": null,
+      "volume": 7,
+      "words": 3,
+      "paragraphs": 3,
+      "illustrations": [
+        "i_071.jpg",
+        "i_072.jpg",
+        "i_073.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_071.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_072.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_073.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "manual: images sat inside <title> in the fb2"
+    },
+    {
       "slug": "017",
       "type": "chapter",
       "number": "17",
@@ -1060,6 +1084,42 @@
         }
       ],
       "source_ref": "flat-scan"
+    },
+    {
+      "slug": "extra-10",
+      "type": "extra",
+      "number": null,
+      "label": "Начальные иллюстрации",
+      "title": "",
+      "phase": null,
+      "volume": 9,
+      "words": 4,
+      "paragraphs": 4,
+      "illustrations": [
+        "i_104.jpg",
+        "i_105.jpg",
+        "i_106.jpg",
+        "i_107.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_104.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_105.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_106.jpg",
+          "after_paragraph": 0
+        },
+        {
+          "image": "i_107.jpg",
+          "after_paragraph": 0
+        }
+      ],
+      "source_ref": "manual: images sat inside <title> in the fb2"
     },
     {
       "slug": "prologue-02",

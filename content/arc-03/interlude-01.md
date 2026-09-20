@@ -4,8 +4,8 @@ volume: 9
 type: "interlude"
 label: "Интермедия"
 title: "Кушать подано"
-order_release: 48
-order_chrono: 48
+order_release: 50
+order_chrono: 50
 illustrations: ["i_099.jpg"]
 ---
 

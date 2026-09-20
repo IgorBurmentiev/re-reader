@@ -4,8 +4,8 @@ volume: 9
 type: "side"
 label: "Фрагмент"
 title: "Нацуки Рем"
-order_release: 47
-order_chrono: 47
+order_release: 49
+order_chrono: 49
 illustrations: ["i_098.jpg"]
 ---
 

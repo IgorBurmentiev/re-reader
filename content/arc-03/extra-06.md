@@ -3,8 +3,8 @@ arc: 3
 volume: 7
 type: "extra"
 label: "Постскриптум"
-order_release: 32
-order_chrono: 32
+order_release: 33
+order_chrono: 33
 illustrations: ["i_067.jpg", "i_068.jpg", "i_069.jpg"]
 ---
 
