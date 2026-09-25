@@ -52,6 +52,7 @@ export async function getStaticPaths() {
           isExtra: true,
           seriesSlug: series.slug,
           seriesTitle: series.title,
+          hasSubmenu: series.parts > 1,
           category: series.category,
           prev: list[i - 1] ?? null,
           next: list[i + 1] ?? null,
@@ -75,6 +76,9 @@ const props = Astro.props as any;
 const { entry, isExtra, prev, next, pos, total, toc } = props;
 const seriesSlug: string = isExtra ? props.seriesSlug : "";
 const seriesTitle: string = isExtra ? props.seriesTitle : "";
+// у истории из нескольких частей есть своё подменю (/extra/<slug>) — «назад»
+// из части должно вести в него, а не в общий список «Дополнительного»
+const hasSubmenu: boolean = isExtra ? !!props.hasSubmenu : false;
 const category: string = isExtra ? props.category : "";
 const { Content } = await render(entry);
 const d = entry.data as any;
@@ -113,9 +117,15 @@ const pageTitle = isExtra
   <header class="rhead">
     {
       isExtra ? (
-        <a href="/extra" class="crumb">
-          <Icon name="chevron-left" size={15} /> Дополнительно
-        </a>
+        hasSubmenu ? (
+          <a href={`/extra/${seriesSlug}`} class="crumb" title={`К частям: ${seriesTitle}`}>
+            <Icon name="chevron-left" size={15} /> <span class="crumbtxt">{seriesTitle}</span>
+          </a>
+        ) : (
+          <a href="/extra" class="crumb">
+            <Icon name="chevron-left" size={15} /> Дополнительно
+          </a>
+        )
       ) : (
         <a href={`/arc/${arcSlug}`} class="crumb">
           <Icon name="chevron-left" size={15} /> Арка {d.arc}
@@ -301,7 +311,8 @@ const pageTitle = isExtra
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--rule);
   }
-  .rhead .crumb { display: inline-flex; align-items: center; gap: 4px; color: var(--c); }
+  .rhead .crumb { display: inline-flex; align-items: center; gap: 4px; color: var(--c); min-width: 0; max-width: 55%; }
+  .rhead .crumb .crumbtxt { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .rhead .mid { flex: 1; color: var(--ink); font-style: italic; }
   .rhead .pct { color: var(--c); font-variant-numeric: tabular-nums; }
 
