@@ -554,7 +554,7 @@
     "volumes": "44–…",
     "structure": "wn",
     "status": "онгоинг",
-    "expected_total": 35,
+    "expected_total": 37,
     "phases": [
       {
         "n": 1,
@@ -587,7 +587,7 @@
           ],
           [
             25,
-            35
+            37
           ]
         ]
       }

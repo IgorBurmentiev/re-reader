@@ -14,7 +14,9 @@
     "7_10-30.epub",
     "8_10-31.epub",
     "9_10-32.epub",
-    "13_10-36.epub"
+    "13_10-36.epub",
+    "0_10-prologue3.epub",
+    "14_10-37.epub"
   ],
   "toc_labels": [
     "АРКА 10 — ПРОЛОГ",
@@ -39,7 +41,7 @@
     "i_036.jpg",
     "i_037.jpg"
   ],
-  "images_total": 38,
+  "images_total": 40,
   "generator": "epub_to_md.py",
   "chapters": [
     {
@@ -666,6 +668,20 @@
       "source_ref": "index_split_069.html +index_split_070.html +index_split_071.html +index_split_072.html +index_split_073.html +index_split_074.html +index_split_075.html"
     },
     {
+      "slug": "prologue-02",
+      "type": "prologue",
+      "number": null,
+      "label": "Пролог",
+      "title": "Бесцветный",
+      "phase": 3,
+      "volume": null,
+      "words": 756,
+      "paragraphs": 30,
+      "illustrations": [],
+      "illustration_anchors": [],
+      "source_ref": "index.html"
+    },
+    {
       "slug": "025",
       "type": "chapter",
       "number": "25",
@@ -853,6 +869,32 @@
       "illustrations": [],
       "illustration_anchors": [],
       "source_ref": "index.html"
+    },
+    {
+      "slug": "037",
+      "type": "chapter",
+      "number": "37",
+      "label": "37",
+      "title": "Исполнитель",
+      "phase": 3,
+      "volume": null,
+      "words": 3362,
+      "paragraphs": 174,
+      "illustrations": [
+        "i_039.jpg",
+        "i_040.jpg"
+      ],
+      "illustration_anchors": [
+        {
+          "image": "i_039.jpg",
+          "after_paragraph": 165
+        },
+        {
+          "image": "i_040.jpg",
+          "after_paragraph": 172
+        }
+      ],
+      "source_ref": "index_split_000.html +index_split_001.html +index_split_002.html +index_split_003.html"
     }
   ]
 }
