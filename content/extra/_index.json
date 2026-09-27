@@ -4068,7 +4068,8 @@
     },
     "status": "ok",
     "words": 6163,
-    "subgroup": "Будьте со мной, Плеяды"
+    "subgroup": "Будьте со мной, Плеяды",
+    "requires": "budte-so-mnoj-pleyady"
   },
   {
     "slug": "budte-so-mnoj-pleyady-muzhskie-peregovory-petry",
@@ -4097,7 +4098,8 @@
     },
     "status": "ok",
     "words": 13291,
-    "subgroup": "Будьте со мной, Плеяды"
+    "subgroup": "Будьте со мной, Плеяды",
+    "requires": "budte-so-mnoj-pleyady-vozvraschenie-bludnogo-syna"
   },
   {
     "slug": "budte-so-mnoj-pleyady-nevesta-krovi-frederika",
@@ -4124,7 +4126,8 @@
     },
     "status": "ok",
     "words": 15700,
-    "subgroup": "Будьте со мной, Плеяды"
+    "subgroup": "Будьте со мной, Плеяды",
+    "requires": "budte-so-mnoj-pleyady"
   },
   {
     "slug": "ochen-surovoe-pravosudie",
