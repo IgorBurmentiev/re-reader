@@ -33,6 +33,7 @@ const items = rows.map((el) => ({
   read_after: el.dataset.arc
     ? { arc: parseInt(el.dataset.arc, 10), container: el.dataset.container || null }
     : null,
+  requires: el.dataset.requires || null,
 }));
 const unlocked = computeUnlocked(progress, chapterMeta, arcsMeta, items);
 

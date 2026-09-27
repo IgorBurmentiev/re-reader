@@ -44,6 +44,7 @@ export interface ArcUnlockMeta {
 export interface UnlockItem {
   slug: string;
   read_after: { arc: number; container: string | null } | null;
+  requires?: string | null;
 }
 
 export function computeUnlocked(
@@ -79,15 +80,18 @@ export function computeUnlocked(
     const contLabel = item.read_after.container ?? "";
     const contNum = contLabel.match(/\d+/)?.[0];
     const isTom = /^Том/i.test(contLabel);
+    // помимо обычной привязки к тому/арке — необязательная явная зависимость
+    // от прочтения (100%) другой конкретной истории «Дополнительного»
+    const requiresOk = !item.requires || (progress[`extra/${item.requires}`] ?? 0) >= READ_DONE;
 
     if (meta.structure === "ln") {
       const reached = maxVolByArc[arcKey] ?? 0;
-      if (!contNum || reached >= +contNum) unlocked.add(item.slug);
+      if ((!contNum || reached >= +contNum) && requiresOk) unlocked.add(item.slug);
       continue;
     }
 
     if (isTom && contNum && TOM_MAX_CHAPTER[+contNum] != null) {
-      if ((maxNumByArc[arcKey] ?? 0) >= TOM_MAX_CHAPTER[+contNum]) unlocked.add(item.slug);
+      if ((maxNumByArc[arcKey] ?? 0) >= TOM_MAX_CHAPTER[+contNum] && requiresOk) unlocked.add(item.slug);
       continue;
     }
 
@@ -109,7 +113,7 @@ export function computeUnlocked(
     );
     const ph = meta.phases.find((p) => p.n === targetPhase);
     const maxChNum = ph ? Math.max(...ph.ranges.map((r) => r[1])) : 0;
-    if ((maxNumByArc[arcKey] ?? 0) >= maxChNum) unlocked.add(item.slug);
+    if ((maxNumByArc[arcKey] ?? 0) >= maxChNum && requiresOk) unlocked.add(item.slug);
   }
   return unlocked;
 }

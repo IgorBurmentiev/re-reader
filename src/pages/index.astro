@@ -624,7 +624,7 @@ const extraSeries = REGISTRY.map((s) => ({
     } catch {}
     const { chapterMeta, arcsMeta } = window.__HOME_UNLOCK__ || ({} as any);
     if (chapterMeta) {
-      const items = REGISTRY.map((r) => ({ slug: r.slug, read_after: r.read_after }));
+      const items = REGISTRY.map((r) => ({ slug: r.slug, read_after: r.read_after, requires: r.requires }));
       const unlocked = computeUnlocked(progress, chapterMeta, arcsMeta, items);
       checkAndToastUnlocks(unlocked, (slug) => REGISTRY.find((r) => r.slug === slug)?.title);
     }

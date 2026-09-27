@@ -29,6 +29,7 @@ const showParts = item.status === "ok" && item.parts > 1;
       data-status={item.status}
       data-arc={ra?.arc ?? ""}
       data-container={ra?.container ?? ""}
+      data-requires={item.requires ?? ""}
       data-parts={item.part_slugs.join(",")}
     >
       <div class="exlbl">{CATEGORY_TAG[cat]}</div>
@@ -47,6 +48,7 @@ const showParts = item.status === "ok" && item.parts > 1;
       data-status={item.status}
       data-arc={ra?.arc ?? ""}
       data-container={ra?.container ?? ""}
+      data-requires={item.requires ?? ""}
       data-parts={item.part_slugs.join(",")}
     >
       <span class="mid">

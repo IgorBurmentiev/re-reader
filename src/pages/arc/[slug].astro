@@ -605,7 +605,7 @@ for (const a of ARCS) {
       try {
         progress = JSON.parse(localStorage.getItem("rz:progress") || "{}");
       } catch {}
-      const its = REGISTRY.map((r) => ({ slug: r.slug, read_after: r.read_after }));
+      const its = REGISTRY.map((r) => ({ slug: r.slug, read_after: r.read_after, requires: r.requires }));
       const unlocked = computeUnlocked(progress, data.chapterMeta, data.arcsMeta, its);
       checkAndToastUnlocks(unlocked, (slug) => REGISTRY.find((r) => r.slug === slug)?.title);
     }

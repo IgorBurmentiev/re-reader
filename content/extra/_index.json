@@ -2476,7 +2476,8 @@
       "container": "Танпэнсю 2"
     },
     "status": "ok",
-    "words": 5931
+    "words": 5931,
+    "requires": "istoriya-geroya-nachavshayasya-s-nulya"
   },
   {
     "slug": "ram-eto-zakon",
