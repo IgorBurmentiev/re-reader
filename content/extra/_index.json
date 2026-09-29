@@ -4361,8 +4361,8 @@
     "words": 2
   },
   {
-    "slug": "strazhi-bagrovogo-plameni",
-    "title": "Стражи Багрового Пламени",
+    "slug": "hranitel-bagrovogo-plameni",
+    "title": "Хранитель Багрового Пламени",
     "title_jp": "紅炎の守護者",
     "category": "side",
     "tags": [
@@ -4372,18 +4372,18 @@
       "Сесилус",
       "Чиша"
     ],
-    "translator": "",
+    "translator": "Перевод и редактура: Энди; Помощь с японским: Witcher",
     "fanart": "",
     "parts": 1,
     "part_slugs": [
-      "strazhi-bagrovogo-plameni"
+      "hranitel-bagrovogo-plameni"
     ],
     "read_after": {
       "arc": 9,
       "container": "Танпэнсю 12"
     },
-    "status": "no_translation",
-    "words": 2
+    "status": "ok",
+    "words": 7820
   },
   {
     "slug": "polozhenie-del-bagrovoj-sakury-yae-tendzen",
