@@ -3,8 +3,8 @@ title: "День, когда я перестал быть Звездой-Пос�
 title_jp: "後追い星をやめた日"
 category: "side"
 status: "ok"
-read_after_arc: 3
-read_after_container: "Танпэнсю 1"
+read_after_arc: 5
+read_after_container: "Том 20"
 tags: ["Альдебаран", "Лейп", "Присцилла", "Шульт"]
 translator: "Перевод и редактура: Энди"
 source_ref: "Text/The_Day_I_Gave_Up_On_Being_A_Following_Star.xhtml"
